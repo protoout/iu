@@ -1,0 +1,13 @@
+{
+  "name": "her",
+  "version": "1.0.0",
+  "description": "Day1：2/13木 13時-17時半 Day2：2/20木 13時-17時半 Day3：2/27木 13時-17時半",
+  "main": "index.js",
+  "scripts": {
+    "push": "git add . && git commit -m 'update' && git push origin main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
