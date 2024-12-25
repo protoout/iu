@@ -95,3 +95,6 @@ AIはこの入力をもとに応答を生成します。
 完成したエージェントを会場の人と共有し、公開できているか試してみましょう。
 
 <img src="https://i.gyazo.com/a745adb42a26d2e77c498b84731099d7.png" width="450px" alt="image from gyazo"/>
+
+- [次の資料へ](./03_line_api.md)
+- [トップページへ](./readme.md)
