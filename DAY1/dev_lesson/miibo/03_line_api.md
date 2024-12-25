@@ -1,4 +1,4 @@
-# 3.miiboとLINEを連携する
+# 3.　miiboとLINEを連携する
 
 ### LINEdevelopersにログインする
 https://developers.line.biz/ja/
