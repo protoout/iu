@@ -3,18 +3,21 @@
 ## ナレッジファイルを元にGPTを作成しよう
 GPTsではナレッジファイルというファイルを用意して、このファイルにある情報を情報リソースとして扱い、オリジナルのGPTを作ることができます。
 
-## 福井のクマ情報GPTを作ってみる
+### 福井のクマ情報GPTを作ってみる
 完成イメージのGPTsはこちらです。  
 [福井のクマ情報GPT](https://chatgpt.com/g/g-6739ea0a83e08191b807fe9b427f892d-fu-jing-nokumaqing-bao-gpt) 
+
 <img src="https://i.gyazo.com/f201f1aded8712e8842cc296d3e1451c.png" width="450px" alt="image from gyazo"/>
 
-1. GPTStoreの右上に表示される「＋作成する」のボタンをクリックする。
+- GPTStoreの右上に表示される「＋作成する」のボタンをクリックする。
+
 <img src="https://i.gyazo.com/5eaaaa11ebe05e7e6bac3d7dcd4c2aef.png" width="450px" alt="image from gyazo"/>
 
-1. 「GPT Builder」というノーコードツールがWeb上で立ち上がったら、ページを「構成」に切り替えて情報を入れる。
+- 「GPT Builder」というノーコードツールがWeb上で立ち上がったら、ページを「構成」に切り替えて情報を入れる。
+
 <img src="https://i.gyazo.com/2bc7b730e55a1698b577a497aa639d11.png" width="450px" alt="image from gyazo"/>
 
-    まずはコピペして試してみましょう。
+まずはコピペして試してみましょう。  
 
     Name（名前）: `福井県のクマ情報GPT`  
     Description（説明）: `福井のクマに関する情報を教えてくれます。`  
@@ -31,45 +34,52 @@ GPTsではナレッジファイルというファイルを用意して、この�
     Conversation starters（会話の開始者）:（なくても大丈夫）
     `クマと出会ったときはどうしたらいい？`  
     `クマの出没件数は？`
+
 <img src="https://i.gyazo.com/512abd506e9efb8f20dd6225849cbb59.png" width="450px" alt="image from gyazo"/>
 
-1. ナレッジファイルを追加する  
-3-1. ナレッジファイルを用意する  
+### ナレッジファイルを追加する  
+- ナレッジファイルを用意する   
     今回は[福井県庁のサイト](https://www.pref.fukui.lg.jp/doc/shizen/tixyouzixyuu/tukinowaguma2.html)に掲載されていたPDFをナレッジファイルとして扱ってみます。
 
     PDF: [（チラシ）クマに会わないように・会ったときは](https://www.pref.fukui.lg.jp/doc/shizen/tixyouzixyuu/tukinowaguma2_d/fil/R5chirashi.pdf)  
     PDF: [クマの出没件数（令和２～6年度）](https://www.pref.fukui.lg.jp/doc/shizen/tixyouzixyuu/tukinowaguma2_d/fil/R2-6.pdf)  
     この2つをDLしてみましょう。
 
-    2-2. ナレッジファイルをアップロードする  
+- ナレッジファイルをアップロードする  
     Upload files（ファイルをアップロードする）のボタンからPDFファイルをそのままアップロードします。  
+
 <img src="https://i.gyazo.com/e5462ca55b7193ed73d32bc3ae7be1c8.png" width="450px" alt="image from gyazo"/>
 
-    データ加工などをせずに、PDFデータをそのままアップロードできるのがすごいです。  
-    今までは機械に学習させるためにデータを加工して、ゴミを取って、、みたいなことが当たり前でした。
+　　データ加工などをせずに、PDFデータをそのままアップロードできるのがすごいです。   
+　　今までは機械に学習させるためにデータを加工して、ゴミを取って、、みたいなことが当たり前でした。
 
-1. Capabilities（機能）のチェックは外す  
+- Capabilities（機能）のチェックは外す  
+
 <img src="https://i.gyazo.com/9f40aaf96f3b0783334720db5e2d03e4.png" width="450px" alt="image from gyazo"/>
 
     Web Browsingなどの機能を内包させたい場合は良いのですが、答えが見つからない場合にインターネット上に情報を探しにいき、よく分からない答えを出してしまうハルシネーションに繋がってしまう場合があります。  
     今回のケースではオフでいきます。
 
-1. 試してみる  
+- 試してみる  
 右のプレビュー画面で試してみましょう。  
 何か情報が返ってくると思います。
+
 <img src="https://i.gyazo.com/a34f2b1cea191f7e8d7a9f2b038d2cff.png" width="450px" alt="image from gyazo"/>
 <img src="https://i.gyazo.com/c6ec3e009f480723fbd4852c447eaac7.png" width="450px" alt="image from gyazo"/>
 
-元々のPDFを確認してみると、PDFファイルの中に記載のある情報を元にGPTが回答していることがわかると思います。  
+元々のPDFを確認してみると、PDFファイルの中に記載のある情報を元にGPTが回答していることがわかると思います。 
+
 <img src="https://i.gyazo.com/a61ef76013e6f695f1f3b49b8491ec55.png" width="450px" alt="image from gyazo"/>
 
-4. アイコンを作成する
+- アイコンを作成する
     DALL-Eを選択して、アイコンを自動生成して限定公開をしてみましょう。  
     情報があればあるほど精度が上がるため、一番最後にアイコンを作るのがオススメです。
+
     <img src="https://i.gyazo.com/efda038ecaee8f005aab8396fcdbd149.png" width="450px" alt="image from gyazo"/>
     <img src="https://i.gyazo.com/b8b66e2329ac1543a8211fa5499a5e92.png" width="450px" alt="image from gyazo"/>
 
-5. 右上の「作成する」ボタンをクリックして公開する  
+- 右上の「作成する」ボタンをクリックして公開する  
+
 <img src="https://i.gyazo.com/cc5d85047545899496daf0f3756bb92f.png" width="450px" alt="image from gyazo"/>
 <img src="https://i.gyazo.com/5876e8ea0a2103f580195899718d3c96.png" width="450px" alt="image from gyazo"/>
 
