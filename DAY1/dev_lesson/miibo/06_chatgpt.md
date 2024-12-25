@@ -1,6 +1,6 @@
-# GPTsに触れてみよう"
+# 6.GPTsに触れてみよう"
 
-# 1. GPTとは？
+## 1.GPTとは？
 
 ## ChatGPTとGPT（Generative Pre-trained Transformer）
 ChatGPTは、2022年11月にOpenAIが発表した「高性能なチャットボット（人間の代わりに機械が対話してくれるシステム）」です。  

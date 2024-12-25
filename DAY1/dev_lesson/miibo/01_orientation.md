@@ -1,3 +1,4 @@
+# 1.オリエンテーション
 
 # 講義に入る前に心構えの復習
 ## 今回の目標
@@ -102,3 +103,52 @@ LLMは生成AIの1つで、テキストを生成するのに特化したモデ�
 
 - [サービスカウンターが楽しくなるマニュアル検索ChatBotです。](https://protoout.studio/1ea4f6a646df4e30ac8c834e2b1d86a9)
 <img src="https://i.gyazo.com/d03dd7580268744fbbd3a4bb0c8bae0e.png" width="450px" alt="image from gyazo"/>
+
+# 今回使用するツール
+
+## miibo
+生成AIを簡単にアプリケーション化するためのサービスです。
+- 「AIではじめて何かをしてみよう！」という人におススメ
+
+miiboのメリット
+1. プログラミング不要で爆速でAI開発できる
+1. さまざまなLLMを選んで変更できる
+1. さまざまなサービスと連携できる
+1. 作成したAIをどこにでも組み込める
+1. 開発と運用の費用を最小化できる
+1. 個別化された会話ができるAIを構築できる
+1. 汎用的な機能を備えている
+
+## LINE Bot
+LINEは日本でもっとも利用されているメッセージングアプリです。
+直感的な見た目と操作性により、初心者でも利用しやすいのが特徴です。
+
+LINE Botは、そのLINE上で動作するチャットボット（ロボット）です。
+日頃使っているLINEとはすこし違うものだと思っていてください。
+
+【会話型AIの活用例】
+- カスタマーサポート: 企業の顧客サポート、問い合わせ対応の効率化
+- ヘルスケア: 健康アドバイス、予約管理、医療機関との連携
+- 予約管理: レストランやクリニックの予約
+- 情報提供: ニュース、天気予報、イベント情報の提供
+- リマインダー: 薬の服用やアポイントメントのリマインダー
+- 教育: 学習支援や教材の提供
+
+## 活用事例
+### もいせん卒業生
+- [鼻洗太郎bot](https://sho-k.my.canva.site/dagqv-x6nqu)
+<img src="https://i.gyazo.com/1832edfa0a041fdbd5d8cf052c3bce11.jpg" width="450px" alt="image from gyazo"/>
+
+### 他社製品
+- [医療機関のお問い合わせ対応にmiiboを導入する効果](https://www.docswell.com/s/daitoku0110/57VJNJ-miibo#p1)
+<img src="https://i.gyazo.com/061cd9695af32226947e329d0a8d2763.png" width="450px" alt="image from gyazo"/>
+
+
+- [AI毎日物語](https://camp-fire.jp/projects/view/683245?list=channel_sparks)
+<img src="https://i.gyazo.com/b1c38322d6c0272b077f13b0dc800281.png" width="450px" alt="image from gyazo"/>
+
+# 今日のゴール
+1. 自分の会話型AIを作成できる
+1. 作った会話型AIをカスタマイズできる
+1. 職場での活用を検討できる
+<img src="https://i.gyazo.com/7d86f01c0c57e9920611820a42b5a9c3.png" width="450px" alt="image from gyazo"/>

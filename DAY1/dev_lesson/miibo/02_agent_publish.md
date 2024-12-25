@@ -1,58 +1,10 @@
-#　miiboを触ってエージェントを公開しよう
+#　2.miiboを触ってエージェントを公開しよう
 
-
-## miibo
-生成AIを簡単にアプリケーション化するためのサービスです。
-- 「AIではじめて何かをしてみよう！」という人におススメ
-
-miiboのメリット
-1. プログラミング不要で爆速でAI開発できる
-1. さまざまなLLMを選んで変更できる
-1. さまざまなサービスと連携できる
-1. 作成したAIをどこにでも組み込める
-1. 開発と運用の費用を最小化できる
-1. 個別化された会話ができるAIを構築できる
-1. 汎用的な機能を備えている
-
-## LINE Bot
-LINEは日本でもっとも利用されているメッセージングアプリです。
-直感的な見た目と操作性により、初心者でも利用しやすいのが特徴です。
-
-LINE Botは、そのLINE上で動作するチャットボット（ロボット）です。
-日頃使っているLINEとはすこし違うものだと思っていてください。
-
-【会話型AIの活用例】
-- カスタマーサポート: 企業の顧客サポート、問い合わせ対応の効率化
-- ヘルスケア: 健康アドバイス、予約管理、医療機関との連携
-- 予約管理: レストランやクリニックの予約
-- 情報提供: ニュース、天気予報、イベント情報の提供
-- リマインダー: 薬の服用やアポイントメントのリマインダー
-- 教育: 学習支援や教材の提供
-
-## 活用事例
-### もいせん卒業生
-- [鼻洗太郎bot](https://sho-k.my.canva.site/dagqv-x6nqu)
-<img src="https://i.gyazo.com/1832edfa0a041fdbd5d8cf052c3bce11.jpg" width="450px" alt="image from gyazo"/>
-
-### 他社製品
-- [医療機関のお問い合わせ対応にmiiboを導入する効果](https://www.docswell.com/s/daitoku0110/57VJNJ-miibo#p1)
-<img src="https://i.gyazo.com/061cd9695af32226947e329d0a8d2763.png" width="450px" alt="image from gyazo"/>
-
-
-- [AI毎日物語](https://camp-fire.jp/projects/view/683245?list=channel_sparks)
-<img src="https://i.gyazo.com/b1c38322d6c0272b077f13b0dc800281.png" width="450px" alt="image from gyazo"/>
-
-# 今日のゴール
-1. 自分の会話型AIを作成できる
-1. 作った会話型AIをカスタマイズできる
-1. 職場での活用を検討できる
-<img src="https://i.gyazo.com/7d86f01c0c57e9920611820a42b5a9c3.png" width="450px" alt="image from gyazo"/>
-
-# 1.miiboで会話型AIをつくる
-## 1-1.miiboにサインインする
+## miiboで会話型AIをつくる
+### 1-1.miiboにサインインする
 https://mebo.work/
 
-##  1-2.新規エージェントの作成
+###  1-2.新規エージェントの作成
 miiboでは会話型AIの1単位を「エージェント」と呼びます。
 エージェントに対してさまざまな設定や会話コンテンツの登録をすることで会話可能な状態にします。
 
@@ -101,7 +53,7 @@ miiboでは会話型AIの1単位を「エージェント」と呼びます。
 <img src="https://i.gyazo.com/45ba65dfdb8daa267c51f9bc0f99e61a.png" width="450px" alt="image from gyazo"/>
 
     
-## 1-3.会話を試す
+### 1-3.会話を試す
 「会話をテストする」ボタンをクリックします。
 チャット画面が表示されますので、1度だけ何かを送信し、返答が返ってくるのを確かめましょう。
 
@@ -110,7 +62,7 @@ miiboでは会話型AIの1単位を「エージェント」と呼びます。
 ここで会話クレジットを消費しすぎないよう注意してください。
 <img src="https://i.gyazo.com/10dca318c3d93a8eeef868f3a78e012a.png" width="450px" alt="image from gyazo"/>
 
-##  1-4.エージェントを公開する
+###  1-4.エージェントを公開する
 エージェントは、プレビュー版と公開版があります。
 公開したエージェントは、他のユーザーに共有し、会話をしてもらえるようになります。
 - 一般公開
@@ -127,6 +79,6 @@ miiboでは会話型AIの1単位を「エージェント」と呼びます。
 「限定公開」で大丈夫です。
 <img src="https://i.gyazo.com/74c4edf33b05081cef5e58c691233f82.png" width="450px" alt="image from gyazo"/>
 
-### 使ってみよう
+#### 使ってみよう
 完成したエージェントを会場の人と共有し、公開できているか試してみましょう。
 <img src="https://i.gyazo.com/a745adb42a26d2e77c498b84731099d7.png" width="450px" alt="image from gyazo"/>
