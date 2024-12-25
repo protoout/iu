@@ -58,6 +58,7 @@
 
 ### モデル
 脳みそのこと。何も学習していない状態は産まれたての赤ちゃんみたいなものです。
+
 <img src="https://i.gyazo.com/854fdc0acc8cc4357265fa8e50d1deaa.png" width="450px" alt="image from gyazo"/>
 
 ### LLM（Large Language Model、大規模言語モデル）
@@ -89,9 +90,11 @@ LLMは生成AIの1つで、テキストを生成するのに特化したモデ�
 
 ### 事例
 - [店舗従業員業務支援AI](https://protoout.studio/43d4f52ee1c744d3a22c3bf7857bc4b1)
+
 <img src="https://i.gyazo.com/b385192df760f0aa76805f64d195b414.png" width="450px" alt="image from gyazo"/>
 
 - [サービスカウンターが楽しくなるマニュアル検索ChatBotです。](https://protoout.studio/1ea4f6a646df4e30ac8c834e2b1d86a9)
+
 <img src="https://i.gyazo.com/d03dd7580268744fbbd3a4bb0c8bae0e.png" width="450px" alt="image from gyazo"/>
 
 # 今回使用するツール
@@ -126,18 +129,22 @@ LINE Botは、そのLINE上で動作するチャットボット（ロボット�
 ## 活用事例
 ### もいせん卒業生
 - [鼻洗太郎bot](https://sho-k.my.canva.site/dagqv-x6nqu)
+
 <img src="https://i.gyazo.com/1832edfa0a041fdbd5d8cf052c3bce11.jpg" width="450px" alt="image from gyazo"/>
 
 ### 他社製品
 - [医療機関のお問い合わせ対応にmiiboを導入する効果](https://www.docswell.com/s/daitoku0110/57VJNJ-miibo#p1)
+
 <img src="https://i.gyazo.com/061cd9695af32226947e329d0a8d2763.png" width="450px" alt="image from gyazo"/>
 
 
 - [AI毎日物語](https://camp-fire.jp/projects/view/683245?list=channel_sparks)
+
 <img src="https://i.gyazo.com/b1c38322d6c0272b077f13b0dc800281.png" width="450px" alt="image from gyazo"/>
 
 # 今日のゴール
 - 自分の会話型AIを作成できる
 - 作った会話型AIをカスタマイズできる
 - 職場での活用を検討できる
+
 <img src="https://i.gyazo.com/7d86f01c0c57e9920611820a42b5a9c3.png" width="450px" alt="image from gyazo"/>

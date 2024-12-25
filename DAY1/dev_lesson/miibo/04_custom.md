@@ -9,12 +9,15 @@ Tipsがたくさんありますので、探してみましょう。
 
 ## 1.プロンプトを編集する
 - 左のメニューバーから「会話の設定」をクリックする
+
 <img src="https://i.gyazo.com/576052a39e39aef74bf5864318facfdf.png" width="450px" alt="image from gyazo"/>
 
 - 「AIの応答をカスタマイズ」をクリックする
+
 <img src="https://i.gyazo.com/aa334901d1deaa23da0ccbb5a8b14760.png" width="450px" alt="image from gyazo"/>
 
 - 「AIにプロンプトを考えてもらう」をクリックする
+
 <img src="https://i.gyazo.com/2d8d9b05af4e1052e4c8e8082d00c112.png" width="450px" alt="image from gyazo"/>
     
 - プロンプトジェネレーターが立ち上がったら、作ってほしい内容を送る  
@@ -29,6 +32,7 @@ Tipsがたくさんありますので、探してみましょう。
 
 - 右上の✕をクリックして、プロンプトジェネレーターを閉じる  
 　一度閉じると会話が消えるので、注意してください。
+
 <img src="https://i.gyazo.com/593097d837d8e92246456e15712e108b.png" width="450px" alt="image from gyazo"/>
 
 - 作られたプロンプトをプロンプトエディターに転記する
@@ -74,15 +78,18 @@ Tipsがたくさんありますので、探してみましょう。
 <img src="https://i.gyazo.com/13eeec5a444c784318df76453d31ed97.png" width="450px" alt="image from gyazo"/>
 
 - 「変更を保存」をクリックする
+
 <img src="https://i.gyazo.com/91618f7827caaa721a397f2be59efa80.png" width="450px" alt="image from gyazo"/>
 
 ## 2.会話の様子
 友だちになったLINEbotへ「旬の食べ物を教えて」などと送信し、プロンプトに沿った返答があるか確かめてみましょう。
+
 <img src="https://i.gyazo.com/ace2b6d537fe0a1401b9231d5cc11195.png" width="450px" alt="image from gyazo"/>
 
 ## 3.クイックリプライ
 クイックリプライは、ユーザーに対して即座に選択肢を提示し、簡単に応答できるようにする機能です。  
 通常、ボタン形式で表示され、ユーザーは選択肢をタップするだけで返信が完了します。
+
 <img src="https://i.gyazo.com/051bfc3423f978876579788d0cf8f862.png" width="450px" alt="image from gyazo"/>
 
 そのため次にユーザに発話してもらいたい内容や、ユーザが次に知りたいと思われるような内容を並べておくことが好ましいです。  
