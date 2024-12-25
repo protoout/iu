@@ -108,3 +108,6 @@ ChatGPTの入力フォームで@を入力すると候補が出てきます。
 
 - 「先ほどのニュースの内容からブログを書きたいのでサムネイルを作成してください。」など問い合わせをしましょう。  
 <img src="https://i.gyazo.com/f79d7de44fcc9024984969badd724b58.png" width="450px" alt="image from gyazo"/>
+
+- [次の資料へ](./07_original.md)
+- [トップページへ](./readme.md)
