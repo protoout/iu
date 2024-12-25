@@ -148,3 +148,6 @@ LINE Botは、そのLINE上で動作するチャットボット（ロボット�
 - 職場での活用を検討できる
 
 <img src="https://i.gyazo.com/7d86f01c0c57e9920611820a42b5a9c3.png" width="450px" alt="image from gyazo"/>
+
+-[次の資料へ](./01_orientation.md)
+- [トップページへ](./readme.md)
