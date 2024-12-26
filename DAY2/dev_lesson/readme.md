@@ -7,35 +7,36 @@
 
 また、1ページ終わるごとにこのページに戻ってきてください。
 
-### まずはじめに【13:10〜13:30】
-0. [この授業のゴール]() ←IoTプロトタイプをつくる
-1. [授業の進め方と使うツール](./lesson00-overview/00_tools.md)
-2. [2日目の授業でやること](./lesson00-overview/01_overview.md)
-3. ~[環境構築](./lesson00-overview/02_env.md)~
+### まずはじめに【13:10〜13:20】
+0. [自己紹介]()
+1. [この授業でやること・ゴール]() ←IoTプロトタイプをつくる
+2. [授業の進め方と使うツール](./lesson00-overview/00_tools.md)
+3. ~[2日目の授業でやること](./lesson00-overview/01_overview.md)~
+4. ~[環境構築](./lesson00-overview/02_env.md)~
 
-### Lesson01 Node-REDのおさらい【13:30〜13:55】
+### 事前準備 Node-REDのおさらい（初回にやった内容です）
 
-**やること:** Node-REDの基礎とフローの作り方をおさらい
-
-**ゴール:** 
-りゆさんの素材次第
-
-### Lesson02 obnizをはじめよう 【13:55〜14:50】
+**以降の作業を進めている時にわからなくなったら[こちら]()のページに戻ってきてください！**  
+  
+  
+### Lesson01 obnizをはじめよう 【13:20〜14:20】
 
 **やること:** obnizの基本的な使い方を学びいくつかの電子パーツを動かす
 
 **ゴール:** 授業のペースに乗って、手を動かして実働させる体験をする
 
-0. [Node-RED: 基本的な操作とフローのつくりかたを学ぼう](./lesson01-obniz-basic/00_node-red-introduction.md)
-1. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)
-2. [Lチカしてみよう](./lesson01-obniz-basic/02_obniz-LED.md)
-3. [スピーカーで音を鳴らしてみよう](./lesson01-obniz-basic/03_obniz-speaker.md)
-4. [超音波測距センサーで距離を取得しよう](./lesson01-obniz-basic/04_obniz-distance.md)
+0. ~[Node-RED: 基本的な操作とフローのつくりかたを学ぼう](./lesson01-obniz-basic/00_node-red-introduction.md)~
+2. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)←wifi接続など
+3. [Lチカしてみよう](./lesson01-obniz-basic/02_obniz-LED.md)
+4. [スピーカーで音を鳴らしてみよう](./lesson01-obniz-basic/03_obniz-speaker.md)
+5. [超音波測距センサーで距離を取得しよう](./lesson01-obniz-basic/04_obniz-distance.md)
+6. [自由につくってみよう！]()
 
 ### 休憩
+**10分間休憩します**
 ↑やることを説明して10分休憩(というかバッファー)。企画を考えてもらう意図。時間がなければそのまま次に移行。
 
-### Lesson03 これまで学んだことを使ってIoTプロトタイプを作ってみよう【15:00〜15:50】
+### Lesson02 これまで学んだことを使ってIoTプロトタイプを作ってみよう【14:30〜15:20】
 
 **やること:** 今日学んだことをフル活用して、アイデアを形にしてみましょう。
 
@@ -43,6 +44,8 @@
 
 **フォーマット:** 
 制作したもの、企画、技術←何か提出ある？
+
+### 成果物を発表しよう！【15:20〜15:45】
 
 ### 参考
 **Nore-RED**
