@@ -30,7 +30,7 @@ Node-REDを構成する基本的な構成要素で、処理をする機能（プ
 
 <img src="https://i.gyazo.com/ac72b467278872701170501f629731ef.png" width="450px" alt="image from gyazo"/>
 
-メッセージはJSONというデータで構成されます。
+メッセージはJSONというデータで構成されます。  
 <img src="https://i.gyazo.com/b2e38a11e61da1ad55ff387493b71891.png" width="450px" alt="image from gyazo"/>
 
 
@@ -99,13 +99,18 @@ gif動画になっています。
 
 ### 3-1.WebサイトのURLをhttp requestに入れる
 
-- Yahooニュースの岩手日報のURLをコピーする。
+- Yahooニュースの岩手日報のURLをコピーする。  
 https://news.yahoo.co.jp/media/iwatenpv
 
 <img src="https://storage.googleapis.com/zenn-user-upload/fe7916b1e7b1-20241229.png" width="450px" alt="image from gyazo"/>
 
-- Yahooニュースの岩手日報のURLをコピーする。
+- Node-REDの画面に戻り、http requestノードをダブルクリックする。  
+プロパティ内の「URL」部分に岩手日報のURLを貼り付けます。
+下記のようになっていたらOKです。
 
+<img src="https://storage.googleapis.com/zenn-user-upload/3e746113176c-20241230.png" width="450px" alt="image from gyazo"/>
+
+- 右上の「完了」ボタンを押します。
 
 
 
@@ -115,20 +120,8 @@ https://news.yahoo.co.jp/media/iwatenpv
 
 <img src="" width="450px" alt="image from gyazo"/>
 
-<img src="" width="450px" alt="image from gyazo"/>
 
 
-・ダブルクリックでプロパティにURL入れていく
-![](https://storage.googleapis.com/zenn-user-upload/987a6ba15b0a-20241229.png)
-
-メソッド：GET
-URL：https://news.yahoo.co.jp/media/iwatenpv
-出力形式：変えない
-
-・出力形式も入れておく
-![](https://storage.googleapis.com/zenn-user-upload/3e746113176c-20241230.png)
-
-→完了ボタンを押す
 
 
 
