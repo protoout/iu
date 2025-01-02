@@ -11,7 +11,7 @@
   - 補足:デバックパネル  
   作った仕組みが正しく動いているかを確認し、問題があるか確認できる場所です。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/aeeab14c68ff-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://gyazo.com/516f5146219ccfd47dd03963bad17b18" width="450px" alt="image from gyazo"/>
 
 
 ## ハンズオン：一緒に作っていきましょう！
@@ -89,6 +89,7 @@ gif動画になっています。
 
 - 各ノードの間を線で繋げていきます。  
 左側のノードの終わり（小さな四角の部分）から、右側のノードの始まり（小さな四角の部分）を長押しして線を引っ張るイメージです。
+  - 補足：繋ぐものは「ワイヤー」と言います。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/8f5733678747-20241229.png" width="450px" alt="image from gyazo"/>
 
@@ -98,6 +99,8 @@ gif動画になっています。
 今回は、Yahooサイトから岩手県の最新ニュースデータを取得してみます。
 
 ### 3-1.http requestノードを設定していく
+
+まずは、Yahooニュースの岩手日報のデータを取る準備をします。
 
 - Yahooニュースの岩手日報のURLをコピーします。  
 https://news.yahoo.co.jp/media/iwatenpv
@@ -117,22 +120,18 @@ https://news.yahoo.co.jp/media/iwatenpv
 
 ### 3-2.Functionノードを設定していく
 
+Yahooニュースの岩手日報のデータを取る準備ができたので、その中から１番上に表示される最新ニュースだけを抽出していきます。
+補足：Webサイトから必要な情報をプログラムを使って自動的に抽出してくることをスクレイピングと言います。
+
 - Functionノードをダブルクリックします。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/289d743b549a-20241229.png" width="450px" alt="image from gyazo"/>
 
 - プロパティ内のコードにあるものを１度全部クリアにし、真っ白な状態にします。
 
+<img src="https://i.gyazo.com/22230be508f31ba18ab5cffe6d78c341.png" width="450px" alt="image from gyazo"/>
 
-
-
-<img src="" width="450px" alt="image from gyazo"/>
-
-
-・Functionノードをダブルクリック
-![]()
-
-・コード入れていく
+- コードの中に下記のコードをコピーして貼り付けていきます。
 
 ```js
 msg.payload = msg.payload.toString();
@@ -193,21 +192,39 @@ msg.payload = articles;
 return msg;
 ```
 
-・コピペして入れたところ
-![](https://storage.googleapis.com/zenn-user-upload/08060f08dd23-20241229.png)
+- コードを貼り付けて、このような画面になればOkです。
 
-・デプロイしてInjectノードの横の小さな四角のボタン押す
-・デバックを見る
-![](https://storage.googleapis.com/zenn-user-upload/aeeab14c68ff-20241230.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/08060f08dd23-20241229.png" width="450px" alt="image from gyazo"/>
+
+### 3-3.データを取得できているか確認する
+
+岩手の最新ニュースデータが抽出できているか確認していきます。
+
+- サイドバー内にある虫のようなアイコン「デバックパネル」を開いておきます。
+
+- 右上の「デプロイ」を押す  
+これにより、作成してきたノードが実際に動かせられる状態になります。
+
+<img src="https://i.gyazo.com/15918eeb56df1237713759b2ae31a558.png" width="450px" alt="image from gyazo"/>
+
+- injectノードの左側にある四角いボタンを１度押します。  
+これにより左から右へ処理が実行されていきます。
+
+<img src="https://i.gyazo.com/7eeebde966317282ad8fa5f020faf0be.png" width="450px" alt="image from gyazo"/>
+
+- デバックパネルを確認する  
+うまくデータが抽出できると下記のような画面になります。
+
+<img src="https://gyazo.com/516f5146219ccfd47dd03963bad17b18" width="450px" alt="image from gyazo"/>
+
+※ 抽出したデータは「▶︎」を押していくと開かれていきます。
+
+<img src="https://gyazo.com/bd9157702b6999343a1aa12e010fd3a1" width="450px" alt="image from gyazo"/>
 
 
+## 4.チャレンジ課題
 
 
-
-
-
-
-## チャレンジ課題
 
 - [次の資料へ](./03_linebot.md)
 - [トップページへ](./readme.md)
