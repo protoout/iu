@@ -72,14 +72,46 @@
 
 <img src="https://i.gyazo.com/6b1ec08ca8672b8ab1ec53a06dc21483.png" width="450px" alt="image from gyazo"/>
 
-- プロパティ内の「LINE Bot」欄の右側にある「鉛筆マーク」を押します。
+- プロパティ内の「LINE Bot」欄の右側にある「鉛筆マーク」を押します。  
 下記のような画面になります。
 
 <img src="https://i.gyazo.com/0ce0faaf32848bbe7d45a2697248dcb5.png" width="450px" alt="image from gyazo"/>
 
 LINE Botと連携するため、チャネルシークレットやアクセストークン、IDなど必要な情報を入れる必要があります。
 
-- [LINE Developers](https://developers.line.biz/ja/)を開く
+**LINE Developersを開く**
+[LINE Developers](https://developers.line.biz/ja/)
+
+<img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
+
+- チャネル基本設定から「チャネル名」をコピーします。
+
+<img src="https://i.gyazo.com/40a7c0f4b44070dbb4c9e9809fbb0044.png" width="450px" alt="image from gyazo"/>
+
+- Node-RED内のプロパティの中の「Bot Name」に貼り付けます。
+
+<img src="https://i.gyazo.com/70fa3e4b92cdcb175bdc3299182a4f8b.png" width="450px" alt="image from gyazo"/>
+
+- チャネル基本設定から「チャネルシークレット」をコピーします。
+
+<img src="https://i.gyazo.com/2bd69c910eaac992f64b2664da8a4eff.png" width="450px" alt="image from gyazo"/>
+
+- Node-RED内のプロパティの中の「Channel Secret」に貼り付けます。
+
+<img src="https://i.gyazo.com/3a0f5e724390eea86e4f9672024a326a.png" width="450px" alt="image from gyazo"/>
+
+- Messaging API設定から「チャネルアクセストークン」をコピーします。
+
+<img src="https://i.gyazo.com/854e4cf8b1b0c4040de56f19466c18dd.png" width="450px" alt="image from gyazo"/>
+
+- Node-RED内のプロパティの中の「Channel Access Token」に貼り付けます。
+
+<img src="https://i.gyazo.com/1b4ea98a979088fc91279347b0241793.png" width="450px" alt="image from gyazo"/>
+
+- 右上の「更新」を選択する。
+
+
+
 
 
 
@@ -89,14 +121,6 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 <img src="" width="450px" alt="image from gyazo"/>
 
 
-<img src="" width="450px" alt="image from gyazo"/>
-
-
-LINE Developers　ページから
-・secret：チャネル基本設定→チャネルシークレットをコピーしてノードへ貼り付ける
-・AccessToken：Messaging API設定→アクセストークンをコピーしてノードへ貼り付ける
-・ID：Messaging API設定→ボットのベーシックIDをコピーしてノードへ貼り付ける
-![](https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png)
 ![](https://storage.googleapis.com/zenn-user-upload/d8474b4529fd-20241230.png)
 
 完了ボタン押す
