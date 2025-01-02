@@ -64,7 +64,7 @@ gif動画になっています。
 
 ## 2.ブロック（ノード）を繋げる
 
-- 現在の画面はこのようになっているかと思います。
+- 現在はこのような画面になっているかと思います。
 <img src="https://storage.googleapis.com/zenn-user-upload/3ff23066e145-20241229.png" width="450px" alt="image from gyazo"/>
 
 - パレット内「共通」の中にある**injectノード**をワークスペースに入れます。  
@@ -120,10 +120,10 @@ https://news.yahoo.co.jp/media/iwatenpv
 
 ### 3-2.Functionノードを設定していく
 
-Yahooニュースの岩手日報のデータを取る準備ができたので、その中から１番上に表示される最新ニュースだけを抽出していきます。
+Yahooニュースの岩手日報のデータを取る準備ができたので、その中から１番上に表示される最新ニュースだけを抽出していきます。  
 補足：Webサイトから必要な情報をプログラムを使って自動的に抽出してくることをスクレイピングと言います。
 
-- Functionノードをダブルクリックします。
+- Functionノードをダブルクリックすると、プロパティが出てきます。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/289d743b549a-20241229.png" width="450px" alt="image from gyazo"/>
 
@@ -215,11 +215,11 @@ return msg;
 - デバックパネルを確認する  
 うまくデータが抽出できると下記のような画面になります。
 
-<img src="https://gyazo.com/516f5146219ccfd47dd03963bad17b18" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/516f5146219ccfd47dd03963bad17b18.png" width="450px" alt="image from gyazo"/>
 
 ※ 抽出したデータは「▶︎」を押していくと開かれていきます。
 
-<img src="https://gyazo.com/bd9157702b6999343a1aa12e010fd3a1" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/bd9157702b6999343a1aa12e010fd3a1.png" width="450px" alt="image from gyazo"/>
 
 
 ## 4.チャレンジ課題
