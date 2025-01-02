@@ -1,4 +1,4 @@
-# 1.Node-REDを立ち上げてみよう
+# オリエンテーション
 
 ## 1.授業の進み方
 
@@ -73,14 +73,24 @@ LINEは日本でもっとも利用されているメッセージングアプリ�
 - 日常生活への応用をイメージする
 
 
-## 5.ハンズオン:Node-REDを立ち上げてみよう
+# 1.Node-REDを立ち上げてみよう
 
-### このパートでやること
+## このパートでやること
 
 - GitHub Codespacesを使ってNode-REDを立ち上げる　　
   - 補足:GitHub Codespacesとは？  
   インターネット上にパソコンを借りて、コーディングができるサービスです。  
   GitHubのアカウントがあれば利用できます。  
+
+## 今回作るもの
+
+- Node-REDとGitHub Codespacesの画面が下記になるように一緒に作っていきます。
+
+Node-REDの画面
+<img src="https://i.gyazo.com/522659c78c07734d1cd4f30ce1b47764.png" width="450px" alt="image from gyazo"/>
+
+GitHub Codespacesの画面
+<img src="https://storage.googleapis.com/zenn-user-upload/ebc28a8da87b-20241229.png" width="450px" alt="image from gyazo"/>
 
 ## 5-1.GitHub Codespacesの始め方
 
@@ -94,5 +104,5 @@ LINEは日本でもっとも利用されているメッセージングアプリ�
 
 [参考：GitHub Codespacesの再開とタイムアウト時間の設定](https://zenn.dev/protoout/articles/77-github-codespaces-restart)
 
-- [次の資料へ](./02_agent_publish.md)
+- [次の資料へ](./02_api.md)
 - [トップページへ](./readme.md)
