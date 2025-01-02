@@ -18,11 +18,11 @@
 
 パレット内にLINEのノードを追加していきます。
 
-- Node-REDの画面の右上にある三本線のメニューを開きます。
+- Node-REDの画面の右上にある三本線のメニューを開きます。  
+「パレットの管理」を選択します。
 
 <img src="https://i.gyazo.com/591e2aec34439626d298134a52b1e674.png" width="450px" alt="image from gyazo"/>
 
-- 「パレットの管理」を選択します。
 - ノードを検索という欄で「node-red-contrib-line-messaging-api」と検索します。  
 右下の「ノード追加」を選択します。
 
@@ -38,18 +38,43 @@
 
 ノードを繋げていき、LINE Botに簡単なメッセージを送ってみます。
 
+### 2-1.ノードを繋げる
+
 - パレット内「共有」の中にある**injectノード**をワークスペースに入れます。 
+
+<img src="https://i.gyazo.com/3600262f56396bc765ba15fbf0d3b2bb.png" width="450px" alt="image from gyazo"/>
+
 - パレット内で先ほど追加した「LINE」の中にある**Pushノード**をinjectノードの右側に配置します。  
-　2つのノードを繋げます。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/b886b530b957-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/fc8dd351197293fcb8c87106e17525b8.png" width="450px" alt="image from gyazo"/>
+
+- 2つのノードを繋げます。
+
+<img src="https://i.gyazo.com/d446fc49180360a5775f9c64e65d7cfa.png" width="450px" alt="image from gyazo"/>
+
+### 2-2.プロパティを入れる
+
+- injectノードを設定する  
+ダブルクリックでプロパティを開く。
+
+- 「文字列」を選択する
+
+<img src="https://i.gyazo.com/da266a9513cec2f01fffb21bbb476ede.png" width="450px" alt="image from gyazo"/>
+
+- 送りたいメッセージを入れる。（LINE Botに通知されるメッセージになります。）  
+「Node-REDから文字の送信」と入れてみましょう。
+
+<img src="https://i.gyazo.com/147e07ef805fe52b44c6ab1e56cb135f.png" width="450px" alt="image from gyazo"/>
+
+
+
+![](https://storage.googleapis.com/zenn-user-upload/ceab5a9654a0-20241230.png)
+
 
 
 
 
 <img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
-
 
 
 LINE Developers　ページから
@@ -61,8 +86,7 @@ LINE Developers　ページから
 
 完了ボタン押す
 
-injectノードの設定
-![](https://storage.googleapis.com/zenn-user-upload/ceab5a9654a0-20241230.png)
+
 
 Pushノードの設定
 ![](https://storage.googleapis.com/zenn-user-upload/d5c4a92f83fe-20241230.png)
@@ -75,6 +99,8 @@ LINEにメッセージが送れた！プッシュメッセージできた
 
 
 ## チャレンジ課題
+
+送るメッセージを変えて挙動を確認しよう。
 
 - [次の資料へ](./04_api_linebot.md)
 - [トップページへ](./readme.md)
