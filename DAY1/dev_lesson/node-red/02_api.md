@@ -30,7 +30,7 @@ Node-REDを構成する基本的な構成要素で、処理をする機能（プ
 
 <img src="https://i.gyazo.com/ac72b467278872701170501f629731ef.png" width="450px" alt="image from gyazo"/>
 
-メッセージはJSONというデータで構成されます。  
+- メッセージはJSONというデータで構成されます。  
 <img src="https://i.gyazo.com/b2e38a11e61da1ad55ff387493b71891.png" width="450px" alt="image from gyazo"/>
 
 
