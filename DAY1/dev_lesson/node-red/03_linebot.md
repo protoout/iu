@@ -66,7 +66,7 @@
 <img src="https://i.gyazo.com/147e07ef805fe52b44c6ab1e56cb135f.png" width="450px" alt="image from gyazo"/>
 
 
-### 2-2.Pushノードを設定する 
+### 2-2.Pushノードの設定準備をする
 
 - Pushノードをダブルクリックして、プロパティを開きます。
 
@@ -79,7 +79,9 @@
 
 LINE Botと連携するため、チャネルシークレットやアクセストークン、IDなど必要な情報を入れる必要があります。
 
-**LINE Developersを開く**
+### 2-3.LINE Developersから連携に必要な情報をとり、プロパティに設定する
+
+LINE Developersを開きます。
 [LINE Developers](https://developers.line.biz/ja/)
 
 <img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
@@ -125,6 +127,8 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 - 「デプロイ」ボタンを押します。
 
 <img src="https://i.gyazo.com/1af68a080a70c8d60737fe1fec3e1bdb.png" width="450px" alt="image from gyazo"/>
+
+### 2-4.LINE Botでメッセージの通知確認をする
 
 -　LINE Botに「Node-REDから文字の送信」というメッセージが通知されていたらOKです！
 
