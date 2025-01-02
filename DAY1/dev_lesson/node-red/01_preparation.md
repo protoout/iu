@@ -1,6 +1,7 @@
 # 1.Node-REDを立ち上げてみよう
 
 ## 1.授業の進み方
+
 - 進行　　
   - 最初は資料を見ながら講師と共にハンズオンを進めていきます。　　
   - 全体の6~7割程度の進捗を確認しながら進めます。
@@ -19,6 +20,7 @@
 
 
 ## 2.今回やること
+
 - Node-REDについて触れてみる  
   - 理論の理解をするのではなく、仕組みを作ってアウトプットすることを大切にしています。  
   （数学の公式を理解するのではなく、公式を使えることが大事です。）
@@ -28,17 +30,20 @@
 
 
 ## 3.今回使用するツール
+
 Node-RED授業では主に2つのツールを使っていきます。
 - Node-RED
 - LINE Bot
 
 ### Node-REDとは？　
+
   - プログラムを書かなくても直感的に操作ができるノーコードツールです。  
   コードを書く代わりに、ブロック（ノード）を線で繋いでシステムやアプリが作成できます。
 
 <img src="https://i.gyazo.com/4ab37c349c161a9067a4f9ad30995267.png" width="450px" alt="image from gyazo"/>
 
 **Node-REDのメリット**
+
 - コードを書かなくても簡単に使える  
 ブロック（ノード）を繋げるだけなので、プログラミング初心者でも分かりやすい
 
@@ -53,6 +58,7 @@ Node-RED授業では主に2つのツールを使っていきます。
 Windows、Mac、Linux、Raspberry Piなど、どんなパソコンでも動くので、特別な環境は必要ありません。
 
 ### LINE Botとは？
+
 - miiboの授業でも使いましたね！  
 LINEは日本でもっとも利用されているメッセージングアプリです。  
 直感的な見た目と操作性により、初心者でも利用しやすいのが特徴です。
@@ -62,6 +68,7 @@ LINEは日本でもっとも利用されているメッセージングアプリ�
 
 
 ## 4.今回のゴール
+
 - Node-REDに触れ、実際に動くシステムや仕組みを作成できる
 - 日常生活への応用をイメージする
 
@@ -69,18 +76,22 @@ LINEは日本でもっとも利用されているメッセージングアプリ�
 ## 5.ハンズオン:Node-REDを立ち上げてみよう
 
 ### このパートでやること
+
 - GitHub Codespacesを使ってNode-REDを立ち上げる　　
   - 補足:GitHub Codespacesとは？  
   インターネット上にパソコンを借りて、コーディングができるサービスです。  
   GitHubのアカウントがあれば利用できます。  
 
 ## 5-1.GitHub Codespacesの始め方
+
 https://zenn.dev/protoout/articles/68-github-codespaces-setup#1.-github-codespaces%E3%81%A3%E3%81%A6%EF%BC%9F
 
 ## 5-2.GitHub CodespacesでNode-REDを実行する方法
+
 https://github.com/kazuhitoyokoi/node-red-codespaces
 
 ## 5-3.GitHub Codespacesの再開とタイムアウト時間の設定
+
 https://zenn.dev/protoout/articles/77-github-codespaces-restart
 
 - [次の資料へ](./02_agent_publish.md)
