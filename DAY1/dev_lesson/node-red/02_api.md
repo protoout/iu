@@ -11,7 +11,7 @@
   - 補足:デバックパネル  
   作った仕組みが正しく動いているかを確認し、問題があるか確認できる場所です。
 
-<img src="https://gyazo.com/516f5146219ccfd47dd03963bad17b18" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/516f5146219ccfd47dd03963bad17b18.png" width="450px" alt="image from gyazo"/>
 
 
 ## ハンズオン：一緒に作っていきましょう！
