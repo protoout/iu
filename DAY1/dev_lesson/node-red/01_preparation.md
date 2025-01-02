@@ -84,7 +84,7 @@ LINEは日本でもっとも利用されているメッセージングアプリ�
 
 ## 今回作るもの
 
-- Node-REDとGitHub Codespacesの画面が下記になるように一緒に作っていきます。
+- Node-REDとGitHub Codespacesを下記の画面まで一緒に作っていきます。
 
 Node-REDの画面  
 <img src="https://i.gyazo.com/522659c78c07734d1cd4f30ce1b47764.png" width="450px" alt="image from gyazo"/>

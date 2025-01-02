@@ -7,11 +7,65 @@
 
 ## 今回作るもの
 
+- ブロック（ノード）を繋げていき、右側のデバックパネルに岩手県の最新ニュースデータを表示させます。
+  - 補足:デバックパネル  
+  作った仕組みが正しく動いているかを確認し、問題があるか確認できる場所です。
+
 <img src="https://storage.googleapis.com/zenn-user-upload/aeeab14c68ff-20241230.png" width="450px" alt="image from gyazo"/>
 
 
-
 ## ハンズオン：一緒に作っていきましょう！
+
+### 1-1.ブロック（ノード）を繋げる
+
+- 前のパートでNode-REDを立ち上げることができました。
+
+## 画面の構成
+
+![image](https://i.gyazo.com/4e4f325615d23c2a56929fc767ce4327.png)
+
+パレットはノードが置かれているエリアです。
+利用可能なすべてのノードが含まれます。インストールしてノードを増やすこともできます。
+
+![image](https://i.gyazo.com/47f080539655f431df2bc6afbf2eb845.png)
+
+ワークスペースはパレットからノードを配置してフロー（データの流れ）を作るエリアです。
+
+![image](https://i.gyazo.com/2b44b8d4535ed54a2ce46629fec8f96f.png)
+
+サイドバーは、エディター内に多くの便利なツールを提供するエリアです。
+
+* ノードについてのさらなる情報
+* ヘルプを確認するパネル
+* デバッグメッセージを確認するパネル
+* フローの設定ノードを確認するパネル
+
+などがあります。
+
+## ノードとは何か
+
+![image](https://i.gyazo.com/4209abfa226dca0d1a4c1d3421768bbe.png)
+
+ノード（Node）はNode-REDを構成する基本的な構成要素です。処理をする機能（プログラム）のかたまりです。
+
+![image](https://i.gyazo.com/ac72b467278872701170501f629731ef.png)
+
+ノードは前方のノードからメッセージを受け取るか、外部イベントを受け取ることで動き出します。  
+ノードは受け取ったメッセージ、またはイベントを処理し、 次のノードにメッセージを送ります。  
+処理は右から左に実行され、各ノードで処理された内容がバケツリレーのようにやり取りされていきます。
+
+![image](https://i.gyazo.com/b2e38a11e61da1ad55ff387493b71891.png)
+
+
+
+
+
+
+## どんなイメージか動画を見てみましょう
+
+[![Image from Gyazo](https://i.gyazo.com/9f29274f6b038b421de3817f321b9dce.gif)](https://gyazo.com/9f29274f6b038b421de3817f321b9dce)
+
+
 
 ## スクレイピング　Yahoo　
 
@@ -19,7 +73,7 @@
 スクレイピング：Webサイトやデータベース上のデータから特定の情報を抽出・収集する技術や行為
 function：関数、与えられた値(引数)を元に何らかの計算や処理を行い、結果を呼び出し元に返すもののこと
 
-Node-RED立ち上げ後
+
 ![](https://storage.googleapis.com/zenn-user-upload/3ff23066e145-20241229.png)
 ![](https://storage.googleapis.com/zenn-user-upload/974fb1f435f7-20241229.png)
 ![](https://storage.googleapis.com/zenn-user-upload/46441f5b74ab-20241229.png)
