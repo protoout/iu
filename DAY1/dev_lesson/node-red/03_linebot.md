@@ -1,1 +1,1 @@
-# 3.Node-REDでLINE Bot作成しよう
+# 3.Node-REDでLINE Botにメッセージを送ろう
