@@ -97,36 +97,40 @@ gif動画になっています。
 
 今回は、Yahooサイトから岩手県の最新ニュースデータを取得してみます。
 
-### 3-1.WebサイトのURLをhttp requestに入れる
+### 3-1.http requestノードを設定していく
 
-- Yahooニュースの岩手日報のURLをコピーする。  
+- Yahooニュースの岩手日報のURLをコピーします。  
 https://news.yahoo.co.jp/media/iwatenpv
 
 <img src="https://storage.googleapis.com/zenn-user-upload/fe7916b1e7b1-20241229.png" width="450px" alt="image from gyazo"/>
 
-- Node-REDの画面に戻り、http requestノードをダブルクリックする。  
-プロパティ内の「URL」部分に岩手日報のURLを貼り付けます。
+- Node-REDの画面に戻り、http requestノードをダブルクリックします。  
+プロパティ内の「URL」部分に岩手日報のURLを貼り付けます。  
 下記のようになっていたらOKです。
+
+  - 補足:プロパティとは設定のようなものです。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/3e746113176c-20241230.png" width="450px" alt="image from gyazo"/>
 
-- 右上の「完了」ボタンを押します。
+- 右上の「完了」ボタンを押します。  
+これでhttp requestノードの設定はOKです。
 
+### 3-2.Functionノードを設定していく
+
+- Functionノードをダブルクリックします。
+
+<img src="https://storage.googleapis.com/zenn-user-upload/289d743b549a-20241229.png" width="450px" alt="image from gyazo"/>
+
+- プロパティ内のコードにあるものを１度全部クリアにし、真っ白な状態にします。
 
 
 
 
 <img src="" width="450px" alt="image from gyazo"/>
-
-<img src="" width="450px" alt="image from gyazo"/>
-
-
-
-
 
 
 ・Functionノードをダブルクリック
-![](https://storage.googleapis.com/zenn-user-upload/289d743b549a-20241229.png)
+![]()
 
 ・コード入れていく
 
