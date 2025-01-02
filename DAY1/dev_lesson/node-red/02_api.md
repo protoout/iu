@@ -18,11 +18,28 @@
 
 ### 1-1.画面の構成
 
-- 前のパートでNode-REDを立ち上げることができました。
-パレットはブロック（ノード）が置かれているエリアです。
+- 前のパートでNode-REDを立ち上げることができました。  
+パレット：ブロック（ノード）が置かれているエリアです。  
 インストールしてノードを増やすこともできます。
 
 <img src="https://i.gyazo.com/4e4f325615d23c2a56929fc767ce4327.png" width="450px" alt="image from gyazo"/>
+
+- ワークスペース：パレットからノードを配置してフロー（データの流れ）を作るエリアです。
+
+<img src="https://i.gyazo.com/47f080539655f431df2bc6afbf2eb845.png" width="450px" alt="image from gyazo"/>
+
+- サイドバー：エディターの中で使える便利なツールがまとめられたエリアです。
+* ノードについてのさらなる情報
+* ヘルプを確認するパネル
+* デバッグメッセージを確認するパネル
+* フローの設定ノードを確認するパネル
+
+などがあります。
+
+
+<img src="" width="450px" alt="image from gyazo"/>
+![image](https://i.gyazo.com/2b44b8d4535ed54a2ce46629fec8f96f.png)
+
 
 
 
@@ -32,22 +49,8 @@
 
 
 
-<img src="" width="450px" alt="image from gyazo"/>
-![image](https://i.gyazo.com/47f080539655f431df2bc6afbf2eb845.png)
 
-ワークスペースはパレットからノードを配置してフロー（データの流れ）を作るエリアです。
 
-<img src="" width="450px" alt="image from gyazo"/>
-![image](https://i.gyazo.com/2b44b8d4535ed54a2ce46629fec8f96f.png)
-
-サイドバーは、エディター内に多くの便利なツールを提供するエリアです。
-
-* ノードについてのさらなる情報
-* ヘルプを確認するパネル
-* デバッグメッセージを確認するパネル
-* フローの設定ノードを確認するパネル
-
-などがあります。
 
 ## ノードとは何か
 
