@@ -16,30 +16,41 @@
 
 ## 1.LINEのノードをインストールをする
 
+パレット内にLINEのノードを追加していきます。
+
 - Node-REDの画面の右上にある三本線のメニューを開きます。
 
-<img src="https://i.gyazo.com/591e2aec34439626d298134a52b1e674" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/591e2aec34439626d298134a52b1e674.png" width="450px" alt="image from gyazo"/>
 
+- 「パレットの管理」を選択します。
+- ノードを検索という欄で「node-red-contrib-line-messaging-api」と検索します。  
+右下の「ノード追加」を選択します。
 
-<img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
+<img src="https://storage.googleapis.com/zenn-user-upload/ced7848977a6-20241230.png" width="450px" alt="image from gyazo"/>
 
-- パレット
+- パレット内にLINEのノードが追加されました。  
+追加が確認できたら、無事にインストール完了です！
 
-Nodeの中でパレットの管理でnode-red-contrib-line-messaging-api と検索
-![](https://storage.googleapis.com/zenn-user-upload/ced7848977a6-20241230.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/ef516502f3da-20241230.png" width="450px" alt="image from gyazo"/>
 
-追加されました
-![](https://storage.googleapis.com/zenn-user-upload/ef516502f3da-20241230.png)
-
-インストール完了！！
 
 ## 2.LINE Botにメッセージを送る
 
-injectノードと、「push」ノードをつなげる
-![](https://storage.googleapis.com/zenn-user-upload/b886b530b957-20241230.png)
+ノードを繋げていき、LINE Botに簡単なメッセージを送ってみます。
+
+- パレット内「共有」の中にある**injectノード**をワークスペースに入れます。 
+- パレット内で先ほど追加した「LINE」の中にある**Pushノード**をinjectノードの右側に配置します。  
+　2つのノードを繋げます。
+
+<img src="https://storage.googleapis.com/zenn-user-upload/b886b530b957-20241230.png" width="450px" alt="image from gyazo"/>
+
+
+
+
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+
+
 
 LINE Developers　ページから
 ・secret：チャネル基本設定→チャネルシークレットをコピーしてノードへ貼り付ける
