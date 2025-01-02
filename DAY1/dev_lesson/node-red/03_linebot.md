@@ -54,9 +54,9 @@
 
 ### 2-2.injectノードを設定する 
  
-- injectノードをダブルクリックして、プロパティを開く。
+- injectノードをダブルクリックして、プロパティを開きます。
 
-- 「文字列」を選択する
+- 「文字列」を選択します。
 
 <img src="https://i.gyazo.com/da266a9513cec2f01fffb21bbb476ede.png" width="450px" alt="image from gyazo"/>
 
@@ -68,7 +68,7 @@
 
 ### 2-2.Pushノードを設定する 
 
-- Pushノードをダブルクリックして、プロパティを開く。
+- Pushノードをダブルクリックして、プロパティを開きます。
 
 <img src="https://i.gyazo.com/6b1ec08ca8672b8ab1ec53a06dc21483.png" width="450px" alt="image from gyazo"/>
 
@@ -84,7 +84,7 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 
 <img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
 
-- チャネル基本設定から「チャネル名」をコピーします。
+- LINE Developers内のチャネル基本設定から「チャネル名」をコピーします。
 
 <img src="https://i.gyazo.com/40a7c0f4b44070dbb4c9e9809fbb0044.png" width="450px" alt="image from gyazo"/>
 
@@ -92,7 +92,7 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 
 <img src="https://i.gyazo.com/70fa3e4b92cdcb175bdc3299182a4f8b.png" width="450px" alt="image from gyazo"/>
 
-- チャネル基本設定から「チャネルシークレット」をコピーします。
+- LINE Developers内のチャネル基本設定から「チャネルシークレット」をコピーします。
 
 <img src="https://i.gyazo.com/2bd69c910eaac992f64b2664da8a4eff.png" width="450px" alt="image from gyazo"/>
 
@@ -100,7 +100,7 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 
 <img src="https://i.gyazo.com/3a0f5e724390eea86e4f9672024a326a.png" width="450px" alt="image from gyazo"/>
 
-- Messaging API設定から「チャネルアクセストークン」をコピーします。
+- LINE Developers内のMessaging API設定から「チャネルアクセストークン」をコピーします。
 
 <img src="https://i.gyazo.com/854e4cf8b1b0c4040de56f19466c18dd.png" width="450px" alt="image from gyazo"/>
 
@@ -108,33 +108,27 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 
 <img src="https://i.gyazo.com/1b4ea98a979088fc91279347b0241793.png" width="450px" alt="image from gyazo"/>
 
-- 右上の「更新」を選択する。
+- 右上の「更新」を選択します。  
+再び（AccessToken）内に「チャネルアクセストークン」を貼り付けます。
 
+<img src="https://i.gyazo.com/95dcdfed6df72458a3c1b0abcda12433.png" width="450px" alt="image from gyazo"/>
 
+- LINE Developers内のチャネル基本設定から「あなたのユーザーID」をコピーします。
 
+<img src="https://i.gyazo.com/7fa8219ea2b7a9d6c2f6e3885c8d9faa.png" width="450px" alt="image from gyazo"/>
 
+- Node-RED内のプロパティの中の「User Id or Group ID」に貼り付けます。
 
+<img src="https://i.gyazo.com/3a6824536c4f04f23a715c8cc869b809.png" width="450px" alt="image from gyazo"/>
 
-<img src="" width="450px" alt="image from gyazo"/>
+- 「完了」ボタンを選択します。
+- 「デプロイ」ボタンを押します。
 
+<img src="https://i.gyazo.com/1af68a080a70c8d60737fe1fec3e1bdb.png" width="450px" alt="image from gyazo"/>
 
-<img src="" width="450px" alt="image from gyazo"/>
+-　LINE Botに「Node-REDから文字の送信」というメッセージが通知されていたらOKです！
 
-
-![](https://storage.googleapis.com/zenn-user-upload/d8474b4529fd-20241230.png)
-
-完了ボタン押す
-
-
-
-Pushノードの設定
-![](https://storage.googleapis.com/zenn-user-upload/d5c4a92f83fe-20241230.png)
-
-デプロイしてみる
-
-LINEにメッセージが送れた！プッシュメッセージできた
-![](https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png)
-
+<img src="https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png" width="450px" alt="image from gyazo"/>
 
 
 ## チャレンジ課題
