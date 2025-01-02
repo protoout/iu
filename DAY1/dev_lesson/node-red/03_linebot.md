@@ -52,10 +52,9 @@
 
 <img src="https://i.gyazo.com/d446fc49180360a5775f9c64e65d7cfa.png" width="450px" alt="image from gyazo"/>
 
-### 2-2.プロパティを入れる
-
-- injectノードを設定する  
-ダブルクリックでプロパティを開く。
+### 2-2.injectノードを設定する 
+ 
+- injectノードをダブルクリックして、プロパティを開く。
 
 - 「文字列」を選択する
 
@@ -67,11 +66,27 @@
 <img src="https://i.gyazo.com/147e07ef805fe52b44c6ab1e56cb135f.png" width="450px" alt="image from gyazo"/>
 
 
+### 2-2.Pushノードを設定する 
 
-![](https://storage.googleapis.com/zenn-user-upload/ceab5a9654a0-20241230.png)
+- Pushノードをダブルクリックして、プロパティを開く。
+
+<img src="https://i.gyazo.com/6b1ec08ca8672b8ab1ec53a06dc21483.png" width="450px" alt="image from gyazo"/>
+
+- プロパティ内の「LINE Bot」欄の右側にある「鉛筆マーク」を押します。
+下記のような画面になります。
+
+<img src="https://i.gyazo.com/0ce0faaf32848bbe7d45a2697248dcb5.png" width="450px" alt="image from gyazo"/>
+
+LINE Botと連携するため、チャネルシークレットやアクセストークン、IDなど必要な情報を入れる必要があります。
+
+- [LINE Developers](https://developers.line.biz/ja/)を開く
 
 
 
+<img src="" width="450px" alt="image from gyazo"/>
+
+
+<img src="" width="450px" alt="image from gyazo"/>
 
 
 <img src="" width="450px" alt="image from gyazo"/>
