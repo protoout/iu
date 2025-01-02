@@ -2,13 +2,31 @@
 
 ## このパートでやること
 
+- LINEのノードをNode-REDにインストールする
+- Node-REDからLINE Botにメッセージを送る
+
 ## 今回作るもの
+
+- injectノードで設定した言葉をLINE Botに通知する簡単な仕組みを作ります。  
+
+<img src="https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png" width="450px" alt="image from gyazo"/>
+
 
 ## ハンズオン：一緒に作っていきましょう！
 
-# LINEに通知する
+## 1.LINEのノードをインストールをする
 
-## LINEのノードをインストールをする
+- Node-REDの画面の右上にある三本線のメニューを開きます。
+
+<img src="https://i.gyazo.com/591e2aec34439626d298134a52b1e674" width="450px" alt="image from gyazo"/>
+
+
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+
+- パレット
 
 Nodeの中でパレットの管理でnode-red-contrib-line-messaging-api と検索
 ![](https://storage.googleapis.com/zenn-user-upload/ced7848977a6-20241230.png)
@@ -18,7 +36,7 @@ Nodeの中でパレットの管理でnode-red-contrib-line-messaging-api と検�
 
 インストール完了！！
 
-## LINE Botにプッシュメッセージを送るだけやってみる
+## 2.LINE Botにメッセージを送る
 
 injectノードと、「push」ノードをつなげる
 ![](https://storage.googleapis.com/zenn-user-upload/b886b530b957-20241230.png)
