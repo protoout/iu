@@ -30,8 +30,9 @@ Node-REDを構成する基本的な構成要素で、処理をする機能（プ
 
 <img src="https://i.gyazo.com/ac72b467278872701170501f629731ef.png" width="450px" alt="image from gyazo"/>
 
-これなに？
+メッセージはJSONというデータで構成されます。
 <img src="https://i.gyazo.com/b2e38a11e61da1ad55ff387493b71891.png" width="450px" alt="image from gyazo"/>
+
 
 ### 1-2.画面の構成
 
@@ -55,7 +56,12 @@ Node-REDを構成する基本的な構成要素で、処理をする機能（プ
 
 <img src="https://i.gyazo.com/2b44b8d4535ed54a2ce46629fec8f96f.png" width="450px" alt="image from gyazo"/>
 
-　
+### 実際にどんなイメージで作っていくのか見てみましょう
+gif動画になっています。
+
+<img src="https://i.gyazo.com/9f29274f6b038b421de3817f321b9dce.gif" width="450px" alt="image from gyazo"/>
+
+
 ## 2.ブロック（ノード）を繋げる
 
 
@@ -71,18 +77,14 @@ Node-REDを構成する基本的な構成要素で、処理をする機能（プ
 
 
 
-## どんなイメージか動画を見てみましょう
 
-<img src="" width="450px" alt="image from gyazo"/>
-[![Image from Gyazo](https://i.gyazo.com/9f29274f6b038b421de3817f321b9dce.gif)](https://gyazo.com/9f29274f6b038b421de3817f321b9dce)
 
 
 
 ## スクレイピング　Yahoo　
 
 
-スクレイピング：Webサイトやデータベース上のデータから特定の情報を抽出・収集する技術や行為
-function：関数、与えられた値(引数)を元に何らかの計算や処理を行い、結果を呼び出し元に返すもののこと
+
 <img src="" width="450px" alt="image from gyazo"/>
 
 ![](https://storage.googleapis.com/zenn-user-upload/3ff23066e145-20241229.png)
