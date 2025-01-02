@@ -56,7 +56,7 @@ Node-REDを構成する基本的な構成要素で、処理をする機能（プ
 
 <img src="https://i.gyazo.com/2b44b8d4535ed54a2ce46629fec8f96f.png" width="450px" alt="image from gyazo"/>
 
-### 実際にどんなイメージで作っていくのか見てみましょう
+### 1-3.実際にどんなイメージで作っていくのか見てみましょう
 gif動画になっています。
 
 <img src="https://i.gyazo.com/9f29274f6b038b421de3817f321b9dce.gif" width="450px" alt="image from gyazo"/>
@@ -64,40 +64,59 @@ gif動画になっています。
 
 ## 2.ブロック（ノード）を繋げる
 
+- 現在の画面はこのようになっているかと思います。
+<img src="https://storage.googleapis.com/zenn-user-upload/3ff23066e145-20241229.png" width="450px" alt="image from gyazo"/>
+
+- パレット内「共通」の中にある**injectノード**をワークスペースに入れます。  
+ノードを長押ししながら移動させるイメージです。
+
+<img src="https://storage.googleapis.com/zenn-user-upload/974fb1f435f7-20241229.png" width="450px" alt="image from gyazo"/>
+
+- パレット内「ネットワーク」の中にある**http requestノード**をワークスペースに入れます。  
+先ほどのinjectノードの右側に配置します。 
+
+<img src="https://storage.googleapis.com/zenn-user-upload/46441f5b74ab-20241229.png" width="450px" alt="image from gyazo"/>
+
+- パレット内「機能」の中にある**functionノード**をワークスペースに入れます。  
+先ほどのhttp requestノードの右側に配置します。 
+
+<img src="https://storage.googleapis.com/zenn-user-upload/6cb078a62397-20241229.png" width="450px" alt="image from gyazo"/>
+
+- パレット内「共通」の中にある**debugノード**をワークスペースに入れます。  
+先ほどのfunctionノードの右側に配置します。 
+
+<img src="https://storage.googleapis.com/zenn-user-upload/a981684dfbba-20241229.png" width="450px" alt="image from gyazo"/>
+
+- 各ノードの間を線で繋げていきます。  
+左側のノードの終わり（小さな四角の部分）から、右側のノードの始まり（小さな四角の部分）を長押しして線を引っ張るイメージです。
+
+<img src="https://storage.googleapis.com/zenn-user-upload/8f5733678747-20241229.png" width="450px" alt="image from gyazo"/>
+
+
+## 3.Webサイトのデータを取得する
+
+今回は、Yahooサイトから岩手県の最新ニュースデータを取得してみます。
+
+### 3-1.WebサイトのURLをhttp requestに入れる
+
+- Yahooニュースの岩手日報のURLをコピーする。
+https://news.yahoo.co.jp/media/iwatenpv
+
+<img src="https://storage.googleapis.com/zenn-user-upload/fe7916b1e7b1-20241229.png" width="450px" alt="image from gyazo"/>
+
+- Yahooニュースの岩手日報のURLをコピーする。
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## スクレイピング　Yahoo　
 
 
 
 <img src="" width="450px" alt="image from gyazo"/>
 
-![](https://storage.googleapis.com/zenn-user-upload/3ff23066e145-20241229.png)
-![](https://storage.googleapis.com/zenn-user-upload/974fb1f435f7-20241229.png)
-![](https://storage.googleapis.com/zenn-user-upload/46441f5b74ab-20241229.png)
-![](https://storage.googleapis.com/zenn-user-upload/6cb078a62397-20241229.png)
-![](https://storage.googleapis.com/zenn-user-upload/a981684dfbba-20241229.png)
-　
- ・線で繋げる
-![](https://storage.googleapis.com/zenn-user-upload/8f5733678747-20241229.png)
+<img src="" width="450px" alt="image from gyazo"/>
 
-・Yahooニュースの岩手日報のURLをコピー
-![](https://storage.googleapis.com/zenn-user-upload/fe7916b1e7b1-20241229.png)
+<img src="" width="450px" alt="image from gyazo"/>
+
 
 ・ダブルクリックでプロパティにURL入れていく
 ![](https://storage.googleapis.com/zenn-user-upload/987a6ba15b0a-20241229.png)
@@ -110,6 +129,8 @@ URL：https://news.yahoo.co.jp/media/iwatenpv
 ![](https://storage.googleapis.com/zenn-user-upload/3e746113176c-20241230.png)
 
 →完了ボタンを押す
+
+
 
 ・Functionノードをダブルクリック
 ![](https://storage.googleapis.com/zenn-user-upload/289d743b549a-20241229.png)
