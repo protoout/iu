@@ -93,9 +93,9 @@ LINE Developersを開きます。
 
   - **以下は必要な情報を1つずつコピーして貼り付ける流れが細かく載っています。**
 
-<details>
+　　<details>
 
-<summary>←を開いてみてください。</summary>
+<summary>←開いてみてください。</summary>
 
 <img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
 
