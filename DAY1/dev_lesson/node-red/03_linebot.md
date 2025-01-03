@@ -159,8 +159,6 @@ LINE Developersを開きます。
 <img src="https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png" width="450px" alt="image from gyazo"/>
 
 
-
-
 ## チャレンジ課題
 
 - LINE Botに通知するメッセージを変えてみましょう。

@@ -67,7 +67,7 @@ gif動画になっています。
 - 現在はこのような画面になっているかと思います。
 <img src="https://storage.googleapis.com/zenn-user-upload/3ff23066e145-20241229.png" width="450px" alt="image from gyazo"/>
 
-- パレット内「共通」の中にある**injectノード**をワークスペースに入れます。  
+- パレット内 `共通`の中にある**injectノード**をワークスペースに入れます。  
 ノードを長押ししながら移動させるイメージです。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/974fb1f435f7-20241229.png" width="450px" alt="image from gyazo"/>
@@ -220,10 +220,6 @@ return msg;
 ※ 抽出したデータは「▶︎」を押していくと開かれていきます。
 
 <img src="https://i.gyazo.com/bd9157702b6999343a1aa12e010fd3a1.png" width="450px" alt="image from gyazo"/>
-
-
-## 4.チャレンジ課題
-
 
 
 - [次の資料へ](./03_linebot.md)
