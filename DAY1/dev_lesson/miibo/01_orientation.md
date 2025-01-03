@@ -21,11 +21,11 @@
 
 ## 2.基礎知識
 
-### 2-1.AIのお話
+### 2-1.生成AI
 
 - 生成AI（Generative AI）とは  
 AIの一つで文章、画像、音声、動画などのデータやコンテンツを新しく作り出す技術です。  
-生成AIの例としては下記のようなものが挙げられます。  
+【生成AIの例】 
   - 動画生成：[Runway](https://runwayml.com/)  
   - 画像生成：[Midjourney](https://www.midjourney.com/home)  
   - 音楽：[Suno](https://suno.com/) 
@@ -42,7 +42,7 @@ AIの一つで文章、画像、音声、動画などのデータやコンテン
 
 <img src="https://i.gyazo.com/854fdc0acc8cc4357265fa8e50d1deaa.png" width="450px" alt="image from gyazo"/>
 
-【代表的なLLM】
+【LLMの例】
 - [GPT（Generative Pre-trained Transformer）](https://chatgpt.com/)  
 OpenAIが開発した一連のモデル。現在のバージョンはGPT-4oです。
 - [Claude](https://claude.ai/login?returnTo=%2F%3F)  
@@ -51,25 +51,28 @@ Anthropicが開発した言語モデル。人間のフィードバックを取�
 Googleが開発したモデル。Google検索エンジンの情報を基にしているので情報が新しい傾向です。
 
 
+### 2-2.ノーコードツール
+
+言葉通り「NO CODEツール」です。  
+プログラムを書かなくても、直感的に操作できるシステムです。  
+日々もの凄い速さで様々なサービスが開発されているので、こまめに情報をキャッチできると良いですね！
+
+【ノーコードツールの例】
+- サービス同士を繋げるもの
+  - [Make](https://www.make.com/en)
+  - [Zapier](https://zapier.com/)
+
+- Webサイトやアプリを作れるもの
+  - [STUDIO](https://studio.design/ja)
+  - [Adalo](https://ja.adalo.com/)
+
+- AI系のもの
+  - [miibo](https://miibo.ai/)
+  - [Dify](https://dify.ai/jp)
+  - [Coze](https://www.coze.com/)
 
 
-### ノーコードツール
-言葉通りNO CODEツールです。  
-プログラムを書かなくても直感的に操作できるシステムです。  
-色々なサービスがすごく速い速度で開発されているので、こまめに情報をキャッチできるといいですね！
 
-【サービス同士を繋げる系】
-- [Make](https://www.make.com/en)
-- [Zapier](https://zapier.com/)
-
-【Webサイトやアプリを作れる系】
-- [STUDIO](https://studio.design/ja)
-- [Adalo](https://ja.adalo.com/)
-
-【AI系】
-- miibo
-- [Dify](https://dify.ai/jp)
-- [Coze](https://www.coze.com/)
 
 ### 事例
 - [店舗従業員業務支援AI](https://protoout.studio/43d4f52ee1c744d3a22c3bf7857bc4b1)
