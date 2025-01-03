@@ -33,7 +33,7 @@ AIの一つで文章、画像、音声、動画などのデータやコンテン
 <img src="https://i.gyazo.com/9fa38557e2abdcd459d0e9b841d7e83d.png" width="450px" alt="image from gyazo"/>
 
   - 生成AIの中の１つにテキストを生成するのに特化したモデルがあります。  
-  それは**LLM(Large Language Model、大規模言語モデル)**です。  
+  それは**LLM**(Large Language Model、大規模言語モデル)です。  
   LLMとは、膨大な量のテキストデータを学習した、高性能なモデルのことです。  
 
     - 補足：モデルとは  
