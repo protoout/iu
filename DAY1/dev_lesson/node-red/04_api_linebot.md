@@ -52,11 +52,11 @@
 - [03.Node-REDでLINE Botにメッセージを送ろう](./03_linebot.md) ）と同じようにLINEノードのプロパティを入れていきます。
 
 - Pushノードのプロパティに必要な情報を入れることができた画面は下記のようになります。  
-  - 鉛筆マーク画面
+鉛筆マーク画面
 
 <img src="https://i.gyazo.com/1b4ea98a979088fc91279347b0241793.png" width="450px" alt="image from gyazo"/>
 
-  - プロパティ最初の画面
+プロパティ最初の画面
 
   <img src="https://i.gyazo.com/3a6824536c4f04f23a715c8cc869b809.png" width="450px" alt="image from gyazo"/>
 
