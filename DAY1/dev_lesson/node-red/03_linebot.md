@@ -136,7 +136,8 @@ LINE Developersを開きます。
 
 </details>
 
-- 「完了」ボタンを選択します。
+
+- Pushノードのプロパティに必要な情報を入れることができたら、「完了」ボタンを選択します。
 - 「デプロイ」ボタンを押します。
 
 <img src="https://i.gyazo.com/1af68a080a70c8d60737fe1fec3e1bdb.png" width="450px" alt="image from gyazo"/>
