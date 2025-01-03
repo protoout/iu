@@ -57,31 +57,32 @@ Googleが開発したモデル。Google検索エンジンの情報を基にし�
 プログラムを書かなくても、直感的に操作できるシステムです。  
 日々もの凄い速さで様々なサービスが開発されているので、こまめに情報をキャッチできると良いですね！
 
-【ノーコードツールの例】
-- サービス同士を繋げるもの
-  - [Make](https://www.make.com/en)
-  - [Zapier](https://zapier.com/)
+#### ノーコードツールの例
+【サービス同士を繋げるもの】
+- [Make](https://www.make.com/en)
+- [Zapier](https://zapier.com/)
 
-- Webサイトやアプリを作れるもの
-  - [STUDIO](https://studio.design/ja)
-  - [Adalo](https://ja.adalo.com/)
+【Webサイトやアプリを作れるもの】
+- [STUDIO](https://studio.design/ja)
+- [Adalo](https://ja.adalo.com/)
 
-- AI系のもの
-  - [miibo](https://miibo.ai/)
-  - [Dify](https://dify.ai/jp)
-  - [Coze](https://www.coze.com/)
-
-
+【AI系のもの】
+- [miibo](https://miibo.ai/)
+- [Dify](https://dify.ai/jp)
+- [Coze](https://www.coze.com/)
 
 
-### 事例
+#### ノーコードツールを使った活用事例
+ノーコードツールを使って作成したChatBotの例をご紹介します。
+
 - [店舗従業員業務支援AI](https://protoout.studio/43d4f52ee1c744d3a22c3bf7857bc4b1)
 
 <img src="https://i.gyazo.com/b385192df760f0aa76805f64d195b414.png" width="450px" alt="image from gyazo"/>
 
-- [サービスカウンターが楽しくなるマニュアル検索ChatBotです。](https://protoout.studio/1ea4f6a646df4e30ac8c834e2b1d86a9)
+- [サービスカウンターが楽しくなるマニュアル検索ChatBot](https://protoout.studio/1ea4f6a646df4e30ac8c834e2b1d86a9)
 
 <img src="https://i.gyazo.com/d03dd7580268744fbbd3a4bb0c8bae0e.png" width="450px" alt="image from gyazo"/>
+
 
 
 
@@ -123,6 +124,8 @@ Googleが開発したモデル。Google検索エンジンの情報を基にし�
 - 教育: 学習支援や教材の提供
 
 ## 活用事例
+
+
 ### もいせん卒業生
 - [鼻洗太郎bot](https://sho-k.my.canva.site/dagqv-x6nqu)
 
