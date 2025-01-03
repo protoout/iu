@@ -21,13 +21,14 @@
 自分でノードを繋げられそうな方は、トライしてみましょう。
 
   - 補足：ノードの場所を探す時には、下記のパレット内のキーワードを参考にしてみてください。
-    - inject:共通
-    - http request:ネットワーク
-    - function:機能
-    - change:機能
-    - Push:LINE
+    - inject：共通
+    - http request：ネットワーク
+    - function：機能
+    - change：機能
+    - Push：LINE
 
-<img src="ttps://storage.googleapis.com/zenn-user-upload/6ec8f08e2590-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://storage.googleapis.com/zenn-user-upload/6ec8f08e2590-20241230.png" width="450px" alt="image from gyazo"/>
+
 
 
 
@@ -43,8 +44,6 @@
 <img src="" width="450px" alt="image from gyazo"/>
 
 
-
-→さっきスクレイピングした要素と組みあわせる
 
 
 
