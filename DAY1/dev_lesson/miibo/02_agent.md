@@ -63,56 +63,74 @@ miibo：https://mebo.work/
 会話の消費回数：miiboのプランに割り当てられた、1ヵ月あたりの会話上限クレジットの消費ポイントのことです。  
     会話上限を超えると、その月は会話ができなくなります。  
 
-有料プランでアップグレードできます。  
-参考：GPT-4の消費ポイント50、GPT-4o-miniの消費ポイント5  
+> - 有料プランでアップグレードできます。  
+参考：GPT-4」の消費ポイント→50、「GPT-4o-mini」の消費ポイント→5  
 個人のAPIキーを利用ができるAIは、APIキーを割り当てることで消費回数を一律1回にできます。  
 
-- プロンプトの設定をする
+### 1-3.プロンプトの設定する
+
 プロンプト（Prompt）とは、AIモデルに対して指示をするためのテキストです。  
-AIはこの入力をもとに応答を生成します。  
-プロンプトテンプレートから`デフォルトテンプレート`や`お問い合わせ対応AI`などを選びます。
+AIはこの入力をもとに応答を生成しています。  
 
-<img src="https://i.gyazo.com/bb96585984785a649fd9e2a7be446f6f.png" width="450px" alt="image from gyazo"/>
-<img src="https://i.gyazo.com/daa33b1330986a8c7050fcae73339dab.png" width="450px" alt="image from gyazo"/>
+- `プロンプトテンプレートから選ぶ`をクリックします。
 
-- エージェントの完成
-`登録して開始する`をクリックして完了しましょう。
+<img src="https://i.gyazo.com/4a594bfb9ca427ae5b134255ad632646.png" width="450px" alt="image from gyazo"/>
+
+- `デフォルトテンプレート`や`お問い合わせ対応AI`などを選びます。
+
+<img src="https://i.gyazo.com/52aa16fea892396fb7a1c1feb97b51d3.png" width="450px" alt="image from gyazo"/>
+
+- エージェントの完成  
+`登録して開始する`をクリックしましょう。
 
 <img src="https://i.gyazo.com/3b79cdda4ccb7e33b0ec37936afbbca0.png" width="450px" alt="image from gyazo"/>
-<img src="https://i.gyazo.com/45ba65dfdb8daa267c51f9bc0f99e61a.png" width="450px" alt="image from gyazo"/>
 
-    
-### 1-3.会話を試す
+
+### 1-4.会話を試す
+
+- Botの設定・管理ページが開かれました。
+
+<img src="https://i.gyazo.com/4a39dafb3f9c5eca4e0399f7ab91ef95.png" width="450px" alt="image from gyazo"/>
+
+- 作成したbotで会話を試してみましょう。  
 `会話をテストする`ボタンをクリックします。  
-チャット画面が表示されますので、1度だけ何かを送信し、返答が返ってくるのを確かめましょう。
+チャット画面が表示されますので、1度だけ何かメッセージを送信し、返答が返ってくるのを確かめましょう。
 
-1回送るごとに5回分の会話回数を消費します。  
-ここで会話クレジットを消費しすぎないよう注意してください。
+**1回送るごとに5回分の会話回数を消費してしまうので、 ここで会話クレジットを使いすぎないよう注意してください。**
 
-<img src="https://i.gyazo.com/10dca318c3d93a8eeef868f3a78e012a.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/397bd1160d38bbc7227f4cf46d372575.png" width="450px" alt="image from gyazo"/>
 
-###  1-4.エージェントを公開する
-エージェントは、プレビュー版と公開版があります。  
+
+###  1-5.エージェントを公開する
+
+- エージェントは、プレビュー版と公開版があります。  
 公開したエージェントは、他のユーザーに共有し、会話をしてもらえるようになります。
 
-- 一般公開
+  - 一般公開
     - 発行されたURLを共有することで、誰でもチャット画面で会話ができます
     - 外部サービスとの連携やWebサイトへの埋め込みも可能です
-- 限定公開
-    - チャット画面を他のユーザーに共有できませんが、外部サービス連携は可能です
-    - 作成者がログインしている間だけエージェントと会話ができます
+  - 限定公開
+    - チャット画面を他のユーザーに共有はできませんが、外部サービス連携は可能です
+    - 作成者がログインしている間だけ、エージェントと会話ができます
 
-- 左のメニューバーから`公開設定`をクリックする
+- 左のメニューバーから`公開設定`をクリックします。
 
-<img src="https://i.gyazo.com/e5a256aee68ad63dd2822c96d86c5032.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/01aaf6bc603edbd8b9898673265cf440.png" width="450px" alt="image from gyazo"/>
 
-- 公開の範囲を決めて、`利用規約に同意して公開`ボタンをクリックする
+- 公開の範囲を決めて、`利用規約に同意して公開`ボタンをクリックします。 
 `限定公開`で大丈夫です。
 
-<img src="https://i.gyazo.com/74c4edf33b05081cef5e58c691233f82.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/30a4540fc37e680f8c9ee3b910b6078c.png" width="450px" alt="image from gyazo"/>
 
-#### 使ってみよう
-完成したエージェントを会場の人と共有し、公開できているか試してみましょう。
+- `公開する`ボタンをクリックします。
+
+<img src="https://i.gyazo.com/0d17d938a8ed2add83539eb8f8e720fb.png" width="450px" alt="image from gyazo"/>
+
+
+## 2.完成したエージェントを使ってみよう
+
+**【✅検討事項・確認してから】**
+完成したエージェントを他の方と共有し、公開できているか試してみましょう。
 
 <img src="https://i.gyazo.com/a745adb42a26d2e77c498b84731099d7.png" width="450px" alt="image from gyazo"/>
 
