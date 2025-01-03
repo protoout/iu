@@ -95,7 +95,7 @@ LINE Developersを開きます。
 
 <details>
 
-<summary>必要な情報をコピペする詳しい流れはこちらから</summary>
+<summary>必要な情報をコピペする詳しい手順はこちらから</summary>
 
 - LINE Developers内のチャネル基本設定から「チャネル名」をコピーします。
 

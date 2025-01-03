@@ -2,18 +2,52 @@
 
 ## このパートでやること
 
+- 前のパートで作ったLINE Botにメッセージを送る仕組みと組み合わせる
+
 ## 今回作るもの
+
+- LINE Botに岩手県の最新ニュース1件を通知する仕組みを作ります。
+
+<img src="https://i.gyazo.com/34f75775036a4e0b40a7e5d45253ec3f.png" width="450px" alt="image from gyazo"/>
 
 ## ハンズオン：一緒に作っていきましょう！
 
-## 最新のニュース1件をLINEに通知させる
+## 1.最新のニュース1件をLINEに通知させる
+
+### 1-1.ノードを繋げる
+
+- 新しくノードを繋げていきます。  
+「inject」→「http request」→「function」→「change」→「Push」の順番です。  
+自分でノードを繋げられそうな方は、トライしてみましょう。
+
+  - 補足：ノードの場所を探す時には、下記のパレット内のキーワードを参考にしてみてください。
+    - inject:共通
+    - http request:ネットワーク
+    - function:機能
+    - change:機能
+    - Push:LINE
+
+<img src="ttps://storage.googleapis.com/zenn-user-upload/6ec8f08e2590-20241230.png" width="450px" alt="image from gyazo"/>
+
+
+
+
+
+
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+
+
 
 →さっきスクレイピングした要素と組みあわせる
-💡ChangeノードやFunctionノードが必要になりそう
 
-ノードを繋げていく
-・inject→http request→Function→change→Push
-![](https://storage.googleapis.com/zenn-user-upload/6ec8f08e2590-20241230.png)
+
+
 
 ・デバックノード追加した（http requestとfunctionのところ）
 ![](https://storage.googleapis.com/zenn-user-upload/28af669c29b8-20241230.png)
