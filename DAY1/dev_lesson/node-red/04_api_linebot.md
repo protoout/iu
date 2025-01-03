@@ -16,19 +16,31 @@
 
 ### 1-1.ノードを繋げる
 
-- 新しくノードを繋げていきます。  
+「02. Webサイトからニュースデータを取得してみよう」で作ったノードに追加していきます。
+
+- 02.で繋げたノードを見てください。  
+現在はこのような画面になっていると思います。
+
+<img src="https://i.gyazo.com/47a78c1833c907317452702e576508fe.png" width="450px" alt="image from gyazo"/>
+
+- ここから下記の画面のようにノードを繋げてみてください。  
 「inject」→「http request」→「function」→「change」→「Push」の順番です。  
 自分でノードを繋げられそうな方は、トライしてみましょう。
 
-  - 補足：ノードの場所を探す時には、下記のパレット内のキーワードを参考にしてみてください。
-    - inject：共通
-    - http request：ネットワーク
-    - function：機能
-    - change：機能
-    - Push：LINE
+  - 参考：ノードの場所を探すときに、下記のパレット内のキーワードを見てみてください。
+    - 共通：inject・debug
+    - ネットワーク：http request
+    - 機能：function・change
 
-<img src="https://storage.googleapis.com/zenn-user-upload/6ec8f08e2590-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/4ac23238afde63958bdcc15f77c477d6.png" width="450px" alt="image from gyazo"/>
 
+- 次に「debug」ノードを２つ追加して、繋げていきます。  
+  - 「http requestノード」と「debugノード」を繋ぐ
+  - 「functionノード」と「debugノード」を繋ぐ
+
+<img src="https://i.gyazo.com/4062fd5750bfd347a152c40106359730.png" width="450px" alt="image from gyazo"/>
+
+### 1-2.http requestのノードのプロパティを入れていく
 
 
 
@@ -40,18 +52,12 @@
 <img src="" width="450px" alt="image from gyazo"/>
 <img src="" width="450px" alt="image from gyazo"/>
 <img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
 
 
 
 
 
-
-・デバックノード追加した（http requestとfunctionのところ）
-![](https://storage.googleapis.com/zenn-user-upload/28af669c29b8-20241230.png)
-
-・http requestのノードのプロパティに入れていく
+・
 メソッド：GET
 URL：https://news.yahoo.co.jp/media/iwatenpv
 ![](https://storage.googleapis.com/zenn-user-upload/7bb8a11548ac-20241230.png)
@@ -59,62 +65,7 @@ URL：https://news.yahoo.co.jp/media/iwatenpv
 ・Functionノードに入れていく
 
 ```js
-msg.payload = msg.payload.toString();
-let articles = [];
 
-// 記事リストを分割
-let items = msg.payload.split('<li class="sc-1u4589e-0 kKmBYF">');
-
-// 各記事の情報を抽出
-for (let i = 1; i < items.length; i++) {
-    let item = items[i];
-    let article = {};
-
-    try {
-        // URLの抽出
-        let urlStart = item.indexOf('href="') + 'href="'.length;
-        let urlEnd = item.indexOf('"', urlStart);
-        if (urlStart > -1 && urlEnd > -1) {
-            article.url = item.substring(urlStart, urlEnd).trim();
-        }
-
-        // タイトルの抽出
-        let titleStart = item.indexOf('class="sc-3ls169-0 dHAJpi">') + 'class="sc-3ls169-0 dHAJpi">'.length;
-        let titleEnd = item.indexOf('</div>', titleStart);
-        if (titleStart > -1 && titleEnd > -1) {
-            article.title = item.substring(titleStart, titleEnd).trim();
-        }
-
-        // 日付の抽出 - 新しい方法
-        let dateStart = item.indexOf('class="sc-16vsoxb-1 cPSkfe">') + 'class="sc-16vsoxb-1 cPSkfe">'.length;
-        if (dateStart > -1) {
-            let dateText = item.substring(dateStart);
-            let dateMatch = dateText.match(/([0-9]{1,2}\/[0-9]{1,2}\([日月火水木金土]\))\s*<!-- -->\s*<!-- -->\s*([0-9]{1,2}:[0-9]{2})/);
-            if (dateMatch) {
-                article.date = dateMatch[1] + " " + dateMatch[2];
-            }
-        }
-
-        // メディア名の抽出
-        let mediaStart = item.indexOf('class="sc-1t7ra5j-9 dIJJqB">') + 'class="sc-1t7ra5j-9 dIJJqB">'.length;
-        let mediaEnd = item.indexOf('</span>', mediaStart);
-        if (mediaStart > -1 && mediaEnd > -1) {
-            article.media = item.substring(mediaStart, mediaEnd).trim();
-        }
-
-        // 記事が有効な情報を持っている場合のみ追加
-        if (article.title && article.url) {
-            articles.push(article);
-        }
-    } catch (e) {
-        // エラーが発生した場合はその記事をスキップ
-        node.error("Error processing article: " + e.message);
-        continue;
-    }
-}
-
-msg.payload = articles;
-return msg;
 ```
 ![](https://storage.googleapis.com/zenn-user-upload/90d1367c7198-20241230.png)
 
