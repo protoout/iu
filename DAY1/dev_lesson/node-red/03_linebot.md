@@ -84,6 +84,8 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 LINE Developersを開きます。  
 [LINE Developers](https://developers.line.biz/ja/)
 
+<img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
+
 - LINE Developersから必要な情報をコピーし、Pushノードのプロパティに貼り付けていきます。
   - 必要な情報  
     -  チャネル名（LINE Developers内のチャネル基本設定の中にあります）
@@ -94,8 +96,6 @@ LINE Developersを開きます。
 <details>
 
 <summary>必要な情報をコピペする詳しい流れはこちらから</summary>
-
-<img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
 
 - LINE Developers内のチャネル基本設定から「チャネル名」をコピーします。
 
@@ -143,14 +143,14 @@ LINE Developersを開きます。
 
 <img src="https://i.gyazo.com/1af68a080a70c8d60737fe1fec3e1bdb.png" width="450px" alt="image from gyazo"/>
 
--　LINE Botに「Node-REDから文字の送信」というメッセージが通知されていたらOKです！
+- LINE Botに「Node-REDから文字の送信」というメッセージが通知されていたらOKです！
 
 <img src="https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png" width="450px" alt="image from gyazo"/>
 
 
 ## チャレンジ課題
 
-送るメッセージを変えて挙動を確認しよう。
+- LINE Botに通知するメッセージを変えてみましょう。
 
 - [次の資料へ](./04_api_linebot.md)
 - [トップページへ](./readme.md)
