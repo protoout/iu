@@ -16,7 +16,7 @@
 
 ### 1-1.ノードを繋げる
 
-「02. Webサイトからニュースデータを取得してみよう」で作ったノードに追加していきます。
+[02.Webサイトからニュースデータを取得してみよう](./02_api.md)で作ったノードに追加していきます。
 
 - 02.で繋げたノードを見てください。  
 現在はこのような画面になっていると思います。
@@ -40,63 +40,46 @@
 
 <img src="https://i.gyazo.com/4062fd5750bfd347a152c40106359730.png" width="450px" alt="image from gyazo"/>
 
-### 1-2.http requestのノードのプロパティを入れていく
+### 1-2.changeノードを設定していく
+
+- 「代入する値」の右側に「payload[0].url」を入れます。
+
+<img src="https://storage.googleapis.com/zenn-user-upload/93911cafabfd-20241230.png" width="450px" alt="image from gyazo"/>
+
+### 1-3.Pushノードを設定していく
+
+- [03.Node-REDでLINE Botにメッセージを送ろう](./03_linebot.md) ）と同じようにLINEノードのプロパティを入れていきます。
+
+- Pushノードのプロパティに必要な情報を入れることができた画面は下記のようになります。  
+  - 鉛筆マーク画面
+
+<img src="https://i.gyazo.com/1b4ea98a979088fc91279347b0241793.png" width="450px" alt="image from gyazo"/>
+
+  - プロパティ最初の画面
+
+  <img src="https://i.gyazo.com/3a6824536c4f04f23a715c8cc869b809.png" width="450px" alt="image from gyazo"/>
+
+  ### 1-4.LINE Botで岩手県の最新ニュースが1件来ているか通知の確認をする
+
+- 必要な情報を入れることができたか確認できたら「完了」ボタンを選択します。
+- 「デプロイ」ボタンを押します。
+
+- LINE Botに、岩手県の最新ニュースが1件通知が来ていたらOKです！
+
+<img src="https://i.gyazo.com/34f75775036a4e0b40a7e5d45253ec3f.png" width="450px" alt="image from gyazo"/>
+
+※YahooのWebサイトも見てみると、最新ニュースがLINE Botに抽出されていることが確認できます！
+https://news.yahoo.co.jp/media/iwatenpv
 
 
-
-
-
-
-<img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
-
-
-
-
-
-・
-メソッド：GET
-URL：https://news.yahoo.co.jp/media/iwatenpv
-![](https://storage.googleapis.com/zenn-user-upload/7bb8a11548ac-20241230.png)
-
-・Functionノードに入れていく
-
-```js
-
-```
-![](https://storage.googleapis.com/zenn-user-upload/90d1367c7198-20241230.png)
-
-・changeノードに入れていく
-payload[0].url
-![](https://storage.googleapis.com/zenn-user-upload/93911cafabfd-20241230.png)
-
-・Pushノードに入れていく
-→さっきとLINEの設定一緒
-![](https://storage.googleapis.com/zenn-user-upload/62ebb20ec383-20241230.png)
-
-・最新のニュース表示できた（パソコンの画面）
-![](https://storage.googleapis.com/zenn-user-upload/edf6c9d05daa-20241230.png)
-→スマホだと画像もついていい感じ
-![](https://storage.googleapis.com/zenn-user-upload/309323a8f29a-20241230.jpg)
-
-YahooのWEBサイトも見る。このページが１番上に来ていたことを確認。OK
-![](https://storage.googleapis.com/zenn-user-upload/7ef951eb03f1-20241230.png)
-
-
-
-
-
-
+- いかがでしたか？  
+LINE Botに岩手県の最新ニュース1件を通知する仕組みは作れたでしょうか？
 
 
 ## チャレンジ課題
 
-最新のニュース5件通知する仕組みを作る
-
-
+- 最新のニュース5件通知する仕組みを作る
+- 他のWebサイトからスクレイピングしてLINE Botに通知する仕組みを作る
 
 - [次の資料へ](./05_conclusion.md)
 - [トップページへ](./readme.md)

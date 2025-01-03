@@ -136,9 +136,18 @@ LINE Developersを開きます。
 
 </details>
 
+- Pushノードのプロパティに必要な情報を入れることができた画面は下記のようになります。  
+  - 鉛筆マーク画面
+
+<img src="https://i.gyazo.com/1b4ea98a979088fc91279347b0241793.png" width="450px" alt="image from gyazo"/>
+
+  - プロパティ最初の画面
+
+  <img src="https://i.gyazo.com/3a6824536c4f04f23a715c8cc869b809.png" width="450px" alt="image from gyazo"/>
+
 ### 2-4.LINE Botでメッセージの通知確認をする
 
-- Pushノードのプロパティに必要な情報を入れることができたら、「完了」ボタンを選択します。
+- 必要な情報を入れることができたか確認できたら「完了」ボタンを選択します。
 - 「デプロイ」ボタンを押します。
 
 <img src="https://i.gyazo.com/1af68a080a70c8d60737fe1fec3e1bdb.png" width="450px" alt="image from gyazo"/>
@@ -146,6 +155,8 @@ LINE Developersを開きます。
 - LINE Botに「Node-REDから文字の送信」というメッセージが通知されていたらOKです！
 
 <img src="https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png" width="450px" alt="image from gyazo"/>
+
+
 
 
 ## チャレンジ課題
