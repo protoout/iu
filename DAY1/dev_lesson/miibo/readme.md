@@ -11,10 +11,13 @@
 
 ## 授業本編
 
-1. [この授業の進め方と使うツール]()
-2. [miibo入門]()
-3. [miiboでAIを作る]() 
-4. [miiboでLINE Botを作る]() 
-5. [まとめ]()
+1. [授業の進め方と使用ツール](./01_orientation.md)
+2. [miiboを触ってエージェントを公開しよう](./02_agent.md)
+3. [miiboを用いてLINE Botを作ろう](./03_line_api.md) 
+4. [miiboのプロンプトを変更しよう](./04_prompt.md) 
+5. [miiboのナレッジデータを設定しよう](./05_rag.md)
+6. [GPTsに触れてみよう](./06_chatgpt.md)
+7. [ナレッジファイルを元にGPTsを作成](./07_knowledge.md)
+8. [まとめ](./08_conclusion.md)
 
-[授業全体のページへ戻る](./readme.md)
+[授業全体のページへ](./readme.md)

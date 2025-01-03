@@ -17,4 +17,4 @@
 4. [取得したデータをLINE Botに通知しよう](./04_api_linebot.md) 
 5. [まとめ](./05_conclusion.md) 
 
-[トップページへ](./readme.md)
+[授業全体のページへ](./readme.md)
