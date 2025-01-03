@@ -12,8 +12,6 @@
 <img src="https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png" width="450px" alt="image from gyazo"/>
 
 
-## ハンズオン：一緒に作っていきましょう！
-
 ## 1.LINEのノードをインストールをする
 
 パレット内にLINEのノードを追加していきます。

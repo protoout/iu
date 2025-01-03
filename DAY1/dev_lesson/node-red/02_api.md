@@ -14,9 +14,7 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 <img src="https://i.gyazo.com/516f5146219ccfd47dd03963bad17b18.png" width="450px" alt="image from gyazo"/>
 
 
-## ハンズオン：一緒に作っていきましょう！
-
-## 1.環境について
+## 1.Node-REDの環境について
 
 ### 1-1.ノードとは何か
 

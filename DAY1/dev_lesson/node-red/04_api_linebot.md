@@ -10,7 +10,6 @@
 
 <img src="https://i.gyazo.com/34f75775036a4e0b40a7e5d45253ec3f.png" width="450px" alt="image from gyazo"/>
 
-## ハンズオン：一緒に作っていきましょう！
 
 ## 1.最新のニュース1件をLINEに通知させる
 
