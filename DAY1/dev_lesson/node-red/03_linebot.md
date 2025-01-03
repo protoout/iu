@@ -95,7 +95,7 @@ LINE Developersを開きます。
 
 <details>
 
-<summary>**「▶︎」を開いてみてください。</summary>
+<summary>←を開いてみてください。</summary>
 
 <img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
 
