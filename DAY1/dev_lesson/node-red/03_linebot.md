@@ -91,11 +91,9 @@ LINE Developersを開きます。
     -  チャネルアクセストークン（LINE Developers内のMessaging API設定の中にあります）
     -  ユーザーID（LINE Developers内のチャネル基本設定の中にあります）
 
-  - **以下は必要な情報を1つずつコピーして貼り付ける流れが細かく載っています。**
+<details>
 
-　　<details>
-
-<summary>←開いてみてください。</summary>
+<summary>必要な情報をコピペする詳しい流れはこちらから</summary>
 
 <img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
 
