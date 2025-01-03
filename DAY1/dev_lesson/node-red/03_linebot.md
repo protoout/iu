@@ -149,6 +149,8 @@ LINE Developersを開きます。
 
 - 必要な情報を入れることができたか確認できたら「完了」ボタンを選択します。
 - 「デプロイ」ボタンを押します。
+- injectノードの左側にある四角いボタンを１度押します。  
+これにより左から右へ処理が実行されていきます。
 
 <img src="https://i.gyazo.com/1af68a080a70c8d60737fe1fec3e1bdb.png" width="450px" alt="image from gyazo"/>
 
