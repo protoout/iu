@@ -94,11 +94,11 @@ GitHub Codespacesの画面
 
 ## ハンズオン：一緒に作っていきましょう！
 
-### 1-1.GitHub Codespacesの始め方
+### 1.GitHub Codespacesの始め方
 
 [参考：GitHub Codespacesの始め方](https://zenn.dev/protoout/articles/68-github-codespaces-setup#1.-github-codespaces%E3%81%A3%E3%81%A6%EF%BC%9F)
 
-### 1-2.GitHub CodespacesでNode-REDを実行する方法
+### 2.GitHub CodespacesでNode-REDを実行する方法
 
 [参考：GitHub CodespacesでNode-REDを実行する方法](https://qiita.com/kazuhitoyokoi/items/7a41e7c7aee684815cf0)
 
