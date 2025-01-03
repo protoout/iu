@@ -88,17 +88,17 @@ Googleが開発したモデル。Google検索エンジンの情報を基にし�
 
 ### 2-3.ノーコードツール使った会話型AI
 
-AIだけでは日常で思うように使えません。
+AIだけでは日常で思うように使えません。  
 何らかのサービスやアプリになっていた方が使いやすいのです。  
 
 <img src="https://i.gyazo.com/f762cd8bbc5f757ea220db60bbbb7422.png" width="450px" alt="image from gyazo"/>
 
 これまで私たちは、業者に依頼して何万円も支払いHPやアプリなどを作ってもらうことがありました。  
-（完成したものを確認すると、なんとなく理想と異なっている仕上がりだということもあります。）
-
-<img src="https://i.gyazo.com/079cd94ec6cc4d27de0495d5ea13bbbb.png" width="450px" alt="image from gyazo"/>
+（完成したものを確認すると、なんとなく理想と異なっている仕上がりだということもあります。）  
 
 しかし、今回体験する**miibo**を使うと、**無料で、自分で、自分が思い描く形に近い会話型AI**が作れちゃいます！
+
+<img src="https://i.gyazo.com/079cd94ec6cc4d27de0495d5ea13bbbb.png" width="450px" alt="image from gyazo"/>
 
 #### 会話型AIの活用例
 
