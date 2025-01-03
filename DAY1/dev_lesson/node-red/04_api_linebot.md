@@ -42,7 +42,8 @@
 
 ### 1-2.changeノードを設定していく
 
-- 「代入する値」の右側に「payload[0].url」を入れます。
+- 「代入する値」の右側に「payload[0].url」を入れます。  
+ニュースの中で1番上に出てくる最新のデータを抽出したいURLの部分を取得する設定をしています。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/93911cafabfd-20241230.png" width="450px" alt="image from gyazo"/>
 
