@@ -81,7 +81,7 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 
 ### 2-3.LINE Developersから連携に必要な情報をとり、プロパティに設定する
 
-LINE Developersを開きます。
+LINE Developersを開きます。  
 [LINE Developers](https://developers.line.biz/ja/)
 
 - LINE Developersから必要な情報をコピーし、Pushノードのプロパティに貼り付けていきます。
@@ -136,13 +136,12 @@ LINE Developersを開きます。
 
 </details>
 
+### 2-4.LINE Botでメッセージの通知確認をする
 
 - Pushノードのプロパティに必要な情報を入れることができたら、「完了」ボタンを選択します。
 - 「デプロイ」ボタンを押します。
 
 <img src="https://i.gyazo.com/1af68a080a70c8d60737fe1fec3e1bdb.png" width="450px" alt="image from gyazo"/>
-
-### 2-4.LINE Botでメッセージの通知確認をする
 
 -　LINE Botに「Node-REDから文字の送信」というメッセージが通知されていたらOKです！
 
