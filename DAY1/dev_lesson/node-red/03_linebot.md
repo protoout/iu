@@ -84,6 +84,17 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 LINE Developersを開きます。
 [LINE Developers](https://developers.line.biz/ja/)
 
+- LINE Developersから必要な情報をコピーし、Pushノードのプロパティに貼り付けていきます。
+  - 必要な情報  
+    -  チャネル名（LINE Developers内のチャネル基本設定の中にあります）
+    -  チャネルシークレット（LINE Developers内のチャネル基本設定の中にあります）
+    -  チャネルアクセストークン（LINE Developers内のMessaging API設定の中にあります）
+    -  ユーザーID（LINE Developers内のチャネル基本設定の中にあります）
+
+<details>
+
+<summary>必要な情報を1つずつコピーして貼り付ける流れはこちら</summary>
+
 <img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
 
 - LINE Developers内のチャネル基本設定から「チャネル名」をコピーします。
@@ -122,6 +133,8 @@ LINE Developersを開きます。
 - Node-RED内のプロパティの中の「User Id or Group ID」に貼り付けます。
 
 <img src="https://i.gyazo.com/3a6824536c4f04f23a715c8cc869b809.png" width="450px" alt="image from gyazo"/>
+
+</details>
 
 - 「完了」ボタンを選択します。
 - 「デプロイ」ボタンを押します。
