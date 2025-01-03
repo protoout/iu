@@ -1,73 +1,63 @@
-
-
-## このパートで作るもの
-
-- ブロック（ノード）を繋げていき、右側のデバックパネルに岩手県の最新ニュースデータを表示させます。
-  - 補足:デバックパネル  
-  作った仕組みが正しく動いているかを確認し、問題があるか確認できる場所です。
-
-<img src="https://i.gyazo.com/516f5146219ccfd47dd03963bad17b18.png" width="450px" alt="image from gyazo"/>
-
-
-## 1.Node-REDの環境について
-
-### 1-1.ノードとは何か
-
-
-ーーーーーーーーーーーーーー
-
-
-
 # 2.miiboを触ってエージェントを公開しよう
 
 ## このパートでやること
 
-- Webサイトからニュースデータを取得する   
-YahooのWebサイトから岩手県の最新ニュースデータを取得してみます。
+- miiboでエージェントを作成し、公開する  
+作成したエージェントを、他の人やサービスが利用できる状態にしていきます。
+
+  - 補足：エージェントとは  
+  特定の役割に特化している会話型AIの1つの機能のことです。
 
 
+## このパートで作るもの
+
+- 公開したエージェントとチャット画面で会話をすることができる
+
+【✅作るもの画像貼っていく（エージェント公開するところ）】
+<img src="" width="450px" alt="image from gyazo"/>
 
 
-## miiboで会話型AIをつくる
+## 1.miiboで会話型AIをつくる
+
 ### 1-1.miiboにサインインする
-https://mebo.work/
+
+miibo：https://mebo.work/
+
 
 ### 1-2.新規エージェントの作成
-miiboでは会話型AIの1単位を「エージェント」と呼びます。  
-エージェントに対してさまざまな設定や会話コンテンツの登録をすることで会話可能な状態にします。
 
-- 「新規作成して開始する」のボタンをクリックする
+エージェントに対して、さまざまな設定や会話コンテンツの登録をすることで会話可能な状態にします。 
+
+- `新規作成して開始する`のボタンをクリックする
 
 <img src="https://i.gyazo.com/5460a41fcd073e57015371f39b9b8ea5.png" width="450px" alt="image from gyazo"/>
 
-- 「新規作成する」のボタンをクリックする
+- `通常モードで新規作成する`のボタンをクリックする
 
 <img src="https://i.gyazo.com/cde3a43294e6010800129b1ac5180709.png" width="450px" alt="image from gyazo"/>
 
-- 名前を入力する
+- 名前を入力する  
+※文字の色は薄く表示されます。
 
-<img src="https://i.gyazo.com/d0c0d56162aad885ef67dcc55b4018bc.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/cd21c4ebada67622b425838b2dbb29c5.png" width="450px" alt="image from gyazo"/>
 
 - 提供者名を入力する
 
-<img src="https://i.gyazo.com/449f036b4101a2068de306020fea9d4a.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/6e08b8112f9e22209a7a5528e2f6443a.png" width="450px" alt="image from gyazo"/>
 
 - イメージの設定をする（設定しなくても大丈夫）
 
 <img src="https://i.gyazo.com/1d2bccaf78ecd9bb0c5b8013467901f2.png" width="450px" alt="image from gyazo"/>
-<img src="https://i.gyazo.com/d03dd7580268744fbbd3a4bb0c8bae0e.png" width="450px" alt="image from gyazo"/>
 
 - 紹介文の設定をする
 
-<img src="https://i.gyazo.com/06a6019934164764d9b4aa4a56e5e72d.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/ec0f17b22ca288ad651773b155b3653b.png" width="450px" alt="image from gyazo"/>
 
-- 言語モデルを選択する
-
+- 言語モデルを選択する  
+**GPT-4o-mini**を選びましょう。
 <img src="https://i.gyazo.com/c6bd34489ede11f9c516cdc4c76c952e.png" width="450px" alt="image from gyazo"/>
-    GPT-4o-miniを選びましょう。
 
- 
-利用する言語モデルによって、精度や会話の消費回数が異なります。  
+> 利用する言語モデルによって、精度や会話の消費回数が異なります。  
 会話の消費回数とは、miiboのプランに割り当てられた、1ヵ月あたりの会話上限クレジットの消費ポイントです。  
 会話上限を超えると、その月は会話ができなくなります。  
 
@@ -78,20 +68,20 @@ miiboでは会話型AIの1単位を「エージェント」と呼びます。
 - プロンプトの設定をする
 プロンプト（Prompt）とは、AIモデルに対して指示をするためのテキストです。  
 AIはこの入力をもとに応答を生成します。  
-プロンプトテンプレートから「デフォルトテンプレート」や「お問い合わせ対応AI」などを選びます。
+プロンプトテンプレートから`デフォルトテンプレート`や`お問い合わせ対応AI`などを選びます。
 
 <img src="https://i.gyazo.com/bb96585984785a649fd9e2a7be446f6f.png" width="450px" alt="image from gyazo"/>
 <img src="https://i.gyazo.com/daa33b1330986a8c7050fcae73339dab.png" width="450px" alt="image from gyazo"/>
 
 - エージェントの完成
-「登録して開始する」をクリックして完了しましょう。
+`登録して開始する`をクリックして完了しましょう。
 
 <img src="https://i.gyazo.com/3b79cdda4ccb7e33b0ec37936afbbca0.png" width="450px" alt="image from gyazo"/>
 <img src="https://i.gyazo.com/45ba65dfdb8daa267c51f9bc0f99e61a.png" width="450px" alt="image from gyazo"/>
 
     
 ### 1-3.会話を試す
-「会話をテストする」ボタンをクリックします。  
+`会話をテストする`ボタンをクリックします。  
 チャット画面が表示されますので、1度だけ何かを送信し、返答が返ってくるのを確かめましょう。
 
 1回送るごとに5回分の会話回数を消費します。  
@@ -110,12 +100,12 @@ AIはこの入力をもとに応答を生成します。
     - チャット画面を他のユーザーに共有できませんが、外部サービス連携は可能です
     - 作成者がログインしている間だけエージェントと会話ができます
 
-- 左のメニューバーから「公開設定」をクリックする
+- 左のメニューバーから`公開設定`をクリックする
 
 <img src="https://i.gyazo.com/e5a256aee68ad63dd2822c96d86c5032.png" width="450px" alt="image from gyazo"/>
 
-- 公開の範囲を決めて、「利用規約に同意して公開」ボタンをクリックする
-「限定公開」で大丈夫です。
+- 公開の範囲を決めて、`利用規約に同意して公開`ボタンをクリックする
+`限定公開`で大丈夫です。
 
 <img src="https://i.gyazo.com/74c4edf33b05081cef5e58c691233f82.png" width="450px" alt="image from gyazo"/>
 
