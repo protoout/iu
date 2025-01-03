@@ -24,7 +24,7 @@
 <img src="https://i.gyazo.com/47a78c1833c907317452702e576508fe.png" width="450px" alt="image from gyazo"/>
 
 - ここから下記の画面のようにノードを繋げてみてください。  
-「inject」→「http request」→「function」→「change」→「Push」の順番です。  
+`inject`→`http request`→`function`→`change`→`Push`の順番です。  
 自分でノードを繋げられそうな方は、トライしてみましょう。
 
   - 参考：ノードの場所を探すときに、下記のパレット内のキーワードを見てみてください。
@@ -34,15 +34,15 @@
 
 <img src="https://i.gyazo.com/4ac23238afde63958bdcc15f77c477d6.png" width="450px" alt="image from gyazo"/>
 
-- 次に「debug」ノードを２つ追加して、繋げていきます。  
-  - 「http requestノード」と「debugノード」を繋ぐ
-  - 「functionノード」と「debugノード」を繋ぐ
+- 次に`debug`ノードを２つ追加して、繋げていきます。  
+  - `http requestノード`と`debugノード`を繋ぐ
+  - `functionノード`と`debugノード`を繋ぐ
 
 <img src="https://i.gyazo.com/4062fd5750bfd347a152c40106359730.png" width="450px" alt="image from gyazo"/>
 
 ### 1-2.changeノードを設定していく
 
-- 「代入する値」の右側に「payload[0].url」を入れます。  
+- `代入する値`の右側に`payload[0].url`を入れます。  
 ニュースの中で1番上に出てくる最新のデータを抽出したいURLの部分を取得する設定をしています。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/93911cafabfd-20241230.png" width="450px" alt="image from gyazo"/>
@@ -60,8 +60,8 @@
 
   ### 1-4.LINE Botで岩手県の最新ニュースが1件来ているか通知の確認をする
 
-- 必要な情報を入れることができたか確認できたら「完了」ボタンを選択します。
-- 「デプロイ」ボタンを押します。
+- 必要な情報を入れることができたか確認できたら`完了`ボタンを選択します。
+- `デプロイ`ボタンを押します。
 - injectノードの左側にある四角いボタンを１度押します。  
 これにより左から右へ処理が実行されていきます。
 

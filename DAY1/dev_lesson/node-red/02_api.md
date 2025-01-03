@@ -67,22 +67,22 @@ gif動画になっています。
 - 現在はこのような画面になっているかと思います。
 <img src="https://storage.googleapis.com/zenn-user-upload/3ff23066e145-20241229.png" width="450px" alt="image from gyazo"/>
 
-- パレット内 `共通`の中にある**injectノード**をワークスペースに入れます。  
+- パレット内 `共通`の中にある`injectノード`をワークスペースに入れます。  
 ノードを長押ししながら移動させるイメージです。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/974fb1f435f7-20241229.png" width="450px" alt="image from gyazo"/>
 
-- パレット内「ネットワーク」の中にある**http requestノード**をワークスペースに入れます。  
+- パレット内`ネットワーク`の中にある`http requestノード`をワークスペースに入れます。  
 先ほどのinjectノードの右側に配置します。 
 
 <img src="https://storage.googleapis.com/zenn-user-upload/46441f5b74ab-20241229.png" width="450px" alt="image from gyazo"/>
 
-- パレット内「機能」の中にある**functionノード**をワークスペースに入れます。  
+- パレット内`機能`の中にある`functionノード`をワークスペースに入れます。  
 先ほどのhttp requestノードの右側に配置します。 
 
 <img src="https://storage.googleapis.com/zenn-user-upload/6cb078a62397-20241229.png" width="450px" alt="image from gyazo"/>
 
-- パレット内「共通」の中にある**debugノード**をワークスペースに入れます。  
+- パレット内`共通`の中にある`debugノード`をワークスペースに入れます。  
 先ほどのfunctionノードの右側に配置します。 
 
 <img src="https://storage.googleapis.com/zenn-user-upload/a981684dfbba-20241229.png" width="450px" alt="image from gyazo"/>
@@ -108,14 +108,14 @@ https://news.yahoo.co.jp/media/iwatenpv
 <img src="https://storage.googleapis.com/zenn-user-upload/fe7916b1e7b1-20241229.png" width="450px" alt="image from gyazo"/>
 
 - Node-REDの画面に戻り、http requestノードをダブルクリックします。  
-プロパティ内の「URL」部分に岩手日報のURLを貼り付けます。  
+プロパティ内の`URL`部分に岩手日報のURLを貼り付けます。  
 下記のようになっていたらOKです。
 
-  - 補足:プロパティとは設定のようなものです。
+  - 補足：プロパティとは設定のようなものです。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/3e746113176c-20241230.png" width="450px" alt="image from gyazo"/>
 
-- 右上の「完了」ボタンを押します。  
+- 右上の`完了`ボタンを押します。  
 これでhttp requestノードの設定はOKです。
 
 ### 3-2.Functionノードを設定していく
@@ -200,9 +200,9 @@ return msg;
 
 岩手の最新ニュースデータが抽出できているか確認していきます。
 
-- サイドバー内にある虫のようなアイコン「デバックパネル」を開いておきます。
+- サイドバー内にある虫のようなアイコン`デバックパネル`を開いておきます。
 
-- 右上の「デプロイ」を押す  
+- 右上の`デプロイ`を押す  
 これにより、作成してきたノードが実際に動かせられる状態になります。
 
 <img src="https://i.gyazo.com/15918eeb56df1237713759b2ae31a558.png" width="450px" alt="image from gyazo"/>
@@ -217,7 +217,7 @@ return msg;
 
 <img src="https://i.gyazo.com/516f5146219ccfd47dd03963bad17b18.png" width="450px" alt="image from gyazo"/>
 
-※ 抽出したデータは「▶︎」を押していくと開かれていきます。
+※ 抽出したデータは`▶︎`を押していくと開かれていきます。
 
 <img src="https://i.gyazo.com/bd9157702b6999343a1aa12e010fd3a1.png" width="450px" alt="image from gyazo"/>
 
