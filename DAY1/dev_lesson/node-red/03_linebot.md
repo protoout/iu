@@ -19,7 +19,7 @@
 - Node-REDの画面の右上にある三本線のメニューを開きます。  
 `パレットの管理`を選択します。
 
-<img src="https://i.gyazo.com/591e2aec34439626d298134a52b1e674.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/591e2aec34439626d298134a52b1e674.png" width="250px" alt="image from gyazo"/>
 
 - ノードを検索という欄で`node-red-contrib-line-messaging-api`と検索します。  
 右下の`ノード追加`を選択します。
@@ -29,7 +29,7 @@
 - パレット内にLINEのノードが追加されました。  
 追加が確認できたら、無事にインストール完了です！
 
-<img src="https://storage.googleapis.com/zenn-user-upload/ef516502f3da-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://storage.googleapis.com/zenn-user-upload/ef516502f3da-20241230.png" width="250px" alt="image from gyazo"/>
 
 
 ## 2.LINE Botにメッセージを送る

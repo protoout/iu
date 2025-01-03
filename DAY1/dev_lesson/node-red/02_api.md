@@ -20,7 +20,7 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 
 - ノード（Node）とは？
 Node-REDを構成する基本的な構成要素で、処理をする機能（プログラム）のかたまりです。
-<img src="https://i.gyazo.com/4209abfa226dca0d1a4c1d3421768bbe.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/4209abfa226dca0d1a4c1d3421768bbe.png" width="250px" alt="image from gyazo"/>
 
 - ノードは前方のノードからメッセージを受け取るか、外部イベントを受け取ることで動き出します。  
 ノードは受け取ったメッセージまたはイベントを処理し、 次のノードにメッセージを送ります。  
@@ -111,7 +111,7 @@ https://news.yahoo.co.jp/media/iwatenpv
 
   - 補足：プロパティとは設定のようなものです。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/3e746113176c-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://storage.googleapis.com/zenn-user-upload/3e746113176c-20241230.png" width="350px" alt="image from gyazo"/>
 
 - 右上の`完了`ボタンを押します。  
 これでhttp requestノードの設定はOKです。
@@ -123,11 +123,11 @@ Yahooニュースの岩手日報のデータを取る準備ができたので、
 
 - Functionノードをダブルクリックすると、プロパティが出てきます。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/289d743b549a-20241229.png" width="450px" alt="image from gyazo"/>
+<img src="https://storage.googleapis.com/zenn-user-upload/289d743b549a-20241229.png" width="350px" alt="image from gyazo"/>
 
 - プロパティ内のコードにあるものを１度全部クリアにし、真っ白な状態にします。
 
-<img src="https://i.gyazo.com/22230be508f31ba18ab5cffe6d78c341.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/22230be508f31ba18ab5cffe6d78c341.png" width="350px" alt="image from gyazo"/>
 
 - コードの中に下記のコードをコピーして貼り付けていきます。
 
@@ -192,7 +192,7 @@ return msg;
 
 - コードを貼り付けて、このような画面になればOkです。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/08060f08dd23-20241229.png" width="450px" alt="image from gyazo"/>
+<img src="https://storage.googleapis.com/zenn-user-upload/08060f08dd23-20241229.png" width="350px" alt="image from gyazo"/>
 
 ### 3-3.データを取得できているか確認する
 
@@ -208,7 +208,7 @@ return msg;
 - injectノードの左側にある四角いボタンを１度押します。  
 これにより左から右へ処理が実行されていきます。
 
-<img src="https://i.gyazo.com/7eeebde966317282ad8fa5f020faf0be.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/7eeebde966317282ad8fa5f020faf0be.png" width="250px" alt="image from gyazo"/>
 
 - デバックパネルを確認する  
 うまくデータが抽出できると下記のような画面になります。
@@ -217,7 +217,7 @@ return msg;
 
 ※ 抽出したデータは`▶︎`を押していくと開かれていきます。
 
-<img src="https://i.gyazo.com/bd9157702b6999343a1aa12e010fd3a1.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/bd9157702b6999343a1aa12e010fd3a1.png" width="350px" alt="image from gyazo"/>
 
 
 - [次の資料へ](./03_linebot.md)
