@@ -115,7 +115,7 @@ AIはこの入力をもとに応答を生成しています。
 
 - 左のメニューバーから`公開設定`をクリックします。
 
-<img src="https://i.gyazo.com/01aaf6bc603edbd8b9898673265cf440.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/01aaf6bc603edbd8b9898673265cf440.png" width="250px" alt="image from gyazo"/>
 
 - 公開の範囲を決めて、`利用規約に同意して公開`ボタンをクリックします。  
 `限定公開`で大丈夫です。
