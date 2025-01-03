@@ -37,19 +37,21 @@ miibo：https://mebo.work/
 <img src="https://i.gyazo.com/cde3a43294e6010800129b1ac5180709.png" width="450px" alt="image from gyazo"/>
 
 - 名前を入力する  
-※文字の色は薄く表示されます。
+例：`岩手ワークショップ` ※文字の色は薄く表示されます。
 
 <img src="https://i.gyazo.com/cd21c4ebada67622b425838b2dbb29c5.png" width="450px" alt="image from gyazo"/>
 
-- 提供者名を入力する
+- 提供者名を入力する  
+例：`岩手botくん`
 
 <img src="https://i.gyazo.com/6e08b8112f9e22209a7a5528e2f6443a.png" width="450px" alt="image from gyazo"/>
 
-- イメージの設定をする（設定しなくても大丈夫）
+- イメージの設定をする（設定しなくても大丈夫です。）
 
 <img src="https://i.gyazo.com/1d2bccaf78ecd9bb0c5b8013467901f2.png" width="450px" alt="image from gyazo"/>
 
 - 紹介文の設定をする
+例：`ワークショップ用です。`
 
 <img src="https://i.gyazo.com/ec0f17b22ca288ad651773b155b3653b.png" width="450px" alt="image from gyazo"/>
 
