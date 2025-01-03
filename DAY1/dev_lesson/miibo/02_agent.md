@@ -117,7 +117,7 @@ AIはこの入力をもとに応答を生成しています。
 
 <img src="https://i.gyazo.com/01aaf6bc603edbd8b9898673265cf440.png" width="450px" alt="image from gyazo"/>
 
-- 公開の範囲を決めて、`利用規約に同意して公開`ボタンをクリックします。 
+- 公開の範囲を決めて、`利用規約に同意して公開`ボタンをクリックします。  
 `限定公開`で大丈夫です。
 
 <img src="https://i.gyazo.com/30a4540fc37e680f8c9ee3b910b6078c.png" width="450px" alt="image from gyazo"/>
