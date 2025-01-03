@@ -33,7 +33,7 @@ AIの一つで文章、画像、音声、動画などのデータやコンテン
 <img src="https://i.gyazo.com/9fa38557e2abdcd459d0e9b841d7e83d.png" width="450px" alt="image from gyazo"/>
 
   - 生成AIの中の１つにテキストを生成するのに特化したモデルがあります。  
-  それは**LLM**(Large Language Model、大規模言語モデル)です。  
+  **LLM**(Large Language Model、大規模言語モデル)です。  
   LLMとは、膨大な量のテキストデータを学習した、高性能なモデルのことです。  
 
     - 補足：モデルとは  
@@ -44,10 +44,8 @@ AIの一つで文章、画像、音声、動画などのデータやコンテン
 【代表的なLLM】
 - [GPT（Generative Pre-trained Transformer）](https://chatgpt.com/)  
 OpenAIが開発した一連のモデル。現在のバージョンはGPT-4oです。
-
 - [Claude](https://claude.ai/login?returnTo=%2F%3F)  
 Anthropicが開発した言語モデル。人間のフィードバックを取り入れて安全で信頼性の高い応答を目指しています。
-
 - [Gemini](https://gemini.google.com/app?hl=ja)  
 Googleが開発したモデル。Google検索エンジンの情報を基にしているので情報が新しい傾向です。
 
