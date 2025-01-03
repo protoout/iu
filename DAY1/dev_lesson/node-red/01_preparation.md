@@ -102,7 +102,7 @@ GitHub Codespacesの画面
 
 [参考：GitHub CodespacesでNode-REDを実行する方法](https://qiita.com/kazuhitoyokoi/items/7a41e7c7aee684815cf0)
 
-### 5-3.GitHub Codespacesの再開とタイムアウト時間の設定
+**補足**
 
 [参考：GitHub Codespacesの再開とタイムアウト時間の設定](https://zenn.dev/protoout/articles/77-github-codespaces-restart)
 
