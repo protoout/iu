@@ -20,7 +20,7 @@
 
 
 ## Xで繋がりましょう  
- [のびすけさん](https://x.com/n0bisuke)  
+ [のびすけ](https://x.com/n0bisuke)  
  [りゆ](https://x.com/riyu___11) 
 
 
