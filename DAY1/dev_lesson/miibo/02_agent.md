@@ -50,17 +50,17 @@ miibo：https://mebo.work/
 
 <img src="https://i.gyazo.com/1d2bccaf78ecd9bb0c5b8013467901f2.png" width="450px" alt="image from gyazo"/>
 
-- 紹介文の設定をする
+- 紹介文の設定をする  
 例：「ワークショップ用です。」
 
 <img src="https://i.gyazo.com/ec0f17b22ca288ad651773b155b3653b.png" width="450px" alt="image from gyazo"/>
 
 - 言語モデルを選択する  
 **GPT-4o-mini**を選びましょう。
-<img src="https://i.gyazo.com/c6bd34489ede11f9c516cdc4c76c952e.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/1bb1015e3d282d31a1e8ad4bec660b78.png" width="450px" alt="image from gyazo"/>
 
-> 利用する言語モデルによって、精度や会話の消費回数が異なります。  
-会話の消費回数とは、miiboのプランに割り当てられた、1ヵ月あたりの会話上限クレジットの消費ポイントです。  
+> - 利用する言語モデルによって、精度や会話の消費回数が異なります。  
+- 会話の消費回数：miiboのプランに割り当てられた、1ヵ月あたりの会話上限クレジットの消費ポイントのことです。  
 会話上限を超えると、その月は会話ができなくなります。  
 
 有料プランでアップグレードできます。  
