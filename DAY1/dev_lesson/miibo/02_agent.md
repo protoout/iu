@@ -13,7 +13,7 @@
 
 - 公開したエージェントとチャット画面で会話をすることができる
 
-<img src="https://i.gyazo.com/397bd1160d38bbc7227f4cf46d372575.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/ee451187efa4e0d0116b11229ea570aa.png" width="450px" alt="image from gyazo"/>
 
 
 ## 1.miiboで会話型AIをつくる
@@ -36,14 +36,12 @@ miibo：https://mebo.work/
 <img src="https://i.gyazo.com/cde3a43294e6010800129b1ac5180709.png" width="450px" alt="image from gyazo"/>
 
 - 名前を入力する  
-例：「岩手ワークショップ」 ※文字の色は薄く表示されます。
 
-<img src="https://i.gyazo.com/cd21c4ebada67622b425838b2dbb29c5.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/d0c0d56162aad885ef67dcc55b4018bc.png" width="450px" alt="image from gyazo"/>
 
 - 提供者名を入力する  
-例：「岩手botくん」
 
-<img src="https://i.gyazo.com/6e08b8112f9e22209a7a5528e2f6443a.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/449f036b4101a2068de306020fea9d4a.png" width="450px" alt="image from gyazo"/>
 
 - イメージの設定をする（設定しなくても大丈夫です。）
 
@@ -89,7 +87,7 @@ AIはこの入力をもとに応答を生成しています。
 
 - Botの設定・管理ページが開かれました。
 
-<img src="https://i.gyazo.com/4a39dafb3f9c5eca4e0399f7ab91ef95.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/ac29834a593ddaa781998ad63eaafc8c.png" width="450px" alt="image from gyazo"/>
 
 - 作成したbotで会話を試してみましょう。  
 `会話をテストする`ボタンをクリックします。  
@@ -97,7 +95,7 @@ AIはこの入力をもとに応答を生成しています。
 
 **1回送るごとに5回分の会話回数を消費してしまうので、 ここで会話クレジットを使いすぎないよう注意してください。**
 
-<img src="https://i.gyazo.com/397bd1160d38bbc7227f4cf46d372575.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/ee451187efa4e0d0116b11229ea570aa.png" width="450px" alt="image from gyazo"/>
 
 
 ###  1-5.エージェントを公開する
@@ -114,7 +112,7 @@ AIはこの入力をもとに応答を生成しています。
 
 - 左のメニューバーから`公開設定`をクリックします。
 
-<img src="https://i.gyazo.com/01aaf6bc603edbd8b9898673265cf440.png" width="250px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/e5a256aee68ad63dd2822c96d86c5032.png" width="250px" alt="image from gyazo"/>
 
 - 公開の範囲を決めて、`利用規約に同意して公開`ボタンをクリックします。  
 `限定公開`で大丈夫です。

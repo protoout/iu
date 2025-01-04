@@ -151,8 +151,6 @@ miiboの授業では主に2つのツールを使っていきます。
 - 生成AIを使って、簡単にアプリケーション化するためのサービスです。  
 「AIを使って何かを作ってみよう！」という方におすすめです！
 
-<img src="https://i.gyazo.com/289c62f1ba5a85e5ade5a71f9a963e75.png" width="450px" alt="image from gyazo"/>
-
 **miiboのメリット**
 
 - コードを書かなくても簡単に使える  
