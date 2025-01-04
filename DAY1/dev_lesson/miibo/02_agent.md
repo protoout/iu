@@ -13,8 +13,7 @@
 
 - 公開したエージェントとチャット画面で会話をすることができる
 
-【✅作るもの画像貼っていく（エージェント公開するところ）】
-<img src="" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/397bd1160d38bbc7227f4cf46d372575.png" width="450px" alt="image from gyazo"/>
 
 
 ## 1.miiboで会話型AIをつくる
