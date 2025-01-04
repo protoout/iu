@@ -47,60 +47,69 @@ LINE Developers：https://developers.line.biz/ja/
   - あいさつメッセージは有効になっていることがおすすめです。  
   右側の`編集`ボタンから下記のように設定しておきます。
 
+<img src="https://i.gyazo.com/d9a707b5b85c3401cc2b9b536ba71104.png" width="450px" alt="image from gyazo"/>
+
 <img src="https://i.gyazo.com/9ea92e7237b87af7e59feb8b3d576c0e.png" width="450px" alt="image from gyazo"/>
 
 
+## 2.miiboにLINEの情報を登録する
+
+- miiboのエージェントページに移動します  
+左側のメニューバーから「外部サービス連携」をクリックします。
+
+<img src="https://i.gyazo.com/3b998db521042669c0d4157fc2e2ff19.png" width="250px" alt="image from gyazo"/>
+
+- 「LINE上で会話する」ボタンをクリックします。
+
+<img src="https://i.gyazo.com/6e68d6cc6ed5508a108822ee279ad150.png" width="450px" alt="image from gyazo"/>
+
+- 先ほど取得した「チャネルシークレット」と「チャネルアクセストークン」を貼り付けます。  
+貼り付けた後は「LINEと連携する」ボタンをクリックします。
+
+<img src="https://i.gyazo.com/6605f9740f9a5facd581c72bf07d2037.png" width="450px" alt="image from gyazo"/>
 
 
 
+## 3.LINEにWebhook URLを登録する
+
+- miiboで発行された「Webhook URL」をコピーします  
+  - 補足：Webhookとは？  
+  サービス（アプリケーション）の何らかのアクションを他のアプリケーションへリアルタイムに通知する仕組みのことです。
+
+<img src="https://i.gyazo.com/4c05804099dcc6f93f49862b2ebff05b.png" width="450px" alt="image from gyazo"/>
+
+
+- LINEのチャネルページへ移動し、「messageing API設定」のタブからWebhook設定をします。
+
+<img src="https://i.gyazo.com/c87e8d9e659aae5a400d061d805f62a8.png" width="450px" alt="image from gyazo"/>
+
+- Webhook URLの `編集`ボタンをクリックします。
+
+<img src="https://i.gyazo.com/2dc501d6a7c30fe75ce8d6572657ecf0.png" width="350px" alt="image from gyazo"/>
+
+- 先ほどコピーしたWebhook URLを貼り付け、`更新`ボタンをクリックします。
+
+<img src="https://i.gyazo.com/57486cb575b3d8fd6b6615929d644bab.png" width="450px" alt="image from gyazo"/>
+
+- Webhookの利用ボタンをクリックし、オンにします。
+
+<img src="https://i.gyazo.com/88de95e073afa7218f78e883e8fa3d4d.png" width="450px" alt="image from gyazo"/>
+
+- `検証`ボタンをクリックし、「成功」の表示がでたら連携完了です。
+
+<img src="https://i.gyazo.com/2699f7e4370f7140e2b8ff2e12e9a805.png" width="250px" alt="image from gyazo"/>
 
 
 
-<img src="" width="450px" alt="image from gyazo"/>
 <img src="" width="450px" alt="image from gyazo"/>
 <img src="" width="450px" alt="image from gyazo"/>
 
    
 
-## 2.miiboにLINEの情報を登録する
-### miiboのエージェントページに移動する
-- 左のメニューバーから「外部サービス連携」をクリックする
-
-<img src="https://i.gyazo.com/87a6864e9fb3985633eb5157cf319229.png" width="450px" alt="image from gyazo"/>
-
-- 「LINE上で会話する」ボタンをクリックする
-
-<img src="https://i.gyazo.com/76f66b6b4d40add359ad2345dfbc55d6.png" width="450px" alt="image from gyazo"/>
-
-- 先ほど取得した「チャンネルシークレット」と「チャンネルアクセストークン」を貼り付け、「LINEと連携する」ボタンをクリックする
-
-<img src="https://i.gyazo.com/b7dc30f134392ab6176097f27a4e8fb7.png" width="450px" alt="image from gyazo"/>
 
 
-## 3.LINEにWebhook URLを登録する
-- miiboで発行された「Webhook URL」をコピーする  
-　Webhookとは、サービス（アプリケーション）の何らかのアクションを他のアプリケーションへリアルタイムに通知する仕組みのことです。
 
-###  LINEのチャネルページへ移動する
-- 「messageing API設定」のタブからWebhook設定をする
 
-<img src="https://i.gyazo.com/7f302b0956c1aad41c0bc2a4de975328.png" width="450px" alt="image from gyazo"/>
-
-- 「編集」ボタンをクリックする
-
-<img src="https://i.gyazo.com/2dc501d6a7c30fe75ce8d6572657ecf0.png" width="450px" alt="image from gyazo"/>
-
-- 先ほどコピーしたWebhook URLを貼り付け、「更新」ボタンをクリックする
-
-<img src="https://i.gyazo.com/e7ee66e8691b50ce00405eda49deee39.png" width="450px" alt="image from gyazo"/>
-
-- Webhookの利用ボタンをクリックし、オンにする
-
-<img src="https://i.gyazo.com/88de95e073afa7218f78e883e8fa3d4d.png" width="450px" alt="image from gyazo"/>
-
-- 「検証」ボタンをクリックし、「成功」の表示から連携完了を確認する
-
-<img src="https://i.gyazo.com/2699f7e4370f7140e2b8ff2e12e9a805.png" width="450px" alt="image from gyazo"/>
 
 # いったん完成
 ## LINEから会話する
