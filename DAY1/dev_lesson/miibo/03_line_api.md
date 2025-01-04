@@ -105,7 +105,7 @@ LINE Developers：https://developers.line.biz/ja/
 
 <img src="https://i.gyazo.com/078e7398d19084061828cae7c8934f8c.png" width="350px" alt="image from gyazo"/>
 
-- miiboとLINE Botが連携され、会話型AIが完成しました！
+- miiboとLINE Botが連携され、会話型AIが完成しました！  
 ここからオリジナリティを出していきましょう。
 
 - [次の資料へ](./04_custom.md)
