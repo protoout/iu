@@ -124,7 +124,7 @@ ChatGPTの入力フォームで@を入力すると候補が出てきます。
 「DALL-E」をメンションして呼び出し、画像生成をしてもらいましょう。  
 （@daなど入れると候補が出ると思います。）
 
-<img src="https://i.gyazo.com/c1011bcb8eb8aefc77e2e7920549773e.png" width="450px" alt="image from gyazo"/
+<img src="https://i.gyazo.com/c1011bcb8eb8aefc77e2e7920549773e.png" width="450px" alt="image from gyazo"/>
 
 - 「先ほどのニュースの内容からブログを書きたいのでサムネイルを作成してください。」など問い合わせをしてみましょう。  
 
