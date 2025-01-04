@@ -100,7 +100,7 @@ LINE Developers：https://developers.line.biz/ja/
 
 ## 4.ひとまず完成！
 
-### LINEから会話してみましょう
+### LINEから会話をしてみる
 
 - スマートフォンで、友達になったLINE Botへ何かメッセージを送信し、返答がくるのを確認しましょう。  
 
