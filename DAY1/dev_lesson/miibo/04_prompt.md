@@ -119,10 +119,10 @@
 
 ## 2.会話してみましょう
 
-友だちになったLINE Botへ「1月に岩手県に行きます。旬の食べ物を教えてください。」などと送信してみましょう。
+友だちになったLINE Botへ「1月に岩手県に行きます。旬の食べ物を教えてください。」などと送信してみましょう。  
 プロンプトに沿った返答があるか確かめてみます。
 
-<img src="https://gyazo.com/9f7764315b1c98b05dad7555bd34eb43" width="350px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/9f7764315b1c98b05dad7555bd34eb43.png" width="350px" alt="image from gyazo"/>
 
 
 
