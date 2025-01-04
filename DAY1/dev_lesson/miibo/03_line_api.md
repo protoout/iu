@@ -1,62 +1,66 @@
+# 3.miiboを用いてLINE Botを作ろう
+
+## このパートでやること
+
+- LINEの情報を取得してmiiboに登録していきます。
 
 
 ## このパートで作るもの
 
-- ブロック（ノード）を繋げていき、右側のデバックパネルに岩手県の最新ニュースデータを表示させます。
-  - 補足:デバックパネル  
-  作った仕組みが正しく動いているかを確認し、問題があるか確認できる場所です。
+- miiboとLINEを連携して、会話型AIのLINE Botを作る  
+何かメッセージを送信すると、返答が来る仕組みになります。
 
-<img src="https://i.gyazo.com/516f5146219ccfd47dd03963bad17b18.png" width="450px" alt="image from gyazo"/>
+**【✅作るもの画像添付する】**
+<img src="" width="450px" alt="image from gyazo"/>
 
-
-## 1.Node-REDの環境について
-
-### 1-1.ノードとは何か
-
-
-ーーーーーーーーーーーーーー
-
-# 3.miiboを用いてLINE Botを作ろう
-
-↓ここから
-
-## このパートでやること
-
-- Webサイトからニュースデータを取得する   
-YahooのWebサイトから岩手県の最新ニュースデータを取得してみます。
-
-
-
-### LINEdevelopersにログインする
-https://developers.line.biz/ja/
-
-### コンソールから事前に作ったプロバイダーの中のチャネルを開く
-
-<img src="https://i.gyazo.com/6ab44ffa9a4744ccbed2a54094ad6af6.png" width="450px" alt="image from gyazo"/>
 
 ## 1.LINEの情報を取得する
-### 「チャンネル基本設定」のタブから「チャンネルシークレット」を取得する  
-　　発行されていなければ、「発行」ボタンをクリックして文字列をコピーします。  
-　　コピーしたら、パソコンに搭載されているメモ帳、付箋、Wordなどに貼り付けて控えておきましょう。
 
-<img src="https://i.gyazo.com/4d45ad3a58b8abb7770fa1af718ab784.png" width="450px" alt="image from gyazo"/>
-<img src="https://i.gyazo.com/8aa805cce8792c525f2ac1e04a151ca0.png" width="450px" alt="image from gyazo"/>
+### 1-1.LINEのチャネルを開く
 
-### 「messageing API設定」のタブから「チャンネルアクセストークン」を取得する  
-- 発行されていなければ、「発行」ボタンをクリックして文字列をコピーします。  
-　こちらもコピーしたら、メモ帳、付箋、Wordなどに貼り付けて控えておきましょう。
+- LINE Developersにログインします。  
+`コンソールからログイン`→`LINEアカウントでログイン`→`ログイン`  
+LINE Developers：https://developers.line.biz/ja/
 
-<img src="https://i.gyazo.com/7f302b0956c1aad41c0bc2a4de975328.png" width="450px" alt="image from gyazo"/>
-<img src="https://i.gyazo.com/5f707875217adfc29bf322a485029573.png" width="450px" alt="image from gyazo"/>
+- コンソールから事前に作ったプロバイダーの中のチャネルを開きます  
+<img src="https://i.gyazo.com/904ada972e3f14c175986f1bf56556de.png" width="450px" alt="image from gyazo"/>
+
+
+### 1-2.LINEの情報を取得する
+
+- 「チャネル基本設定」のタブから「チャネルシークレット」を取得します
+  - 発行されていなければ、`発行`ボタンをクリックして文字列をコピーします。  
+  コピーしたら、パソコンに搭載されているメモ帳、付箋、Wordなどに貼り付けて控えておきましょう。
+
+<img src="https://i.gyazo.com/ba1324e1744b946075b6c431bd27a16a.png" width="450px" alt="image from gyazo"/>
+
+<img src="https://i.gyazo.com/f13b828514fb92fc40b7ac400dcf7788.png" width="450px" alt="image from gyazo"/>
+
+- 「Messageing API設定」のタブから「チャネルアクセストークン」を取得します  
+  - 発行されていなければ、`発行`ボタンをクリックして文字列をコピーします。  
+  こちらもコピーしたら、メモ帳、付箋、Wordなどに貼り付けて控えておきましょう。
+
+<img src="https://i.gyazo.com/c87e8d9e659aae5a400d061d805f62a8.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/47f9f55878de22f875eeaa25c49bcd97.png" width="450px" alt="image from gyazo"/>
+
+- 応答機能を確認します  
+  - あいさつメッセージは有効になっていることがおすすめです。  
+  右側の`編集`ボタンから下記のように設定しておきます。
+
+<img src="https://i.gyazo.com/9ea92e7237b87af7e59feb8b3d576c0e.png" width="450px" alt="image from gyazo"/>
+
+
+
+
+
+
+
+
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+
    
-- 応答メッセージとあいさつメッセージが無効になっていることを確認してください。
-
-<img src="https://i.gyazo.com/f8a24c530b76d92b20e898a1229188b6.png" width="450px" alt="image from gyazo"/>
-   
-- 挨拶メッセージは有効になっている方がおススメとのことで、右端の編集ボタンからオンにしておきましょう。
-
-<img src="https://i.gyazo.com/f4ad4a98705b79ec5e7ddf9a3231e286.png" width="450px" alt="image from gyazo"/>  
-<img src="https://i.gyazo.com/a49afca099e1f8030ed3ecc8daf838b9.png" width="450px" alt="image from gyazo"/>
 
 ## 2.miiboにLINEの情報を登録する
 ### miiboのエージェントページに移動する
