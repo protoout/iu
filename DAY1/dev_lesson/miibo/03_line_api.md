@@ -10,8 +10,7 @@
 - miiboとLINEを連携して、会話型AIのLINE Botを作る  
 何かメッセージを送信すると、返答が来る仕組みになります。
 
-**【✅作るもの画像添付する】**
-<img src="" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/078e7398d19084061828cae7c8934f8c.png" width="350px" alt="image from gyazo"/>
 
 
 ## 1.LINEの情報を取得する
@@ -69,7 +68,6 @@ LINE Developers：https://developers.line.biz/ja/
 <img src="https://i.gyazo.com/6605f9740f9a5facd581c72bf07d2037.png" width="450px" alt="image from gyazo"/>
 
 
-
 ## 3.LINEにWebhook URLを登録する
 
 - miiboで発行された「Webhook URL」をコピーします  
@@ -99,26 +97,18 @@ LINE Developers：https://developers.line.biz/ja/
 
 <img src="https://i.gyazo.com/2699f7e4370f7140e2b8ff2e12e9a805.png" width="250px" alt="image from gyazo"/>
 
+## 4.ひとまず完成！
 
+### LINEから会話してみましょう
 
-<img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
+- スマートフォンで、友達になったLINE Botへ何かを送信し、返答がくるのを確認しましょう。  
 
-   
+<img src="https://i.gyazo.com/078e7398d19084061828cae7c8934f8c.png" width="350px" alt="image from gyazo"/>
 
-
-
-
-
-
-# いったん完成
-## LINEから会話する
-スマートフォンで、友達になったLINE Botへ何かを送信し、返答がくるのを確認しましょう。
-
-<img src="https://i.gyazo.com/7b3929bf5dd796a84f81600102e18709.png" width="450px" alt="image from gyazo"/>
-
-miiboとLINE Botが連携され、会話型AIが完成しました。
+- miiboとLINE Botが連携され、会話型AIが完成しました！
 ここからオリジナリティを出していきましょう。
 
 - [次の資料へ](./04_custom.md)
 - [トップページへ](./readme.md)
+
+

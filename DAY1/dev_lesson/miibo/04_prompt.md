@@ -19,6 +19,11 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 ### 1-1.ノードとは何か
 
 
+<img src="" width="450px" alt="image from gyazo"/>
+<img src="" width="450px" alt="image from gyazo"/>
+
+
+
 ーーーーーーーーーーーーーー
 
 
