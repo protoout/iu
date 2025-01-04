@@ -29,7 +29,7 @@ miibo：https://mebo.work/
 
 - `新規作成して開始する`のボタンをクリックする
 
-<img src="https://i.gyazo.com/5460a41fcd073e57015371f39b9b8ea5.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/5460a41fcd073e57015371f39b9b8ea5.png" width="250px" alt="image from gyazo"/>
 
 - `通常モードで新規作成する`のボタンをクリックする
 

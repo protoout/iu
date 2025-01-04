@@ -10,7 +10,7 @@
 - miiboとLINEを連携して、会話型AIのLINE Botを作る  
 何かメッセージを送信すると、返答が来る仕組みになります。
 
-<img src="https://i.gyazo.com/7b3929bf5dd796a84f81600102e18709.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/7b3929bf5dd796a84f81600102e18709.png" width="250px" alt="image from gyazo"/>
 
 
 ## 1.LINEの情報を取得する
@@ -104,7 +104,7 @@ LINE Developers：https://developers.line.biz/ja/
 
 - スマートフォンで、友達になったLINE Botへ何かメッセージを送信し、返答がくるのを確認しましょう。  
 
-<img src="https://i.gyazo.com/7b3929bf5dd796a84f81600102e18709.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/7b3929bf5dd796a84f81600102e18709.png" width="250px" alt="image from gyazo"/>
 
 - miiboとLINE Botが連携され、会話型AIが完成しました！  
 ここからオリジナリティを出していきましょう。
