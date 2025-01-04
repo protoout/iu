@@ -124,7 +124,7 @@
 ユーザー（実際にLINE Botを使う人）に対して即座に選択肢を提示し、簡単に応答できるようにする機能です。  
 通常、ボタン形式で表示され、ユーザーは選択肢をタップするだけで返信が完了するのです。
 
-<img src="https://i.gyazo.com/bf5fa0fd17ebf6be15d5cf29b2b39f80.png" width="350px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/051bfc3423f978876579788d0cf8f862.png" width="450px" alt="image from gyazo"/>
 
 そのため、ユーザーに発話してもらいたい内容や、ユーザーが次に知りたいと思えるような内容を並べておくことが好ましいです。  
 下記のようなプロンプトがクイックリプライのところで含まれていると良いでしょう。
