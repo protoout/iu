@@ -18,7 +18,7 @@ GPTsではナレッジファイルというファイルを用意して、この�
 
 - GPTStoreの右上に表示される「＋作成する」のボタンをクリックします。
 
-<img src="https://i.gyazo.com/5eaaaa11ebe05e7e6bac3d7dcd4c2aef.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/5eaaaa11ebe05e7e6bac3d7dcd4c2aef.png" width="250px" alt="image from gyazo"/>
 
 - 「GPT Builder」というノーコードツールがWeb上で立ち上がったら、ページを「構成」に切り替えて情報を入れます。
 
@@ -84,7 +84,7 @@ Web Browsingなどの機能を内包させたい場合は良いのですが、�
 
 元々のPDFを確認してみると、PDFファイルの中に記載のある情報を元にGPTが回答していることがわかると思います。 
 
-<img src="https://i.gyazo.com/a61ef76013e6f695f1f3b49b8491ec55.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/a61ef76013e6f695f1f3b49b8491ec55.png" width="200px" alt="image from gyazo"/>
 
 
 - アイコンを作成する  
