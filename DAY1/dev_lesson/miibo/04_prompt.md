@@ -62,7 +62,7 @@
 ### 1-2.作られたプロンプトを転記する
 
 - 作られたプロンプトをプロンプトエディターに転記します。   
-すでに入っているプロンプトは消し、作られたプロンプトをコピーして貼り付けます。  
+すでに入っているプロンプトは消し、作られたプロンプトをコピーします。
 
 下記が作られたプロンプトです。 
 
@@ -108,7 +108,22 @@
     - 「岩手県の歴史について知りたい」
 ```
 
+- 作られたプロンプトを貼り付けます。
+
 <img src="https://i.gyazo.com/a556c203f10b9b627ca51eeb5976b8f4.png" width="450px" alt="image from gyazo"/>
+
+- 「変更を保存」をクリックします。
+
+<img src="https://i.gyazo.com/91618f7827caaa721a397f2be59efa80.png" width="250px" alt="image from gyazo"/>
+
+
+## 2.会話してみましょう
+
+友だちになったLINE Botへ「1月に岩手県に行きます。旬の食べ物を教えてください。」などと送信してみましょう。
+プロンプトに沿った返答があるか確かめてみます。
+
+<img src="https://gyazo.com/9f7764315b1c98b05dad7555bd34eb43" width="350px" alt="image from gyazo"/>
+
 
 
 
@@ -116,23 +131,11 @@
 
 
 ーーーーーーーーーーーーーーー
+
 <img src="" width="450px" alt="image from gyazo"/>
-<img src="" width="450px" alt="image from gyazo"/>
 
 
 
-    
-
-<img src="https://i.gyazo.com/13eeec5a444c784318df76453d31ed97.png" width="450px" alt="image from gyazo"/>
-
-- 「変更を保存」をクリックする
-
-<img src="https://i.gyazo.com/91618f7827caaa721a397f2be59efa80.png" width="450px" alt="image from gyazo"/>
-
-## 2.会話の様子
-友だちになったLINEbotへ「旬の食べ物を教えて」などと送信し、プロンプトに沿った返答があるか確かめてみましょう。
-
-<img src="https://i.gyazo.com/ace2b6d537fe0a1401b9231d5cc11195.png" width="450px" alt="image from gyazo"/>
 
 ## 3.クイックリプライ
 クイックリプライは、ユーザーに対して即座に選択肢を提示し、簡単に応答できるようにする機能です。  
