@@ -21,7 +21,7 @@
   プロンプトの質や内容次第で、　生成AIに自分がイメージしている挙動をしてもらえるかが決まります。  
 
   - プロンプトの書き方は1つではありません。  
-  参考記事がたくさんありますので、後で探してみましょう。  
+  参考記事がたくさんありますので、探してみましょう。  
   参考：[プロンプトエンジニアリングガイド](https://www.promptingguide.ai/jp)
 
 
@@ -126,7 +126,7 @@
 ユーザー（実際にLINE Botを使う人）に対して即座に選択肢を提示し、簡単に応答できるようにする機能です。　　
 通常、ボタン形式で表示され、ユーザーは選択肢をタップするだけで返信が完了するのです。
 
-<img src="https://gyazo.com/bf5fa0fd17ebf6be15d5cf29b2b39f80" width="350px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/bf5fa0fd17ebf6be15d5cf29b2b39f80.png" width="350px" alt="image from gyazo"/>
 
 そのため、ユーザーに発話してもらいたい内容や、ユーザーが次に知りたいと思えるような内容を並べておくことが好ましいです。  
 下記のようなプロンプトがクイックリプライのところで含まれていると良いでしょう。
@@ -162,7 +162,7 @@
 - お大事にしてくださいぴょん。
 ```
 
-<img src="https://i.gyazo.com/9accfe56509ba8f49e9847c44d44415e.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/9accfe56509ba8f49e9847c44d44415e.png" width="350px" alt="image from gyazo"/>
 
 
 ## 5. チャレンジ
