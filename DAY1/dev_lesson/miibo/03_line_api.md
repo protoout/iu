@@ -101,7 +101,7 @@ LINE Developers：https://developers.line.biz/ja/
 
 ### LINEから会話してみましょう
 
-- スマートフォンで、友達になったLINE Botへ何かを送信し、返答がくるのを確認しましょう。  
+- スマートフォンで、友達になったLINE Botへ何かメッセージを送信し、返答がくるのを確認しましょう。  
 
 <img src="https://i.gyazo.com/078e7398d19084061828cae7c8934f8c.png" width="350px" alt="image from gyazo"/>
 
