@@ -84,6 +84,8 @@ LINE Developersを開きます。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
 
+**miiboの時に使用したLINE Botと一緒のチャネルで大丈夫です。**
+
 - LINE Developersから必要な情報をコピーし、Pushノードのプロパティに貼り付けていきます。
   - 必要な情報  
     -  チャネル名（LINE Developers内のチャネル基本設定の中にあります）
