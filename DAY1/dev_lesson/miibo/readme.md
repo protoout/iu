@@ -20,4 +20,4 @@
 7. [ナレッジファイルを元にGPTsを作成](./07_knowledge.md)
 8. [まとめ](./08_conclusion.md)
 
-[授業全体のページへ](./readme.md)
+[授業全体のページへ](../../readme.md)
