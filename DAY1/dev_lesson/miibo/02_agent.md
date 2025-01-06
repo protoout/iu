@@ -15,6 +15,7 @@
 
 <img src="https://i.gyazo.com/ee451187efa4e0d0116b11229ea570aa.png" width="450px" alt="image from gyazo"/>
 
+（注：今回は、福井県の研修で使用した資料を利用しています。）
 
 ## 1.miiboで会話型AIをつくる
 
