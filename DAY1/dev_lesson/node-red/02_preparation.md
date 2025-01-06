@@ -1,4 +1,4 @@
-# 1.Node-REDを立ち上げてみよう
+# 2.Node-REDを立ち上げてみよう
 
 ## このパートでやること
 
@@ -30,5 +30,5 @@ GitHub Codespacesの画面
 **補足**
 [参考：GitHub Codespacesの再開とタイムアウト時間の設定](https://zenn.dev/protoout/articles/77-github-codespaces-restart)
 
-- [次の資料へ](./02_api.md)
+- [次の資料へ](./03_api.md)
 - [トップページへ](./readme.md)
