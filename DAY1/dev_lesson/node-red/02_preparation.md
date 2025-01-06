@@ -14,8 +14,6 @@
 Node-REDの画面  
 <img src="https://i.gyazo.com/522659c78c07734d1cd4f30ce1b47764.png" width="450px" alt="image from gyazo"/>
 
-GitHub Codespacesの画面  
-<img src="https://storage.googleapis.com/zenn-user-upload/ebc28a8da87b-20241229.png" width="450px" alt="image from gyazo"/>
 
 ## ハンズオン：一緒に作っていきましょう！
 
