@@ -13,52 +13,7 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 
 <img src="https://i.gyazo.com/516f5146219ccfd47dd03963bad17b18.png" width="450px" alt="image from gyazo"/>
 
-
-## 1.Node-REDの環境について
-
-### 1-1.ノードとは何か
-
-- ノード（Node）とは？
-Node-REDを構成する基本的な構成要素で、処理をする機能（プログラム）のかたまりです。
-<img src="https://i.gyazo.com/4209abfa226dca0d1a4c1d3421768bbe.png" width="250px" alt="image from gyazo"/>
-
-- ノードは前方のノードからメッセージを受け取るか、外部イベントを受け取ることで動き出します。  
-ノードは受け取ったメッセージまたはイベントを処理し、 次のノードにメッセージを送ります。  
-処理は左から右に実行され、各ノードで処理された内容がバケツリレーのようにやり取りされていきます。
-
-<img src="https://i.gyazo.com/ac72b467278872701170501f629731ef.png" width="450px" alt="image from gyazo"/>
-
-- メッセージはJSONというデータで構成されます。  
-<img src="https://i.gyazo.com/b2e38a11e61da1ad55ff387493b71891.png" width="450px" alt="image from gyazo"/>
-
-
-### 1-2.画面の構成
-
-前のパートでNode-REDを立ち上げることができました。  
-実際の画面を一緒に見てみましょう。
-
-- パレット：ノードが置かれているエリアです。  
-インストールしてノードを増やすこともできます。
-
-<img src="https://i.gyazo.com/4e4f325615d23c2a56929fc767ce4327.png" width="450px" alt="image from gyazo"/>
-
-- ワークスペース：パレットからノードを配置してフロー（データの流れ）を作るエリアです。
-
-<img src="https://i.gyazo.com/47f080539655f431df2bc6afbf2eb845.png" width="450px" alt="image from gyazo"/>
-
-- サイドバー：エディター（ブラウザ上で表示しているNode-RED）の中で使える便利なツールがまとめられたエリアです。
-  - ノードについてのさらなる情報
-  - ヘルプを確認するパネル
-  - デバッグメッセージを確認するパネル
-  - フローの設定ノードを確認するパネル　などがあります。
-
-<img src="https://i.gyazo.com/2b44b8d4535ed54a2ce46629fec8f96f.png" width="450px" alt="image from gyazo"/>
-
-### 1-3.実際にどんなイメージで作っていくのか見てみましょう
-gif動画になっています。
-
-<img src="https://i.gyazo.com/9f29274f6b038b421de3817f321b9dce.gif" width="450px" alt="image from gyazo"/>
-
+✅ここから修正！！
 
 ## 2.ブロック（ノード）を繋げる
 
