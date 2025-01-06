@@ -1,4 +1,4 @@
-# 3.Node-REDでLINE Botにメッセージを送ろう
+# 4.Node-REDでLINE Botにメッセージを送ろう
 
 ## このパートでやること
 
@@ -163,5 +163,5 @@ LINE Developersを開きます。
 
 - LINE Botに通知するメッセージを変えてみましょう。
 
-- [次の資料へ](./04_api_linebot.md)
+- [次の資料へ](./05_api_linebot.md)
 - [トップページへ](./readme.md)
