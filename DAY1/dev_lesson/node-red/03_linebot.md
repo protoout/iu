@@ -1,167 +1,224 @@
-# 3.Node-REDでLINE Botにメッセージを送ろう
+# 2.Webサイトからニュースデータを取得してみよう
 
 ## このパートでやること
 
-- LINEのノードをNode-REDにインストールする
-- Node-REDからLINE Botにメッセージを送る
+- Webサイトからニュースデータを取得する   
+YahooのWebサイトから岩手県の最新ニュースデータを取得してみます。
 
 ## このパートで作るもの
 
-- injectノードで設定した言葉をLINE Botに通知する簡単な仕組みを作ります。  
+- ブロック（ノード）を繋げていき、右側のデバックパネルに岩手県の最新ニュースデータを表示させます。
+  - 補足:デバックパネル  
+  作った仕組みが正しく動いているかを確認し、問題があるか確認できる場所です。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/516f5146219ccfd47dd03963bad17b18.png" width="450px" alt="image from gyazo"/>
 
 
-## 1.LINEのノードをインストールをする
+## 1.Node-REDの環境について
 
-パレット内にLINEのノードを追加していきます。
+### 1-1.ノードとは何か
 
-- Node-REDの画面の右上にある三本線のメニューを開きます。  
-`パレットの管理`を選択します。
+- ノード（Node）とは？
+Node-REDを構成する基本的な構成要素で、処理をする機能（プログラム）のかたまりです。
+<img src="https://i.gyazo.com/4209abfa226dca0d1a4c1d3421768bbe.png" width="250px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/591e2aec34439626d298134a52b1e674.png" width="250px" alt="image from gyazo"/>
+- ノードは前方のノードからメッセージを受け取るか、外部イベントを受け取ることで動き出します。  
+ノードは受け取ったメッセージまたはイベントを処理し、 次のノードにメッセージを送ります。  
+処理は左から右に実行され、各ノードで処理された内容がバケツリレーのようにやり取りされていきます。
 
-- ノードを検索という欄で`node-red-contrib-line-messaging-api`と検索します。  
-右下の`ノード追加`を選択します。
+<img src="https://i.gyazo.com/ac72b467278872701170501f629731ef.png" width="450px" alt="image from gyazo"/>
 
-<img src="https://storage.googleapis.com/zenn-user-upload/ced7848977a6-20241230.png" width="450px" alt="image from gyazo"/>
+- メッセージはJSONというデータで構成されます。  
+<img src="https://i.gyazo.com/b2e38a11e61da1ad55ff387493b71891.png" width="450px" alt="image from gyazo"/>
 
-- パレット内にLINEのノードが追加されました。  
-追加が確認できたら、無事にインストール完了です！
 
-<img src="https://storage.googleapis.com/zenn-user-upload/ef516502f3da-20241230.png" width="250px" alt="image from gyazo"/>
+### 1-2.画面の構成
 
+前のパートでNode-REDを立ち上げることができました。  
+実際の画面を一緒に見てみましょう。
 
-## 2.LINE Botにメッセージを送る
+- パレット：ノードが置かれているエリアです。  
+インストールしてノードを増やすこともできます。
 
-ノードを繋げていき、LINE Botに簡単なメッセージを送ってみます。
+<img src="https://i.gyazo.com/4e4f325615d23c2a56929fc767ce4327.png" width="450px" alt="image from gyazo"/>
 
-### 2-1.ノードを繋げる
+- ワークスペース：パレットからノードを配置してフロー（データの流れ）を作るエリアです。
 
-- パレット内`共有`の中にある`injectノード`をワークスペースに入れます。 
+<img src="https://i.gyazo.com/47f080539655f431df2bc6afbf2eb845.png" width="450px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/3600262f56396bc765ba15fbf0d3b2bb.png" width="450px" alt="image from gyazo"/>
+- サイドバー：エディター（ブラウザ上で表示しているNode-RED）の中で使える便利なツールがまとめられたエリアです。
+  - ノードについてのさらなる情報
+  - ヘルプを確認するパネル
+  - デバッグメッセージを確認するパネル
+  - フローの設定ノードを確認するパネル　などがあります。
 
-- パレット内で先ほど追加した`LINE`の中にある`Pushノード`をinjectノードの右側に配置します。  
+<img src="https://i.gyazo.com/2b44b8d4535ed54a2ce46629fec8f96f.png" width="450px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/fc8dd351197293fcb8c87106e17525b8.png" width="450px" alt="image from gyazo"/>
+### 1-3.実際にどんなイメージで作っていくのか見てみましょう
+gif動画になっています。
 
-- 2つのノードを繋げます。
+<img src="https://i.gyazo.com/9f29274f6b038b421de3817f321b9dce.gif" width="450px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/d446fc49180360a5775f9c64e65d7cfa.png" width="450px" alt="image from gyazo"/>
 
-### 2-2.injectノードを設定する 
- 
-- injectノードをダブルクリックして、プロパティを開きます。
+## 2.ブロック（ノード）を繋げる
 
-- `文字列`を選択します。
+- 現在はこのような画面になっているかと思います。
+<img src="https://storage.googleapis.com/zenn-user-upload/3ff23066e145-20241229.png" width="450px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/da266a9513cec2f01fffb21bbb476ede.png" width="450px" alt="image from gyazo"/>
+- パレット内 `共通`の中にある`injectノード`をワークスペースに入れます。  
+ノードを長押ししながら移動させるイメージです。
 
-- 送りたいメッセージを入れる。（LINE Botに通知されるメッセージになります。）  
-`Node-REDから文字の送信`と入れてみましょう。
+<img src="https://storage.googleapis.com/zenn-user-upload/974fb1f435f7-20241229.png" width="450px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/147e07ef805fe52b44c6ab1e56cb135f.png" width="450px" alt="image from gyazo"/>
+- パレット内`ネットワーク`の中にある`http requestノード`をワークスペースに入れます。  
+先ほどのinjectノードの右側に配置します。 
 
+<img src="https://storage.googleapis.com/zenn-user-upload/46441f5b74ab-20241229.png" width="450px" alt="image from gyazo"/>
 
-### 2-2.Pushノードの設定準備をする
+- パレット内`機能`の中にある`functionノード`をワークスペースに入れます。  
+先ほどのhttp requestノードの右側に配置します。 
 
-- Pushノードをダブルクリックして、プロパティを開きます。
+<img src="https://storage.googleapis.com/zenn-user-upload/6cb078a62397-20241229.png" width="450px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/6b1ec08ca8672b8ab1ec53a06dc21483.png" width="450px" alt="image from gyazo"/>
+- パレット内`共通`の中にある`debugノード`をワークスペースに入れます。  
+先ほどのfunctionノードの右側に配置します。 
 
-- プロパティ内の`LINE Bot`欄の右側にある`鉛筆マーク`を押します。  
-下記のような画面になります。
+<img src="https://storage.googleapis.com/zenn-user-upload/a981684dfbba-20241229.png" width="450px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/0ce0faaf32848bbe7d45a2697248dcb5.png" width="450px" alt="image from gyazo"/>
+- 各ノードの間を線で繋げていきます。  
+左側のノードの終わり（小さな四角の部分）から、右側のノードの始まり（小さな四角の部分）を長押しして線を引っ張るイメージです。
+  - 補足：繋ぐものは「ワイヤー」と言います。
 
-LINE Botと連携するため、チャネルシークレットやアクセストークン、IDなど必要な情報を入れる必要があります。
+<img src="https://storage.googleapis.com/zenn-user-upload/8f5733678747-20241229.png" width="450px" alt="image from gyazo"/>
 
-### 2-3.LINE Developersから連携に必要な情報をとり、プロパティに設定する
 
-LINE Developersを開きます。  
-[LINE Developers](https://developers.line.biz/ja/)
+## 3.Webサイトのデータを取得する
 
-<img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
+今回は、Yahooサイトから岩手県の最新ニュースデータを取得してみます。
 
-**miiboの時に使用したLINE Botと一緒のチャネルで大丈夫です。**
+### 3-1.http requestノードを設定していく
 
-- LINE Developersから必要な情報をコピーし、Pushノードのプロパティに貼り付けていきます。
-  - 必要な情報  
-    -  チャネル名（LINE Developers内のチャネル基本設定の中にあります）
-    -  チャネルシークレット（LINE Developers内のチャネル基本設定の中にあります）
-    -  チャネルアクセストークン（LINE Developers内のMessaging API設定の中にあります）
-    -  ユーザーID（LINE Developers内のチャネル基本設定の中にあります）
+まずは、Yahooニュースの岩手日報のデータを取る準備をします。
 
-<details>
+- Yahooニュースの岩手日報のURLをコピーします。  
+https://news.yahoo.co.jp/media/iwatenpv
 
-<summary>必要な情報をコピペする詳しい手順はこちらから</summary>
+<img src="https://storage.googleapis.com/zenn-user-upload/fe7916b1e7b1-20241229.png" width="450px" alt="image from gyazo"/>
 
-- LINE Developers内のチャネル基本設定から`チャネル名`をコピーします。
+- Node-REDの画面に戻り、http requestノードをダブルクリックします。  
+プロパティ内の`URL`部分に岩手日報のURLを貼り付けます。  
+下記のようになっていたらOKです。
+
+  - 補足：プロパティとは設定のようなものです。
+
+<img src="https://storage.googleapis.com/zenn-user-upload/3e746113176c-20241230.png" width="350px" alt="image from gyazo"/>
+
+- 右上の`完了`ボタンを押します。  
+これでhttp requestノードの設定はOKです。
+
+### 3-2.Functionノードを設定していく
+
+Yahooニュースの岩手日報のデータを取る準備ができたので、その中から１番上に表示される最新ニュースだけを抽出していきます。  
+補足：Webサイトから必要な情報をプログラムを使って自動的に抽出してくることをスクレイピングと言います。
+
+- Functionノードをダブルクリックすると、プロパティが出てきます。
+
+<img src="https://storage.googleapis.com/zenn-user-upload/289d743b549a-20241229.png" width="350px" alt="image from gyazo"/>
+
+- プロパティ内のコードにあるものを１度全部クリアにし、真っ白な状態にします。
+
+<img src="https://i.gyazo.com/22230be508f31ba18ab5cffe6d78c341.png" width="350px" alt="image from gyazo"/>
+
+- コードの中に下記のコードをコピーして貼り付けていきます。
+
+```js
+msg.payload = msg.payload.toString();
+let articles = [];
+
+// 記事リストを分割
+let items = msg.payload.split('<li class="sc-1u4589e-0 kKmBYF">');
+
+// 各記事の情報を抽出
+for(let i=1; i<items.length; i++) {
+    let item = items[i];
+    let article = {};
+    
+    try {
+        // URLの抽出
+        let urlStart = item.indexOf('href="') + 'href="'.length;
+        let urlEnd = item.indexOf('"', urlStart);
+        if(urlStart > -1 && urlEnd > -1) {
+            article.url = item.substring(urlStart, urlEnd).trim();
+        }
+
+        // タイトルの抽出
+        let titleStart = item.indexOf('class="sc-3ls169-0 dHAJpi">') + 'class="sc-3ls169-0 dHAJpi">'.length;
+        let titleEnd = item.indexOf('</div>', titleStart);
+        if(titleStart > -1 && titleEnd > -1) {
+            article.title = item.substring(titleStart, titleEnd).trim();
+        }
+        
+        // 日付の抽出 - 新しい方法
+        let dateStart = item.indexOf('class="sc-16vsoxb-1 cPSkfe">') + 'class="sc-16vsoxb-1 cPSkfe">'.length;
+        if(dateStart > -1) {
+            let dateText = item.substring(dateStart);
+            let dateMatch = dateText.match(/([0-9]{1,2}\/[0-9]{1,2}\([日月火水木金土]\))\s*<!-- -->\s*<!-- -->\s*([0-9]{1,2}:[0-9]{2})/);
+            if(dateMatch) {
+                article.date = dateMatch[1] + " " + dateMatch[2];
+            }
+        }
+        
+        // メディア名の抽出
+        let mediaStart = item.indexOf('class="sc-1t7ra5j-9 dIJJqB">') + 'class="sc-1t7ra5j-9 dIJJqB">'.length;
+        let mediaEnd = item.indexOf('</span>', mediaStart);
+        if(mediaStart > -1 && mediaEnd > -1) {
+            article.media = item.substring(mediaStart, mediaEnd).trim();
+        }
+        
+        // 記事が有効な情報を持っている場合のみ追加
+        if(article.title && article.url) {
+            articles.push(article);
+        }
+    } catch(e) {
+        // エラーが発生した場合はその記事をスキップ
+        node.error("Error processing article: " + e.message);
+        continue;
+    }
+}
+
+msg.payload = articles;
+return msg;
+```
+
+- コードを貼り付けて、このような画面になればOkです。
+
+<img src="https://storage.googleapis.com/zenn-user-upload/08060f08dd23-20241229.png" width="350px" alt="image from gyazo"/>
+
+### 3-3.データを取得できているか確認する
+
+岩手の最新ニュースデータが抽出できているか確認していきます。
+
+- サイドバー内にある虫のようなアイコン`デバックパネル`を開いておきます。
+
+- 右上の`デプロイ`を押す  
+これにより、作成してきたノードが実際に動かせられる状態になります。
+
+<img src="https://i.gyazo.com/15918eeb56df1237713759b2ae31a558.png" width="450px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/40a7c0f4b44070dbb4c9e9809fbb0044.png" width="450px" alt="image from gyazo"/>
-
-- Node-RED内のプロパティの中の`Bot Name`に貼り付けます。
-
-<img src="https://i.gyazo.com/70fa3e4b92cdcb175bdc3299182a4f8b.png" width="450px" alt="image from gyazo"/>
-
-- LINE Developers内のチャネル基本設定から`チャネルシークレット`をコピーします。
-
-<img src="https://i.gyazo.com/2bd69c910eaac992f64b2664da8a4eff.png" width="450px" alt="image from gyazo"/>
-
-- Node-RED内のプロパティの中の`Channel Secret`に貼り付けます。
-
-<img src="https://i.gyazo.com/3a0f5e724390eea86e4f9672024a326a.png" width="450px" alt="image from gyazo"/>
-
-- LINE Developers内のMessaging API設定から`チャネルアクセストークン`をコピーします。
-
-<img src="https://i.gyazo.com/854e4cf8b1b0c4040de56f19466c18dd.png" width="450px" alt="image from gyazo"/>
-
-- Node-RED内のプロパティの中の`Channel Access Token`に貼り付けます。
-
-<img src="https://i.gyazo.com/1b4ea98a979088fc91279347b0241793.png" width="450px" alt="image from gyazo"/>
-
-- 右上の「更新」を選択します。  
-再び`AccessToken`内に`チャネルアクセストークン`を貼り付けます。
-
-<img src="https://i.gyazo.com/95dcdfed6df72458a3c1b0abcda12433.png" width="450px" alt="image from gyazo"/>
-
-- LINE Developers内のチャネル基本設定から`あなたのユーザーID`をコピーします。
-
-<img src="https://i.gyazo.com/7fa8219ea2b7a9d6c2f6e3885c8d9faa.png" width="450px" alt="image from gyazo"/>
-
-- Node-RED内のプロパティの中の`User Id or Group ID`に貼り付けます。
-
-<img src="https://i.gyazo.com/3a6824536c4f04f23a715c8cc869b809.png" width="450px" alt="image from gyazo"/>
-
-</details>
-
-- Pushノードのプロパティに必要な情報を入れることができた画面は下記のようになります。  
-  - 鉛筆マーク画面
-
-<img src="https://i.gyazo.com/1b4ea98a979088fc91279347b0241793.png" width="450px" alt="image from gyazo"/>
-
-  - プロパティ最初の画面
-
-  <img src="https://i.gyazo.com/3a6824536c4f04f23a715c8cc869b809.png" width="450px" alt="image from gyazo"/>
-
-### 2-4.LINE Botでメッセージの通知確認をする
-
-- 必要な情報を入れることができたか確認できたら`完了`ボタンを選択します。
-- `デプロイ`ボタンを押します。
 - injectノードの左側にある四角いボタンを１度押します。  
 これにより左から右へ処理が実行されていきます。
 
-<img src="https://i.gyazo.com/1af68a080a70c8d60737fe1fec3e1bdb.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/7eeebde966317282ad8fa5f020faf0be.png" width="250px" alt="image from gyazo"/>
 
-- LINE Botに`Node-REDから文字の送信`というメッセージが通知されていたらOKです！
+- デバックパネルを確認する  
+うまくデータが抽出できると下記のような画面になります。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/516f5146219ccfd47dd03963bad17b18.png" width="450px" alt="image from gyazo"/>
+
+※ 抽出したデータは`▶︎`を押していくと開かれていきます。
+
+<img src="https://i.gyazo.com/bd9157702b6999343a1aa12e010fd3a1.png" width="350px" alt="image from gyazo"/>
 
 
-## チャレンジ課題
-
-- LINE Botに通知するメッセージを変えてみましょう。
-
-- [次の資料へ](./04_api_linebot.md)
+- [次の資料へ](./03_linebot.md)
 - [トップページへ](./readme.md)
