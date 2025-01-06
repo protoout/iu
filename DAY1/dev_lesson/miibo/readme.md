@@ -16,8 +16,6 @@
 3. [miiboを用いてLINE Botを作ろう](./03_line_api.md) 
 4. [miiboのプロンプトを変更しよう](./04_prompt.md) 
 5. [miiboのナレッジデータを設定しよう](./05_rag.md)
-6. [GPTsに触れてみよう](./06_chatgpt.md)
-7. [ナレッジファイルを元にGPTsを作成](./07_knowledge.md)
-8. [まとめ](./08_conclusion.md)
+6. [まとめ](./06_conclusion.md)
 
 [授業全体のページへ](../../readme.md)
