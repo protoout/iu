@@ -217,9 +217,12 @@ CodePen：https://codepen.io/
  
 [表示エリアを大きくする方法](https://zenn.dev/protoout/articles/40-codepen-live-preview)
 
+### チャレンジ
 
-**【✅確認してから修正】**
-### 作れたらURLをオープンチャットに投稿してみましょう。
+時間がある方は、他の方にも共有してみましょう！
+
+- 授業連絡用チャット内に、作ったWebサイトのURLを共有してみてください。  
+- 他の方が作成したものも見にいってみましょう！
 
 - 機能がついたサイトも作れます。  
 [やるだけえらい](https://codepen.io/ka5ha4/pen/WNqLgqd)
