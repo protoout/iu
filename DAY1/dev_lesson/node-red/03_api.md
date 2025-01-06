@@ -1,4 +1,4 @@
-# 2.Webサイトからニュースデータを取得してみよう
+# 3.Webサイトからニュースデータを取得してみよう
 
 ## このパートでやること
 
@@ -220,5 +220,5 @@ return msg;
 <img src="https://i.gyazo.com/bd9157702b6999343a1aa12e010fd3a1.png" width="350px" alt="image from gyazo"/>
 
 
-- [次の資料へ](./03_linebot.md)
+- [次の資料へ](./04_linebot.md)
 - [トップページへ](./readme.md)
