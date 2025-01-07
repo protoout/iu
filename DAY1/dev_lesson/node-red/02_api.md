@@ -16,7 +16,7 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 
 ## 2.ブロック（ノード）を繋げる
 
-- 現在、「2.Node-REDを立ち上げてみよう」で行ったinjectノードとdebugノードを繋げた画面になっていると思います。
+- 現在、「1.Node-REDを立ち上げてみよう」で行ったinjectノードとdebugノードを繋げた画面になっていると思います。
 
 <img src="https://i.gyazo.com/abc62548060782192d4b4312fb5e392c.png" width="450px" alt="image from gyazo"/>
 
