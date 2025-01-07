@@ -17,7 +17,7 @@
 
 作業場所確保のため、[03.Node-REDでLINE Botにメッセージを送ろう](./03_api.md)ので作ったノードたちは作業しやすいように、下記のように少し開けて下に置いておいてください。
 
-<img src="" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/22f1447e5ce30f08e69712d492674ed6.png" width="450px" alt="image from gyazo"/>
 
 - [02.Webサイトからニュースデータを取得してみよう](./02_api.md)で作ったノードに追加していきます。
 - こちらのノードの下付近で、下記の画面のようにノードを繋げてみてください。  
