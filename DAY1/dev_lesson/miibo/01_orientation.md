@@ -30,7 +30,7 @@
 AIの一つで文章、画像、音声、動画などのデータやコンテンツを新しく作り出す技術です。  
 【生成AI（ツール）の例】 
   - 動画生成：[Runway](https://runwayml.com/) ・[Sora](https://openai.com/sora/)
-  - 画像生成：[Midjourney](https://www.midjourney.com/home)・[DALL-E(GPT-4o)]() ・[ImageFX](https://labs.google/fx/tools/image-fx) 
+  - 画像生成：[Midjourney](https://www.midjourney.com/home)・[DALL-E(GPT-4o)](https://openai.com/index/dall-e/) ・[ImageFX](https://labs.google/fx/tools/image-fx) 
   - 音楽：[Suno](https://suno.com/) 
 
 <img src="https://i.gyazo.com/9fa38557e2abdcd459d0e9b841d7e83d.png" width="450px" alt="image from gyazo"/>
