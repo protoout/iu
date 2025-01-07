@@ -13,14 +13,20 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 
 <img src="https://i.gyazo.com/516f5146219ccfd47dd03963bad17b18.png" width="450px" alt="image from gyazo"/>
 
-✅ここから修正！！
 
 ## 2.ブロック（ノード）を繋げる
 
-- 現在はこのような画面になっているかと思います。
-<img src="https://storage.googleapis.com/zenn-user-upload/3ff23066e145-20241229.png" width="450px" alt="image from gyazo"/>
+- 現在、「2.Node-REDを立ち上げてみよう」で行ったinjectノードとdebugノードを繋げた画面になっていると思います。
 
-- パレット内 `共通`の中にある`injectノード`をワークスペースに入れます。  
+<img src="https://i.gyazo.com/abc62548060782192d4b4312fb5e392c.png" width="450px" alt="image from gyazo"/>
+
+- このパートでは、新しい作業場所を作ります。  
+右上の「＋」ボタン（フローを追加）をクリックし、作業するスペースを変えます。
+
+<img src="https://i.gyazo.com/0cf1b8dcdf636bc54cdf74620a83eee1.png" width="450px" alt="image from gyazo"/>
+
+
+- 新しい作業場所ができたら、パレット内 `共通`の中にある`injectノード`をワークスペースに入れます。  
 
 <img src="https://storage.googleapis.com/zenn-user-upload/974fb1f435f7-20241229.png" width="450px" alt="image from gyazo"/>
 
