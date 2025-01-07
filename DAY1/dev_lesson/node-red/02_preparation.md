@@ -97,7 +97,8 @@ gif動画になっています。
 - デプロイボタンをクリックするとボタンの色が変わって、今作ったものが反映されます。
 <img src="https://i.gyazo.com/58de57346d51b7620c32562f9c8690bf.png" width="450px" alt="image from gyazo"/>
 
-反映された様子です。
+反映された様子です。  
+
 <img src="https://i.gyazo.com/6d69e6990487e06533edba753d67904e.png" width="450px" alt="image from gyazo"/>
 
 - debugノードのデータはサイドバーのデバッグタブをクリックすると見ることができます。  
