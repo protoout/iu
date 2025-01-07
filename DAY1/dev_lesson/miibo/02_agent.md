@@ -21,7 +21,7 @@
 
 ### 1-1.miiboにサインインする
 
-miibo：https://mebo.work/
+miibo：https://miibo.ai/
 
 
 ### 1-2.新規エージェントの作成
