@@ -1,4 +1,4 @@
-# 2.Node-REDを立ち上げてみよう
+# 1.Node-REDを立ち上げてみよう
 
 ## このパートでやること
 
@@ -151,5 +151,5 @@ gif動画になっています。
 [エディタガイド : Node\-RED日本ユーザ会](https://nodered.jp/docs/user-guide/editor/)
 
 
-- [次の資料へ](./03_api.md)
+- [次の資料へ](./02_api.md)
 - [トップページへ](./readme.md)
