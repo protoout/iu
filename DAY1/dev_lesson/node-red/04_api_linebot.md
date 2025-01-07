@@ -22,7 +22,7 @@
 
 <img src="https://i.gyazo.com/47a78c1833c907317452702e576508fe.png" width="450px" alt="image from gyazo"/>
 
-- こちらのノードの下付近で新しく作業場所を設け、下記の画面のようにノードを繋げてみてください。  
+- こちらのノードの下付近で、下記の画面のようにノードを繋げてみてください。  
 `inject`→`http request`→`function`→`change`→`Push`の順番です。  
 自分でノードを繋げられそうな方は、トライしてみましょう。
 
