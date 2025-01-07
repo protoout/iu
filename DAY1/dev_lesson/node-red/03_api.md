@@ -7,7 +7,7 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 
 ## このパートで作るもの
 
-- ブロック（ノード）を繋げていき、右側のデバックパネルに岩手県の最新ニュースデータを表示させます。
+- ノードを繋げていき、右側のデバックパネルに岩手県の最新ニュースデータを表示させます。
   - 補足:デバックパネル  
   作った仕組みが正しく動いているかを確認し、問題があるか確認できる場所です。
 
@@ -21,7 +21,6 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 <img src="https://storage.googleapis.com/zenn-user-upload/3ff23066e145-20241229.png" width="450px" alt="image from gyazo"/>
 
 - パレット内 `共通`の中にある`injectノード`をワークスペースに入れます。  
-ノードを長押ししながら移動させるイメージです。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/974fb1f435f7-20241229.png" width="450px" alt="image from gyazo"/>
 
@@ -42,7 +41,6 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 
 - 各ノードの間を線で繋げていきます。  
 左側のノードの終わり（小さな四角の部分）から、右側のノードの始まり（小さな四角の部分）を長押しして線を引っ張るイメージです。
-  - 補足：繋ぐものは「ワイヤー」と言います。
 
 <img src="https://storage.googleapis.com/zenn-user-upload/8f5733678747-20241229.png" width="450px" alt="image from gyazo"/>
 
