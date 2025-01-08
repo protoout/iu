@@ -87,17 +87,161 @@ https://news.yahoo.co.jp/media/iwatenpv
 
 ## 2.最新のニュース3件をLINEに通知させる
 
-LINE Botに岩手県の最新ニュース1件を通知する仕組みは作れましたね。
-次に少しチャレンジとして、岩手県の最新ニュース3件をLINEに通知する仕組みを作ってみましょう！
+LINE Botに岩手県の最新ニュース1件を通知する仕組みは作れましたね。  
+次に少しチャレンジとして、岩手県の最新ニュース3件を同時にLINEに通知する仕組みを作ってみましょう！
 
+※ 今回の作業場所としては、「＋」ボタンから新しいフローを追加した方がやりやすいです。
 
+実際に作るとこのような仕組みになります。  
+先ほどとノードの配置は変わりませんが、ノード内の設定が少し変わってきます。
 
+<img src="https://i.gyazo.com/d19da52370ea3c1c786e40d060dae99e.png" width="450px" alt="image from gyazo"/>
 
+### 2-1.ノードを繋げる
+
+- ノードを先ほどのように繋げていきます。（先ほど作ったものをコピペしてもOKです。）
+
+<img src="https://i.gyazo.com/fe3432fff021e255c2af1235c4057e77.gif" width="450px" alt="image from gyazo"/>
+
+- ノードを繋げたあとは、Functionノードとchangeノードの設定を変える必要があります。  
+
+  - **自分で作ってみたい方は[ChatGPT](https://chatgpt.com/)に聞きながらトライしてみましょう！**
+    - 【ヒント】  
+    1. 1件の場合と複数件ある場合ではデータの扱い方や最終的にどのような形式で使いたいのかで設定が変わってきます。
+    2. Functionノードのコードの変更：岩手県の最新ニュース1件から3件へ変える必要があり、同時にLINEに表示できるようにします。  
+    3. changeノード：代入する値を変える必要があります。
+
+<details>
+<summary>詳しい手順はこちら</summary>
+
+### 2-2.Functionノードを変更する
+
+- 岩手県のニュース1件の場合のNode-REDデバックタブを見てみましょう。   
+1番目のニュースの中のurlというところをLINEに表示されていました。
+
+<img src="https://i.gyazo.com/d366f6f6c90a5bdd559c0e30db895429.png" width="350px" alt="image from gyazo"/>
+
+ただ今回の3件という複数件表示することになります。  
+この場合、データを全部まとめて表示するのか、複数回に分けて表示するのかなど設定次第で変わってきます。
+
+今回は同時に3件表示するため、下記のようなコードになります。
+
+<details>
+<summary>Function内のコード</summary>
+
+```js
+// (1) HTMLを文字列化
+msg.payload = msg.payload.toString();
+
+// (2) 記事を格納する配列
+let articles = [];
+
+// (3) Yahoo!ニュースページで記事を含む区切りを split
+let items = msg.payload.split('<li class="sc-1u4589e-0 kKmBYF">');
+
+// (4) 先頭( i=1 )から順に、最大3件をパース
+for (let i = 1; i < items.length; i++) {
+    // すでに3件取得済みなら終了
+    if (articles.length >= 3) {
+        break;
+    }
+
+    let item = items[i];
+    let article = {};
+
+    try {
+        // -------------------
+        // URL抽出
+        // -------------------
+        let urlStart = item.indexOf('href="') + 'href="'.length;
+        let urlEnd = item.indexOf('"', urlStart);
+        if (urlStart > -1 && urlEnd > -1) {
+            article.url = item.substring(urlStart, urlEnd).trim();
+        }
+
+        // -------------------
+        // タイトル抽出
+        // -------------------
+        let titleStart = item.indexOf('class="sc-3ls169-0 dHAJpi">') + 'class="sc-3ls169-0 dHAJpi">'.length;
+        let titleEnd = item.indexOf('</div>', titleStart);
+        if (titleStart > -1 && titleEnd > -1) {
+            article.title = item.substring(titleStart, titleEnd).trim();
+        }
+
+        // -------------------
+        // 日付抽出
+        // -------------------
+        let dateStart = item.indexOf('class="sc-16vsoxb-1 cPSkfe">') + 'class="sc-16vsoxb-1 cPSkfe">'.length;
+        if (dateStart > -1) {
+            let dateText = item.substring(dateStart);
+            let dateMatch = dateText.match(/([0-9]{1,2}\/[0-9]{1,2}\([日月火水木金土]\))\s*<!-- -->\s*<!-- -->\s*([0-9]{1,2}:[0-9]{2})/);
+            if (dateMatch) {
+                // 例: "12/31(土) 10:02"
+                article.date = dateMatch[1] + " " + dateMatch[2];
+            }
+        }
+
+        // -------------------
+        // メディア名の抽出
+        // -------------------
+        let mediaStart = item.indexOf('class="sc-1t7ra5j-9 dIJJqB">') + 'class="sc-1t7ra5j-9 dIJJqB">'.length;
+        let mediaEnd = item.indexOf('</span>', mediaStart);
+        if (mediaStart > -1 && mediaEnd > -1) {
+            article.media = item.substring(mediaStart, mediaEnd).trim();
+        }
+
+        // -------------------
+        // 有効なタイトルとURLがある場合のみ追加
+        // -------------------
+        if (article.title && article.url) {
+            articles.push(article);
+        }
+
+    } catch (err) {
+        node.error("Error while parsing article: " + err.message);
+        // スキップ
+        continue;
+    }
+}
+
+// (5) 先頭3件の配列を msg.payload に
+msg.payload = articles;
+return msg;
+```
+</details>
+
+こちらで3件のデータを次のchangeノードへと送ることができました。
+
+### 2-3.changeノードを変更する
+
+それぞれのニュースからURLだけを取り出し、同時にLINEへ送る設定をしていきます。  
+短い式だけで配列の要素を取り出したり、結合できるJSONata式を使います。
+
+今回はプロパティの代入する値にJSONataを選択し、`$join(payload[ ].url, "\n")`を入れます。
+
+【$join(payload[ ].url, "\n`】
+
+- \n：改行です。
+- ニュースのURLを3つこのように表示する　という意味になります。
+
+<img src="https://i.gyazo.com/b19cffe4e6a31ed4e45fb79958a80d7c.png" width="250px" alt="image from gyazo"/>
+
+これで岩手県のニュース3つを同時に送る準備ができました。
+<img src="https://i.gyazo.com/c558c08d0b7c0f9c3af84c21705c9702.png" width="350px" alt="image from gyazo"/>
+
+後の設定は変えず、デプロイしてinjectノードの小さい四角ボタンをクリックします。  
+LINEに岩手県のニュースが同時に３件送られているか見てみましょう！
+
+</details>
+
+LINEに岩手県のニュースが３件送られてきました！
+
+<img src="https://i.gyazo.com/9d4b0bad0636fbd9a4ba57ae4344f93c.png" width="250px" alt="image from gyazo"/>
 
 
 ## チャレンジ課題
 
-- 他のWebサイトからスクレイピングしてLINE Botに通知する仕組みを作る
+- 時間がある方は、他のWebサイトからスクレイピングしてLINE Botに通知する仕組みを作ってみましょう！
 
 - [次の資料へ](./05_conclusion.md)
 - [トップページへ](./readme.md)
