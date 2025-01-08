@@ -60,7 +60,8 @@ changeノードを使って、岩手のニュースデータの全体から最�
 <img src="https://storage.googleapis.com/zenn-user-upload/93911cafabfd-20241230.png" width="450px" alt="image from gyazo"/> 
 
 これなに
-https://i.gyazo.com/d7e93814cba78d11ac6506e9dda179e3.png
+<img src="https://i.gyazo.com/d7e93814cba78d11ac6506e9dda179e3.png" width="450px" alt="image from gyazo"/> 
+
 
 
 
