@@ -39,10 +39,31 @@
 
 ### 1-2.changeノードを設定していく
 
-- `代入する値`の右側に`payload[0].url`を入れます。  
-ニュースの中で1番上に出てくる最新のデータを抽出したいURLの部分を取得する設定をしています。
+Node-REDでは、各ノード同士がデータを受け渡す際に「メッセージオブジェクト（msg）」という箱のようなものを使います。  
+その中に、実際に扱いたいデータを入れる場所として`payload`というものがあります。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/93911cafabfd-20241230.png" width="450px" alt="image from gyazo"/>
+現在ではhttp　requestで取得した岩手のニュースデータが、payloadに入っているイメージです。  
+そこで今回新たにchangeノードというものを使います。
+
+  - changeノードとは？  
+  ノードの間を流れるメッセージ(msg)の特定のプロパティ値を、書き換えたり、新規に作成できます。
+
+- changeノードを使って、岩手のニュースデータの全体から最新の１番上のニュースだけを抽出したいと思います。  
+
+イメージはこちらです。  
+左側に岩手のWebサイト、右側にNode-REDのデバックタブを載せています。
+上から1番目のニュース、2番目のニュース...と続いていきます。
+
+<img src="https://i.gyazo.com/d366f6f6c90a5bdd559c0e30db895429.png" width="450px" alt="image from gyazo"/>
+
+今回は１番上のニュースだけを抽出したいので、`代入する値`の右側に`payload[0].url`を入れます。  
+※[0] は「配列の1番目の要素を取り出す」書き方になります。
+<img src="https://storage.googleapis.com/zenn-user-upload/93911cafabfd-20241230.png" width="450px" alt="image from gyazo"/> 
+
+これなに
+https://gyazo.com/d7e93814cba78d11ac6506e9dda179e3
+
+
 
 ### 1-3.Pushノードを設定していく
 
