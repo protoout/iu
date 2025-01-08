@@ -52,18 +52,12 @@ changeノードを使って、岩手のニュースデータの全体から最�
 左側に岩手のWebサイト、右側にNode-REDのデバックタブを載せています。
 上から1番目のニュース、2番目のニュース...と続いていきます。
 
-<img src="https://i.gyazo.com/d366f6f6c90a5bdd559c0e30db895429.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/d366f6f6c90a5bdd559c0e30db895429.png" width="350px" alt="image from gyazo"/>
 
 今回は１番上のニュースだけを抽出したいので、`代入する値`の右側に`payload[0].url`を入れます。  
 ※[0] は「配列の1番目の要素を取り出す」書き方になります。  
 
-<img src="https://storage.googleapis.com/zenn-user-upload/93911cafabfd-20241230.png" width="450px" alt="image from gyazo"/> 
-
-これなに
 <img src="https://i.gyazo.com/d7e93814cba78d11ac6506e9dda179e3.png" width="450px" alt="image from gyazo"/> 
-
-
-
 
 
 ### 1-3.Pushノードを設定していく
