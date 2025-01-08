@@ -109,7 +109,7 @@ LINE Botに最新ニュース1件を通知する仕組みは作れましたね�
   - **自分で作ってみたい方は[ChatGPT](https://chatgpt.com/)に聞きながらトライしてみましょう！**
     - 【ヒント】  
       -  1件の場合と複数件ある場合ではデータの扱い方や最終的にどのような形式で使いたいのかで設定が変わってきます。
-      -  Functionノードのコードの変更：の最新ニュース1件から3件へ変える必要があり、同時にLINEに表示できるようにします。  
+      -  Functionノードのコードの変更：最新ニュース1件から3件へ変える必要があり、同時にLINEに表示できるようにします。  
       -  changeノード：代入する値を変える必要があります。
 
 <details>
@@ -228,7 +228,8 @@ return msg;
 <img src="https://i.gyazo.com/b19cffe4e6a31ed4e45fb79958a80d7c.png" width="250px" alt="image from gyazo"/>
 
 これで最新のニュース3つを同時に送る準備ができました。
-<img src="https://i.gyazo.com/c558c08d0b7c0f9c3af84c21705c9702.png" width="350px" alt="image from gyazo"/>
+
+<img src="https://i.gyazo.com/c558c08d0b7c0f9c3af84c21705c9702.png" width="250px" alt="image from gyazo"/>
 
 後の設定は変えず、デプロイしてinjectノードの小さい四角ボタンをクリックします。  
 LINEに最新のニュースが同時に３件送られているか見てみましょう！
@@ -237,7 +238,7 @@ LINEに最新のニュースが同時に３件送られているか見てみま�
 
 LINEに最新のニュースが３件送られてきました。完成です！
 
-<img src="https://i.gyazo.com/9d4b0bad0636fbd9a4ba57ae4344f93c.png" width="250px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/9d4b0bad0636fbd9a4ba57ae4344f93c.png" width="350px" alt="image from gyazo"/>
 
 
 ## チャレンジ課題
