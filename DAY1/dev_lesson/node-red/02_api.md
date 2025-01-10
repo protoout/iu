@@ -28,27 +28,27 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 
 - 新しい作業場所ができたら、パレット内 `共通`の中にある`injectノード`をワークスペースに入れます。  
 
-<img src="https://storage.googleapis.com/zenn-user-upload/974fb1f435f7-20241229.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/cc9ddfec339a497fd5ed6691f6d82a76.png" width="450px" alt="image from gyazo"/>
 
 - パレット内`ネットワーク`の中にある`http requestノード`をワークスペースに入れます。  
 先ほどのinjectノードの右側に配置します。 
 
-<img src="https://storage.googleapis.com/zenn-user-upload/46441f5b74ab-20241229.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/bbf4d2dc2deb62ce0ef1dda3021346b1.png" width="450px" alt="image from gyazo"/>
 
 - パレット内`機能`の中にある`functionノード`をワークスペースに入れます。  
 先ほどのhttp requestノードの右側に配置します。 
 
-<img src="https://storage.googleapis.com/zenn-user-upload/6cb078a62397-20241229.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/0c15b0c8efbd7b2f5f459bf13d6f8aa0.png" width="450px" alt="image from gyazo"/>
 
 - パレット内`共通`の中にある`debugノード`をワークスペースに入れます。  
 先ほどのfunctionノードの右側に配置します。 
 
-<img src="https://storage.googleapis.com/zenn-user-upload/a981684dfbba-20241229.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/e8ac2f47d88e99c05f7465a918287252.png" width="450px" alt="image from gyazo"/>
 
 - 各ノードの間を線で繋げていきます。  
 左側のノードの終わり（小さな四角の部分）から、右側のノードの始まり（小さな四角の部分）を長押しして線を引っ張るイメージです。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/8f5733678747-20241229.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/915159e20d4565c71891d3daea04238d.png" width="450px" alt="image from gyazo"/>
 
 
 ## 3.Webサイトのデータを取得する
@@ -62,7 +62,7 @@ YahooのWebサイトから岩手県の最新ニュースデータを取得して
 - Yahooニュースの岩手日報のURLをコピーします。  
 https://news.yahoo.co.jp/media/iwatenpv
 
-<img src="https://storage.googleapis.com/zenn-user-upload/fe7916b1e7b1-20241229.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/63f2ed005cf6873b321abcd1dff28c84.png" width="450px" alt="image from gyazo"/>
 
 - Node-REDの画面に戻り、http requestノードをダブルクリックします。  
 プロパティ内の`URL`部分に岩手日報のURLを貼り付けます。  
@@ -70,7 +70,7 @@ https://news.yahoo.co.jp/media/iwatenpv
 
   - 補足：プロパティとは設定のようなものです。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/3e746113176c-20241230.png" width="350px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/4ef6e10c0946c055d826acd76b8555dd.png" width="250px" alt="image from gyazo"/>
 
 - 右上の`完了`ボタンを押します。  
 これでhttp requestノードの設定はOKです。
@@ -82,7 +82,7 @@ Yahooニュースの岩手日報のデータを取る準備ができたので、
 
 - Functionノードをダブルクリックすると、プロパティが出てきます。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/289d743b549a-20241229.png" width="350px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/df6cbf4afa383d1f9754fea2089bf0c1.png" width="350px" alt="image from gyazo"/>
 
 - プロパティ内のコードにあるものを１度全部クリアにし、真っ白な状態にします。
 
@@ -151,7 +151,7 @@ return msg;
 
 - コードを貼り付けて、このような画面になればOkです。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/08060f08dd23-20241229.png" width="350px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/f9cb6fab69fb5ddc5ea4766c022fd8e8.png" width="350px" alt="image from gyazo"/>
 
 ### 3-3.データを取得できているか確認する
 
