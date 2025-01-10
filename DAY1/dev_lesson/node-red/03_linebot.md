@@ -9,7 +9,7 @@
 
 - injectノードで設定した言葉をLINE Botに通知する簡単な仕組みを作ります。  
 
-<img src="https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/71e99211125ebd2878c26415faf01c17.png" width="450px" alt="image from gyazo"/>
 
 
 ## 1.LINEのノードをインストールをする
@@ -24,12 +24,12 @@
 - ノードを検索という欄で`node-red-contrib-line-messaging-api`と検索します。  
 右下の`ノード追加`を選択します。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/ced7848977a6-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/1f3e1e532ccfb87867402b1b1007f067.png" width="450px" alt="image from gyazo"/>
 
 - パレット内にLINEのノードが追加されました。  
 追加が確認できたら、無事にインストール完了です！
 
-<img src="https://storage.googleapis.com/zenn-user-upload/ef516502f3da-20241230.png" width="250px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/10793eb4490b9f01a15038b05b6f7168.png" width="250px" alt="image from gyazo"/>
 
 
 ## 2.LINE Botにメッセージを送る
@@ -85,7 +85,7 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 LINE Developersを開きます。  
 [LINE Developers](https://developers.line.biz/ja/)
 
-<img src="https://storage.googleapis.com/zenn-user-upload/c34f46811fe4-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/d0e686bfc45aac7de185f17d8a139de4.png" width="450px" alt="image from gyazo"/>
 
 **miiboの時に使用したLINE Botと一緒のチャネルで大丈夫です。**
 
@@ -159,7 +159,7 @@ LINE Developersを開きます。
 
 - LINE Botに`Node-REDから文字の送信`というメッセージが通知されていたらOKです！
 
-<img src="https://storage.googleapis.com/zenn-user-upload/1685ed3f0709-20241230.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/3009e9a5e6314df516af39e652423644.png" width="450px" alt="image from gyazo"/>
 
 
 ## チャレンジ課題
