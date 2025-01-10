@@ -9,10 +9,11 @@
 
 ## このパートで作るもの
 
-- Node-REDとGitHub Codespacesを下記の画面まで一緒に作っていきます。
+- Node-REDを下記の画面まで一緒に作っていきます。
 
 Node-REDの画面  
-<img src="https://i.gyazo.com/522659c78c07734d1cd4f30ce1b47764.png" width="450px" alt="image from gyazo"/>
+
+<img src="https://i.gyazo.com/7fedae03d40dee6e3da1e9cc56e2e36a.png" width="450px" alt="image from gyazo"/>
 
 
 ## 1.GitHub Codespacesを使う
