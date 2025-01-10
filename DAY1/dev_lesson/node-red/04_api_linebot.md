@@ -8,9 +8,11 @@
 
 - LINE Botに岩手県の最新ニュース1件を通知する仕組みを作ります。
 
+<img src="https://i.gyazo.com/8af5a416925fbfd4f2173d07b002ef59.png" width="450px" alt="image from gyazo"/>
+
 - 応用で、LINE Botに岩手県の最新ニュース3件を通知する仕組みを作ります。
 
-<img src="https://i.gyazo.com/8af5a416925fbfd4f2173d07b002ef59.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/4f3ae69be01cd23e961eb2569ef8e7b7.png" width="450px" alt="image from gyazo"/>
 
 
 ## 1.最新のニュース1件をLINEに通知させる
@@ -246,7 +248,7 @@ LINEに最新のニュースが同時に３件送られているか見てみま�
 
 LINEに最新のニュースが３件送られてきました。完成です！
 
-<img src="https://i.gyazo.com/4f3ae69be01cd23e961eb2569ef8e7b7.png" width="350px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/4f3ae69be01cd23e961eb2569ef8e7b7.png" width="450px" alt="image from gyazo"/>
 
 
 ## チャレンジ課題
