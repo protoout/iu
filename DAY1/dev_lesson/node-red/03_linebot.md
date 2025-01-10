@@ -155,7 +155,7 @@ LINE Developersを開きます。
 - injectノードの左側にある四角いボタンを１度押します。  
 これにより左から右へ処理が実行されていきます。
 
-<img src="https://i.gyazo.com/7f5a479bdedaf0f2e6068ecaf383f31b.png" width="350px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/7f5a479bdedaf0f2e6068ecaf383f31b.png" width="450px" alt="image from gyazo"/>
 
 - LINE Botに`Node-REDから文字の送信`というメッセージが通知されていたらOKです！
 
