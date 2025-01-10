@@ -166,5 +166,7 @@ LINE Developersを開きます。
 
 - LINE Botに通知するメッセージを変えてみましょう。
 
+---
+
 - [次の資料へ](./04_api_linebot.md)
 - [トップページへ](./readme.md)
