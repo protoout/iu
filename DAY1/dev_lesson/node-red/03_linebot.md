@@ -85,7 +85,7 @@ LINE Botと連携するため、チャネルシークレットやアクセスト
 LINE Developersを開きます。  
 [LINE Developers](https://developers.line.biz/ja/)
 
-<img src="https://i.gyazo.com/c271fcc9e3b7959f3ea6fc2fa1b157e3.png" width="350px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/c271fcc9e3b7959f3ea6fc2fa1b157e3.png" width="450px" alt="image from gyazo"/>
 
 **miiboの時に使用したLINE Botと一緒のチャネルで大丈夫です。**
 
