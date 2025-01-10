@@ -9,7 +9,7 @@
 - LINE Botに岩手県の最新ニュース1件を通知する仕組みを作ります。
 
 - 応用で、LINE Botに岩手県の最新ニュース3件を通知する仕組みを作ります。
-
+✅変更
 <img src="https://i.gyazo.com/34f75775036a4e0b40a7e5d45253ec3f.png" width="450px" alt="image from gyazo"/>
 
 
@@ -72,7 +72,7 @@ Node-REDでは、各ノード同士がデータを受け渡す際に「メッセ
 
 プロパティの画面  
 先ほどLINEの鉛筆マークの画面の中は設定しているので、開くだけでアカウントを選択できます。
-
+✅変更
   <img src="https://i.gyazo.com/3dc4b2a6063fae9863af90d6443e8562.png" width="450px" alt="image from gyazo"/>
 
   ### 1-4.LINE Botで岩手県の最新ニュースが1件来ているか通知の確認をする
@@ -83,7 +83,7 @@ Node-REDでは、各ノード同士がデータを受け渡す際に「メッセ
 これにより左から右へ処理が実行されていきます。
 
 - LINE Botに、最新ニュースが1件通知が来ていたらOKです！
-
+✅変更
 <img src="https://i.gyazo.com/34f75775036a4e0b40a7e5d45253ec3f.png" width="450px" alt="image from gyazo"/>
 
 ※YahooのWebサイトも見てみると、最新ニュースがLINE Botに抽出されていることが確認できます！
@@ -237,7 +237,7 @@ return msg;
 LINEに最新のニュースが同時に３件送られているか見てみましょう！
 
 </details>
-
+✅変更
 LINEに最新のニュースが３件送られてきました。完成です！
 
 <img src="https://i.gyazo.com/9d4b0bad0636fbd9a4ba57ae4344f93c.png" width="350px" alt="image from gyazo"/>
@@ -245,7 +245,8 @@ LINEに最新のニュースが３件送られてきました。完成です！
 
 ## チャレンジ課題
 
-- 時間がある方は、他のWebサイトからスクレイピングしてLINE Botに通知する仕組みを作ってみましょう！
+- 時間がある方は、他の都道府県のニュースデータを取得してLINE Botに通知する仕組みを作ってみましょう！  
+  - 通知する件数なども変えてトライしてみてください。
 
 - [次の資料へ](./05_conclusion.md)
 - [トップページへ](./readme.md)
