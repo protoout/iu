@@ -130,7 +130,10 @@ AIはこの入力をもとに応答を生成しています。
 完成したエージェントが公開できているか自分のスマートフォンで確認してみましょう。  
 QRコードから開いてみてください。
 
-<img src="https://i.gyazo.com/60f3beaa4d914249e76f940c42e3ba49.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/597288957da2bc671eb647606a15a2f2.png" width="350px" alt="image from gyazo"/>
+ 
+<img src="https://i.gyazo.com/60f3beaa4d914249e76f940c42e3ba49.png" width="350px" alt="image from gyazo"/>
+
 
 ### チャレンジ
 
