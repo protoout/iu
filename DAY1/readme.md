@@ -6,7 +6,8 @@
 
 ## ■ オープニング 13:00~13:30
 
-- [OP](https://www.canva.com/design/DAGFRK1eRKU/xhOCYN_9X-UmaHFYhTR5Fw/edit)
+- [OP](https://www.figma.com/slides/DHnlIroTewiPkzOC7YeZ2m/2025_%E5%B2%A9%E6%89%8B%E5%A4%A7%E5%AD%A6DAY1_OP?node-id=14-47&t=R2oDjWMXwtL6MYIx-1)
+    - [ワークシート](https://docs.google.com/spreadsheets/d/1yLajd9JEMNv0urU73ieXg5O-b04ziGM9nMxa_579_3A/edit?gid=0#gid=0&fvid=608767121)
     - 担当: のびすけ
 
 ## ■ 実装授業1 13:30~14:20
@@ -16,7 +17,7 @@
 
 ## ■ 生成AIの話 14:30~15:00
 
-- 最近の生成AI話題を話す予定
+- [最近の生成AI話題など](https://www.figma.com/slides/ju2PATeze9rKFTaLpDVT8f/2025_%E5%B2%A9%E6%89%8B%E5%A4%A7%E5%AD%A6DAY1_%E7%94%9F%E6%88%90AI?node-id=1-25&t=Jm6puKb27BRCw7OR-1)
     - 担当: のびすけ
 
 ## ■ 実装授業2 15:00~15:50
