@@ -32,6 +32,9 @@ Node-REDの画面
 **補足**
 [参考：GitHub Codespacesの再開とタイムアウト時間の設定](https://zenn.dev/protoout/articles/77-github-codespaces-restart)
 
+**npmインストール**
+- ターミナルに`npm install node-red`をコピペしてエンターキーで実行する
+- ターミナルに`npm start`でブラウザが開きます
 
 ## 2.Node-REDの環境について
 
