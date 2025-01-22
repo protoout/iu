@@ -17,7 +17,7 @@
 
 ## ■ 生成AIの話 14:30~15:00
 
-- [最近の生成AI話題など](https://www.figma.com/slides/ju2PATeze9rKFTaLpDVT8f/2025_%E5%B2%A9%E6%89%8B%E5%A4%A7%E5%AD%A6DAY1_%E7%94%9F%E6%88%90AI?node-id=1-25&t=Jm6puKb27BRCw7OR-1)
+- [最近の生成AI話題など](https://www.canva.com/design/DAGc41-L3Ow/1i0OgBJni4SCEsyhDwV0qw/edit?utm_content=DAGc41-L3Ow&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
     - 担当: のびすけ
 
 ## ■ 実装授業2 15:00~15:50
