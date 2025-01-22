@@ -32,6 +32,9 @@ Node-REDの画面
 **補足**
 [参考：GitHub Codespacesの再開とタイムアウト時間の設定](https://zenn.dev/protoout/articles/77-github-codespaces-restart)
 
+**npmインストール**
+- ターミナルに`npm install node-red`をコピペしてエンターキーで実行する
+- ターミナルに`npm start`でブラウザが開きます
 
 ## 2.Node-REDの環境について
 
@@ -50,11 +53,18 @@ Node-REDを構成する基本的な構成要素で、処理をする機能（プ
 - メッセージはJSONというデータで構成されます。  
 <img src="https://i.gyazo.com/b2e38a11e61da1ad55ff387493b71891.png" width="450px" alt="image from gyazo"/>
 
+JSONとは？  
+分類された情報を、コンピュータでも理解できるように書き表した形式です。  
+キーと値はセットです。ここでいうと、キーが値段、値が400となります。
+
+ <img src="https://i.gyazo.com/9e39344807c2dac8d510fac6ffaf1d10.png" width="350px" alt="image from gyazo"/>
+ 
+ 人間にとっても読みやすいですね。  
+
 
 ### 2-2.画面の構成
 
 Node-REDを立ち上げることができました。  
-実際の画面を一緒に見てみましょう。
 
 - パレット：ノードが置かれているエリアです。  
 インストールしてノードを増やすこともできます。
