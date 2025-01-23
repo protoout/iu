@@ -43,8 +43,7 @@ LINE Developers：https://developers.line.biz/ja/
 <img src="https://i.gyazo.com/7f302b0956c1aad41c0bc2a4de975328.png" width="450px" alt="image from gyazo"/>
 <img src="https://i.gyazo.com/5f707875217adfc29bf322a485029573.png" width="450px" alt="image from gyazo"/>
 
-- 応答機能を確認します  
-  - あいさつメッセージは有効になっていることがおすすめです。  
+- 応答機能を確認します
   右側の`編集`ボタンから下記のように設定しておきます。
 
 <img src="https://i.gyazo.com/d9a707b5b85c3401cc2b9b536ba71104.png" width="450px" alt="image from gyazo"/>
