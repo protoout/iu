@@ -51,7 +51,7 @@ LINE Developers：https://developers.line.biz/ja/
 応答メッセージは下記のように設定しておきます。  
 - チャット：オフ　
 - 挨拶メッセージ：オン
-- Webhook：オフ（現時点では選択できない仕様になっています ※理由は下記に参照）
+- Webhook：オフ（現時点では選択できない仕様になっています ※理由は下記「応答メッセージの機能について」に参照）
 - 応答メッセージ：オフ
 
 <img src="https://i.gyazo.com/9ea92e7237b87af7e59feb8b3d576c0e.png" width="450px" alt="image from gyazo"/>
