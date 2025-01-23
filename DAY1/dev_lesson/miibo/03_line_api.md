@@ -56,7 +56,9 @@ LINE Developers：https://developers.line.biz/ja/
 
 <img src="https://i.gyazo.com/9ea92e7237b87af7e59feb8b3d576c0e.png" width="450px" alt="image from gyazo"/>
 
-#### 応答メッセージの機能について
+<details>
+
+<summary>応答メッセージの機能について</summary>
 
 - **チャット**  
   アカウント管理画面からユーザーと手動でメッセージのやり取りができます。
@@ -103,7 +105,8 @@ LINE Developers：https://developers.line.biz/ja/
       LINE公式アカウント：「こんにちは！お問い合わせありがとうございます。」  
 
 > 今回は、応答をカスタマイズしてユーザーのニーズに合わせた返信を実現するため、オフにしています。
- 
+
+</details>
 
 ## 2.miiboにLINEの情報を登録する
 
