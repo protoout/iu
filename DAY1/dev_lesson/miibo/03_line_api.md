@@ -18,7 +18,7 @@
 
 LINEの公式アカウントの登録ができている状態か見てみましょう！
 
-- [LINE Official Acount Manager](https://manager.line.biz/)にアクセスをして自分の作ったアカウントが表示され選択できる。
+- [LINE Official Acount Manager](https://manager.line.biz/)にアクセスをして自分の作ったアカウントが表示され選択できる状態になっている。
 
 <img src="https://i.gyazo.com/18b2af51de0816270f5d3cb1ad7747b0.png" width="350px" alt="image from gyazo"/>
 
