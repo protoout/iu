@@ -35,10 +35,7 @@ LINEの公式アカウントの登録ができている状態か見てみまし�
 ## 1.LINEの情報を取得する
 
 - [こちらの資料](https://zenn.dev/protoout/articles/16-line-bot-setup)にアクセスをします。
-  「4. Messaging APIの有効化」のパートから作っていきます。
-
-- 「5-2. チャネルアクセストークンの取得」まで作ります。
-<img src="https://i.gyazo.com/5f707875217adfc29bf322a485029573.png" width="450px" alt="image from gyazo"/>
+`4. Messaging APIの有効化`〜`5-2. チャネルアクセストークンの取得`まで作ります。
 
 - 次に、応答機能を確認します  
   「Messaging API設定」のタブの「応答メッセージ」で、右側の`編集`ボタンから設定していきます。
