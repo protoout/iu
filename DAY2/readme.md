@@ -18,5 +18,5 @@
 
 - クロージング
     - まとめ
-    - アンケート案内
+    - アンケート案内：[アンケートはこちら](https://docs.google.com/forms/d/e/1FAIpQLSfoms4LLu6tKTExfjoR1ocU1wjxRmpqyazXIuYepEnd94VtzQ/viewform?usp=dialog)
     - 担当: わち
