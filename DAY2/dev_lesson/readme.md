@@ -38,16 +38,15 @@
 
 ### 事前準備 
 #### 1. Node-REDのおさらいと予習
-  [こちら](../..//DAY1/dev_lesson/node-red)のページから Day1 で少し触れた Node-RED の内容を学んでください
+  Day1 で触れた Node-RED の内容を学んでください。リンクは[こちら](../..//DAY1/dev_lesson/node-red)
   
-  ![image](https://github.com/user-attachments/assets/3ace0f09-79ff-4c00-949f-722db0f9a635)
-
-
+  ![image](https://github.com/user-attachments/assets/00139787-1a36-456f-8423-ecae8688c26b)
+  
 #### 2. obnizの Wi-Fi 接続
-  既に実施しているかもしれませんが、設定が必要な方は[こちら](./obniz/00_wifiset_obniz.md)をご確認ください。
+  既に実施しているかもしれないので、設定が必要な方のみ。リンクは[こちら](./obniz/00_wifiset_obniz.md)
 
 #### 3. 使うツール
-  [こちら](./tools.md)のページに必要なものを書いています
+  今回必要なものを記載しているので、念のため確認をお願いします。リンクは[こちら](./tools.md)
 
 ----
   
@@ -108,7 +107,7 @@
   - サーボモーターの応用
 
 > [!NOTE]
-> もしobnizで複数のパーツを同時に使いたい時は[こちら]を参考にしてください(.obniz/obniz-tips.md)
+> もしobnizで複数のパーツを同時に使いたい時は[こちら](.obniz/obniz-tips.md)を参考にしてください
 
 ----
 
@@ -123,7 +122,9 @@
 **ゴール:** 企画と技術の両面を見て簡単なプロダクトに落とし込む
 
 **フォーマット:**  
-- 制作物　※パワーポイントなどの資料を作成する必要はありません
+- 制作物
+> [!CAUTION]
+> パワーポイントなどの資料を作成する必要はありません
 
 ![image](https://github.com/user-attachments/assets/d6c482fc-82a2-4d39-83ba-8ec815cce5bb)
 
