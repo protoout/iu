@@ -135,13 +135,13 @@
 ----
 ### Lesson02 【14:30〜14:40】
 
+#### ～横井さんからTips紹介～
+
 ----
 
 ### Lesson03 これまで学んだことを使ってIoTプロトタイプを作ってみよう【14:40〜15:15】
 
 **やること:** 今日学んだことをフル活用して、アイデアを形にしてみましょう  
-
-  皆さんに持ってきていただいた
   
 **ゴール:** 企画と技術の両面を見て簡単なプロダクトに落とし込む
 
@@ -151,6 +151,9 @@
 > パワーポイントなどの資料を作成する必要はありません
 
 ![image](https://github.com/user-attachments/assets/d6c482fc-82a2-4d39-83ba-8ec815cce5bb)
+
+制作に移る前に、[こちら](https://docs.google.com/spreadsheets/d/1yLajd9JEMNv0urU73ieXg5O-b04ziGM9nMxa_579_3A/edit?usp=sharing
+)のスプレッドシートに制作案を記載してください！ 
 
 ----
 
