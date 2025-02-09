@@ -51,6 +51,8 @@
 ## IoTの世界に飛び込もう！obnizとNode-REDで手を動かして学ぶIoT
 
 ### 事前準備 
+
+<details><summary>事前準備確認</summary>
 #### 1. Node-REDのおさらいと予習
   Day1 で触れた Node-RED の内容を学んでください。リンクは[こちら](../..//DAY1/dev_lesson/node-red)
   
@@ -61,6 +63,7 @@
 
 #### 3. 使うツール
   今回必要なものを記載しているので、念のため確認をお願いします。リンクは[こちら](./tools.md)
+</details>
 
 ----
   
