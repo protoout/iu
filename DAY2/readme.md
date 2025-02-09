@@ -9,14 +9,14 @@
 - [OP](https://www.canva.com/design/DAGFRK1eRKU/xhOCYN_9X-UmaHFYhTR5Fw/edit)
     - 担当: のびすけ
 
-## ■実装授業 13:15~15:50
+## ■実装授業 13:15~15:45
 
 - [obnizでIoTや電子工作に触れるハンズオン](./dev_lesson/)
     - 担当: わち
 
-## ■ 締め 15:50~16:00
+## ■ 締め 15:45~16:00
 
 - クロージング
     - まとめ
     - アンケート案内：[アンケートはこちら](https://docs.google.com/forms/d/e/1FAIpQLSfoms4LLu6tKTExfjoR1ocU1wjxRmpqyazXIuYepEnd94VtzQ/viewform?usp=dialog)
-    - 担当: わち
+    - 担当: のびすけ
