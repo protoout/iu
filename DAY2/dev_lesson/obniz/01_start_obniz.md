@@ -27,16 +27,20 @@ obniz は専用のクラウドを使ってインターネット経由で簡単�
 - M5Stack
 - microbit
 - ESP32 / ESP8266
- 
+  
+----  
+  
 ## Node-RED で obniz を動かしてみる
 
-では早速 obniz を動かしてみましょう。まだセンサーは使いません  
-電源をつなぎ QR コードとID(XXXX-XXXXの数字)が表示されている状態からスタートします
-
 > [!WARNING]
-> obniz ID をどこかに控えておきましょう  
-> だだしSNSなどには公開しないようにしましょう  
-> obniz IDが他人に知られると、悪意を持って操作される可能性があります  
+> **使う場所に注意！**  
+> obniz はノートパソコンの上に置かず、机の上など電気を通さない場所に置きましょう。
+> 
+では早速 obniz を動かしてみましょう。まだセンサーは使いません！  
+電源をつなぎ QR コードとID(XXXX-XXXXの数字)が表示されている状態からスタートします  
+  
+**※ obniz ID はSNSなどには公開しないようにしましょう**
+
 
 ### 1. Node-RED に obniz 用のノードを追加する  
   
@@ -75,9 +79,10 @@ obniz-functionノードはノードの一覧の下の方の「その他」に入
 <img width="50%" alt="image" src="https://github.com/user-attachments/assets/db06cb0d-1813-4417-831b-46e504383547" />
 
 `obniz ID` に obniz に表示されている番号を入れます(「-」あり)  
-`device type` を obniz 1Y にします
-<img width="50%" alt="image" src="https://github.com/user-attachments/assets/f89dd30f-53df-407c-9224-a01015660c45" />
-
+`device type` を obniz 1Y にします  
+  
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/f89dd30f-53df-407c-9224-a01015660c45" />  
+  
 
 コードに以下を記述  
 
