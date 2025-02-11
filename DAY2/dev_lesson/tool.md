@@ -36,7 +36,9 @@
   ![image](https://github.com/user-attachments/assets/bb5b40a4-476e-4f40-908c-1b72d41d7bf0)  
 
   
-## その他	ブレッドボード  
+## その他  	
+  
+- ブレッドボード  
   
 - ジャンパワイヤー	オス-オス	http://akizukidenshi.com/catalog/g/gC-05371  
   ![image](https://github.com/user-attachments/assets/bf94862e-b8a3-428d-b861-834a6e3bcf63)  
