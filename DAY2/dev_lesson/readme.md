@@ -50,16 +50,24 @@
    
 2. [Lチカしてみよう](./obniz/02_obniz-LED.md)
    
-3. [サーボモーター](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
-   
-4. [超音波測距センサーで距離を取得しよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-distance-hcsr04)
-   
-5. 自由につくってみよう！  
+3. [サーボモーターを動かしてみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
+       
+     **`obniz-close` で停止を確認して次へ！**
+     
+     早く終わった方はこちらの課題にも挑戦してみてください  
+     👨‍💻 応用課題: [連続でサーボモーターを動かしてみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)  
+    
+5. [超音波測距センサーで距離を取得しよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-distance-hcsr04)  
+     
+     **`obniz-close` で停止を確認して次へ！**
+     早く終わった方はこちらの課題にも挑戦してみてください  
+     👨‍💻 応用課題: 手を近づけたら好きな言葉が出力する (資料無し！🥶)
+       
+7. 自由につくってみよう！  
     例題を用意しました！挑戦してみたいことがあればこの例以外のものでも構いません！
      - スピーカーで曲を作ってみよう
      - 時間で信号を切り替えてみよう
      - ものが近づいたらLEDを光らせてみよう
-
 
 > [!TIP]
 > 他のセンサーの動かし方はこちらにまとまっています
@@ -118,4 +126,4 @@
 
 ----
 
-[ハンズオン終了です]()
+[ハンズオン終了お疲れさまでした]()
