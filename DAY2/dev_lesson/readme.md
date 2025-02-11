@@ -13,7 +13,7 @@
   既に実施しているかもしれないので、設定が必要な方のみ。リンクは[こちら](./obniz/00_wifiset_obniz.md)
 
 #### 3. 使うツール
-  今回必要なものを記載しているので、念のため確認をお願いします。リンクは[こちら](./obniz/tools.md)
+  今回必要なものを記載しているので、念のため確認をお願いします。リンクは[こちら](./tools.md)
 
 </details>
 
@@ -51,24 +51,27 @@
 2. [Lチカしてみよう](./obniz/02_obniz-LED.md)
      
      早く終わった方はこちらの課題にも挑戦してみてください  
-     👨‍💻 応用課題: ほぼ同じ流れ！スピーカーを鳴らしてみよう  
-     [参考](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)  
-   
+     👨‍💻 応用課題: ほぼ同じ流れ！スピーカーを鳴らしてみよう  [参考](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)  
+     
 3. [サーボモーターを動かしてみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
        
      **`obniz-close` で停止を確認して次へ！**
        
      早く終わった方はこちらの課題にも挑戦してみてください  
-     👨‍💻 応用課題: 連続でサーボモーターを動かしてみよう  
-     [参考](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)  
-    
+     👨‍💻 応用課題: 連続でサーボモーターを動かしてみよう  [参考](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)  
+      
 4. [超音波測距センサーで距離を取得しよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-distance-hcsr04)  
        
-     **`obniz-close` で停止を確認して次へ！**
+
      早く終わった方はこちらの課題にも挑戦してみてください  
      👨‍💻 応用課題: 手を近づけたら好きな言葉が出力されるようにする (ヒント無し！🥶)
+     
+     **`obniz-close` で停止を確認して次へ！**
+     `obniz-repeat`を停止するノードは下図の通り  
+     <img width="50%" alt="image" src="https://github.com/user-attachments/assets/d0b9eb11-774f-4e43-8b99-96ca2c4d0d1c" />  
+
        
-5. 自由につくってみよう！  
+6. 自由につくってみよう！  
     例題を用意しました！挑戦してみたいことがあればこの例以外のものでも構いません！
      - スピーカーで曲を作ってみよう
      - ものが近づいたらLEDを光らせてみよう
@@ -111,7 +114,11 @@
 - 制作物
 > [!CAUTION]
 > パワーポイントなどの資料を作成する必要はありません
-  
+
+他のセンサーも紹介します！  
+  - 温湿度センサー
+  - 照度センサー
+
 制作に移る前に、[こちら](https://docs.google.com/spreadsheets/d/1yLajd9JEMNv0urU73ieXg5O-b04ziGM9nMxa_579_3A/edit?usp=sharing
 )のスプレッドシートに制作案を記載してください！   
   
