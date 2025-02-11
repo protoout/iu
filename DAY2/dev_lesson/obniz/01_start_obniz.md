@@ -104,3 +104,17 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 <img src="https://i.gyazo.com/03c351fabc467739a062d523f9a2622d.jpg" width="90%" />
 
 インターネット経由で obniz を操作しました！！
+
+## 5. ちょっと待った！接続を切りましょう✂
+
+Node-RED の場合、Node.js のプロセスは起動し続ける仕様なため、プログラムの起動ではなく接続の解除を行って停止を行います。  
+要するに、実はまだ接続は残っているのでノードを使ってちゃんと切りましょうということです！  
+  
+`obniz-closeノード`を使います。`injectノード`と繋いで実行します。  
+  
+<img src="https://github.com/user-attachments/assets/2bf4e492-0b16-4f9e-bb93-69c5b2995ec0" width="90%" />   
+  
+上手くいくと、obnizのディスプレイが元の QR コードと ID の画面に戻ります
+> [!CAUTION]
+> **新しいノードを実行する場合は、毎回必ずこのプロセスを実行しましょう！**  
+> 
