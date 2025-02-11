@@ -80,7 +80,7 @@ obniz-functionノードはノードの一覧の下の方の「その他」に入
 
 <img width="50%" alt="image" src="https://github.com/user-attachments/assets/db06cb0d-1813-4417-831b-46e504383547" />
 
-`obniz ID` に obniz に表示されている番号を入れます(「-」あり)  
+`obniz ID` に obniz に表示されている番号を入れます(ハイフンは有/無どちらでも大丈夫)  
 `device type` を obniz 1Y にします  
   
 <img width="50%" alt="image" src="https://github.com/user-attachments/assets/f89dd30f-53df-407c-9224-a01015660c45" />  
