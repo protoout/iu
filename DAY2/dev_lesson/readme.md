@@ -107,12 +107,12 @@
 - 制作物
 > [!CAUTION]
 > パワーポイントなどの資料を作成する必要はありません
-
-![image](https://github.com/user-attachments/assets/d6c482fc-82a2-4d39-83ba-8ec815cce5bb)
-
+  
 制作に移る前に、[こちら](https://docs.google.com/spreadsheets/d/1yLajd9JEMNv0urU73ieXg5O-b04ziGM9nMxa_579_3A/edit?usp=sharing
-)のスプレッドシートに制作案を記載してください！ 
-
+)のスプレッドシートに制作案を記載してください！   
+  
+![image](https://github.com/user-attachments/assets/d6c482fc-82a2-4d39-83ba-8ec815cce5bb)
+  
 ----
 
 ### Lesson4 成果物を発表しよう！【15:15〜15:45】  
