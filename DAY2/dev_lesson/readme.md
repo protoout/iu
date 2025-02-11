@@ -19,7 +19,7 @@
 
 ----
   
-### 今日はハードウェアにチャレンジします【13:10〜13:20】  
+### 今日はハードウェアにチャレンジします【13:15〜13:20】  
 
 0. [自己紹介](https://www.canva.com/design/DAGegVdPr2U/fbcdfSy6tN4Fwq-TduD3Xw/edit?utm_content=DAGegVdPr2U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
     
