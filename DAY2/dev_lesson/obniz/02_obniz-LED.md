@@ -106,6 +106,8 @@ return msg;
 > [!CAUTION]
 > **`obniz-close` で停止するのをお忘れなく！**  
 
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/e4a667dd-f30f-4f7b-8638-7e76f4d64fe5" />
+
 
 ----  
 
@@ -115,3 +117,7 @@ return msg;
 > **LEDをチカチカさせること** です。
 
 **ハードウェアの世界に一歩足を踏み入れました🎊**
+  
+----  
+  
+[戻る](../)
