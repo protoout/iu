@@ -6,10 +6,9 @@
 
 ## ■ オープニング 13:00~13:10
 
-- [OP](https://www.canva.com/design/DAGFRK1eRKU/xhOCYN_9X-UmaHFYhTR5Fw/edit)
     - 担当: のびすけ
 
-## ■実装授業 13:40~15:50
+## ■実装授業 13:10~15:50
 
 - [obnizでIoTや電子工作に触れるハンズオン](./dev_lesson/)
     - 担当: わち
@@ -17,6 +16,8 @@
 ## ■ 締め 15:50~16:00
 
 - クロージング
+    - [OP資料振り返り](https://www.figma.com/slides/DHnlIroTewiPkzOC7YeZ2m/2025_%E5%B2%A9%E6%89%8B%E5%A4%A7%E5%AD%A6DAY1_OP?node-id=14-47&t=R2oDjWMXwtL6MYIx-1)
+        - [ワークシート](https://docs.google.com/spreadsheets/d/1yLajd9JEMNv0urU73ieXg5O-b04ziGM9nMxa_579_3A/edit?gid=0#gid=0&fvid=608767121)
     - まとめ
     - アンケート案内
-    - 担当: わち
+    - 担当: のびすけ
