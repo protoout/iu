@@ -12,51 +12,47 @@
 
 <img src="https://i.gyazo.com/7b3929bf5dd796a84f81600102e18709.png" width="250px" alt="image from gyazo"/>
 
+## 事前準備の確認
+
+参考：[事前準備資料](https://zenn.dev/protoout/articles/16-line-bot-setup)
+
+LINEの公式アカウントの登録ができている状態か見てみましょう！
+
+- [LINE Official Acount Manager](https://manager.line.biz/)にアクセスをして自分の作ったアカウントが表示され選べる状態になっている。
+
+<img src="https://i.gyazo.com/18b2af51de0816270f5d3cb1ad7747b0.png" width="350px" alt="image from gyazo"/>
+
+- アカウントを選んで開くと下記の画面になっている。
+
+<img src="https://i.gyazo.com/546cf492038cee6962d9b8dfa4ca2c04.png" width="350px" alt="image from gyazo"/>
+
+- スマートフォンでLINEの公式アカウントが友達追加されている。
+
+<img src="https://i.gyazo.com/222275d75045bed314557e8526f3750d.png" width="250px" alt="image from gyazo"/>
+
+確認できたら早速作っていきましょう！
 
 ## 1.LINEの情報を取得する
 
-### 1-1.LINEのチャネルを開く
+- [こちらの資料](https://zenn.dev/protoout/articles/16-line-bot-setup)にアクセスをします。  
+`4. Messaging APIの有効化`〜`5-2. チャネルアクセストークンの取得`まで作ります。
 
-- LINE Developersにログインします。  
-`コンソールからログイン`→`LINEアカウントでログイン`→`ログイン`  
-LINE Developers：https://developers.line.biz/ja/
-
-- コンソールから事前に作ったプロバイダーの中のチャネルを開きます  
-
-<img src="https://i.gyazo.com/6ab44ffa9a4744ccbed2a54094ad6af6.png" width="450px" alt="image from gyazo"/>
-
-
-### 1-2.LINEの情報を取得する
-
-- 「チャネル基本設定」のタブから「チャネルシークレット」を取得します
-  - 発行されていなければ、`発行`ボタンをクリックして文字列をコピーします。  
-  コピーしたら、パソコンに搭載されているメモ帳、付箋、Wordなどに貼り付けて控えておきましょう。
-
-<img src="https://i.gyazo.com/4d45ad3a58b8abb7770fa1af718ab784.png" width="450px" alt="image from gyazo"/>
-
-<img src="https://i.gyazo.com/8aa805cce8792c525f2ac1e04a151ca0.png" width="450px" alt="image from gyazo"/>
-
-- 「Messageing API設定」のタブから「チャネルアクセストークン」を取得します  
-  - 発行されていなければ、`発行`ボタンをクリックして文字列をコピーします。  
-  こちらもコピーしたら、メモ帳、付箋、Wordなどに貼り付けて控えておきましょう。
-
-<img src="https://i.gyazo.com/7f302b0956c1aad41c0bc2a4de975328.png" width="450px" alt="image from gyazo"/>
-<img src="https://i.gyazo.com/5f707875217adfc29bf322a485029573.png" width="450px" alt="image from gyazo"/>
-
-- 応答機能を確認します  
-  右側の`編集`ボタンから設定していきます。
+- 次に、応答機能を確認します  
+  「Messaging API設定」のタブの「応答メッセージ」で、右側の`編集`ボタンから設定していきます。
 
 <img src="https://i.gyazo.com/d9a707b5b85c3401cc2b9b536ba71104.png" width="450px" alt="image from gyazo"/>
 
 応答メッセージは下記のように設定しておきます。  
 - チャット：オフ　
 - 挨拶メッセージ：オン
-- Webhook：オフ（現時点では選択できない仕様になっています ※理由は下記に参照）
+- Webhook：オフ（現時点では選択できない仕様になっています ※理由は下記「応答メッセージの機能について」に参照）
 - 応答メッセージ：オフ
 
 <img src="https://i.gyazo.com/9ea92e7237b87af7e59feb8b3d576c0e.png" width="450px" alt="image from gyazo"/>
 
-#### 応答メッセージの機能について
+<details>
+
+<summary>応答メッセージの機能について</summary>
 
 - **チャット**  
   アカウント管理画面からユーザーと手動でメッセージのやり取りができます。
@@ -103,7 +99,8 @@ LINE Developers：https://developers.line.biz/ja/
       LINE公式アカウント：「こんにちは！お問い合わせありがとうございます。」  
 
 > 今回は、応答をカスタマイズしてユーザーのニーズに合わせた返信を実現するため、オフにしています。
- 
+
+</details>
 
 ## 2.miiboにLINEの情報を登録する
 

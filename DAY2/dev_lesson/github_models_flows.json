@@ -1,0 +1,332 @@
+[
+    {
+        "id": "4ff87a6ea45ce30a",
+        "type": "tab",
+        "label": "GitHub Modelsのフロー",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "62cd806820605559",
+        "type": "debug",
+        "z": "4ff87a6ea45ce30a",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "3078eb36016e146b",
+        "type": "template",
+        "z": "4ff87a6ea45ce30a",
+        "name": "text",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"model\": \"gpt-4o\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": [\n                {\n                    \"type\": \"text\",\n                    \"text\": \"{{{payload}}}\"\n                }\n            ]\n        }\n    ]\n}",
+        "output": "json",
+        "x": 290,
+        "y": 120,
+        "wires": [
+            [
+                "2e7ddb8620f61517"
+            ]
+        ]
+    },
+    {
+        "id": "aff805d8e7597301",
+        "type": "http request",
+        "z": "4ff87a6ea45ce30a",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://models.inference.ai.azure.com/chat/completions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "e98164dd6193cb47"
+            ]
+        ]
+    },
+    {
+        "id": "e98164dd6193cb47",
+        "type": "change",
+        "z": "4ff87a6ea45ce30a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.choices[0].message.content",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 440,
+        "y": 200,
+        "wires": [
+            [
+                "62cd806820605559"
+            ]
+        ]
+    },
+    {
+        "id": "abb7f959c1258ad9",
+        "type": "inject",
+        "z": "4ff87a6ea45ce30a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "日立とは",
+        "payloadType": "str",
+        "x": 140,
+        "y": 120,
+        "wires": [
+            [
+                "3078eb36016e146b"
+            ]
+        ]
+    },
+    {
+        "id": "2e7ddb8620f61517",
+        "type": "change",
+        "z": "4ff87a6ea45ce30a",
+        "name": "トークン設定",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers.Authorization",
+                "pt": "msg",
+                "to": "\"Bearer \" & $env(\"GITHUB_TOKEN\")\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 120,
+        "wires": [
+            [
+                "aff805d8e7597301"
+            ]
+        ]
+    },
+    {
+        "id": "f1af892e1eb6af39",
+        "type": "debug",
+        "z": "4ff87a6ea45ce30a",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "2c73bd611a0559ea",
+        "type": "http request",
+        "z": "4ff87a6ea45ce30a",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://models.inference.ai.azure.com/chat/completions",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 530,
+        "y": 420,
+        "wires": [
+            [
+                "553a14d9bc4442b6"
+            ]
+        ]
+    },
+    {
+        "id": "5b90d68cdc3e7216",
+        "type": "template",
+        "z": "4ff87a6ea45ce30a",
+        "name": "image",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "{\n    \"model\": \"gpt-4o\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": [\n                {\n                    \"type\": \"image_url\",\n                    \"image_url\": {\n                        \"url\": \"data:image/png;base64,{{{payload}}}\"\n                    }\n                },\n                {\n                    \"type\": \"text\",\n                    \"text\": \"日本語で説明してください。\"\n                }\n            ]\n        }\n    ]\n}",
+        "output": "json",
+        "x": 430,
+        "y": 340,
+        "wires": [
+            [
+                "4916d4c0496da708"
+            ]
+        ]
+    },
+    {
+        "id": "553a14d9bc4442b6",
+        "type": "change",
+        "z": "4ff87a6ea45ce30a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.choices[0].message.content",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 500,
+        "wires": [
+            [
+                "f1af892e1eb6af39"
+            ]
+        ]
+    },
+    {
+        "id": "0f39b696c5e360ed",
+        "type": "base64",
+        "z": "4ff87a6ea45ce30a",
+        "name": "",
+        "action": "",
+        "property": "payload",
+        "x": 280,
+        "y": 340,
+        "wires": [
+            [
+                "5b90d68cdc3e7216"
+            ]
+        ]
+    },
+    {
+        "id": "7b362f2050cb454b",
+        "type": "camera",
+        "z": "4ff87a6ea45ce30a",
+        "name": "",
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "18ba713d2039ca81",
+                "0f39b696c5e360ed"
+            ]
+        ]
+    },
+    {
+        "id": "18ba713d2039ca81",
+        "type": "image",
+        "z": "4ff87a6ea45ce30a",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 300,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4916d4c0496da708",
+        "type": "change",
+        "z": "4ff87a6ea45ce30a",
+        "name": "トークン設定",
+        "rules": [
+            {
+                "t": "set",
+                "p": "headers.Authorization",
+                "pt": "msg",
+                "to": "\"Bearer \" & $env(\"GITHUB_TOKEN\")\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [
+                "2c73bd611a0559ea"
+            ]
+        ]
+    },
+    {
+        "id": "87bd5b2f2f6924db",
+        "type": "comment",
+        "z": "4ff87a6ea45ce30a",
+        "name": "テキストのみ扱うフロー",
+        "info": "",
+        "x": 170,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7bf142c3efb6786d",
+        "type": "comment",
+        "z": "4ff87a6ea45ce30a",
+        "name": "画像も扱うフロー(node-red-contrib-browser-utils、node-red-contrib-image-output、node-red-node-base64のインストールが必要)",
+        "info": "",
+        "x": 490,
+        "y": 280,
+        "wires": []
+    }
+]
