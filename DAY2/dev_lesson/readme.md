@@ -124,6 +124,14 @@
 制作に移る前に、[こちら](https://docs.google.com/spreadsheets/d/1yLajd9JEMNv0urU73ieXg5O-b04ziGM9nMxa_579_3A/edit?pli=1&gid=1573507651#gid=1573507651)のスプレッドシートに制作案を記載してください！   
   
 ![image](https://github.com/user-attachments/assets/d6c482fc-82a2-4d39-83ba-8ec815cce5bb)
+
+
+#### 2つのセンサを使う初期化コード例
+１．超音波センサとスピーカー
+```
+obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 }); //超音波センサ　0,1,2,3番にピンを割り当てる
+obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 }); //スピーカー　9,11番にピンを割り当てる
+```
   
 ----
 
