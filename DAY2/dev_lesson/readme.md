@@ -132,7 +132,11 @@
 obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 }); //超音波センサ　0,1,2,3番にピンを割り当てる
 obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 }); //スピーカー　9,11番にピンを割り当てる
 ```
-  
+2. 温湿度センサとLED
+```
+obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 }); //LED 脚の長い方（アノード, +）を0, 脚の短い方（カソード,-）を1に割り当てる
+obnizParts.dht20 = obniz.wired("DHT20",{vcc:4, sda:5, gnd:6,  scl:7 ,voltage: "5v"}); //温湿度 4,5,6,7番にピンをアサインし、電圧を5Vに設定
+```  
 ----
 
 ### Lesson4 成果物を発表しよう！【15:15〜15:45】  
