@@ -48,7 +48,7 @@
 
 1. [obnizをはじめよう](./obniz/01_start_obniz.md)
    
-2. [Lチカしてみよう](./obniz/02_obniz-LED.md)
+2. [LEDを光らせてみよう](./obniz/02_obniz-LED.md)
      
      早く終わった方はこちらの課題にも挑戦してみてください  
      👨‍💻 応用課題: ほぼ同じ流れ！スピーカーを鳴らしてみよう  [参考](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)  
