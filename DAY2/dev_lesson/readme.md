@@ -95,8 +95,10 @@
 
 ----
 
+  
 ### 休憩タイム🍵  
 
+  
 ----
 ### Lesson02 【14:30〜14:40】
 
@@ -119,8 +121,7 @@
   - 温湿度センサー
   - 照度センサー
 
-制作に移る前に、[こちら](https://docs.google.com/spreadsheets/d/1yLajd9JEMNv0urU73ieXg5O-b04ziGM9nMxa_579_3A/edit?usp=sharing
-)のスプレッドシートに制作案を記載してください！   
+制作に移る前に、[こちら](https://docs.google.com/spreadsheets/d/1yLajd9JEMNv0urU73ieXg5O-b04ziGM9nMxa_579_3A/edit?pli=1&gid=1573507651#gid=1573507651)のスプレッドシートに制作案を記載してください！   
   
 ![image](https://github.com/user-attachments/assets/d6c482fc-82a2-4d39-83ba-8ec815cce5bb)
   
