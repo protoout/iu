@@ -6,16 +6,12 @@ Difyで作成した盛岡の知識に強いAIなどをLINE Botにできます。
 
 ### 1-1. 利用イメージ
 
-- Dify x RAGのハンズオンツイートまとめ！ #linedc  
-  盛岡開催
+- Dify x RAG
+https://x.com/martina1_111/status/1960588508495503636?s=20
 
-posfie  
-https://posfie.com/@n0bisuke/p/sHjqKTh
-
-x.com  
+- 今回の制作イメージ
+    - 盛岡の観光情報教えてくれるチャットbot 
 https://x.com/T_taisyou/status/1954062259132792958
-
-![利用イメージ](https://storage.googleapis.com/zenn-user-upload/9ce7b1c6f375-20250808.png)
 
 ---
 
@@ -24,7 +20,7 @@ https://x.com/T_taisyou/status/1954062259132792958
 ### 2-0. 準備
 
 - LINE公式アカウントの準備  
-  LINE公式アカウントの作成 / LINE Botの初め方（2025年6月26日更新）  
+  LINE公式アカウントの作成 / LINE Botの初め方
   https://zenn.dev/protoout/articles/16-line-bot-setup
 
 - チャンネルアクセストークン と チャンネルシークレット の二つのキーを取得して下さい。
@@ -42,6 +38,8 @@ LINE Bot以外にもSlackやNotion、スプレットシートなど主要なツ�
 #### プラグインの検索
 プラグインページから、マーケットプレイスへいきLINEのプラグインをインストールしましょう。
 
+![利用イメージ](https://storage.googleapis.com/zenn-user-upload/9ce7b1c6f375-20250808.png)
+
 ![プラグインページからマーケットプレイスへ](https://storage.googleapis.com/zenn-user-upload/8e7fcaff702f-20250808.png)
 
 LINE BotやLINEなどで検索すると候補が出てきます。
@@ -52,7 +50,7 @@ LINE BotやLINEなどで検索すると候補が出てきます。
 
 ![インストール画面](https://storage.googleapis.com/zenn-user-upload/f77caa9fc15a-20250808.png)
 
-![インストール確認](https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png)
+
 
 ---
 
@@ -61,7 +59,7 @@ LINE BotやLINEなどで検索すると候補が出てきます。
 これはコミュニティの知見で発見されましたが、最新の0.0.5だとバグで動きません。  
 0.0.4にダウングレードしましょう。
 
-![0.0.4にダウングレード](https://storage.googleapis.com/zenn-user-upload/37fcea0365b9-20250808.png)
+![0.0.4にダウングレード](https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png)
 
 ---
 
@@ -69,20 +67,20 @@ LINE BotやLINEなどで検索すると候補が出てきます。
 
 インストールしたら設定へ進みます。
 
-![設定へ進む](https://storage.googleapis.com/zenn-user-upload/977fd2fc499e-20250808.png)
+![設定へ進む](https://storage.googleapis.com/zenn-user-upload/37fcea0365b9-20250808.png)
 
 +ボタンから進んでください。
 
-![+ボタン](https://storage.googleapis.com/zenn-user-upload/8a29256a2282-20250808.png)
+![+ボタン](https://storage.googleapis.com/zenn-user-upload/977fd2fc499e-20250808.png)
 
 - エンドポイント名: 適宜名前を入れましょう。
 - チャンネルシークレット: LINE Botの管理画面から取得
 - チャンネルアクセストークン: LINE Botの管理画面から取得
 - アプリ: 作ったチャットフロー（かワークフロー）を設定
 
-※LINEのトークンなどはこちらから
+※LINEのトークンなどは[こちら](https://zenn.dev/protoout/articles/16-line-bot-setup)から
 
-![各項目を入力](https://storage.googleapis.com/zenn-user-upload/3a113c10e68c-20250809.png)
+![各項目を入力](https://storage.googleapis.com/zenn-user-upload/8a29256a2282-20250808.png)
 
 ---
 
@@ -92,15 +90,15 @@ LINE BotやLINEなどで検索すると候補が出てきます。
 
 ここまでトラブルなく進むと、URLが発行されます。
 
-![Webhook URLが発行される](https://i.gyazo.com/16e353c1a68a3a0fd92d9b9d7a83bfd9.png)
+![Webhook URLが発行される](https://storage.googleapis.com/zenn-user-upload/3a113c10e68c-20250809.png)
 
 LINE Developersのコンソールで先ほどのURLをWebhook URLに設定します。
 
-![LINE DevelopersでWebhook URLを設定](https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png)
+![LINE DevelopersでWebhook URLを設定](https://i.gyazo.com/16e353c1a68a3a0fd92d9b9d7a83bfd9.png)
 
 問題なく連携できると、検証ボタンを押したときに成功と表示されます。
 
-![検証が成功](https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png)
+![検証が成功](https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png)
 
 ---
 
@@ -111,7 +109,7 @@ LINE Developersのコンソールで先ほどのURLをWebhook URLに設定しま
 QRコードを共有することで他の人にも使ってもらえます。  
 他の人のLINE Botも使ってみましょう。
 
-![LINEで動作確認](https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png)
+![LINEで動作確認](https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png)
 
 ---
 
@@ -136,6 +134,7 @@ LINE Bot自体はDifyとは全く別物なので、プログラムを書いて�
 - リッチメニューを使う（LINE Developers）  
   https://developers.line.biz/ja/docs/messaging-api/using-rich-menus/
 
+https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png
 ---
 
 ## 5. まとめ
