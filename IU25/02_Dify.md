@@ -80,7 +80,7 @@ https://cloud.dify.ai/datasets
 
 #### 埋め込み: チャンク設定
 
-親子の方が基本的には精度高いです。汎用の方が簡単だけど、僕が勉強したかったので`親子分割モード`にします
+汎用の方が簡単ですが、親子の方が基本的には精度高いので、`親子分割モード`にします
 
 > ![CleanShot 2025-08-09 at 13.11.33.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/14fcb934-1650-48c3-b4cf-14087fbfac5f.png)
 

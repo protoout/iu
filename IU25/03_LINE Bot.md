@@ -2,7 +2,7 @@
 
 ## 1. DifyでLINE Botを作ってみよう
 
-Difyで作成した盛岡の知識に強いAIなどをLINE Botにできます。
+Difyで作成した盛岡の知識に強いAIをLINE Botにしていきます。
 
 ### 1-1. 利用イメージ
 
