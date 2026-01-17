@@ -12,11 +12,11 @@
 
 ## 事前準備（3つのアカウント準備）
 #### (可能な限り)授業前までに準備してください。
-- Googleアカウント[Googleアカウント](https://www.google.com/intl/ja_jp/chrome/)
+- [Googleアカウント](https://www.google.com/intl/ja_jp/chrome/)
     - この授業で利用するブラウザはGoogle Chromeにしてください。
     - それ以外は何かと動かない場合があります。
     
-- Difyアカウント[Difyアカウント](https://cloud.dify.ai/signin)
+- [Difyアカウント](https://cloud.dify.ai/signin)
     - 既に利用したことがある人スキップでOK。
     - ログインしておいてください。
 
