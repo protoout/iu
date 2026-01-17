@@ -45,6 +45,12 @@ LINE公式アカウントは `チャンネルシークレット` と `アクセ�
 
 - このページは固定してリンクは新規タブで開くなど迷子予防を工夫してください。
 
+### 用語チェック
+
+今回学習するツールや技術の用語リストです！
+タスクタブをコピペして、ステータスを更新してみてください。
+[用語チェックリスト](https://docs.google.com/spreadsheets/d/1IuFcXTJYjVJeuBQK-15VeinFWJonUwvU_vVtmkiNglg/edit?usp=sharing)
+
 
 ## 2.基礎知識
 
