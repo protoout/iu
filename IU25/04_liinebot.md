@@ -261,21 +261,5 @@ LINE Bot自体はDifyとは全く別物なので、プログラムを書いて�
 
 ---
 
-## 4. チャレンジ課題
-
-リッチメニューという機能を使うとLINE Botの見栄えが格段に上がります。  
-特にプログラムが必要とかでもなく設定からいけるので、やれる人はチャレンジしてアプリケーションとしての使い勝手を上げましょう。
-
-- LINE公式アカウント（LINE Official Account Manager）リッチメニューを作成するマニュアル｜LINEヤフー for Business  
-  https://www.lycbiz.com/jp/manual/OfficialAccountManager/rich-menus/
-
-プログラム的に制御もできます
-
-- リッチメニューを使う（LINE Developers）  
-  https://developers.line.biz/ja/docs/messaging-api/using-rich-menus/
-
-![LINEリッチメニュー](https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png)
----
-
 - [次の資料へ](/IU25/05_conclusion.md)
 - [前の資料へ](/IU25/03_rag.md)
