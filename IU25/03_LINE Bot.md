@@ -26,7 +26,7 @@ https://x.com/T_taisyou/status/1954062259132792958
 - チャンネルアクセストークン と チャンネルシークレット の二つのキーを取得して下さい。
 - Difyのチャットアプリを作っておく  
   - 公開されている必要があります。
-![公開](https://drive.google.com/file/d/11cBNo4g6sySMypIQGTP0UMAoaQEwpR2D/view?usp=sharing)
+![Dify公開](/仮/CleanShot%202026-01-17%20at%2012.57.14@2x.png)
 ---
 
 ### 2-1. Difyにプラグインを追加
@@ -36,7 +36,7 @@ LINE Bot以外にもSlackやNotion、スプレットシートなど主要なツ�
 プラグインはOSS開発となっていて割と最近追加された機能なので、選択肢はまだ少ない印象です。
 
 #### プラグインの検索
-プラグインページから、マーケットプレイスへいきLINEのプラグインをインストールしましょう。
+プラグインページから、マーケットプレイスに行きLINEのプラグインをインストールしましょう。
 
 ![利用イメージ](https://storage.googleapis.com/zenn-user-upload/9ce7b1c6f375-20250808.png)
 
@@ -134,7 +134,7 @@ LINE Bot自体はDifyとは全く別物なので、プログラムを書いて�
 - リッチメニューを使う（LINE Developers）  
   https://developers.line.biz/ja/docs/messaging-api/using-rich-menus/
 
-https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png
+![LINEリッチメニュー](https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png)
 ---
 
 ## 5. まとめ
