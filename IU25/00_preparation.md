@@ -5,8 +5,11 @@
     - それ以外は何かと動かない場合があります。
     
 - [Difyアカウント](https://cloud.dify.ai/signin)
-    - 既に利用したことがある人スキップでOK。
-    - ログインしておいてください。
+    - クラウド利用 Dify教育版を準備
+    - https://legacy-docs.dify.ai/ja-jp/getting-started/dify-for-education
+    - ご参考：https://note.com/26_27_job/n/n82f076b83ce1
+    - APIキー
+        - 萩原先生に準備していただいたAPIキー受講者共有
 
 - LINE公式アカウント
     - （おそらく）皆さんがよく使うLINEです。
