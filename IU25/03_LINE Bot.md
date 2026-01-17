@@ -26,7 +26,7 @@ https://x.com/T_taisyou/status/1954062259132792958
 - チャンネルアクセストークン と チャンネルシークレット の二つのキーを取得して下さい。
 - Difyのチャットアプリを作っておく  
   - 公開されている必要があります。
-  https://drive.google.com/file/d/11cBNo4g6sySMypIQGTP0UMAoaQEwpR2D/view?usp=sharing
+![公開](https://drive.google.com/file/d/11cBNo4g6sySMypIQGTP0UMAoaQEwpR2D/view?usp=sharing)
 ---
 
 ### 2-1. Difyにプラグインを追加
