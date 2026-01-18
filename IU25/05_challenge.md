@@ -1,21 +1,4 @@
-# 05. 応用課題
-
-リッチメニューという機能を使うとLINE Botの見栄えが格段に上がります。  
-特にプログラムが必要とかでもなく設定からいけるので、やれる人はチャレンジしてアプリケーションとしての使い勝手を上げましょう。
-
-- LINE公式アカウント（LINE Official Account Manager）リッチメニューを作成するマニュアル｜LINEヤフー for Business  
-  https://www.lycbiz.com/jp/manual/OfficialAccountManager/rich-menus/
-
-プログラム的に制御もできます
-
-- リッチメニューを使う（LINE Developers）  
-  https://developers.line.biz/ja/docs/messaging-api/using-rich-menus/
-
-![LINEリッチメニュー](https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png)
-
----
-
-## まとめ
+# 05. まとめ
 
 この資料では、Difyで作成したAIをLINE Botとして利用できるようにする手順を学びました。ポイントを整理すると以下の通りです。
 
