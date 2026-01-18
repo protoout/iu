@@ -210,11 +210,13 @@ https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee96547
 ### 取り込めるデータ
 社内リソース、エクセルファイル、Notionの内部ページなど、Difyは扱えるデータが多く搭載されています。  
 必要に応じて読みこんでください。
+
 <img src="https://i.gyazo.com/2e15069a236dd7193bf98e701a30c773.png" width="250px" alt="image from gyazo"/>
 ---
 
 このページの内容は以上です。  
-[◀ 目次ページ](./readme.md)に戻り、全体構成を確認してから講師の指示にしたがって進めましょう。
 
 - [次の資料へ](./04_liinebot.md)
 - [前の資料へ](./02_dify.md)
+
+[◀ 目次ページ](./readme.md)
