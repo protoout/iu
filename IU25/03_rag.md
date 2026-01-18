@@ -216,7 +216,7 @@ https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee96547
 
 このページの内容は以上です。  
 
-- [次の資料へ](./04_liinebot.md)
+- [次の資料へ](./04_linebot.md)
 - [前の資料へ](./02_dify.md)
 
 [◀ 目次ページ](./readme.md)
