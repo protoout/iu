@@ -1,8 +1,9 @@
 # 04. LINE Bot
 
 このパートでは、Difyで作った会話型AI（盛岡の知識に強いAI）を、LINE上で動くBotとして利用できる形にします。  
-LINEは普段使っているアプリなので、ユーザーにとって「使い始めるハードルが低い」のが強みです。
-LINE Botは、そのLINE上で動作するチャットボット（ロボット）です。日頃使っているLINEとはすこし違うものだと思っていてください。（お店の公式アカウントをイメージしてもらえると良いです。）
+- LINEは普段使っているアプリなので、ユーザーにとって「使い始めるハードルが低い」のが強みです。
+- LINE Botは、そのLINE上で動作するチャットボット（ロボット）です。日頃使っているLINEとはすこし違うものだと思っていてください。
+  - お店の公式アカウントをイメージしてもらえると良いです。
 
 ---
 
@@ -195,6 +196,8 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 ### 2-8. LINE DevelopersでWebhook URLの設定（連携の仕上げ）
 
 ここまで問題なく進むと、Dify側でWebhook URLが発行されます。
+  補足: Webhookとは？  
+  サービス（アプリケーション）の何らかのアクションを他のアプリケーションへリアルタイムに通知する仕組みのことです。
 
 ![Webhook URLが発行される](https://storage.googleapis.com/zenn-user-upload/3a113c10e68c-20250809.png)
 
@@ -202,37 +205,13 @@ LINE Developersのコンソールで、先ほどのURLをWebhook URLに設定し
 
 ![LINE DevelopersでWebhook URLを設定](https://i.gyazo.com/16e353c1a68a3a0fd92d9b9d7a83bfd9.png)
 
-検証ボタンを押して成功と表示されればOKです。
-
-![検証が成功](https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png)
-
-以下はLINE側でWebhook URLを設定する手順の詳細です。
-
-- Difyで発行された「Webhook URL」をコピーします  
-  補足: Webhookとは？  
-  サービス（アプリケーション）の何らかのアクションを他のアプリケーションへリアルタイムに通知する仕組みのことです。
-
-<img src="https://i.gyazo.com/4c05804099dcc6f93f49862b2ebff05b.png" width="450px" alt="image from gyazo"/>
-
-- LINEのチャネルページへ移動し、「messageing API設定」のタブからWebhook設定をします
-
-<img src="https://i.gyazo.com/7f302b0956c1aad41c0bc2a4de975328.png" width="450px" alt="image from gyazo"/>
-
-- Webhook URLの `編集` ボタンをクリックします
-
-<img src="https://i.gyazo.com/2dc501d6a7c30fe75ce8d6572657ecf0.png" width="350px" alt="image from gyazo"/>
-
-- コピーしたWebhook URLを貼り付け、`更新` ボタンをクリックします
-
-<img src="https://i.gyazo.com/57486cb575b3d8fd6b6615929d644bab.png" width="450px" alt="image from gyazo"/>
-
 - Webhookの利用ボタンをクリックし、オンにします
 
 <img src="https://i.gyazo.com/88de95e073afa7218f78e883e8fa3d4d.png" width="450px" alt="image from gyazo"/>
 
-- `検証` ボタンをクリックし、「成功」の表示がでたら連携完了です
+検証ボタンを押して成功と表示されればOKです。
 
-<img src="https://i.gyazo.com/2699f7e4370f7140e2b8ff2e12e9a805.png" width="250px" alt="image from gyazo"/>
+![検証が成功](https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png)
 
 ---
 
@@ -243,7 +222,7 @@ LINE Developersのコンソールで、先ほどのURLをWebhook URLに設定し
 - DifyとLINE Botが連携され、会話型AIが完成しました！  
 ここからオリジナリティを出していきましょう。
 
-![LINEで動作確認](https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png)
+<img src="https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png" width="350px" alt="image from gyazo"/>
 
 ---
 
@@ -504,7 +483,7 @@ LINE Developersのコンソールで先ほどのURLをWebhook URLに設定しま
 
 - スマートフォンで、友達になったLINE Botへ何かメッセージを送信し、返答がくるのを確認しましょう。  
 
-<img src="https://i.gyazo.com/7b3929bf5dd796a84f81600102e18709.png" width="250px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png" width="250px" alt="image from gyazo"/>
 
 - DifyとLINE Botが連携され、会話型AIが完成しました！  
 ここからオリジナリティを出していきましょう。
@@ -517,8 +496,6 @@ LINE Developersのコンソールで先ほどのURLをWebhook URLに設定しま
 
 QRコードを共有することで他の人にも使ってもらえます。  
 他の人のLINE Botも使ってみましょう。
-
-![LINEで動作確認](https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png)
 
 ---
 
