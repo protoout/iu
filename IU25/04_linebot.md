@@ -28,15 +28,11 @@
 
 事前にLINE側の準備が必要です。以下の資料を見て、アカウント作成からキー取得まで進めます。
 
-- 参考: 事前準備資料（LINE公式アカウントの作成 / LINE Botの初め方）
-  https://zenn.dev/protoout/articles/16-line-bot-setup
+- 参考: [事前準備資料（LINE公式アカウントの作成 / LINE Botの初め方）](https://zenn.dev/protoout/articles/16-line-bot-setup)
 
 このパートで必要なキー
 - チャンネルアクセストークン
 - チャンネルシークレット
-
-やること（目安）
-- 上記資料の `4. Messaging APIの有効化` 〜 `5-2. チャネルアクセストークンの取得` まで実施してください
 
 ---
 
