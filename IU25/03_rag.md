@@ -12,7 +12,7 @@
 - Difyのナレッジ（Dataset）機能を使ってRAGを構築します
 - 事前に用意した資料を検索して、その内容を根拠に回答できるチャットボットを作ります
 - 今回作成するのは盛岡の観光情報ですが、自分の職場や施設の情報にも応用できます
-<img src="https://i.gyazo.com/7d86f01c0c57e9920611820a42b5a9c3.png" width="250px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png" width="250px" alt="image from gyazo"/>
 
 参考リンク
 - [漫画で理解するRAGの説明](https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee9654730312d2)
