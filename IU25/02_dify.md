@@ -44,11 +44,8 @@
 
 ### 2-1. 準備: Difyアカウントと事前注意
 
-まずはこちらの記事を元に、Difyでチャットアプリを作成します。  
+まずは[こちら](https://zenn.dev/protoout/articles/81-start-dify-chatflow)の記事を元に、Difyでチャットアプリを作成します。  
 記事内のプロンプトは秋葉原ではなく、盛岡の観光アドバイザーとして作ってみましょう。
-
-- Difyでチャットアプリを作る（ベース記事）
-  - [Dify チャットフロー入門](https://zenn.dev/protoout/articles/81-start-dify-chatflow)
 
 ---
 
