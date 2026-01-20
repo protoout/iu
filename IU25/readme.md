@@ -13,20 +13,23 @@
 - RAGを活用し、盛岡の情報に強いLINE Botを作る
 - 自分でRAGを活用したオリジナルのLINE Botを作る
 
+
+
 ---
 
 ## 全体スケジュール
 
-### ■ オープニング 13:00-13:20（20分）
-- [Orientation](/IU25/01_orientation.md)
-  - 今日作るもの
-  - ゴールと到達ライン
-  - 事前準備チェック（Dify / LINE）
-  - [ワークシート](https://docs.google.com/spreadsheets/d/1IuFcXTJYjVJeuBQK-15VeinFWJonUwvU_vVtmkiNglg/edit?usp=sharing)
+### ■ オープニング 13:00-13:30（30分）
+- [オープニング](https://docs.google.com/presentation/d/135YJM9t7xaBjX_fH5wC9yyu24B8s8wD_vEUzPeQFieI/edit?usp=sharing)
+  - [ワークシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?usp=sharing)
 
 ---
 
-### ■ 実装授業1 13:20-14:10（50分）
+### ■ 実装授業1 13:30-14:20（50分）
+- [Orientation](/IU25/01_orientation.md)
+  - 今日作るもの
+  - ゴールと到達ライン
+  - 事前準備チェック
 - [DifyによるAIアプリ開発（公開設定まで）](/IU25/02_dify.md)
   - アプリ作成の流れ
   - 公開設定（LINE連携の前提）
@@ -38,11 +41,11 @@
 
 ---
 
-### ■ 休憩 14:10-14:20（10分）
+### ■ 休憩 14:20-14:30（10分）
 
 ---
 
-### ■ 実装授業2 14:20-15:10（50分）
+### ■ 実装授業2 14:30-15:10（40分）
 - [RAG活用（知識投入 → 動作確認）](/IU25/03_rag.md)
   - 知識（ナレッジ）作成
   - チャットフローへの組み込み（知識検索）
@@ -61,5 +64,5 @@
 - [1人ずつ簡単に発表]
   - 1人1〜2分
   - 何を作ったか / 工夫した点 / つまずいた点
-  - [ワークシート](https://docs.google.com/spreadsheets/d/1IuFcXTJYjVJeuBQK-15VeinFWJonUwvU_vVtmkiNglg/edit?usp=sharing)
-
+  - [ワークシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?usp=sharing)
+  - [アンケート](https://forms.gle/ZUNycSw8CAuPBaHU6)
