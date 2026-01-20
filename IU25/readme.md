@@ -30,10 +30,13 @@
   - 今日作るもの
   - ゴールと到達ライン
   - 事前準備チェック
-- [DifyによるAIアプリ開発（公開設定まで）](/IU25/02_dify.md)
+- [Difyについて](/IU25/02_dify.md)
+  - Difyでできること
+  - Difyの作例
+- [DifyによるAIアプリ開発](/IU25/02_dify_chat.md)
   - アプリ作成の流れ
   - 公開設定（LINE連携の前提）
-- [DifyのAIをLINE Bot化](/IU25/04_liinebot.md)
+- [DifyのAIをLINE Bot化](/IU25/03_liinebot.md)
   - LINE公式アカウント準備
   - Webhook / チャネル設定
   - Difyとの接続
@@ -46,7 +49,7 @@
 ---
 
 ### ■ 実装授業2 14:30-15:10（40分）
-- [RAG活用（知識投入 → 動作確認）](/IU25/03_rag.md)
+- [RAG活用（知識投入 → 動作確認）](/IU25/04_rag.md)
   - 知識（ナレッジ）作成
   - チャットフローへの組み込み（知識検索）
   - テストと改善ポイント
@@ -55,14 +58,14 @@
 
 ### ■ ワーク 15:10-15:40（30分）
 - [応用課題 自分なりのRAG活用LINE Botを制作](/IU25/05_challenge.md)
-  - 余裕があれば：自分なりのRAG活用LINE Botを制作してみる
+  - 自分なりのRAG活用LINE Botを制作してみる
   - 余裕があれば：LINEリッチメニューで導線改善
 
 ---
 
 ### ■ 制作発表 15:40-16:00（20分）
-- [1人ずつ簡単に発表]
+- [1人ずつ簡単に発表](/IU25/06_conclusion.md)
   - 1人1〜2分
   - 何を作ったか / 工夫した点 / つまずいた点
-  - [ワークシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?usp=sharing)
-  - [アンケート](https://forms.gle/ZUNycSw8CAuPBaHU6)
+- [ワークシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?usp=sharing)
+- [アンケート](https://forms.gle/ZUNycSw8CAuPBaHU6)
