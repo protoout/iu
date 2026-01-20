@@ -7,6 +7,11 @@
 ## 場所
 - 岩手大学
 
+## 今日のゴール
+- Difyでアプリを作り、公開設定まで完了している
+- LINE BotからDifyを呼び出して会話できる
+- RAG（知識投入 → 動作確認）を一度通している
+
 ---
 
 ## 全体スケジュール
@@ -57,9 +62,3 @@
   - 何を作ったか / 工夫した点 / つまずいた点
   - [ワークシート](https://docs.google.com/spreadsheets/d/1IuFcXTJYjVJeuBQK-15VeinFWJonUwvU_vVtmkiNglg/edit?usp=sharing)
 
----
-
-## 今日のゴール
-- Difyでアプリを作り、公開設定まで完了している
-- LINE BotからDifyを呼び出して会話できる
-- RAG（知識投入 → 動作確認）を一度通している
