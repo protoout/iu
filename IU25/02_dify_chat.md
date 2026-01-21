@@ -37,7 +37,7 @@
 授業では、無料枠があり試作が進めやすいGeminiを利用します。
 Difyは「モデルプロバイダー」画面から、使用するLLMを追加できます。
 
-#### 2-2-1. GeminiのAPIキーについて
+#### 1. GeminiのAPIキーについて
 
 **事前に荻原先生に発行＆共有していただいたAPIキーを使いましょう！**
 - 注意: APIキーは外部に公開しないでください（GitHubへ貼らない）
@@ -45,7 +45,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 
 ---
 
-#### 2-2-2. Difyのモデルプロバイダー設定（Gemini）
+#### 2. Difyのモデルプロバイダー設定（Gemini）
 
 - Dify管理画面を開く
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/ec511155-8374-433c-a275-3295daaf9111.png" width="450px" alt="image from gyazo"/>
