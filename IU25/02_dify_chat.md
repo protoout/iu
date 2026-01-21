@@ -19,8 +19,11 @@
 ## 2. Difyでチャットアプリを作るハンズオン
 
 ### 2-1. STEP1：Difyでチャットアプリを作成
-
-まずは[ベース記事](https://zenn.dev/protoout/articles/81-start-dify-chatflow)に沿って、**チャットが動くところまで**作ります。  
+- [Dify](https://cloud.dify.ai/)を開き、`始める`をクリックします。
+- アカウントの作成後、ログインして下記のような画面になればOKです。
+ <img src="https://i.gyazo.com/631c8c23eaca11c6e44bad392d3bbafa.jpg" width="450px" alt="image from gyazo"/>
+ 
+- [ベース記事](https://zenn.dev/protoout/articles/81-start-dify-chatflow)に沿って、まずは、**チャットが動くところまで**作ります。  
 
 - STEP1では、公開までやればOK
   - Difyでアプリを新規作成できている
@@ -124,8 +127,5 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 ---
 
 このページの内容は以上です。  
-
-- [次の資料へ](./03_linebot.md)
-- [前の資料へ](./02_dify.md)
 
 [◀ 目次ページ](./readme.md)
