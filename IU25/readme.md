@@ -24,7 +24,7 @@
 - [DifyによるAIアプリ開発](/IU25/02_dify_chat.md)
   - アプリ作成の流れ
   - 公開設定（LINE連携の前提）
-- [DifyのAIをLINE Bot化](/IU25/03_liinebot.md)
+- [DifyのAIをLINE Bot化](/IU25/03_linebot.md)
   - LINE公式アカウント準備
   - Webhook / チャネル設定
   - Difyとの接続
