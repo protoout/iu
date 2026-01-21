@@ -45,16 +45,16 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 #### 2-2-2. Difyのモデルプロバイダー設定（Gemini）
 
 - Dify管理画面を開く
-> ![CleanShot 2025-08-09 at 12.39.07.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/ec511155-8374-433c-a275-3295daaf9111.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/ec511155-8374-433c-a275-3295daaf9111.png" width="450px" alt="image from gyazo"/>
 
 - 「モデルプロバイダー」からGeminiを選び、`セットアップ`へ
-> ![CleanShot 2025-08-09 at 12.55.39.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/4f4ab1f6-9d74-421d-917e-60e5c9b2b349.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/4f4ab1f6-9d74-421d-917e-60e5c9b2b349.png" width="450px" alt="image from gyazo"/>
 
 - APIキーを貼り付けて保存
-> ![CleanShot 2025-08-09 at 12.57.02.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/672eb24d-f237-433a-adf5-198e9fd459bc.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/672eb24d-f237-433a-adf5-198e9fd459bc.png" width="450px" alt="image from gyazo"/>
 
 - 接続が成功していることを確認
-> ![CleanShot 2025-08-09 at 12.57.09.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/c16bba01-bce4-4cd1-a98b-5e5f5c65b170.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/c16bba01-bce4-4cd1-a98b-5e5f5c65b170.png" width="450px" alt="image from gyazo"/>
 
 補足
 - OpenAIのAPIキーがある人はOpenAIでもOKです
