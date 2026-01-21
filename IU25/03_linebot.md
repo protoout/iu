@@ -109,18 +109,18 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 - Difyのプラグインページからマーケットプレイスへ移動
 - LINEプラグインを検索してインストールします
 
-![利用イメージ](https://storage.googleapis.com/zenn-user-upload/9ce7b1c6f375-20250808.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/9ce7b1c6f375-20250808.png" width="450px" alt="image from gyazo"/>
 
-![プラグインページからマーケットプレイスへ](https://storage.googleapis.com/zenn-user-upload/8e7fcaff702f-20250808.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/8e7fcaff702f-20250808.png" width="450px" alt="image from gyazo"/>
 
 検索
 - `LINE Bot` や `LINE` などで検索すると候補が出てきます
 
-![LINEプラグイン検索結果](https://storage.googleapis.com/zenn-user-upload/25229f4a8016-20250808.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/25229f4a8016-20250808.png" width="450px" alt="image from gyazo"/>
 
 インストール
 
-![インストール画面](https://storage.googleapis.com/zenn-user-upload/f77caa9fc15a-20250808.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/f77caa9fc15a-20250808.png" width="450px" alt="image from gyazo"/>
 
 ---
 
@@ -129,7 +129,7 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 コミュニティ知見として、最新の0.0.5だとバグで動かないケースがあります。  
 その場合は0.0.4にダウングレードします。
 
-![0.0.4にダウングレード](https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png)
+<img src="https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png" width="450px" alt="image from gyazo"/>
 
 ---
 
@@ -137,11 +137,11 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 
 インストールしたら設定へ進みます。
 
-![設定へ進む](https://storage.googleapis.com/zenn-user-upload/37fcea0365b9-20250808.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/37fcea0365b9-20250808.png" width="450px" alt="image from gyazo"/>
 
 `+` ボタンから作成します。
 
-![+ボタン](https://storage.googleapis.com/zenn-user-upload/977fd2fc499e-20250808.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/977fd2fc499e-20250808.png" width="450px" alt="image from gyazo"/>
 
 入力項目
 - エンドポイント名: 任意（わかりやすい名前）
@@ -152,7 +152,7 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 キー取得の参考
 - https://zenn.dev/protoout/articles/16-line-bot-setup
 
-![各項目を入力](https://storage.googleapis.com/zenn-user-upload/8a29256a2282-20250808.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/8a29256a2282-20250808.png" width="450px" alt="image from gyazo"/>
 
 ---
 
@@ -162,11 +162,11 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
   補足: Webhookとは？  
   サービス（アプリケーション）の何らかのアクションを他のアプリケーションへリアルタイムに通知する仕組みのことです。
 
-![Webhook URLが発行される](https://storage.googleapis.com/zenn-user-upload/3a113c10e68c-20250809.png)
+<img src="https://storage.googleapis.com/zenn-user-upload/3a113c10e68c-20250809.png" width="450px" alt="image from gyazo"/>
 
 LINE Developersのコンソールで、先ほどのURLをWebhook URLに設定します。
 
-![LINE DevelopersでWebhook URLを設定](https://i.gyazo.com/16e353c1a68a3a0fd92d9b9d7a83bfd9.png)
+<img src="https://i.gyazo.com/16e353c1a68a3a0fd92d9b9d7a83bfd9.png" width="450px" alt="image from gyazo"/>
 
 - Webhookの利用ボタンをクリックし、オンにします
 
@@ -174,7 +174,7 @@ LINE Developersのコンソールで、先ほどのURLをWebhook URLに設定し
 
 検証ボタンを押して成功と表示されればOKです。
 
-![検証が成功](https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png)
+<img src="https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png" width="450px" alt="image from gyazo"/>
 
 ---
 
@@ -185,7 +185,7 @@ LINE Developersのコンソールで、先ほどのURLをWebhook URLに設定し
 - DifyとLINE Botが連携され、AIと会話ができるLINE Botが完成しました！  
 ここからオリジナリティを出していきましょう。
 
-<img src="https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png" width="350px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png" width="450px" alt="image from gyazo"/>
 
 ---
 
@@ -224,7 +224,8 @@ LINE BotはDifyとは別の仕組みなので、ほかにも色々な連携方�
 - リッチメニューを使う（LINE Developers）  
   https://developers.line.biz/ja/docs/messaging-api/using-rich-menus/
 
-![LINEリッチメニュー](https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png)
+<img src="https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/d9a707b5b85c3401cc2b9b536ba71104.png" width="450px" alt="image from gyazo"/>
 
 ---
 
