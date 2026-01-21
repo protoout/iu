@@ -56,7 +56,7 @@ RAGを入れる前に、同じ質問を投げて「今の状態」を確認し�
 
 - 保存するURL  
   https://gist.githubusercontent.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d/raw/c37cb9a96318eb9b1615b7276628230dbb5dd88e/morioka-oyako.md
-> ![CleanShot 2025-08-09 at 13.07.42.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/8f596432-2369-44c1-90a1-81a2ec0d7954.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/8f596432-2369-44c1-90a1-81a2ec0d7954.png" width="450px" alt="image from gyazo"/>
 
 - 保存名（例）  
   `morioka.md` または `morioka.txt`
@@ -70,13 +70,14 @@ RAGを入れる前に、同じ質問を投げて「今の状態」を確認し�
 
 ナレッジ機能（Datasets）に移動します。  
 - https://cloud.dify.ai/datasets
-> ![CleanShot 2025-08-09 at 13.04.14.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/a232ab96-931d-44dd-a156-6dad13b79f2b.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/a232ab96-931d-44dd-a156-6dad13b79f2b.png" width="450px" alt="image from gyazo"/>
 
 手順
 - `ナレッジベースを作成` を選択
-> ![CleanShot 2025-08-09 at 13.05.07.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/45581e87-f847-459a-8336-b858db709364.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/45581e87-f847-459a-8336-b858db709364.png" width="450px" alt="image from gyazo"/>
+
 - 先ほど保存したファイル（`morioka.md` など）をアップロード
-> ![CleanShot 2025-08-09 at 13.10.43.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/1ec9dfc1-da34-4b18-ad18-df8084f7cb91.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/1ec9dfc1-da34-4b18-ad18-df8084f7cb91.png" width="450px" alt="image from gyazo"/>
 
 ---
 
@@ -85,7 +86,7 @@ RAGを入れる前に、同じ質問を投げて「今の状態」を確認し�
 #### 2-4-1. 埋め込み: チャンク設定（親子分割モード）
 
 汎用設定より手間は増えますが、精度を優先して `親子分割モード` を使います。
-> ![CleanShot 2025-08-09 at 13.11.33.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/14fcb934-1650-48c3-b4cf-14087fbfac5f.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/14fcb934-1650-48c3-b4cf-14087fbfac5f.png" width="450px" alt="image from gyazo"/>
 
 - 分割モード: `親子分割モード`
 - チャンク識別子: `##`
@@ -95,7 +96,7 @@ RAGを入れる前に、同じ質問を投げて「今の状態」を確認し�
 
 - 埋め込みモデル: Geminiの埋め込みモデルを利用（Dify側の選択肢に従って選択）
 
-> ![CleanShot 2025-08-09 at 13.13.47.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/b37e6244-940e-4983-b8d6-3f46dd376173.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/b37e6244-940e-4983-b8d6-3f46dd376173.png" width="450px" alt="image from gyazo"/>
 
 #### 4-3-3. 検索: 検索設定（ハイブリッド検索）
 
@@ -104,12 +105,12 @@ RAGを入れる前に、同じ質問を投げて「今の状態」を確認し�
 
 - `ハイブリッド検索` を選択
 
-> ![CleanShot 2025-08-09 at 13.14.26.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/8db80470-3233-419d-bfd1-3d2db5c3817f.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/8db80470-3233-419d-bfd1-3d2db5c3817f.png" width="450px" alt="image from gyazo"/>
 
 - `ウェイト設定` を選択
 - `保存して処理` を押して完了
 
-> ![CleanShot 2025-08-09 at 13.16.37.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/4c21bf65-f640-4815-ac84-5dd48b8c6d90.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/4c21bf65-f640-4815-ac84-5dd48b8c6d90.png" width="450px" alt="image from gyazo"/>
 
 ---
 
@@ -118,13 +119,14 @@ RAGを入れる前に、同じ質問を投げて「今の状態」を確認し�
 手順
 - 最初に作ったチャットフローの画面に戻る
 - `開始ノード` と `LLMノード` の間に `知識検索` ノードを追加する
-> ![CleanShot 2025-08-09 at 13.17.31.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/41289a68-44c8-4c42-a8a2-01058dbad42c.png)
+<img src="[https://i.gyazo.com/a13427459d017de7ee216957c4992c40.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/41289a68-44c8-4c42-a8a2-01058dbad42c.png" width="450px" alt="image from gyazo"/>
+
 - `知識検索ノード` の設定でナレッジを紐づける
   - ナレッジベース項目の `+` を押す
   - 先ほど作成したナレッジを選択
   - `追加`
-> ![CleanShot 2025-08-09 at 13.18.15.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/32c4664a-c862-46d1-a4a1-8c09159d8080.png)
-> ![CleanShot 2025-08-09 at 13.19.12.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/c73c3ac7-6f2d-4136-baea-272084df7ba0.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/32c4664a-c862-46d1-a4a1-8c09159d8080.png" width="450px" alt="image from gyazo"/>
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/c73c3ac7-6f2d-4136-baea-272084df7ba0.png" width="450px" alt="image from gyazo"/>
 
 ---
 
@@ -134,12 +136,12 @@ RAGが効いていることを分かりやすくするため、あえて少し�
 （賢すぎるモデルだと、RAGなしでも答えてしまうことがあります）
 
 - 例: `Gemini 1.5 Flash` など
-> ![CleanShot 2025-08-09 at 13.19.40.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/60553d4e-1d4e-4889-b733-e53342547bac.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/60553d4e-1d4e-4889-b733-e53342547bac.png" width="450px" alt="image from gyazo"/>
 
 設定
 - LLMノードの `コンテキスト` に `知識検索の result` を設定する
 > ![](https://i.gyazo.com/ee6d974dbc4cc9e9353a09f3cad6e90d.gif)
-> ![CleanShot 2025-08-09 at 13.20.02.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/05790de1-f138-42ee-a085-2a9e1317f021.png)
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/05790de1-f138-42ee-a085-2a9e1317f021.png" width="450px" alt="image from gyazo"/>
 
 ---
 
@@ -158,8 +160,9 @@ LLMノードのプロンプトを、コンテキスト参照前提にします�
 
 ## 制約事項
 - ユーザーが不快に思う返信は禁止です。
-``` 
-> ![CleanShot 2025-08-09 at 13.24.36.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/fea93677-0673-40fe-93e5-d3008d69cda6.png)
+```
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/fea93677-0673-40fe-93e5-d3008d69cda6.png" width="450px" alt="image from gyazo"/>
+
 ---
 
 ### 2-8. 動かしてみる（会話テスト）
