@@ -7,12 +7,10 @@
 
 ## 1. ワーク（振り返り）
 
-### 1-1. ワークシートに記入する
-
-[自分の名前のシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?gid=403873720#gid=403873720)を開いて、受講後の用語チェックをしましょう！
+### [自分の名前のシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?gid=403873720#gid=403873720)を開いて、受講後の用語チェックをしましょう！
 - 受講前と受講後で扱えるようになったツールや知っている用語は増えましたか？
 
-[振り返りFBシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?gid=1409343489#gid=1409343489)を開いて、記入してください。
+### [振り返りFBシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?gid=1409343489#gid=1409343489)を開いて、今日の振り返りをしましょう！
 
 記入する内容（目安）
 - 作ったもの（どんなBotか）
@@ -23,14 +21,14 @@
 
 ---
 
-## 3. アンケート（回答のお願い）
+## 2. アンケート（回答のお願い）
 
 授業改善のため、[アンケート](https://forms.gle/ZUNycSw8CAuPBaHU6)にご協力ください。  
 **所要時間は2〜3分程度**です。
 
 ---
 
-## 4. 最後に
+## 3. 最後に
 
 この資料では、Difyで作成したAIをLINE Botとして利用できるようにする手順を学びました。
 
