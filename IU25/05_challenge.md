@@ -140,9 +140,7 @@ A：〇〇
 プログラム的に制御もできます
 - リッチメニューを使う（LINE Developers）  
   https://developers.line.biz/ja/docs/messaging-api/using-rich-menus/
-
-![LINEリッチメニュー](https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png)
-
+<img src="https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png" width="450px" alt="image from gyazo"/>
 ---
 
 このページの内容は以上です。  
