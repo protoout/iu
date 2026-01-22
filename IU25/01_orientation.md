@@ -1,17 +1,7 @@
 # オリエンテーション
 
-このパートでは、今日のゴールと進め方を確認し、授業で扱う基礎用語（生成AI / LLM / ノーコード）を最低限おさえます。  
+このパートでは、授業の進め方を確認し、授業で扱う基礎用語（生成AI / LLM / ノーコード）を最低限おさえます。  
 この後のハンズオン（Dify → RAG → LINE Bot）を迷子にならずに進めるための準備です。
-
----
-
-## 1. オリエンテーション（授業の進め方）
-
-### 1-1. 今日作るものと流れ
-
-- STEP1: Difyを用いて、AIチャットアプリを作る
-- STEP2: 制作したAIチャットアプリをLINEで動かす
-- STEP3: RAGを活用し、盛岡の情報に強いLINE Botを作る
 
 <details>
   <summary>準備確認（アカウント）</summary>
@@ -24,9 +14,8 @@
   - LINE公式アカウントは、STEP3-5のLINE公式アカウントと友達になるところまでが準備です。
   - 準備できてない方は、この後の冒頭説明を聞きながら作業を進めてください!
 </details>
----
 
-## 2. 授業の進み方（ハンズオンの進行）
+## 1. 授業の進み方（ハンズオンの進行）
 
 - 進行
   - 最初は資料を見ながら、講師と一緒にハンズオンを進めます
@@ -49,7 +38,7 @@
 
 ---
 
-## 3. 基礎知識（今日の前提）
+## 2. 基礎知識（今日の前提）
 
 5年くらい前の身近なAIツールは、iPhoneに搭載されたSiriだったように思います。  
 2021年にOpenAI社がChatGPTを発表したのを皮切りに、今もなおAIが急速に進化しています。
@@ -63,9 +52,8 @@
   - 動画生成：[Runway](https://runwayml.com/) ・[Sora](https://openai.com/sora/)
   - 画像生成：[Midjourney](https://www.midjourney.com/home)・[DALL-E(GPT-4o)](https://openai.com/index/dall-e/) ・[ImageFX](https://labs.google/fx/tools/image-fx) 
   - 音楽：[Suno](https://suno.com/) 
-
-<img src="https://i.gyazo.com/9fa38557e2abdcd459d0e9b841d7e83d.png" width="450px" alt="image from gyazo"/>
 </details>
+<img src="https://i.gyazo.com/9fa38557e2abdcd459d0e9b841d7e83d.png" width="450px" alt="image from gyazo"/>
 
 生成AIの中でも、テキスト生成に特化したモデルが **LLM（Large Language Model / 大規模言語モデル）** です。
 
@@ -75,8 +63,8 @@
 補足: モデルとは脳みそのこと。何も学習していない状態は産まれたての赤ちゃんみたいなものです。
 
 <img src="https://i.gyazo.com/854fdc0acc8cc4357265fa8e50d1deaa.png" width="450px" alt="image from gyazo"/>
-<details>
-  <summary>【LLM例】</summary>
+
+【LLM例】
   
 - [GPT（Generative Pre-trained Transformer）](https://chatgpt.com/)  
 OpenAIが開発した一連のモデル。
@@ -84,7 +72,7 @@ OpenAIが開発した一連のモデル。
 Anthropicが開発した言語モデル。
 - [Gemini](https://gemini.google.com/app?hl=ja)  
 Googleが開発したモデル。
-</details>
+
 ---
 
 ### 3-2. ノーコードツール
