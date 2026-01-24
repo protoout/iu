@@ -15,16 +15,21 @@
 ## 2. Difyでチャットアプリを作るハンズオン
 
 ### 2-1. Difyでチャットアプリを作成
-- [Dify](https://cloud.dify.ai/)を開き、`始める`をクリックします。
-- アカウントの作成後、ログインして下記のような画面になればOKです。
- <img src="https://i.gyazo.com/7b6715b8a0b7da4e31a694601caa4475.png" width="450px" alt="image from gyazo"/>
- 
+- [Dify](https://cloud.dify.ai/)を開き、ログインして下記のような画面になればOKです。
+
+  <img src="https://i.gyazo.com/7b6715b8a0b7da4e31a694601caa4475.png" width="450px" alt="image from gyazo"/>
+
 - [ベース記事](https://zenn.dev/protoout/articles/81-start-dify-chatflow)に沿って、まずは、**チャットが動くところまで**作ります。  
 
 - ここでは、公開までやればOK
   - Difyでアプリを新規作成できている
   - チャットのプレビュー（試し会話）で1往復以上できている
+  
+    <img src="https://i.gyazo.com/23057cb0680f982ec7932cb7f1705ef3.png" width="450px" alt="image from gyazo"/>
+
   - 公開設定になっている
+  
+    <img src="https://i.gyazo.com/b66569ab623f4d957cd11406afea8a0d.png" width="450px" alt="image from gyazo"/>
 
 ### 2-2. モデルプロバイダーをGeminiへ接続（APIキー設定）
 
@@ -34,44 +39,47 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 #### 1. GeminiのAPIキーについて
 
 **事前に荻原先生に発行＆共有していただいたAPIキーを使いましょう！**
-- 注意: APIキーは外部に公開しないでください（GitHubへ貼らない）
+- 注意: APIキーは外部に公開しないでください。
 - [Google AI Studio](https://aistudio.google.com/apikey) を使用することで、自分でもAPIキーを発行することができます。
 
 #### 2. Difyのモデルプロバイダー設定（Gemini）
 
 - Dify管理画面を開く
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/ec511155-8374-433c-a275-3295daaf9111.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/5c0132aef5fa8cda491563a587505550.png" width="450px" alt="image from gyazo"/>
 
 - 「モデルプロバイダー」からGeminiを選び、`セットアップ`へ
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/4f4ab1f6-9d74-421d-917e-60e5c9b2b349.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/0ddcc0b9e7614b70e2515cf595a13a8f.png" width="450px" alt="image from gyazo"/>
 
-- APIキーを貼り付けて保存
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/672eb24d-f237-433a-adf5-198e9fd459bc.png" width="450px" alt="image from gyazo"/>
+- 荻原先生に共有していただいたAPIキーを貼り付けて保存
+<img src="https://i.gyazo.com/fcb1ab3faa25556937e07945dc805d53.png" width="450px" alt="image from gyazo"/>
 
 - 接続が成功していることを確認
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/c16bba01-bce4-4cd1-a98b-5e5f5c65b170.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/e225289892a099455d2f47d3730d85c1.png" width="450px" alt="image from gyazo"/>
 
 補足
 - OpenAIのAPIキーがある人はOpenAIでもOKです
 - もしGeminiで制限が来た場合は、予備としてGroqを接続するのがおすすめです  
   - [Groq コンソール](https://console.groq.com/home)
 
-### 2-3. プロンプトの変更（盛岡版にする）
+### 2-3. プロンプトの変更して、盛岡版にする）
 
 [ベース記事](https://zenn.dev/protoout/articles/81-start-dify-chatflow)の手順に沿って、最後にプロンプトの調整をします。
-
-- 設定のポイント
-  - システムプロンプトを 盛岡の観光アドバイザー に変更する
+- SYSTEMプロンプトを 盛岡の観光アドバイザーAIチャット を作成しましょう
 
 プロンプト例（コピペ用）
 ```
 ## 役割
-- あなたは盛岡の観光アドバイザーです。
-- ユーザーからの質問に対して盛岡観光に役立つ情報を提供してください。
+- あなたは盛岡の日帰り旅行プランナー
+- 回答は必ず以下の順で出す
+1) 旅程：時刻→場所→やること→移動
+2) 予算合計を1行
+3) 雨の日代替を2個
 
 ## 制約事項
-- ユーザーが不快に思う返信は禁止です。
+- 前置きや質問返しは禁止
+- 提案スポットは最大5つ
 ```
+<img src="https://i.gyazo.com/e7d0a803108b67b06cf3878231a2fe89.png" width="450px" alt="image from gyazo"/>
 
 ### 2-4. 動かしてみよう（動作確認）
 
@@ -81,24 +89,27 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
   - 日帰りで盛岡を楽しみたい。おすすめの回り方は？
   - 盛岡冷麺を食べたい。アクセスしやすいエリアも教えて
   - 予算3,000円、駅近、夕方から行ける観光スポットある？
+- 下記画像のように、プロンプト通りの内容で盛岡について詳しく教えてもらえたら成功です。
+<img src="https://i.gyazo.com/f822b0228e75f2dca8db520f41287cf5.png" width="450px" alt="image from gyazo"/>
 
-うまくいかないときの調整
-- 返答がふわっとする → プロンプトに「最初に条件を質問してから提案する」など明記
-- 店名やイベントなどが怪しい → RAGパートで「資料参照」に拡張して精度を上げる
+- プロンプトを調整することで、自分が望む回答を得ることができます。
+- SYSTEMにプロンプトを入れないで同じ質問をすると、下記画像のように質問返しをされるなど安定しない回答になります。
+<img src="https://i.gyazo.com/17176606fdf0e03313954007d6d51ba0.png" width="450px" alt="image from gyazo"/>
 
 ## 3. Tips：プレビューでデバッグ
 
-- まずは短いやり取りを複数回試す
+- まずは短いやり取りを複数回試しましょう。
 - うまくいかないときの見直し順
   1. プロンプト（役割 / 制約 / 出力の形）が具体的か
   2. 質問が曖昧すぎないか（条件が足りないなら追加質問させる）
   3. モデルが想定どおりに選べているか
 
+
 ## 4. チャレンジ課題（余裕がある人向け）
 
-- `課題1.` 会話スターターを3つ追加して、質問しやすい導線を作る
-- `課題2.` 観光の前提質問テンプレを作る（予算 / 滞在時間 / 移動手段 / 興味）
-- `課題3.` Groqもモデルプロバイダーに追加して、切り替えて試す
+- `課題1.` 観光の前提質問テンプレを作ってプロンプトを改善する（予算 / 滞在時間 / 移動手段 / 興味など）
+- `課題2.` Groqもモデルプロバイダーに追加して、切り替えて試す
+- `課題3.` 会話スターターを3つ追加して、質問しやすい導線を作る
 
 ## 5. まとめ
 
