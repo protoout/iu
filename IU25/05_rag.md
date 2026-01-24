@@ -23,7 +23,7 @@
 - 前のパートで作った **チャットフロー（盛岡の観光アドバイザー）** がある
 - そのチャットが **プレビューで会話できる**（RAGはまだ入っていない状態）
 
-<img src="https://i.gyazo.com/a13427459d017de7ee216957c4992c40.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/1a5396ca7c0c4f1123289218c455a68d.png" width="450px" alt="image from gyazo"/>
 
 ### 2-1. RAG導入前に試してみる（比較体験）
 
