@@ -45,6 +45,7 @@ Difyは、クラウド版だけでなく **自分のPCや自社サーバーに�
 ## 1-5. アプリケーションの種類
 
 Difyでは目的に合わせてアプリのタイプを選べます。
+今回は下記の**チャットフロー**を使っていきます。
 
 <img src="https://gyazo.com/242ae53a70f3d94399a5424c743cce83.png" width="350px" alt="image from gyazo"/>
 
