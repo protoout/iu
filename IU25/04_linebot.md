@@ -1,8 +1,8 @@
 # 盛岡の観光アドバイザーLINE Botを作ろう
 
 このパートでは、Difyで作ったBot（盛岡の知識に強いAI）を、LINE上で動くBotとして利用できる形にします。  
-- LINEは普段使っているアプリなので、ユーザーにとって「使い始めるハードルが低い」のが強みです。
-- LINE Botは、そのLINE上で動作するチャットボット（ロボット）です。日頃使っているLINEとはすこし違うものだと思っていてください。
+- LINEはおそらく皆さんが普段使っているアプリなので、使い始めるハードルが低いのが強みです。
+- LINE Botは、そのLINE上で動作するチャットボットです。日頃使っているLINEとはすこし違うものだと思っていてください。
   - お店の公式アカウントをイメージしてもらえると良いです。
 
 ## 1. このパートで作るもの「AIと会話ができるLINE Bot」
@@ -101,18 +101,18 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 - Difyのプラグインページからマーケットプレイスへ移動
 - LINEプラグインを検索してインストールします
 
-<img src="https://storage.googleapis.com/zenn-user-upload/9ce7b1c6f375-20250808.png" width="450px" alt="image from gyazo"/>
+<img src="https://storage.googleapis.com/zenn-user-upload/f77caa9fc15a-20250808.png" width="450px" alt="image from gyazo"/>
 
-<img src="https://storage.googleapis.com/zenn-user-upload/8e7fcaff702f-20250808.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
 
 検索
 - `LINE Bot` や `LINE` などで検索すると候補が出てきます
 
-<img src="https://storage.googleapis.com/zenn-user-upload/25229f4a8016-20250808.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/7f544df4463b7b4c50ec9a6de07899a5.png" width="450px" alt="image from gyazo"/>
 
 インストール
 
-<img src="https://storage.googleapis.com/zenn-user-upload/f77caa9fc15a-20250808.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/11c6ade0c1750586be03eda3bb3950ce.png" width="450px" alt="image from gyazo"/>
 
 ### 2-4. 重要: LINEプラグインのバージョンを0.0.4に下げる
 
@@ -125,11 +125,11 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 
 インストールしたら設定へ進みます。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/37fcea0365b9-20250808.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/62cfd349da465c94475dc743162ada9c.png" width="450px" alt="image from gyazo"/>
 
 `+` ボタンから作成します。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/977fd2fc499e-20250808.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/bce59781f3dbe0a83993d49a5ffe0f2e.png" width="450px" alt="image from gyazo"/>
 
 入力項目
 - エンドポイント名: 任意（わかりやすい名前）
@@ -140,7 +140,7 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 キー取得の参考
 - https://zenn.dev/protoout/articles/16-line-bot-setup
 
-<img src="https://storage.googleapis.com/zenn-user-upload/8a29256a2282-20250808.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/bb04e337be5b9c4d8807a651ba58b9fe.png" width="450px" alt="image from gyazo"/>
 
 ### 2-6. LINE DevelopersでWebhook URLの設定（連携の仕上げ）
 
@@ -148,7 +148,7 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
   補足: Webhookとは？  
   サービス（アプリケーション）の何らかのアクションを他のアプリケーションへリアルタイムに通知する仕組みのことです。
 
-<img src="https://storage.googleapis.com/zenn-user-upload/3a113c10e68c-20250809.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/245a3596028af63c4b7e5c352d07ff6c.png" width="450px" alt="image from gyazo"/>
 
 LINE Developersのコンソールで、先ほどのURLをWebhook URLに設定します。
 
