@@ -59,7 +59,7 @@ Difyでは目的に合わせてアプリのタイプを選べます。
 - [定期的に岩手のクマ情報を通知するDiscord & LINE Botを作ってみた](https://qiita.com/n0bisuke/items/78cc2854f60576023375)
   - 岩手のクマ情報を通知するBOT  
 - [「探すより、聞いてみよう。」—ノーコードで作る社内ナレッジBOTのすゝめ](https://qiita.com/ASTkenta/items/0a8a3341e94a9ba05418)
-  - ナレッジをもとに、生成AIが必要な情報を自動で回答してくれるBOTの例です。
+  - ナレッジをもとに、生成AIが必要な情報を自動で回答してくれるBOT
   - 記事は社会人向けですが、大学の受講マニュアル検索機能に応用したり、事務手続きの効率化や情報共有の質向上ができます。
 - [作例まとめ](https://zenn.dev/protoout/books/15_dify-manual/viewer/example)
 
