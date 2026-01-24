@@ -48,8 +48,8 @@
 <details>
   <summary>【生成AIツール例】 </summary>
   
-  - 動画生成：[Runway](https://runwayml.com/) ・[Sora](https://openai.com/sora/)
-  - 画像生成：[Midjourney](https://www.midjourney.com/home)・[DALL-E(GPT-4o)](https://openai.com/index/dall-e/) ・[ImageFX](https://labs.google/fx/tools/image-fx) 
+  - 動画生成：[Runway](https://runwayml.com/) ・[Sora](https://openai.com/sora/) ・[Luma Dream Machine](https://lumalabs.ai/dream-machine)
+  - 画像生成：[Midjourney](https://www.midjourney.com/home)・[Stability AI](https://stability.ai/) ・[Adobe Firefly](https://www.adobe.com/jp/products/firefly.html) 
   - 音楽：[Suno](https://suno.com/) 
 </details>
 <img src="https://i.gyazo.com/9fa38557e2abdcd459d0e9b841d7e83d.png" width="450px" alt="image from gyazo"/>
@@ -99,18 +99,14 @@ Googleが開発したモデル。
 
 </details>
 
-### 大学生活で身近な活用例
-
 <details>
-  <summary>ノーコードツールを使った活用事例（大学生活で身近な例）</summary>
+  <summary>ノーコードツールを使った活用事例</summary>
 
 - [学内のタスクや共同作業を「見える化」して、共有をスムーズにする](https://protoout.studio/24c6077e4887800cb750cca5d55cd487)
-  - 参考事例：ノーコードツールで制作！タスク管理＆共有アプリ「TASK BOARD」で現場の困りごとを解決！
-  - 例：課題・制作・イベント準備の進捗を、スマホで更新できるタスクボード
+  - 応用の仕方：課題・制作・イベント準備の進捗をスマホで更新できるタスクボードなど
 
 - [申請・承認・管理などの「事務作業」をスマホで簡単にする](https://protoout.studio/71ad29b2ffa5444f9cf7602368b6763c)
-  - 参考事例：事務的な作業をスマホ1つで楽ちんに！
-  - 例：備品の貸出管理、ゼミ備品の管理、申請の承認フローなど
+  - 応用の仕方：備品の貸出管理、ゼミ備品の管理、申請の承認フローなど
 
 【その他活用例】
 - 学内施設の案内（図書館の開館時間、PCルーム、食堂の混雑時間など）
