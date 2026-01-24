@@ -5,8 +5,6 @@
 - LINE Botは、そのLINE上で動作するチャットボット（ロボット）です。日頃使っているLINEとはすこし違うものだと思っていてください。
   - お店の公式アカウントをイメージしてもらえると良いです。
 
----
-
 ## 1. このパートで作るもの「AIと会話ができるLINE Bot」
 
 ### 1-1. 作成するものの概要
@@ -19,8 +17,6 @@
 
 参考リンク
 - [LINE公式アカウント作成 / LINE Botの初め方](https://zenn.dev/protoout/articles/16-line-bot-setup)
-
----
 
 ## 2. DifyとLINE Botを連携する
 
@@ -91,14 +87,10 @@ LINE Official Account Managerで応答設定を確認します。
 
 </details>
 
----
-
 ### 2-2. Difyのチャットアプリを準備する（公開状態）
 
 - Dify側でチャットアプリ（チャットフロー or ワークフロー）を作成しておきます
 - 公開（外部から呼べる状態）になっている必要があります
-
----
 
 ### 2-3. DifyにLINEプラグインを追加（インストール）
 
@@ -122,16 +114,12 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 
 <img src="https://storage.googleapis.com/zenn-user-upload/f77caa9fc15a-20250808.png" width="450px" alt="image from gyazo"/>
 
----
-
 ### 2-4. 重要: LINEプラグインのバージョンを0.0.4に下げる
 
 コミュニティ知見として、最新の0.0.5だとバグで動かないケースがあります。  
 その場合は0.0.4にダウングレードします。
 
 <img src="https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png" width="450px" alt="image from gyazo"/>
-
----
 
 ### 2-5. プラグインの設定（LINEのキーとDifyアプリを紐づけ）
 
@@ -154,8 +142,6 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 
 <img src="https://storage.googleapis.com/zenn-user-upload/8a29256a2282-20250808.png" width="450px" alt="image from gyazo"/>
 
----
-
 ### 2-6. LINE DevelopersでWebhook URLの設定（連携の仕上げ）
 
 ここまで問題なく進むと、Dify側でWebhook URLが発行されます。
@@ -176,8 +162,6 @@ LINE Developersのコンソールで、先ほどのURLをWebhook URLに設定し
 
 <img src="https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png" width="450px" alt="image from gyazo"/>
 
----
-
 ### 2-7. ひとまず完成！
 
 - LINEから会話をしてみる
@@ -187,16 +171,12 @@ LINE Developersのコンソールで、先ほどのURLをWebhook URLに設定し
 
 <img src="https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png" width="450px" alt="image from gyazo"/>
 
----
-
 ### 2-8. 試す / 他の人のLINE Botも試す
 
 試す際はLINEで話しかけて動作を確認してみましょう。
 
 QRコードを共有することで他の人にも使ってもらえます。  
 他の人のLINE Botも使ってみましょう。
-
----
 
 ## 3. Tips: ほかの作り方もある
 
@@ -208,8 +188,6 @@ LINE BotはDifyとは別の仕組みなので、ほかにも色々な連携方�
 - 外部APIと連携してリアルタイム情報を扱う
 
 興味がある人は調べてみましょう。
-
----
 
 ## 4. 参考: リッチメニュー
 
@@ -227,16 +205,11 @@ LINE BotはDifyとは別の仕組みなので、ほかにも色々な連携方�
 <img src="https://i.gyazo.com/669a86b1940aa84ba5da6098e37057b0.png" width="450px" alt="image from gyazo"/>
 <img src="https://i.gyazo.com/d9a707b5b85c3401cc2b9b536ba71104.png" width="450px" alt="image from gyazo"/>
 
----
-
 ## 5. まとめ
 
 - Difyで作ったAIは、プラグインを使ってLINE Botとして提供できます
 - 連携に必要なのは「チャンネルシークレット」「チャンネルアクセストークン」「Webhook URL設定」です
 - まずは動くところまで作り、改善（プロンプト/ナレッジ/体験設計）で精度と満足度を上げていきましょう
-
-
-
 
 ---
 
