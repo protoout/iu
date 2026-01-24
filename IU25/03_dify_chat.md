@@ -105,7 +105,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
   3. モデルが想定どおりに選べているか
       <details>
       <summary>モデルの違いについて</summary>
-      - たくさんのモデルがありますが、目安としては**Pro > Flash > Flash-Lite**の順に精度が高いです。
+      - たくさんのモデルがありますが、目安としては Pro > Flash > Flash-Lite の順に精度が高いです。
 
       ### 一覧（上から順番に高精度）
       - Gemini 2.5 Pro（最上位のthinkingモデル）
@@ -133,6 +133,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 ## 5. まとめ
 
 - Difyでチャットアプリを作成し、Geminiを接続して動作確認まで完了しました。
+  <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
 
 ---
 
