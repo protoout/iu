@@ -24,17 +24,16 @@
 
 <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
 
-### 2-1. RAG導入前に試してみる（比較体験）
+### 2-1. RAG導入前に試してみる
 
-RAGを入れる前に、同じ質問を送ってみましょう。
-あとでRAGを入れた後にもう一度同じ質問をして、差分が分かるようにします。
+- RAGを入れる前に、質問を送ってみましょう。
+- あとでRAGを入れた後にもう一度同じ質問をして、差分が分かるようにします。
 
-例
-- 「盛岡で親子で行けるスポットを教えて」
-- 「盛岡のおすすめの回り方を教えて」
-- 「（資料にしか書いていない）〇〇って何？」
+```txt
+盛岡冷麺について教えて
+```
 
-RAGを入れる前の状態として、返ってきた回答をメモなどにコピペしておきましょう。
+<img src="https://i.gyazo.com/4e7da383f9e0dc7db2c4430237787b28.png" width="450px" alt="image from gyazo"/>
 
 ### 2-2. DifyでRAGアプリを作る
 
@@ -42,7 +41,7 @@ RAGを入れる前の状態として、返ってきた回答をメモなどに�
 
 - 保存するURL  
   https://gist.githubusercontent.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d/raw/c37cb9a96318eb9b1615b7276628230dbb5dd88e/morioka-oyako.md
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/8f596432-2369-44c1-90a1-81a2ec0d7954.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/4feb99d8c10610fa4cf5e2b1663ef129.png" width="450px" alt="image from gyazo"/>
 
 - 保存名（例）  
   `morioka.md` または `morioka.txt`
@@ -54,74 +53,71 @@ RAGを入れる前の状態として、返ってきた回答をメモなどに�
 
 ナレッジ機能（Datasets）に移動します。  
 - https://cloud.dify.ai/datasets
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/a232ab93-931d-44dd-a153-6dad13b79f2b.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/9dd2d3dd9f181ef1be8cd24240814366.png" width="450px" alt="image from gyazo"/>
 
 手順
 - `ナレッジベースを作成` を選択
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/45581e87-f847-459a-8333-b858db709364.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/00293973083117c298714eb8c38e4236.png" width="450px" alt="image from gyazo"/>
 
 - 先ほど保存したファイル（`morioka.md` など）をアップロード
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/1ec9dfc1-da34-4b18-ad18-df8084f7cb91.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/44b34ca32a8699bbced5a4b206601d51.png" width="450px" alt="image from gyazo"/>
 
 ### 2-4. 埋め込み（親子分割モード）と検索設定
 
 #### 1. 埋め込み: チャンク設定（親子分割モード）
 
 汎用設定より手間は増えますが、精度を優先して `親子分割モード` を使います。
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/14fcb934-1650-48c3-b4cf-14087fbfac5f.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/609e339e1339dd94154e381a12c0d2a9.png" width="450px" alt="image from gyazo"/>
 
 - 分割モード: `親子分割モード`
 - チャンク識別子: `##`
 - 検索用子チャンク識別子: `=====`
+- 埋め込みモデル: Geminiの埋め込みモデルを利用
 
-#### 2. 埋め込み: インデックス方法
+<img src="https://i.gyazo.com/0d8b6fa8585a7ecf14009edf38094822.png" width="450px" alt="image from gyazo"/>
 
-- 埋め込みモデル: Geminiの埋め込みモデルを利用（Dify側の選択肢に従って選択）
+#### 2. 検索: 検索設定
 
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/b37e6244-940e-4983-b8d3-3f46dd376173.png" width="450px" alt="image from gyazo"/>
-
-#### 3. 検索: 検索設定（ハイブリッド検索）
-
-本来は「ハイブリッド + リランカー」が強いですが、リランカーは別途APIキーが必要な場合があります。  
-今回はウェイト設定で進めます。
+本来は「ハイブリッド + リランカー」の方が精度が高いですが、リランカーは別途APIキーが必要な場合があるため、今回はウェイト設定で進めます。
 
 - `ハイブリッド検索` を選択
-
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/8db80470-3233-419d-bfd1-3d2db5c3817f.png" width="450px" alt="image from gyazo"/>
-
 - `ウェイト設定` を選択
+
+<img src="https://i.gyazo.com/3bef14cf02e97912eb0eb98bf40b4388.png" width="450px" alt="image from gyazo"/>
+
 - `保存して処理` を押して完了
 
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/4c21bf65-f640-4815-ac84-5dd48b8c6d90.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/dc0e2f09993bfa6630b1e3d672127518.png" width="450px" alt="image from gyazo"/>
 
 ### 2-5. チャットフローに「知識検索ノード」を追加
 
 手順
 - 最初に作ったチャットフローの画面に戻る
 - `開始ノード` と `LLMノード` の間に `知識検索` ノードを追加する
-<img src="[https://i.gyazo.com/a13427459d017de7ee216957c4992c40.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/41289a68-44c8-4c42-a8a2-01058dbad42c.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/f1b31a4a0ce4a2294c650d1bdb5170cd.png" width="450px" alt="image from gyazo"/>
 
 - `知識検索ノード` の設定でナレッジを紐づける
   - ナレッジベース項目の `+` を押す
   - 先ほど作成したナレッジを選択
   - `追加`
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/32c4664a-c862-46d1-a4a1-8c09159d8080.png" width="450px" alt="image from gyazo"/>
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/c73c3ac7-6f2d-4133-baea-272084df7ba0.png" width="450px" alt="image from gyazo"/>
+<img src="https://gyazo.com/ade47fb9b54a1a765aa20514aef8b83c.png" width="450px" alt="image from gyazo"/>
+
+<img src="https://gyazo.com/6e0fe598a6be8a8cd889a368e2a40e05.png" width="450px" alt="image from gyazo"/>
 
 
 
-### 2-6. LLMノードの設定（コンテキストに検索結果を渡す）
+### 2-6. LLMノードの設定
 
 RAGが効いていることを分かりやすくするため、あえて少し古めのモデルを使います。  
 （賢すぎるモデルだと、RAGなしでも答えてしまうことがあります）
 
-- 例: `Gemini 1.5 Flash` など
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/60553d4e-1d4e-4889-b733-e53342547bac.png" width="450px" alt="image from gyazo"/>
+- 例: `Gemini 2.0 Flash-Lite 001` など
+<img src="https://i.gyazo.com/93a33031303a9e50de4d3d5a4e57142e.png" width="450px" alt="image from gyazo"/>
 
 設定
 - LLMノードの `コンテキスト` に `知識検索の result` を設定する
-> ![](https://i.gyazo.com/ee6d974dbc4cc9e9353a09f3cad6e90d.gif)
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/05790de1-f138-42ee-a085-2a9e1317f021.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/7a2138ec292a26b29c610dc949c8bb5e.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/b1299412977579fcb86909c8b44ee624.png" width="450px" alt="image from gyazo"/>
 
 ### 2-7. プロンプトをRAG用に調整
 
@@ -139,20 +135,21 @@ LLMノードのプロンプトを、コンテキスト参照前提にします�
 ## 制約事項
 - ユーザーが不快に思う返信は禁止です。
 ```
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/fea93677-0673-40fe-93e5-d3008d69cda6.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/1868c1034865e2ffec19e8314a59bb3e.png" width="450px" alt="image from gyazo"/>
 
 ### 2-8. 会話テストをしてみる
 
-ここで **3章で送ったものと同じ質問** をもう一度聞きます。  
+ここで **2-1で送ったものと同じ質問** をもう一度聞きます。  
 RAGを入れたことでの差を体験しましょう。
 
-例
-- 盛岡で親子で行けるスポットを教えて
-- この資料に書かれているおすすめの回り方は？
+```txt
+盛岡冷麺について教えて
+```
 
 チェックポイント
 - 回答が「資料の内容」に寄っていれば成功です
-- 資料にないことを断定する場合は、プロンプトを調整して「コンテキスト外はわからない」と言わせましょう
+- 資料にないことを断定する場合は、プロンプトを調整しましょう
+<img src="https://i.gyazo.com/99d4a9284b97ca8e95d40c6510d7f932.png" width="450px" alt="image from gyazo"/>
 
 ## 3. Tips: RAGの限界と応用
 
@@ -168,24 +165,10 @@ RAGを入れたことでの差を体験しましょう。
 
 ### 3-2. RAG（Retrieval-Augmented Generation）で嘘を減らす
 
-- RAGは、検索によって取得した外部の知識をLLMに与えて回答の質を上げる手法です
-- Difyではナレッジ機能（Datasets）と知識検索ノードで実現できます
-https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee9654730312d2 
-
-参考: 手法の例（今回やるのはナレッジデータストア）
-- ナレッジデータストアの利用
-- データソース（Web検索）の利用
-- データコネクターの利用
-- 外部API・DB連携
-- 検索クエリー生成プロンプト
-
-### 3-3. 余談: APIという手もある
-
-- RAGは「事前に登録した情報」が中心です
-- リアルタイム性が高い情報や更新性が高い情報を扱うためにはそういったデータを提供している外部サービス（API）と連携する必要があります。   
+- RAGは、外部の知識をLLMに与えて回答の質を上げる手法です
+- RAGは「事前に登録した情報」が中心ですが、リアルタイム性が高い情報や更新性が高い情報を扱うためにはそういったデータを提供している外部サービス（API）と連携する必要があります。   
 「Webhookを利用して外部サービスと連携する」というものもあります。  
-
-- [お天気API](https://weather.tsukumijima.net/)が手始めにはいいかもしれません。   
+  - 例：[お天気API](https://weather.tsukumijima.net/)   
   - JSONという書き方が少し難しいですが、チャレンジすると応用の幅が広がると思います！
 
 ## 4. チャレンジ課題
@@ -194,21 +177,16 @@ https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee96547
 プロンプトを書き換えてみたり、自分の大学のHPを読みこんでみるなど、オリジナル会話型AIを作ってみよう！
 
 - `課題1.` 盛岡ではなく「自分の大学/職場/施設」の情報でナレッジを作り直す
-<img src="https://i.gyazo.com/7d86f01c0c57e9920611820a42b5a9c3.png" width="250px" alt="image from gyazo"/>
-
 - `課題2.` プロンプトを調整して「コンテキスト外は回答しない」を徹底する
-- `課題3.` 最新のビジネス関連ニュースをリアルタイムで提供するチャットボット
-- `課題4.` セミナーやイベントの予約をサポートするチャットボット
+- `課題3.` 最新の情報（ビジネス関連ニュース等）をリアルタイムで提供するチャットボット
 
 ## 5. まとめ
 
-- ローカル情報は生成AI単体だと弱く、ハルシネーションが起きやすいです
 - RAGは、検索した資料を根拠として回答させることで精度を上げる方法です
 - Difyでは「ナレッジ機能 + 知識検索ノード」で比較的かんたんにRAGを組み込めます
 
 ### 取り込めるデータ
 社内リソース、エクセルファイル、Notionの内部ページなど、Difyは扱えるデータが多く搭載されています。  
-必要に応じて読みこんでください。
 
 <img src="https://i.gyazo.com/2e15069a236dd7193bf98e701a30c773.png" width="250px" alt="image from gyazo"/>
 
