@@ -29,7 +29,7 @@ Difyは、ChatGPTなどのLLM単体ではやりづらい「社内資料の参照
 
 DifyはOSS（オープンソースソフトウェア）として、ソースコードが公開されています。  
 OSSとは、誰でも見られる場所にソースコードが無償で公開されていて、使用・改変・再配布などが自由にできるソフトウェアのことです。
-- [Difyのソースコード]( https://github.com/langgenius/dify)
+- [Difyのソースコード](https://github.com/langgenius/dify)
 
 ## 1-4. オンプレミス環境で構築できる（自分のPCでも使える）
 
