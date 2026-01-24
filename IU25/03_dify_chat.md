@@ -103,13 +103,32 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
   1. プロンプト（役割 / 制約 / 出力の形）が具体的か
   2. 質問が曖昧すぎないか（条件が足りないなら追加質問させる）
   3. モデルが想定どおりに選べているか
+      <details>
+      <summary>モデルの違いについて</summary>
+      - たくさんのモデルがありますが、目安としては**Pro > Flash > Flash-Lite**の順に精度が高いです。
 
+      ### 一覧（上から順番に高精度）
+      - Gemini 2.5 Pro（最上位のthinkingモデル）
+      - Gemini Flash Latest（最新Flashへ自動追従）
+      - Gemini 2.5 Flash（推論もできる高速モデル）
+      - Gemini 2.0 Flash Exp（実験版、当たり外れあり）
+      - Gemini 2.0 Flash 001（固定の安定版）
+      - Gemini 2.0 Flash（latest扱いになり得る）
+      - Gemini Flash-Lite Latest（Flash-Lite系の最新へ自動追従）
+      - Gemini 2.5 Flash-Lite（軽量・コスパ）
+      - Gemini 2.0 Flash-Lite 001（軽量の固定版）
+      - Gemini 2.0 Flash-Lite（※2026/03/31で終了予定）
+
+      ### 画像生成系（文章用途とは別枠）
+      - Nano Banana（画像生成寄り）
+      - Gemini 2.0 Flash Preview Image Generation（画像生成用)
+      </details>
 
 ## 4. チャレンジ課題（余裕がある人向け）
 
 - `課題1.` 観光の前提質問テンプレを作ってプロンプトを改善する（予算 / 滞在時間 / 移動手段 / 興味など）
-- `課題2.` Groqもモデルプロバイダーに追加して、切り替えて試す
-- `課題3.` 会話スターターを3つ追加して、質問しやすい導線を作る
+- `課題2.` 自分の興味があるテーマでチャットbotを作ろう
+- `課題3.` Groqもモデルプロバイダーに追加して、切り替えて試す
 
 ## 5. まとめ
 
