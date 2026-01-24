@@ -3,8 +3,6 @@
 このパートでは、「検索機能」を追加して、ローカル情報（盛岡/社内/施設/大学など）にも強いQ&Aチャットボットを作ります。  
 生成AIがそれっぽい嘘を返すハルシネーションを減らし、「根拠のある回答」に寄せるのが目的です。
 
----
-
 ## 1. このパートで作るもの「ローカル情報に強いQ&Aチャットボット」
 
 ### 1-1. 作成するものの概要
@@ -27,30 +25,19 @@
 
 <img src="https://i.gyazo.com/a13427459d017de7ee216957c4992c40.png" width="450px" alt="image from gyazo"/>
 
----
-
-## 3. RAG導入前に試してみる（比較体験）
+### 2-1. RAG導入前に試してみる（比較体験）
 
 RAGを入れる前に、同じ質問を投げて「今の状態」を確認します。  
 あとでRAGを入れた後にもう一度同じ質問をして、差分が分かるようにします。
-
-### 3-1. まずは同じ質問をを送ってみる
 
 例
 - 「盛岡で親子で行けるスポットを教えて」
 - 「盛岡のおすすめの回り方を教えて」
 - 「（資料にしか書いていない）〇〇って何？」
 
-メモしておくこと
-- 返答がそれっぽいけど根拠がない
-- そもそも知らない内容を適当に答える
-- “たぶんこう” みたいな回答になる
+RAGを入れる前の状態として、返ってきた回答をメモなどにコピペしておきましょう。
 
----
-
-## 4. DifyでRAGアプリを作るハンズオン
-
-### 4-1. 利用するナレッジをダウンロードして保存
+### 2-2. DifyでRAGアプリを作る
 
 以下のテキストを、手元にファイルとして保存します。
 
@@ -64,24 +51,20 @@ RAGを入れる前に、同じ質問を投げて「今の状態」を確認し�
 補足: zipでまとめてDLしたい人  
 - https://gist.github.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d
 
----
-
-### 4-2. ナレッジデータを登録（Dataset作成）
+### 2-3. ナレッジデータを登録（Dataset作成）
 
 ナレッジ機能（Datasets）に移動します。  
 - https://cloud.dify.ai/datasets
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/a232ab96-931d-44dd-a156-6dad13b79f2b.png" width="450px" alt="image from gyazo"/>
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/a232ab93-931d-44dd-a153-6dad13b79f2b.png" width="450px" alt="image from gyazo"/>
 
 手順
 - `ナレッジベースを作成` を選択
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/45581e87-f847-459a-8336-b858db709364.png" width="450px" alt="image from gyazo"/>
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/45581e87-f847-459a-8333-b858db709364.png" width="450px" alt="image from gyazo"/>
 
 - 先ほど保存したファイル（`morioka.md` など）をアップロード
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/1ec9dfc1-da34-4b18-ad18-df8084f7cb91.png" width="450px" alt="image from gyazo"/>
 
----
-
-### 4-3. 埋め込み（親子分割モード）と検索設定
+### 2-4. 埋め込み（親子分割モード）と検索設定
 
 #### 1. 埋め込み: チャンク設定（親子分割モード）
 
@@ -96,7 +79,7 @@ RAGを入れる前に、同じ質問を投げて「今の状態」を確認し�
 
 - 埋め込みモデル: Geminiの埋め込みモデルを利用（Dify側の選択肢に従って選択）
 
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/b37e6244-940e-4983-b8d6-3f46dd376173.png" width="450px" alt="image from gyazo"/>
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/b37e6244-940e-4983-b8d3-3f46dd376173.png" width="450px" alt="image from gyazo"/>
 
 #### 3. 検索: 検索設定（ハイブリッド検索）
 
@@ -112,9 +95,7 @@ RAGを入れる前に、同じ質問を投げて「今の状態」を確認し�
 
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/4c21bf65-f640-4815-ac84-5dd48b8c6d90.png" width="450px" alt="image from gyazo"/>
 
----
-
-### 4-4. チャットフローに「知識検索ノード」を追加
+### 2-5. チャットフローに「知識検索ノード」を追加
 
 手順
 - 最初に作ったチャットフローの画面に戻る
@@ -126,11 +107,11 @@ RAGを入れる前に、同じ質問を投げて「今の状態」を確認し�
   - 先ほど作成したナレッジを選択
   - `追加`
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/32c4664a-c862-46d1-a4a1-8c09159d8080.png" width="450px" alt="image from gyazo"/>
-<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/c73c3ac7-6f2d-4136-baea-272084df7ba0.png" width="450px" alt="image from gyazo"/>
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/c73c3ac7-6f2d-4133-baea-272084df7ba0.png" width="450px" alt="image from gyazo"/>
 
----
 
-### 4-5. LLMノードの設定（コンテキストに検索結果を渡す）
+
+### 2-6. LLMノードの設定（コンテキストに検索結果を渡す）
 
 RAGが効いていることを分かりやすくするため、あえて少し古めのモデルを使います。  
 （賢すぎるモデルだと、RAGなしでも答えてしまうことがあります）
@@ -143,9 +124,7 @@ RAGが効いていることを分かりやすくするため、あえて少し�
 > ![](https://i.gyazo.com/ee6d974dbc4cc9e9353a09f3cad6e90d.gif)
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/05790de1-f138-42ee-a085-2a9e1317f021.png" width="450px" alt="image from gyazo"/>
 
----
-
-### 4-6. プロンプトをRAG用に調整
+### 2-7. プロンプトをRAG用に調整
 
 LLMノードのプロンプトを、コンテキスト参照前提にします。
 
@@ -163,9 +142,7 @@ LLMノードのプロンプトを、コンテキスト参照前提にします�
 ```
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/35387/fea93677-0673-40fe-93e5-d3008d69cda6.png" width="450px" alt="image from gyazo"/>
 
----
-
-## 5. 動かしてみる（会話テスト）
+## 2-8. 動かしてみる（会話テスト）
 
 ここで **3章で投げたのと同じ質問** をもう一度聞きます。  
 RAGを入れたことでの差を体験しましょう。
@@ -178,11 +155,9 @@ RAGを入れたことでの差を体験しましょう。
 - 回答が「資料の内容」に寄っていれば成功です
 - 資料にないことを断定する場合は、プロンプトを調整して「コンテキスト外はわからない」と言わせましょう
 
----
+## 3. Tips: RAGの限界と応用
 
-## 6. Tips: RAGの限界と応用
-
-### 6-1. ハルシネーションとは
+### 3-1. ハルシネーションとは
 
 ハルシネーションとは、もっともらしい嘘の情報を返してくる  
 「本来存在しない情報をAIが勝手に生成してしまう現象」です。
@@ -192,7 +167,7 @@ RAGを入れたことでの差を体験しましょう。
 - AI: 今日のイベントは5件あります
 - あなた: 調べたら来週開催だった…など
 
-### 6-2. RAG（Retrieval-Augmented Generation）で嘘を減らす
+### 3-2. RAG（Retrieval-Augmented Generation）で嘘を減らす
 
 - RAGは、検索によって取得した外部の知識をLLMに与えて回答の質を上げる手法です
 - Difyではナレッジ機能（Datasets）と知識検索ノードで実現できます
@@ -205,7 +180,7 @@ https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee96547
 - 外部API・DB連携
 - 検索クエリー生成プロンプト
 
-### 6-3. 余談: APIという手もある
+### 3-3. 余談: APIという手もある
 
 - RAGは「事前に登録した情報」が中心です
 - リアルタイム性が高い情報や更新性が高い情報を扱うためにはそういったデータを提供している外部サービス（API）と連携する必要があります。   
@@ -214,9 +189,7 @@ https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee96547
 - [お天気API](https://weather.tsukumijima.net/)が手始めにはいいかもしれません。   
   - JSONという書き方が少し難しいですが、チャレンジすると応用の幅が広がると思います！
 
----
-
-## 7. チャレンジ課題
+## 4. チャレンジ課題
 
 時間が余っている人はこちら。
 プロンプトを書き換えてみたり、自分の大学のHPを読みこんでみるなど、オリジナル会話型AIを作ってみよう！
@@ -228,9 +201,7 @@ https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee96547
 - `課題3.` 最新のビジネス関連ニュースをリアルタイムで提供するチャットボット
 - `課題4.` セミナーやイベントの予約をサポートするチャットボット
 
----
-
-## 8. まとめ
+## 5. まとめ
 
 - ローカル情報は生成AI単体だと弱く、ハルシネーションが起きやすいです
 - RAGは、検索した資料を根拠として回答させることで精度を上げる方法です
@@ -241,6 +212,7 @@ https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee96547
 必要に応じて読みこんでください。
 
 <img src="https://i.gyazo.com/2e15069a236dd7193bf98e701a30c773.png" width="250px" alt="image from gyazo"/>
+
 ---
 
 このページの内容は以上です。  
