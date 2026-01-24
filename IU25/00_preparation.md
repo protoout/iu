@@ -7,7 +7,9 @@
     
 ## Difyアカウント
 1. クラウド利用 Dify無料版を準備
-    - [Dify](https://cloud.dify.ai/signin)にアクセス後、Gmailなどのメールアドレスを使用してアカウントの作成をしてください。
+    - [Dify](https://cloud.dify.ai)にアクセス後、Gmailなどのメールアドレスを使用してアカウントの作成をしてください。
+    - アカウントの作成後、ログインして下記のような画面になればOKです。
+     <img src="https://i.gyazo.com/7b6715b8a0b7da4e31a694601caa4475.png" width="450px" alt="image from gyazo"/>
 2. APIキー
    - 荻原先生から共有いただいたDifyのAPIキーは、パソコンに搭載されているWordやメモ帳などに控えておきましょう。
 
