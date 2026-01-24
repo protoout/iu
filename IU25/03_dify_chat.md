@@ -17,7 +17,7 @@
 ### 2-1. Difyでチャットアプリを作成
 - [Dify](https://cloud.dify.ai/)を開き、`始める`をクリックします。
 - アカウントの作成後、ログインして下記のような画面になればOKです。
- <img src="https://i.gyazo.com/631c8c23eaca11c6e44bad392d3bbafa.jpg" width="450px" alt="image from gyazo"/>
+ <img src="https://i.gyazo.com/7b6715b8a0b7da4e31a694601caa4475.png" width="450px" alt="image from gyazo"/>
  
 - [ベース記事](https://zenn.dev/protoout/articles/81-start-dify-chatflow)に沿って、まずは、**チャットが動くところまで**作ります。  
 
