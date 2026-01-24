@@ -24,8 +24,8 @@
 
 ### ■ 実装授業1 13:30-14:10（40分）
 - [Difyについて](/IU25/02_dify.md)
-- [DifyによるAIアプリ開発](/IU25/02_dify_chat.md)
-- [DifyのAIをLINE Bot化](/IU25/03_linebot.md)
+- [DifyによるAIアプリ開発](/IU25/03_dify_chat.md)
+- [DifyのAIをLINE Bot化](/IU25/04_linebot.md)
 
 ---
 
@@ -34,13 +34,13 @@
 ---
 
 ### ■ 実装授業2 14:20-15:00（40分）
-- [RAG活用（知識投入 → 動作確認）](/IU25/04_rag.md)
+- [RAG活用（知識投入 → 動作確認）](/IU25/05_rag.md)
 
 ### ■ 自由制作 15:00-15:30（30分）
-- [応用課題 自分なりのRAG活用LINE Botを制作](/IU25/05_challenge.md)
+- [応用課題 自分なりのRAG活用LINE Botを制作](/IU25/06_challenge.md)
 
 ### ■ 発表 15:30-15:50（20分）
-- [制作したものを発表](/IU25/06_conclusion.md)
+- [制作したものを発表](/IU25/07_conclusion.md)
 
 ### ■ クロージング 15:50-16:00（10分）
 - [ワークシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?usp=sharing)
