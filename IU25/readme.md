@@ -40,8 +40,10 @@
 - [自分なりのRAG活用LINE Botを制作](/IU25/06_challenge.md)
 
 ### ■ 発表 15:30-15:50（20分）
-- [制作したものを発表](/IU25/07_conclusion.md)
+- 制作したものを発表
 
 ### ■ クロージング 15:50-16:00（10分）
 - [ワークシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?usp=sharing)
+  - 受講後の技術分けワーク(3分)
+  - 振り返り時間(7分)
 - アンケート案内：[アンケートはこちら](https://forms.gle/ZUNycSw8CAuPBaHU6)
