@@ -7,8 +7,6 @@
 
 ## 1. このパートで作るもの「AIと会話ができるLINE Bot」
 
-### 1-1. 作成するものの概要
-
 - Difyで作成したAIをLINEに接続し、LINEでメッセージを送ると返信が返ってくるBotを作ります
 - 作成イメージ:
 - [盛岡の観光情報を教えてくれるチャットBot](https://x.com/T_taisyou/status/1954062259132792958)
@@ -20,9 +18,9 @@
 
 ## 2. DifyとLINE Botを連携する
 
-### 2-1. LINE側の応答設定を整える（応答メッセージ）
+### 2-1. LINE側の応答設定を整える
 
-LINE Official Account Managerで応答設定を確認します。  
+[LINE Official Account Manager](https://manager.line.biz/)で応答設定を確認します。  
 「Messaging API設定」タブの「応答メッセージ」から、右側の `編集` ボタンで設定します。
 
 <img src="https://i.gyazo.com/d9a707b5b85c3401cc2b9b536ba71104.png" width="450px" alt="image from gyazo"/>
