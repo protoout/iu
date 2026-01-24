@@ -37,7 +37,7 @@
 - [RAG活用（知識投入 → 動作確認）](/IU25/05_rag.md)
 
 ### ■ 自由制作 15:00-15:30（30分）
-- [応用課題 自分なりのRAG活用LINE Botを制作](/IU25/06_challenge.md)
+- [自分なりのRAG活用LINE Botを制作](/IU25/06_challenge.md)
 
 ### ■ 発表 15:30-15:50（20分）
 - [制作したものを発表](/IU25/07_conclusion.md)
