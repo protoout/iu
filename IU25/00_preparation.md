@@ -2,13 +2,12 @@
 #### 下記3つのアカウント準備を授業前までにお願いします。
 
 ## Google Chromeのインストール
-- Googleアカウントの作成をし、[Google Chrome](https://www.google.com/intl/ja_jp/chrome/)のインストールをしておいてください。この授業ではブラウザをGoogle Chromeで指定して進めていきます。
+- Googleアカウントの作成をし、[Google Chrome](https://www.google.com/intl/ja_jp/chrome/)のインストールをしておいてください。この授業ではブラウザをGoogle Chromeに指定して進めていきます。
 - それ以外は何かと動かない場合があります。
     
 ## Difyアカウント
-1. クラウド利用 Dify教育版を準備
+1. クラウド利用 Dify無料版を準備
     - [Dify教育版](https://legacy-docs.dify.ai/ja-jp/getting-started/dify-for-education)の手順に沿って、アカウントの作成をしてください。
-    参考：[【朗報】AI開発プラットフォーム「Dify」が学生なら1年間無料！登録方法と活用法を徹底解説](https://note.com/26_27_job/n/n82f076b83ce1)
 2. APIキー
    - 荻原先生から共有いただいたDifyのAPIキーは、パソコンに搭載されているWordやメモ帳などに控えておきましょう。
 
