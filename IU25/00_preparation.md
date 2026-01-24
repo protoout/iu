@@ -7,7 +7,7 @@
     
 ## Difyアカウント
 1. クラウド利用 Dify無料版を準備
-    - [Dify教育版](https://legacy-docs.dify.ai/ja-jp/getting-started/dify-for-education)の手順に沿って、アカウントの作成をしてください。
+    - [Dify](https://cloud.dify.ai/signin)にアクセス後、Gmailなどのメールアドレスを使用してアカウントの作成をしてください。
 2. APIキー
    - 荻原先生から共有いただいたDifyのAPIキーは、パソコンに搭載されているWordやメモ帳などに控えておきましょう。
 
