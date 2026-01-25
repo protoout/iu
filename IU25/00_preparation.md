@@ -6,19 +6,19 @@
 - **この授業ではブラウザをGoogle Chromeに指定して進めていきます。**
 - それ以外は何かと動かない場合があります。
     
-## 2. Difyアカウント
+## 2. Difyアカウントの作成
 ### クラウド利用 Dify無料版を準備
 1. [Difyのアカウント登録](https://zenn.dev/protoout/books/15_dify-manual/viewer/signin)の手順に沿って、アカウントの作成をしてください。
 2. アカウントの作成後、ログインして下記のような画面になればOKです。
 <img src="https://i.gyazo.com/7b6715b8a0b7da4e31a694601caa4475.png" width="450px" alt="image from gyazo"/>
 
-## 3. Gemini APIキー
+## 3. Gemini APIキーの作成
 - [モデルプロバイダー: Gemini](https://zenn.dev/protoout/books/15_dify-manual/viewer/model-setup-gemini)の手順に沿って、[1. GeminiのAPIキーを作成](https://zenn.dev/protoout/books/15_dify-manual/viewer/model-setup-gemini#1.-gemini%E3%81%AEapi%E3%82%AD%E3%83%BC%E3%82%92%E4%BD%9C%E6%88%90)まで進めて、GeminiのAPIキーを取得しておきましょう。
 - 下記画像のように、APIキーと書かれた青い文字をクリックすると、APIキーの詳細が確認でます。
 - APIキーをコピーして、パソコンに搭載されているWordやメモ帳などに控えたら準備OKです。
 <img src="https://i.gyazo.com/8709badf2c4cabba428ad6f4f03ff33c.png" width="450px" alt="image from gyazo"/>
 
-## 4. LINE公式アカウント
+## 4. LINE公式アカウントの作成
 - [LINE公式アカウントの作成の仕方](https://zenn.dev/protoout/articles/16-line-bot-setup)の手順に沿って、[5-2. チャネルアクセストークンの取得](https://zenn.dev/protoout/articles/16-line-bot-setup#5-2.-%E3%83%81%E3%83%A3%E3%83%8D%E3%83%AB%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3%E3%81%AE%E5%8F%96%E5%BE%97)まで準備をしてください。
     - 新規LINEアカウントを作るわけではないので注意
 
