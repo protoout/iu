@@ -50,7 +50,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 - 「モデルプロバイダー」からGeminiを選び、`セットアップ`へ
 <img src="https://i.gyazo.com/0ddcc0b9e7614b70e2515cf595a13a8f.png" width="450px" alt="image from gyazo"/>
 
-- 荻原先生に共有していただいたAPIキーを貼り付けて保存
+- 事前準備で発行したAPIキーを貼り付けて保存
 <img src="https://i.gyazo.com/fcb1ab3faa25556937e07945dc805d53.png" width="450px" alt="image from gyazo"/>
 
 - 接続が成功していることを確認
