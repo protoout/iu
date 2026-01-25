@@ -35,7 +35,7 @@
 <img src="https://i.gyazo.com/546cf492038cee6962d9b8dfa4ca2c04.png" width="450px" alt="image from gyazo"/>
 
 3. スマホで公式アカウントが友だち追加できている
-<img src="https://i.gyazo.com/222275d75045bed314557e8526f3750d.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/222275d75045bed314557e8526f3750d.png" width="250px" alt="image from gyazo"/>
 
 - マストではないですが、LINEのデスクトップアプリをインストールした方がテストしやすく捗ります。
 
