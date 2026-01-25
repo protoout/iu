@@ -38,9 +38,9 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 
 #### 1. GeminiのAPIキーについて
 
-**事前に荻原先生に発行＆共有していただいたAPIキーを使いましょう！**
+事前に準備したAPIキーを使いましょう！
 - 注意: APIキーは外部に公開しないでください。
-- [Google AI Studio](https://aistudio.google.com/apikey) を使用することで、自分でもAPIキーを発行することができます。
+<img src="https://i.gyazo.com/8709badf2c4cabba428ad6f4f03ff33c.png" width="450px" alt="image from gyazo"/>
 
 #### 2. Difyのモデルプロバイダー設定（Gemini）
 
