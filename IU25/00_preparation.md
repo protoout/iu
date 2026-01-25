@@ -14,7 +14,7 @@
 
 ## 3. Gemini APIキーの作成
 - [モデルプロバイダー: Gemini](https://zenn.dev/protoout/books/15_dify-manual/viewer/model-setup-gemini)の手順に沿って、[1. GeminiのAPIキーを作成](https://zenn.dev/protoout/books/15_dify-manual/viewer/model-setup-gemini#1.-gemini%E3%81%AEapi%E3%82%AD%E3%83%BC%E3%82%92%E4%BD%9C%E6%88%90)まで進めて、GeminiのAPIキーを取得しておきましょう。
-- 下記画像のように、APIキーと書かれた青い文字をクリックすると、APIキーの詳細が確認でます。
+- 下記画像のように、APIキーと書かれた青い文字をクリックすると、APIキーの詳細が確認できます。
 - APIキーをコピーして、パソコンに搭載されているWordやメモ帳などに控えたら準備OKです。
 <img src="https://i.gyazo.com/8709badf2c4cabba428ad6f4f03ff33c.png" width="450px" alt="image from gyazo"/>
 
