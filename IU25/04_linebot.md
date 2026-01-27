@@ -19,15 +19,11 @@
 
 ## 1. 作るアプリケーション
 
-### Difyで作成したAIをLINEに接続しメッセージを送ると返信がくるLINE Bot
+### 盛岡の観光情報について質問すると、AIが回答してくれるLINE Bot
 
-- 作成イメージ:
-- [盛岡の観光情報を教えてくれるチャットBot](https://x.com/T_taisyou/status/1954062259132792958)
+[盛岡の観光情報を教えてくれるチャットBot](https://x.com/T_taisyou/status/1954062259132792958)
 
 <img src="https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png" width="250px" alt="image from gyazo"/>
-
-参考リンク
-- [LINE公式アカウント作成 / LINE Botの初め方](https://zenn.dev/protoout/articles/16-line-bot-setup)
 
 ## 2. DifyとLINE Botを連携する
 
