@@ -1,13 +1,26 @@
-# 盛岡の観光アドバイザーLINE Botを作ろう
+# LINEと連携をした「盛岡の観光アドバイザーLINE Bot」を作ろう
 
 このパートでは、Difyで作ったBot（盛岡の知識に強いAI）を、LINE上で動くBotとして利用できる形にします。  
-- LINEはおそらく皆さんが普段使っているアプリなので、使い始めるハードルが低いのが強みです。
-- LINE Botは、そのLINE上で動作するチャットボットです。日頃使っているLINEとはすこし違うものだと思っていてください。
-  - お店の公式アカウントをイメージしてもらえると良いです。
+- LINEはみなさんの身の回りにある身近なアプリなので、触れることがイメージしやすいのが強みです。
+- Bot（ボット）は、**人の代わりに自動でやり取りや処理を行うプログラム**のことです。
+  - 例えば「質問に自動で返事をする」「案内をする」「予約や申請の受付をする」などを、ルールやAIを使って実行します。
+- LINE Botは、LINE上で動作するチャットボットです。お店の公式アカウントをイメージしてもらえると良いです。
+  - [郵便局LINE「ぽすくま」](https://www.post.japanpost.jp/send/line/index.html)
 
-## 1. このパートで作るもの「AIと会話ができるLINE Bot」
+    <img src="https://i.gyazo.com/584ad087677f0a94caa5649177ab6ec8.png" width="250px" alt="image from gyazo"/>
 
-- Difyで作成したAIをLINEに接続し、LINEでメッセージを送ると返信が返ってくるBotを作ります
+  - [スターバックスLINEでモバイルオーダー](https://www.starbucks.co.jp/mobileorder/line/?srsltid=AfmBOorlyDn1F7MMv6uCnyz6CYoa5a_jU0I6oGPBmkvy8f7bk-ZygOum)
+
+    <img src="https://i.gyazo.com/23d8488beab27b4d1ddb28f1f7d0bc28.png" width="250px" alt="image from gyazo"/>
+
+- 個人のLINEアカウントとは別物です（個人アカウントをBot化するわけではありません）
+- LINE公式アカウントは複数作れるので、用途別にBotを作って試せます  
+  （例：盛岡観光Bot / 大学案内Bot / サークル新歓Bot など）
+
+## 1. 作るアプリケーション
+
+### Difyで作成したAIをLINEに接続しメッセージを送ると返信がくるLINE Bot
+
 - 作成イメージ:
 - [盛岡の観光情報を教えてくれるチャットBot](https://x.com/T_taisyou/status/1954062259132792958)
 
