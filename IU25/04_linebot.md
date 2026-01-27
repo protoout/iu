@@ -7,11 +7,11 @@
 - LINE Botは、LINE上で動作するチャットボットです。お店の公式アカウントをイメージしてもらえると良いです。
   - [郵便局LINE「ぽすくま」](https://www.post.japanpost.jp/send/line/index.html)
 
-    <img src="https://i.gyazo.com/584ad087677f0a94caa5649177ab6ec8.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/584ad087677f0a94caa5649177ab6ec8.png" width="300px" alt="image from gyazo"/>
 
   - [スターバックスLINEでモバイルオーダー](https://www.starbucks.co.jp/mobileorder/line/?srsltid=AfmBOorlyDn1F7MMv6uCnyz6CYoa5a_jU0I6oGPBmkvy8f7bk-ZygOum)
 
-    <img src="https://i.gyazo.com/23d8488beab27b4d1ddb28f1f7d0bc28.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/23d8488beab27b4d1ddb28f1f7d0bc28.png" width="300px" alt="image from gyazo"/>
 
 - 個人のLINEアカウントとは別物です（個人アカウントをBot化するわけではありません）
 - LINE公式アカウントは複数作れるので、用途別にBotを作って試せます  
@@ -19,53 +19,59 @@
 
 ## 1. 作るアプリケーション
 
-### 盛岡の観光情報について質問すると、AIが回答してくれるLINE Bot
+### 1-1. 盛岡の観光情報について質問すると、AIが回答してくれるLINE Bot
 
-<img src="https://i.gyazo.com/b132065325a9792bb0a1fc7a5c8004b8.png" width="250px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/b132065325a9792bb0a1fc7a5c8004b8.png" width="300px" alt="image from gyazo"/>
 
-## 2. DifyとLINE Botを連携する
+### 1-2. フロー画面
+- [DIfy](https://cloud.dify.ai/)のフロー画面をひらいておきましょう
+
+<img src="https://i.gyazo.com/b2c0d6c458f5c309f29c5ba43cc9621a.png" width="300px" alt="image from gyazo"/>
+
+## 2. ハンズオン：盛岡の観光アドバイザーLINE Botを作ろう
 
 ### 2-1. Difyのチャットアプリを準備する
 
 - 先ほど制作したDifyのチャットアプリは公開になっている必要があります。
-<img src="https://i.gyazo.com/b66569ab623f4d957cd11406afea8a0d.png" width="450px" alt="image from gyazo"/>
+  - アプリが公開されているか確認しておきましょう。
+<img src="https://i.gyazo.com/b66569ab623f4d957cd11406afea8a0d.png" width="300px" alt="image from gyazo"/>
 
 ### 2-2. DifyにLINEプラグインを追加
 
 Difyには外部サービスと連携しやすい「プラグイン」機能があります。  
 LINE以外にも、Slack/Notion/スプレッドシートなどと連携できます。
 
-手順
-- Difyのプラグインページからマーケットプレイスへ移動
+1. 右上にある`プラグイン`ボタンをクリックします。
 
-<img src="https://i.gyazo.com/73b39427cd085ff89b46f7eb900a8d3b.png" width="450px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/73b39427cd085ff89b46f7eb900a8d3b.png" width="300px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/ab4e2c1421386436eeb7df03bd1ac7e1.png" width="450px" alt="image from gyazo"/>
+2. 様々なプラグイン機能が載っている「マーケットプレイス」が開かれます。
 
-検索
-- `LINE Bot` や `LINE` などで検索すると候補が出てきます
+  <img src="https://i.gyazo.com/ab4e2c1421386436eeb7df03bd1ac7e1.png" width="300px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/7f544df4463b7b4c50ec9a6de07899a5.png" width="450px" alt="image from gyazo"/>
+3. `検索プラグイン`の検索バーで「LINE」や「LINE Bot」と検索をします。
 
-- LINEプラグインを検索してインストールします
+  <img src="https://i.gyazo.com/1c2ca1961d889788eb3dd60a156c81db.png" width="300px" alt="image from gyazo"/>
 
-<img src="https://i.gyazo.com/11c6ade0c1750586be03eda3bb3950ce.png" width="450px" alt="image from gyazo"/>
+4. 右下の`インストール`ボタンをクリックしてインストールしましょう。
+
+  <img src="https://i.gyazo.com/11c6ade0c1750586be03eda3bb3950ce.png" width="300px" alt="image from gyazo"/>
 
 ### 2-3. 重要: LINEプラグインのバージョンを0.0.4に下げる
 
 コミュニティ知見として、最新の0.0.5だとバグで動かないケースがあるため、0.0.4にダウングレードします。
 
-<img src="https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png" width="300px" alt="image from gyazo"/>
 
 ### 2-4. プラグインの設定（LINEのキーとDifyアプリを紐づけ）
 
 インストールしたら設定へ進みます。
 
-<img src="https://i.gyazo.com/62cfd349da465c94475dc743162ada9c.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/62cfd349da465c94475dc743162ada9c.png" width="300px" alt="image from gyazo"/>
 
 `+` ボタンから作成します。
 
-<img src="https://i.gyazo.com/bce59781f3dbe0a83993d49a5ffe0f2e.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/bce59781f3dbe0a83993d49a5ffe0f2e.png" width="300px" alt="image from gyazo"/>
 
 入力項目
 - エンドポイント名: 任意（わかりやすい名前）
@@ -76,7 +82,7 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 キー取得の参考
 - https://zenn.dev/protoout/articles/16-line-bot-setup
 
-<img src="https://i.gyazo.com/bb04e337be5b9c4d8807a651ba58b9fe.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/bb04e337be5b9c4d8807a651ba58b9fe.png" width="300px" alt="image from gyazo"/>
 
 ### 2-5. LINE DevelopersでWebhook URLの設定（連携の仕上げ）
 
