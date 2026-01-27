@@ -59,9 +59,19 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 
 ### 2-3. 重要: LINEプラグインのバージョンを0.0.4に下げる
 
-コミュニティ知見として、最新の0.0.5だとバグで動かないケースがあるため、0.0.4にダウングレードします。
+1. コミュニティ知見として、最新の0.0.5だとバグで動かないケースがあるため、0.0.4にダウングレードします。
 
-<img src="https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png" width="300px" alt="image from gyazo"/>
+2. マーケットプレイスを探索するタブから、以下画像左上の「プラグイン」タブに移動しましょう。
+
+  <img src="https://i.gyazo.com/4d9b98ca1138fb9bbd056622db32314e.png" width="300px" alt="image from gyazo"/>
+
+3. 先ほどインストールしたLINE Botの枠内をクリックすると、右側にバージョン設定が出てきます。
+  
+  <img src="https://i.gyazo.com/7942431bf430e4d551d8af4e771d3920.png" width="300px" alt="image from gyazo"/>
+
+4. このバージョン部分をクリックして、0.0.4にダウングレードします。
+
+  <img src="https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png" width="300px" alt="image from gyazo"/>
 
 ### 2-4. プラグインの設定（LINEのキーとDifyアプリを紐づけ）
 
