@@ -228,7 +228,7 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 - リッチメニューという機能を使うと、LINE Botの見栄えと操作性が格段に上がります。  
 - 管理画面の設定で、プログラムなどは使わずに作ることができます。
 
-<img src="https://i.gyazo.com/831101cd49d0d302d5a2fb51ded99988.jpg" width="300px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/831101cd49d0d302d5a2fb51ded99988.jpg" width="200px" alt="image from gyazo"/>
 
 参考
 - ノーコード：[LINE公式アカウント（LINE Official Account Manager）リッチメニューを作成するマニュアル｜LINEヤフー for Business](https://www.lycbiz.com/jp/manual/OfficialAccountManager/rich-menus/)
