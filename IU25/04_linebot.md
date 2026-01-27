@@ -121,7 +121,7 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 
 5. `Webhook設定`の`編集`ボタンをクリックします。
 
-    <img src="https://i.gyazo.com/54330709801aabf9f5fe63ff6c96a58f.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/54330709801aabf9f5fe63ff6c96a58f.png" width="300px" alt="image from gyazo"/>
 
 6. 先ほどコピーしたURLをWebhook URLに設定します。
 
@@ -129,17 +129,17 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 
 7. その下にある`Webhookの利用`ボタンをクリックし、オンにします
 
-  <img src="https://i.gyazo.com/88de95e073afa7218f78e883e8fa3d4d.png" width="450px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/88de95e073afa7218f78e883e8fa3d4d.png" width="300px" alt="image from gyazo"/>
 
 8. 検証ボタンを押して成功と表示されればOKです。
 
-  <img src="https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png" width="450px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png" width="300px" alt="image from gyazo"/>
 
 ### 2-6. LINEから会話してみよう
 
 - スマートフォンで、友達になったLINE Botへ何かメッセージを送信し、返答がくるのを確認しましょう。
 
-<img src="https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png" width="300px" alt="image from gyazo"/>
 
 - DifyとLINE Botが連携され、AIと会話ができるLINE Botが完成しました！  
 ここからオリジナリティを出していきましょう。
