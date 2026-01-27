@@ -38,7 +38,7 @@
 授業では、無料枠があり試作が進めやすいGeminiを利用します。
 Difyは「モデルプロバイダー」画面から、使用するLLMを追加できます。
 
-#### 1. GeminiのAPIキーについて
+1. GeminiのAPIキーについて
 
 事前にwordやメモ帳に控えておいたGeminiのAPIキーを使いましょう！
 
@@ -46,7 +46,8 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 
   > [!CAUTION]
   > APIキーは外部に公開しないでください。
-#### 2. Difyのモデルプロバイダー設定（Gemini）
+
+2. Difyのモデルプロバイダー設定（Gemini）
 
 - [Difyモデルプロバイダー設定ページ](https://zenn.dev/protoout/books/15_dify-manual/viewer/model-setup-gemini#2-dify%E3%81%AE%E3%83%A2%E3%83%87%E3%83%AB%E3%83%97%E3%83%AD%E3%83%90%E3%82%A4%E3%83%80%E3%83%BC%E8%A8%AD%E5%AE%9A)に沿って、`セット成功`まで進めましょう。
 - 下記のように、Geminiの右上のインジケーター（小さい丸）が緑なら接続OKです。
@@ -56,6 +57,13 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 補足：もしGeminiで制限が来た場合
 - OpenAIのAPIキーがある人はOpenAIでもOKです
 - 予備として[Groq コンソール](https://console.groq.com/home)を接続するのがおすすめです 
+
+3. プレビューで試す
+
+- `プレビュー`ボタンを押すと、チャットウィンドウが開くので、「こんにちは」など何か挨拶してみましょう。
+- 下記画像のように回答が返ってきたらOKです！
+
+<img src="https://i.gyazo.com/88bf6b20783ea0d37811226f31e08158.png" width="300px" alt="image from gyazo"/>
 
 ### 2-3. プロンプトの変更して、盛岡版にする）
 
