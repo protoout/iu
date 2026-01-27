@@ -21,20 +21,21 @@
 
 ### 1-1. 盛岡の観光情報について質問すると、AIが回答してくれるLINE Bot
 
-<img src="https://i.gyazo.com/b132065325a9792bb0a1fc7a5c8004b8.png" width="300px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/b132065325a9792bb0a1fc7a5c8004b8.png" width="300px" alt="image from gyazo"/>
 
 ### 1-2. フロー画面
 - [DIfy](https://cloud.dify.ai/)のフロー画面をひらいておきましょう
 
-<img src="https://i.gyazo.com/b2c0d6c458f5c309f29c5ba43cc9621a.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/b2c0d6c458f5c309f29c5ba43cc9621a.png" width="300px" alt="image from gyazo"/>
 
 ## 2. ハンズオン：盛岡の観光アドバイザーLINE Botを作ろう
 
 ### 2-1. Difyのチャットアプリを準備する
 
 - 先ほど制作したDifyのチャットアプリは公開になっている必要があります。
-  - アプリが公開されているか確認しておきましょう。
-<img src="https://i.gyazo.com/b66569ab623f4d957cd11406afea8a0d.png" width="300px" alt="image from gyazo"/>
+- アプリが公開されているか確認しておきましょう。
+
+    <img src="https://i.gyazo.com/b66569ab623f4d957cd11406afea8a0d.png" width="300px" alt="image from gyazo"/>
 
 ### 2-2. DifyにLINEプラグインを追加
 
@@ -43,19 +44,19 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 
 1. 右上にある`プラグイン`ボタンをクリックします。
 
-  <img src="https://i.gyazo.com/73b39427cd085ff89b46f7eb900a8d3b.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/73b39427cd085ff89b46f7eb900a8d3b.png" width="300px" alt="image from gyazo"/>
 
 2. 様々なプラグイン機能が載っている「マーケットプレイス」が開かれます。
 
-  <img src="https://i.gyazo.com/ab4e2c1421386436eeb7df03bd1ac7e1.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/ab4e2c1421386436eeb7df03bd1ac7e1.png" width="300px" alt="image from gyazo"/>
 
 3. `検索プラグイン`の検索バーで「LINE」や「LINE Bot」と検索をします。
 
-  <img src="https://i.gyazo.com/1c2ca1961d889788eb3dd60a156c81db.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/1c2ca1961d889788eb3dd60a156c81db.png" width="300px" alt="image from gyazo"/>
 
 4. 右下の`インストール`ボタンをクリックしてインストールしましょう。
 
-  <img src="https://i.gyazo.com/11c6ade0c1750586be03eda3bb3950ce.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/11c6ade0c1750586be03eda3bb3950ce.png" width="300px" alt="image from gyazo"/>
 
 ### 2-3. 重要: LINEプラグインのバージョンを0.0.4に下げる
 
@@ -63,32 +64,33 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 
 1. マーケットプレイスを探索するタブから、以下画像左上の「プラグイン」タブに移動しましょう。
 
-  <img src="https://i.gyazo.com/4d9b98ca1138fb9bbd056622db32314e.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/4d9b98ca1138fb9bbd056622db32314e.png" width="300px" alt="image from gyazo"/>
 
 2. 先ほどインストールしたLINE Botの枠内をクリックすると、右側にバージョン設定が出てきます。
   
-  <img src="https://i.gyazo.com/7942431bf430e4d551d8af4e771d3920.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/7942431bf430e4d551d8af4e771d3920.png" width="300px" alt="image from gyazo"/>
 
 3. このバージョン部分をクリックして、0.0.4にダウングレードします。
 
-  <img src="https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/c158e3c8746e232ac13663f1166f4ab7.png" width="300px" alt="image from gyazo"/>
 
 ### 2-4. エンドポイントの設定
 
 1. インストールしたらエンドポイントの設定へ進みます。
-  <img src="https://i.gyazo.com/62cfd349da465c94475dc743162ada9c.png" width="300px" alt="image from gyazo"/>
 
-2. `+` ボタンから作成します。
+    <img src="https://i.gyazo.com/62cfd349da465c94475dc743162ada9c.png" width="300px" alt="image from gyazo"/>
 
-  <img src="https://i.gyazo.com/3c1b027ae1be6071db87d0273d7fa7fc.png" width="300px" alt="image from gyazo"/>
+3. `+` ボタンから作成します。
 
+    <img src="https://i.gyazo.com/3c1b027ae1be6071db87d0273d7fa7fc.png" width="300px" alt="image from gyazo"/>
+  
 3. 各項目に必要事項を入力します。
   - エンドポイント名: `dify-line-bot`
   - チャネルシークレット: 事前に準備したwordやメモ帳などに控えているチャネルシークレットをコピーして貼り付ける
   - チャネルアクセストークン: 事前に準備したwordやメモ帳などに控えているチャネルアクセストークンをコピーして貼り付ける
   - アプリ: 作成したチャットフローを選択
 
-  <img src="https://i.gyazo.com/bb04e337be5b9c4d8807a651ba58b9fe.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/bb04e337be5b9c4d8807a651ba58b9fe.png" width="300px" alt="image from gyazo"/>
 
 ### 2-5. LINE DevelopersでWebhook URLの設定（連携の仕上げ）
 
@@ -129,18 +131,18 @@ LINE以外にも、Slack/Notion/スプレッドシートなどと連携できま
 
 7. その下にある`Webhookの利用`ボタンをクリックし、オンにします
 
-  <img src="https://i.gyazo.com/88de95e073afa7218f78e883e8fa3d4d.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/88de95e073afa7218f78e883e8fa3d4d.png" width="300px" alt="image from gyazo"/>
 
 8. 検証ボタンを押して成功と表示されればOKです。
 
-  <img src="https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png" width="300px" alt="image from gyazo"/>
 
 ### 2-6. LINEから会話してみよう
 
 - スマートフォンで、友達になったLINE Botへ何かメッセージを送信し、返答がくるのを確認しましょう。
 
-<img src="https://i.gyazo.com/2973c4d251732e7e08b43885580d3268.png" width="300px" alt="image from gyazo"/>
-
+    <img src="https://i.gyazo.com/b132065325a9792bb0a1fc7a5c8004b8.png" width="300px" alt="image from gyazo"/>
+    
 - DifyとLINE Botが連携され、AIと会話ができるLINE Botが完成しました！  
 ここからオリジナリティを出していきましょう。
 
