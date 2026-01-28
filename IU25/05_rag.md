@@ -11,7 +11,7 @@
     ```
   - 作成したチャットボットでも、`公式な公開情報はありません`という事実と異なる答えが返ってきたので、ハルシネーションが起きていることが確認できます
 
-    <img src="https://i.gyazo.com/4267d93864c4eb345671d70277672836.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/4267d93864c4eb345671d70277672836.png" width="300px" alt="image from gyazo"/>
 
 - 参考リンク
   - [漫画で理解するRAGの説明](https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee9654730312d2)
@@ -24,7 +24,7 @@
 - Difyのナレッジ機能を使ってRAGを構築します
 - 事前に用意した資料を検索して、その内容を根拠に回答できるチャットボットを作ります
 
-  <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="450px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="300px" alt="image from gyazo"/>
 
 ### 1-2. スタート準備
 
@@ -32,7 +32,7 @@
   - 前のパートで作った **盛岡の観光アドバイザーチャットボット** がある
   - そのチャットボットが **プレビューで会話できる**状態になっている
 
-    <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="300px" alt="image from gyazo"/>
 
 ## 2. ハンズオン：RAGを使った盛岡の観光アドバイザーAIチャットボットを作ろう
 
