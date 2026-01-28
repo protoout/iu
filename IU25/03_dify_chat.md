@@ -13,19 +13,19 @@
 
   <img src="https://i.gyazo.com/b2c0d6c458f5c309f29c5ba43cc9621a.png" width="450px" alt="image from gyazo"/>
 
-## 2. ハンズオン：汎用的なチャットアプリを作ろう
+## 2. ハンズオン：AIチャットアプリを作ろう
 
 ### 2-1. DifyでAIチャットアプリを作成
 1. [Dify](https://cloud.dify.ai/)を開き、ログインして下記のような画面になればOKです。
 
-  <img src="https://i.gyazo.com/7b6715b8a0b7da4e31a694601caa4475.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/7b6715b8a0b7da4e31a694601caa4475.png" width="450px" alt="image from gyazo"/>
 
 2. DifyのVersionが`1.11.4`になっているか確認しましょう。
 
-  <img src="https://i.gyazo.com/3c214ed1059fe525300ebb8641138b43.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/7244bf7eb6f60446bf080717b36d5fd1.png" width="250px" alt="image from gyazo"/>
 
 3. [Difyチャットアプリ作成ページ](https://zenn.dev/protoout/articles/81-start-dify-chatflow)に沿って、まずは、[「アプリケーションを作成しよう」](https://zenn.dev/protoout/articles/81-start-dify-chatflow)まで作っていきます。
-  
+
   > [!CAUTION]
   > ワークフローを選ぶのではなく、チャットフローで選んで作ること！
   >
@@ -33,14 +33,14 @@
 
 ### 2-2. LLMをGeminiのモデルに設定しよう
 
-授業では、無料枠があり試作が進めやすいGeminiを利用します。
+授業では、無料枠があり試作が進めやすいGeminiを利用します。  
 Difyは「モデルプロバイダー」画面から、使用するLLMを追加できます。
 
 1. GeminiのAPIキーについて
 
-事前にwordやメモ帳に控えておいたGeminiのAPIキーを使いましょう！
+    事前にwordやメモ帳に控えておいたGeminiのAPIキーを使いましょう！
 
-<img src="https://i.gyazo.com/8709badf2c4cabba428ad6f4f03ff33c.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/8709badf2c4cabba428ad6f4f03ff33c.png" width="450px" alt="image from gyazo"/>
 
   > [!CAUTION]
   > APIキーは外部に公開しないでください。
@@ -52,9 +52,10 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 
   <img src="https://i.gyazo.com/e225289892a099455d2f47d3730d85c1.png" width="450px" alt="image from gyazo"/>
 
-補足：もしGeminiで制限が来た場合
-- OpenAIのAPIキーがある人はOpenAIでもOKです
-- 予備として[Groq コンソール](https://console.groq.com/home)を接続するのがおすすめです 
+> [!TIP]
+> もしGeminiで制限が来た場合、  
+> OpenAIのAPIキーがある人はOpenAIでもOKです  
+> 予備として[Groq コンソール](https://console.groq.com/home)を接続するのがおすすめです 
 
 3. プレビューで試す
 
@@ -104,7 +105,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
   
   - プロンプトを調整することで、自分が望む回答を得ることができます。
 
-  <img src="https://i.gyazo.com/f822b0228e75f2dca8db520f41287cf5.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/f822b0228e75f2dca8db520f41287cf5.png" width="300px" alt="image from gyazo"/>
 
   > SYSTEMにプロンプトを入れないで同じ質問をすると、下記画像のように質問返しをされるなど安定しない回答になります。
   > 
@@ -126,7 +127,9 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 
 ## 3. Tips：プレビューでデバッグ
 
-※デバッグ：プログラムやシステムの中にある不具合（バグ）を見つけて、原因を特定し、直す作業のこと
+> [!TIP]
+> デバッグ：プログラムやシステムの中にある不具合（バグ）を見つけて、原因を特定し、直す作業のこと
+
 - まずは短いやり取りを複数回試しましょう。
 - うまくいかない時は以下を見直してみてください。
 1. プロンプト（役割 / 制約 / 出力の形）が具体的か
@@ -169,7 +172,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 1. ざっくり質問
   - 例：今日の予定を立てて
 2. 条件を足した質問（目的/制約/出力形式を足す）
-  - 例：移動少なめ/予算0円/所要2時間で、今日の予定を箇条書きで3案出して。
+  - 例：移動少なめ/予算0円/所要2時間で、今日の予定を箇条書きで3案出して
 
 ### 4-3. 自分が作りたいBotの素材集めをする
 
