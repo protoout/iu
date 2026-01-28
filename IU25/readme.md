@@ -18,8 +18,8 @@
 > - 制作したAIチャットアプリをLINEで動かす
 > 
 > ゴール：
-> - Difyを使ってAIチャットアプリを動かせる
-> - DifyとLINE Botを連携できる
+> - Dify上でAIチャットアプリを動かせる
+> - DifyとLINEを連携してLINE Botを作成できる
 
 - [Dify（ディフィー）ってなんだろう](/IU25/02_dify.md)
 - [Difyに触れてAIチャットアプリを作ろう](/IU25/03_dify_chat.md)
