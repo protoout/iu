@@ -97,22 +97,20 @@
 
 <img src="https://i.gyazo.com/6d37cc15a7954a2bc22f1152e49af3c9.png" width="250px" alt="image from gyazo"/>
 
-3. ナレッジベースを作成
-- 画面左上の`+ナレッジベースを作成`をクリックします。
+### 2-2 ナレッジベースを作成
+1. 画面左上の`+ナレッジベースを作成`をクリックします。
 
 <img src="https://i.gyazo.com/00293973083117c298714eb8c38e4236.png" width="250px" alt="image from gyazo"/>
 
-5. 先ほど保存したファイル（`morioka-oyako.md` など）をドラッグアンドドロップでアップロード
+2. 先ほど保存したファイル（`morioka-oyako.md` など）をドラッグアンドドロップでアップロード
 
 <img src="https://i.gyazo.com/44b34ca32a8699bbced5a4b206601d51.png" width="250px" alt="image from gyazo"/>
 
-6. 実際にアップロードすると、「次へ」というボタンが表示されるのでそのボタンをクリック
+3. 実際にアップロードすると、「次へ」というボタンが表示されるのでそのボタンをクリック
 
 <img src="https://i.gyazo.com/6b9699b09e8a5b17d964195335e7dc1c.png" width="250px" alt="image from gyazo"/>
 
-### 2-3. 埋め込み（親子分割モード）と検索設定
-
-#### 1. 埋め込み: チャンク設定（親子分割モード）
+### 2-3. 埋め込み
 
 1. 基本汎用設定で良いですが、今回は精度を優先して `親子分割モード` を選択します。
 
@@ -124,22 +122,42 @@
 
 <img src="https://i.gyazo.com/609e339e1339dd94154e381a12c0d2a9.png" width="250px" alt="image from gyazo"/>
 
-- 埋め込みモデル: Geminiの埋め込みモデルを利用
+3. 埋め込みモデル
+- 受講生の皆さんはGeminiがデフォルトで入っているかと思いますが、クリックして「embedding-001」というモデルを選びましょう。
 
-<img src="https://i.gyazo.com/0d8b6fa8585a7ecf14009edf38094822.png" width="250px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/eeaacd1f6a779377ef435f3973f9e288.png" width="250px" alt="image from gyazo"/>
 
-#### 2. 検索: 検索設定
+### 2-4.検索設定をして保存しよう
 
-本来は「ハイブリッド + リランカー」の方が精度が高いですが、リランカーは別途APIキーが必要な場合があるため、今回はウェイト設定で進めます。
+- 本来は「ハイブリッド + リランカー」の方が精度が高い
+- ただリランカーは別途APIキーが必要な場合があるので、今回はウェイト設定で進めます。
 
-- `ハイブリッド検索` を選択
-- `ウェイト設定` を選択
+1. ベクトル検索、全文検索、ハイブリッド検索の中から、`ハイブリッド検索` を選択
 
-<img src="https://i.gyazo.com/3bef14cf02e97912eb0eb98bf40b4388.png" width="250px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/8c43d475ce1b25f798b3d9cb24c416f7.png" width="250px" alt="image from gyazo"/>
 
-- `保存して処理` を押して完了
+2. `ウェイト設定` を選択
 
-<img src="https://i.gyazo.com/dc0e2f09993bfa6630b1e3d672127518.png" width="250px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/fc14ea2b1739476acf83fc96f5b71a97.png" width="250px" alt="image from gyazo"/>
+
+3. `保存して処理` を押す
+- 最後に、「保存して処理」のボタンをクリックしましょう
+- このとき多少埋め込み処理時間があります。
+
+  <img src="https://i.gyazo.com/6782e5a33d0a533d1b7cc2fcb21952c1.png" width="250px" alt="image from gyazo"/>
+
+> [!CAUTION]
+> 下記画像のように`埋め込み処理が完了しました`の表記が出たら、完了している合図です。
+> <img src="https://i.gyazo.com/bde4a5a225ba4c79c6a81380257cb3c4.png" width="250px" alt="image from gyazo"/>
+
+4. `ドキュメントに移動`をクリック
+
+<img src="https://i.gyazo.com/e4311250b72841b277afd46062218626.png" width="250px" alt="image from gyazo"/>
+
+5. ナレッジ追加の確認
+- 右側のステータスが利用可能になっているか確かめましょう。
+
+<img src="https://i.gyazo.com/b355dd66cc8543274e0359f40047342a.png" width="250px" alt="image from gyazo"/>
 
 ### 2-5. チャットフローに「知識検索ノード」を追加
 
