@@ -3,79 +3,130 @@
 生成AIは、事前にある程度の知識を学習していますが、ニッチな情報に対応していない時に、もっともらしい嘘の情報を返してくる（（=ハルシネーション））ことがあります。
 本来存在しない情報をAIが勝手に生成しないように、RAG（Retrieval-Augmented Generation）を使用して、ローカル情報（盛岡/社内/施設/大学など）にも強いQ&Aチャットボットを作ってみましょう。
 
-
-
-## 2. 現在の状態
-
-現時点で、Difyが以下の状態になっていればOKです。
-
-- 前のパートで作った **盛岡の観光アドバイザーチャットボット** がある
-- そのチャットボットが **プレビューで会話できる**状態になっている
-
-<img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
-
-### 2-1. RAG導入前に試してみる
-
 - RAGを入れる前に、質問を送ってみましょう。
-- あとでRAGを入れた後にもう一度同じ質問をして、差分が分かるようにします。
+  - あとでRAGを入れた後にもう一度同じ質問をして、差分が分かるようにします。
 
-```txt
-直利庵本店の最低予約人数、大人料金と小学生料金は？
-```
+    ```txt
+    直利庵本店の最低予約人数、大人料金と小学生料金は？
+    ```
 
-<img src="https://i.gyazo.com/4e0fbe8f32b7a4ee10a0ac2418140fc8.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/4e0fbe8f32b7a4ee10a0ac2418140fc8.png" width="450px" alt="image from gyazo"/>
 
-参考リンク
-- [漫画で理解するRAGの説明](https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee9654730312d2)
+- 参考リンク
+  - [漫画で理解するRAGの説明](https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee9654730312d2)
 
 
-## 1. このパートで作るもの「ローカル情報に強いQ&Aチャットボット」
+## 1. このパートで作るもの
+
+ローカル情報について質問すると、資料を参照しながら正しく回答してくれるAIチャットボット
+
+<img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="450px" alt="image from gyazo"/>
 
 ### 1-1. 作成するものの概要
 
 - Difyのナレッジ機能を使ってRAGを構築します
 - 事前に用意した資料を検索して、その内容を根拠に回答できるチャットボットを作ります
 
-### 2-2. DifyでRAGアプリを作る
+### 1-2. スタート準備
 
-以下のテキストを、手元にファイルとして保存します。
+- 現時点で、Difyが以下の状態になっていればOKです。
+  - 前のパートで作った **盛岡の観光アドバイザーチャットボット** がある
+  - そのチャットボットが **プレビューで会話できる**状態になっている
 
-- 保存するURL  
-  https://gist.githubusercontent.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d/raw/c37cb9a96318eb9b1615b7276628230dbb5dd88e/morioka-oyako.md
-<img src="https://i.gyazo.com/4feb99d8c10610fa4cf5e2b1663ef129.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
 
-- 保存名（例）  
-  `morioka.md` または `morioka.txt`
+## 2. ハンズオン：RAGを使った盛岡の観光アドバイザーAIチャットボットを作ろう
 
-補足: zipでまとめてDLしたい人  
-- https://gist.github.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d
+### 2-1. ナレッジデータを登録しよう
 
-### 2-3. ナレッジデータを登録（Dataset作成）
+1. 以下のテキストを、手元にファイルとして保存します。
 
-ナレッジ機能（Datasets）に移動します。  
-- https://cloud.dify.ai/datasets
-<img src="https://i.gyazo.com/9dd2d3dd9f181ef1be8cd24240814366.png" width="450px" alt="image from gyazo"/>
+1.[こちらのURL](https://gist.githubusercontent.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d/raw/c37cb9a96318eb9b1615b7276628230dbb5dd88e/morioka-oyako.md)を開き、ファイルとして保存します。
+`morioka-oyako.md`または`morioka-oyako.txt`という名前で自分のパソコンに保存してください。
 
-手順
-- `ナレッジベースを作成` を選択
-<img src="https://i.gyazo.com/00293973083117c298714eb8c38e4236.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/5d03e8e9fa1725f0f27e2c9f9046283d.png" width="250px" alt="image from gyazo"/>
 
-- 先ほど保存したファイル（`morioka.md` など）をアップロード
-<img src="https://i.gyazo.com/44b34ca32a8699bbced5a4b206601d51.png" width="450px" alt="image from gyazo"/>
+補足: zipでまとめてDLしたい人は[こちら](https://gist.github.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d)
 
-### 2-4. 埋め込み（親子分割モード）と検索設定
+<details>
+  <summary>ファイル記載内容</summary>
+
+# 盛岡観光完全ガイド
+
+## 盛岡冷麺専門情報
+
+盛岡冷麺は1954年に焼肉レストラン「食道園」で誕生した盛岡市を代表するご当地グルメです。朝鮮半島の平壌冷麺をベースに、日本人の味覚に合わせて改良を重ねました。最大の特徴は、小麦粉と片栗粉をブレンドした独特のコシの強い麺で、一度食べると忘れられない食感です。スープは牛骨を12時間以上煮込んだ透明で澄んだスープで、キムチの辛味と酸味が絶妙にマッチします。トッピングには茹で卵、きゅうり、そして盛岡冷麺ならではの季節の果物（梨、スイカ、リンゴなど）が添えられ、甘味が全体の味をまろやかにします。代表的な店舗「ぴょんぴょん舎盛岡駅前店」は盛岡駅東口から徒歩3分の好立地で、営業時間は11:00-22:00（ラストオーダー21:30）、年中無休で営業しています。価格帯は並盛880円、中盛1,080円、大盛1,280円とリーズナブルで、学生からサラリーマン、観光客まで幅広い層に愛されています。店内は120席の大型店舗で、平日昼間は比較的空いているため、ゆっくり食事を楽しめます。土日祝日や夏季は行列ができることもあるので、開店直後の11:00-12:00または午後の15:00-17:00の時間帯がおすすめです。食道園本店は大通2-5-8にあり、より伝統的な味を楽しめます。営業時間は17:00-23:30で日曜定休、価格は若干高めですが本格的な味わいが堪能できます。盛岡駅からは徒歩12分、タクシーで5分程度です。
+
+=====
+冷たい麺料理 夏にさっぱり 韓国風スープ 果物トッピング コシの強い麺
+=====
+11時開店 22時閉店 盛岡駅前立地 徒歩3分アクセス良好 年中無休
+=====
+880円から1280円 リーズナブル 学生でも利用可能 120席大型店舗
+=====
+1954年誕生 食道園発祥 朝鮮半島平壌冷麺ベース 牛骨12時間煮込みスープ
+
+## わんこそば体験情報
+
+わんこそばは江戸時代末期から明治時代にかけて岩手県で発達した郷土料理で、現在では盛岡市の代表的な観光体験となっています。一口大のそばを次々と小さなお椀に入れて食べる独特のスタイルで、給仕さんが「はい、じゃんじゃん」「はい、どんどん」の掛け声とともに、食べ終わるや否やすかさず次のそばを椀に入れ続けます。これは南部藩時代の「そば振る舞い」という客人をもてなす文化が起源とされ、一杯でも多く食べてもらいたいという主人の心遣いから生まれました。満腹になったら椀に蓋をして「ごちそうさま」の合図をします。平均的な摂取量は成人男性で50-70杯、女性で30-50杯程度ですが、これは通常のそば一人前とほぼ同量です。直利庵本店（中ノ橋通1-8-3）は明治17年創業の老舗で、営業時間は11:00-20:00、2名以上から予約可能で料金は大人3,500円、小学生2,500円です。所要時間は約1時間で、完食後は記念品として手形がもらえます。盛岡駅からは徒歩15分、市内循環バス「県庁・市役所前」下車徒歩5分です。東家本店は同じ住所にあり、営業時間11:00-21:00、料金も同額ですが、より歴史ある建物で伝統的な雰囲気を楽しめます。店内では岩手の民謡「南部牛追唄」が流れ、給仕さんの威勢の良い掛け声とともに、まさに岩手の文化体験ができます。団体予約も可能で、修学旅行生や企業の懇親会にも利用されています。
+
+=====
+江戸時代郷土料理 一口サイズそば 小さなお椀 次々と食べる独特スタイル
+=====
+はいじゃんじゃん はいどんどん 威勢の良い掛け声 椀に蓋をして終了合図
+=====
+男性50-70杯 女性30-50杯 所要時間1時間 記念品手形がもらえる
+=====
+直利庵本店 東家本店 中ノ橋通 11時開始 大人3500円 2名以上予約
+
+## 石川啄木記念館詳細情報
+
+石川啄木は1886年（明治19年）2月20日に岩手県南岩手郡日戸村（現在の盛岡市玉山区日戸）で生まれ、本名を石川一（はじめ）と言いました。盛岡中学校在学中から文学に親しみ、与謝野鉄幹の「明星」に短歌を投稿するなど早くから才能を発揮しました。1905年に中学校を卒業間近で退学し、上京して文学活動に専念しましたが、生活は困窮を極めました。1906年に故郷に戻り、渋民尋常小学校で代用教員として約1年間勤務しましたが、この時期の体験が後の作品に大きな影響を与えました。石川啄木記念館は玉山区渋民字渋民9番地にあり、啄木が代用教員時代を過ごした渋民の地に建設されました。開館時間は9:00-17:00（入館受付は16:30まで）、休館日は月曜日（祝日の場合は翌日）と年末年始です。入館料は大人300円、高校生200円、小中学生100円で、20名以上の団体は2割引になります。館内には啄木の生涯を追った常設展示のほか、直筆原稿約200点、書簡類約150点、生活用品約100点が展示されています。特に「一握の砂」「悲しき玩具」の原稿は貴重で、啄木の心境の変化を直接感じることができます。隣接する旧渋民尋常小学校は啄木が教鞭をとった学校を復元したもので、当時の教室の様子を再現しています。盛岡駅からはバスで約30分、「渋民」バス停下車徒歩5分です。車の場合は東北自動車道盛岡ICから約15分で、無料駐車場が50台分あります。
+
+=====
+1886年明治19年岩手県生まれ 石川一本名 代用教員経験 渋民尋常小学校
+=====
+9時開館 17時閉館 月曜休館 大人300円 高校生200円 小中学生100円
+=====
+直筆原稿200点 書簡150点 生活用品100点 一握の砂悲しき玩具原稿
+=====
+渋民バス停徒歩5分 盛岡駅からバス30分 無料駐車場50台 盛岡IC15分
+</details>
+
+2. [ナレッジ機能](https://cloud.dify.ai/datasets)に移動します。  
+
+<img src="https://i.gyazo.com/6d37cc15a7954a2bc22f1152e49af3c9.png" width="250px" alt="image from gyazo"/>
+
+3. ナレッジベースを作成
+- 画面左上の`+ナレッジベースを作成`をクリックします。
+
+<img src="https://i.gyazo.com/00293973083117c298714eb8c38e4236.png" width="250px" alt="image from gyazo"/>
+
+5. 先ほど保存したファイル（`morioka-oyako.md` など）をドラッグアンドドロップでアップロード
+
+<img src="https://i.gyazo.com/44b34ca32a8699bbced5a4b206601d51.png" width="250px" alt="image from gyazo"/>
+
+6. 実際にアップロードすると、「次へ」というボタンが表示されるのでそのボタンをクリック
+
+<img src="https://i.gyazo.com/6b9699b09e8a5b17d964195335e7dc1c.png" width="250px" alt="image from gyazo"/>
+
+### 2-3. 埋め込み（親子分割モード）と検索設定
 
 #### 1. 埋め込み: チャンク設定（親子分割モード）
 
-汎用設定より手間は増えますが、精度を優先して `親子分割モード` を使います。
-<img src="https://i.gyazo.com/609e339e1339dd94154e381a12c0d2a9.png" width="450px" alt="image from gyazo"/>
+1. 基本汎用設定で良いですが、今回は精度を優先して `親子分割モード` を選択します。
 
-- 分割モード: `親子分割モード`
+<img src="https://i.gyazo.com/a7ed0fb494e320d45de9bf2873198bd3.png" width="250px" alt="image from gyazo"/>
+
+2. チャンク識別子と検索用子チャンク識別子は以下に書き換えましょう。
 - チャンク識別子: `##`
 - 検索用子チャンク識別子: `=====`
+
+<img src="https://i.gyazo.com/609e339e1339dd94154e381a12c0d2a9.png" width="250px" alt="image from gyazo"/>
+
 - 埋め込みモデル: Geminiの埋め込みモデルを利用
 
-<img src="https://i.gyazo.com/0d8b6fa8585a7ecf14009edf38094822.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/0d8b6fa8585a7ecf14009edf38094822.png" width="250px" alt="image from gyazo"/>
 
 #### 2. 検索: 検索設定
 
@@ -84,26 +135,26 @@
 - `ハイブリッド検索` を選択
 - `ウェイト設定` を選択
 
-<img src="https://i.gyazo.com/3bef14cf02e97912eb0eb98bf40b4388.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/3bef14cf02e97912eb0eb98bf40b4388.png" width="250px" alt="image from gyazo"/>
 
 - `保存して処理` を押して完了
 
-<img src="https://i.gyazo.com/dc0e2f09993bfa6630b1e3d672127518.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/dc0e2f09993bfa6630b1e3d672127518.png" width="250px" alt="image from gyazo"/>
 
 ### 2-5. チャットフローに「知識検索ノード」を追加
 
 手順
 - 最初に作ったチャットフローの画面に戻る
 - `開始ノード` と `LLMノード` の間に `知識検索` ノードを追加する
-<img src="https://i.gyazo.com/f1b31a4a0ce4a2294c650d1bdb5170cd.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/f1b31a4a0ce4a2294c650d1bdb5170cd.png" width="250px" alt="image from gyazo"/>
 
 - `知識検索ノード` の設定でナレッジを紐づける
   - ナレッジベース項目の `+` を押す
   - 先ほど作成したナレッジを選択
   - `追加`
-<img src="https://gyazo.com/ade47fb9b54a1a765aa20514aef8b83c.png" width="450px" alt="image from gyazo"/>
+<img src="https://gyazo.com/ade47fb9b54a1a765aa20514aef8b83c.png" width="250px" alt="image from gyazo"/>
 
-<img src="https://gyazo.com/6e0fe598a6be8a8cd889a368e2a40e05.png" width="450px" alt="image from gyazo"/>
+<img src="https://gyazo.com/6e0fe598a6be8a8cd889a368e2a40e05.png" width="250px" alt="image from gyazo"/>
 
 
 
@@ -113,12 +164,12 @@ RAGが効いていることを分かりやすくするため、あえて少し�
 （賢すぎるモデルだと、RAGなしでも答えてしまうことがあります）
 
 - 例: `Gemini 2.0 Flash-Lite 001` など
-<img src="https://i.gyazo.com/93a33031303a9e50de4d3d5a4e57142e.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/93a33031303a9e50de4d3d5a4e57142e.png" width="250px" alt="image from gyazo"/>
 
 設定
 - LLMノードの `コンテキスト` に `知識検索の result` を設定する
-<img src="https://i.gyazo.com/7a2138ec292a26b29c610dc949c8bb5e.png" width="450px" alt="image from gyazo"/>
-<img src="https://i.gyazo.com/b1299412977579fcb86909c8b44ee624.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/7a2138ec292a26b29c610dc949c8bb5e.png" width="250px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/b1299412977579fcb86909c8b44ee624.png" width="250px" alt="image from gyazo"/>
 
 ### 2-7. プロンプトをRAG用に調整
 
@@ -136,7 +187,7 @@ LLMノードのプロンプトを、コンテキスト参照前提にします�
 ## 制約事項
 - ユーザーが不快に思う返信は禁止です。
 ```
-<img src="https://i.gyazo.com/1868c1034865e2ffec19e8314a59bb3e.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/1868c1034865e2ffec19e8314a59bb3e.png" width="250px" alt="image from gyazo"/>
 
 ### 2-8. 会話テストをしてみる
 
@@ -150,7 +201,7 @@ RAGを入れたことでの差を体験しましょう。
 チェックポイント
 - 回答が「資料の内容」に寄っていれば成功です
 - 資料にないことを断定する場合は、プロンプトを調整しましょう
-<img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="250px" alt="image from gyazo"/>
 
 ## 3. Tips: RAGの限界と応用
 
