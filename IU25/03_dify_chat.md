@@ -120,11 +120,11 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 
 2. `アクションが成功しました`が表示されたらOKです
 
-    <img src="https://i.gyazo.com/e207e9745453366d225ae663b2981510.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/86dff25ab402ecbd30794931e743017d.png" width="300px" alt="image from gyazo"/>
 
 3. `実行`ボタンをクリックして早速試してみましょう！
 
-    <img src="https://i.gyazo.com/86dff25ab402ecbd30794931e743017d.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/e207e9745453366d225ae663b2981510.png" width="300px" alt="image from gyazo"/>
 
 ## 3. Tips：プレビューでデバッグ
 
