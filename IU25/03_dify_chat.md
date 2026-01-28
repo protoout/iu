@@ -109,11 +109,13 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
   <img src="https://i.gyazo.com/f822b0228e75f2dca8db520f41287cf5.png" width="300px" alt="image from gyazo"/>
 
   > SYSTEMにプロンプトを入れないで同じ質問をすると、下記画像のように質問返しをされるなど安定しない回答になります。
+  > 
   > <img src="https://i.gyazo.com/17176606fdf0e03313954007d6d51ba0.png" width="300px" alt="image from gyazo"/>
 
 ### 2-5. 公開しよう
 
 1. 画面右上の`公開`するをクリックし、`更新を公開`ボタンを押します
+
     <img src="https://i.gyazo.com/b66569ab623f4d957cd11406afea8a0d.png" width="300px" alt="image from gyazo"/>
 
 2. `アクションが成功しました`が表示されたらOKです
