@@ -194,29 +194,24 @@
 
 <img src="https://gyazo.com/6e0fe598a6be8a8cd889a368e2a40e05.png" width="250px" alt="image from gyazo"/>
 
-### 2-7. LLMノードの設定
-
-1. 次にLLMノードをクリックして右側の画面で設定していきます
-
-2. 入れるモデルは`Gemini 2.0 Flash-Lite 001`を選びます
+4. 次にLLMノードをクリックして右側の画面で設定していきます
+- 入れるモデルは`Gemini 2.0 Flash-Lite 001`を選びます
 
 > [!TIP]
-> RAGが効いていることを分かりやすくするため、あえて少し古めのモデルを使います。  
+> RAGが効いていることを分かりやすくするため、あえて少し古めのモデルを使います
 > (賢すぎるモデルだと、RAGなしでも答えてしまうことがあります）
 
 <img src="https://i.gyazo.com/93a33031303a9e50de4d3d5a4e57142e.png" width="250px" alt="image from gyazo"/>
 
-設定
-- LLMノードの `コンテキスト` に `知識検索の result` を設定する
+5. 設定
+- コンテキストの「変数値を設定」の欄をクリックし、知識検索の中の`result`を選びましょう
 <img src="https://i.gyazo.com/7a2138ec292a26b29c610dc949c8bb5e.png" width="250px" alt="image from gyazo"/>
 <img src="https://i.gyazo.com/b1299412977579fcb86909c8b44ee624.png" width="250px" alt="image from gyazo"/>
 
-### 2-8. プロンプトをRAG用に調整
+6. プロンプトをRAG用に調整
+- LLMノードのSYSTEMの中に現在入っているプロンプトは削除し、以下のプロンプトをコピーして置き換えましょう。
 
-LLMノードのプロンプトを、コンテキスト参照前提にします。
-
-
-```txt
+```
 ## 役割
 - あなたは盛岡の観光アドバイザーです。
 - ユーザーからの質問に対して盛岡観光に役立つ情報を提供してください。
@@ -227,11 +222,14 @@ LLMノードのプロンプトを、コンテキスト参照前提にします�
 ## 制約事項
 - ユーザーが不快に思う返信は禁止です。
 ```
-<img src="https://i.gyazo.com/1868c1034865e2ffec19e8314a59bb3e.png" width="250px" alt="image from gyazo"/>
 
-### 2-9. 会話テストをしてみる
+> [!TIP]
+> コンテキストは、きちんと紫色で変数として入っているか確認しましょう
+> <img src="https://i.gyazo.com/1868c1034865e2ffec19e8314a59bb3e.png" width="250px" alt="image from gyazo"/>
 
-ここで **2-1で送ったものと同じ質問** をもう一度聞きます。  
+### 2-9. 動かしてみよう
+
+ここで **2-1で送ったものと同じ質問** をプレビュー画面でもう一度聞きます。  
 RAGを入れたことでの差を体験しましょう。
 
 ```txt
@@ -239,13 +237,27 @@ RAGを入れたことでの差を体験しましょう。
 ```
 
 チェックポイント
-- 回答が「資料の内容」に寄っていれば成功です
+- 回答が登録したナレッジの情報通り答えられていれば成功です
 - 資料にないことを断定する場合は、プロンプトを調整しましょう
+  - 参考：[RAGの精度が上がらない？設定を見直してみよう！](https://protoout.studio/2296077e488780f081dace683bb63f86)
 <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="250px" alt="image from gyazo"/>
+
+### 2-10 公開して試そう
+
+1. 画面右上の`公開`するをクリックし、`更新を公開`ボタンを押します
+
+    <img src="https://i.gyazo.com/b66569ab623f4d957cd11406afea8a0d.png" width="300px" alt="image from gyazo"/>
+
+2. `アクションが成功しました`が表示されたらOKです
+
+    <img src="https://i.gyazo.com/86dff25ab402ecbd30794931e743017d.png" width="300px" alt="image from gyazo"/>
+
+3. `実行`ボタンをクリックして早速試してみましょう！
+
+    <img src="https://i.gyazo.com/e207e9745453366d225ae663b2981510.png" width="300px" alt="image from gyazo"/>
 
 ## 3. Tips: RAGの限界と応用
 
-- RAGは、外部の知識をLLMに与えて回答の質を上げる手法です
 - RAGは「事前に登録した情報」が中心ですが、リアルタイム性が高い情報や更新性が高い情報を扱うためにはそういったデータを提供している外部サービス（API）と連携する必要があります。   
 「Webhookを利用して外部サービスと連携する」というものもあります。  
   - 例：[お天気API](https://weather.tsukumijima.net/)   
