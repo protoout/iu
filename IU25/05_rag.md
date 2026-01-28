@@ -229,7 +229,7 @@
 > 
 > <img src="https://i.gyazo.com/1868c1034865e2ffec19e8314a59bb3e.png" width="250px" alt="image from gyazo"/>
 
-### 2-9. 動かしてみよう
+### 2-7. 動かしてみよう
 
 ここで **2-1で送ったものと同じ質問** をプレビュー画面でもう一度聞きます  
 RAGを入れたことでの差を体験しましょう
@@ -245,7 +245,7 @@ RAGを入れたことでの差を体験しましょう
 
     <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="250px" alt="image from gyazo"/>
 
-### 2-10 公開して試そう
+### 2-8 公開して試そう
 
 1. 画面右上の`公開`するをクリックし、`更新を公開`ボタンを押します
 
