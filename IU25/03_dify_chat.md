@@ -62,7 +62,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 - `プレビュー`ボタンを押すと、チャットウィンドウが開くので、「こんにちは」など何か挨拶してみましょう。
 - 下記画像のように回答が返ってきたらOKです！
 
-  <img src="https://i.gyazo.com/88bf6b20783ea0d37811226f31e08158.png" width="300px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/88bf6b20783ea0d37811226f31e08158.png" width="450px" alt="image from gyazo"/>
 
 ### 2-3. プロンプトの変更して、盛岡版にする
 
@@ -187,7 +187,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 DifyでAIチャットアプリを作成し、Geminiを接続して動作確認まで完了しました。
 ふと疑問に思ったことを聞いてみたり、雑談したり、様々なテーマに活用してみましょう。
 
-  <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="300px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
 
 ---
 
