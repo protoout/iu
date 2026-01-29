@@ -49,7 +49,7 @@
 <details>
   <summary>【コンテンツ生成AIサービス例】 </summary>
   
-  - 動画生成：[Runway](https://runwayml.com/) ・[Sora 2](https://openai.com/sora/) ・[Luma Dream Machine](https://lumalabs.ai/dream-machine)
+  - 動画生成：[Runway](https://runwayml.com/) ・[Sora 2](https://sora.chatgpt.com/) ・[Luma Dream Machine](https://lumalabs.ai/dream-machine)
   - 画像生成：[Midjourney](https://www.midjourney.com/home)・[Stability AI](https://stability.ai/) ・[Adobe Firefly](https://www.adobe.com/jp/products/firefly.html) 
   - 音楽：[Suno](https://suno.com/) 
 </details>
