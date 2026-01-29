@@ -7,80 +7,97 @@
 生成AIは、文章や画像などを誰でも簡単に作れるようになったことで、使い方が一気に広がりました。  
 大学生活でも、レポートの下書き、要約、情報整理、画像生成などでAIを使う場面が増えていると思います。  
 
-### 2-1. 生成AI（Generative AI）
+### 1-1. 生成AIとは？
 
-生成AIとは、文章・画像・音声・動画などのデータやコンテンツを新しく作り出す技術です。
-<details>
-  <summary>【生成AIツール例】 </summary>
-  
-  - 動画生成：[Runway](https://runwayml.com/) ・[Sora](https://openai.com/sora/) ・[Luma Dream Machine](https://lumalabs.ai/dream-machine)
-  - 画像生成：[Midjourney](https://www.midjourney.com/home)・[Stability AI](https://stability.ai/) ・[Adobe Firefly](https://www.adobe.com/jp/products/firefly.html) 
-  - 音楽：[Suno](https://suno.com/) 
-</details>
+生成AI（Generative AI）は、テキスト・画像・音声などを“新しく作り出す”AIの総称です。  
+なかでもテキスト生成を得意とする代表格がLLM（Large Language Model／大規模言語モデル）です。
+- ざっくりイメージ：大量の文章を読み込んで、人間っぽく文章を作るAI
+
 <img src="https://i.gyazo.com/9fa38557e2abdcd459d0e9b841d7e83d.png" width="450px" alt="image from gyazo"/>
-
-生成AIの中でも、テキスト生成に特化したモデルが **LLM（Large Language Model / 大規模言語モデル）** です。
 
 #### LLMとは
 
 膨大な量のテキストデータを学習した、高性能なモデルのことです。  
-補足: モデルとは脳みそのこと。何も学習していない状態は産まれたての赤ちゃんみたいなものです。
+補足: モデルとは脳みそのこと。
 
-<img src="https://i.gyazo.com/854fdc0acc8cc4357265fa8e50d1deaa.png" width="450px" alt="image from gyazo"/>
+#### LLM例
 
-【LLM例】
+- [Gemini](https://gemini.google.com/app?hl=ja)：Googleが開発したモデル。今回の講義で使用します。
+- [GPT（Generative Pre-trained Transformer）](https://chatgpt.com/)：OpenAIが開発した一連のモデル。
+- [Claude](https://claude.ai/login?returnTo=%2F%3F)：Anthropicが開発した言語モデル。
+
+## 1-2. LLMはどう学習しているのか？
+
+1. 大量の文章（数兆単語規模）を読み込む  
+2. 「次に来そうな単語」を当てる練習を何度も繰り返す  
+3. 繰り返すうちに、文章の流れ（文脈）をつかめるようになる  
+
+その結果、質問に対して「それっぽい答え」を高速で生成できるようになります。
+
+## 1-3. 代表的な生成AIサービス
+
+| ツール | 提供元 | 特徴 |
+| --- | --- | --- |
+| ChatGPT | OpenAI | 対話型LLMの先駆け。チャットに特化し、拡張プラグイン（機能）も豊富。 |
+| Gemini（旧 Bard） | Google | 検索インデックスとの連携が強み。画像への回答も得意。 |
+| Microsoft Copilot | Microsoft | Word / Excel / Teams などM365製品に直結。業務ドキュメント生成で人気。 |
+| Claude | Anthropic | 長文の安全志向モデル。2〜3倍の入力長を扱えるのが魅力。 |
+
+※ 実際は、どのサービスも裏側で「LLM」が動いているイメージです。
+
+
+<details>
+  <summary>【コンテンツ生成AIサービス例】 </summary>
   
-- [GPT（Generative Pre-trained Transformer）](https://chatgpt.com/)  
-OpenAIが開発した一連のモデル。
-- [Claude](https://claude.ai/login?returnTo=%2F%3F)  
-Anthropicが開発した言語モデル。
-- [Gemini](https://gemini.google.com/app?hl=ja)  
-Googleが開発したモデル。
+  - 動画生成：[Runway](https://runwayml.com/) ・[Sora 2](https://openai.com/sora/) ・[Luma Dream Machine](https://lumalabs.ai/dream-machine)
+  - 画像生成：[Midjourney](https://www.midjourney.com/home)・[Stability AI](https://stability.ai/) ・[Adobe Firefly](https://www.adobe.com/jp/products/firefly.html) 
+  - 音楽：[Suno](https://suno.com/) 
+</details>
 
+## 1-4.LLMだけでは「あと一歩」足りないところ
 
+- LLMは文章生成が得意ですが、実運用では次の3つが苦手です。
 
-## 2-2. ノーコードツール（＋生成AIでできること）
+  - **新しい情報**：今日の休講・今週のイベントなどは古くなりやすい
+  - **ローカル情報**：学内/社内の資料やルールには勝手にアクセスできない
+  - - **実行**：Excel→PDF、送信などの処理は“説明”止まりになりやすい  
 
-ノーコードツールとは、**プログラミングを書かなくても**、画面操作でWebサイトやアプリ、業務の仕組みを作れるサービスです。  
-最近は生成AIと組み合わせることで、**会話型AIや作業を手伝うミニアプリ**も、まずは試作レベルなら自分でも作れるようになってきました。
+- 補い方は大きく3つです。
 
-### ノーコードツールの例
+  - **プロンプト工夫**：指示を整えて品質を上げる
+  - **ファインチューニング**：追加学習で特定領域に強くする
+  - **RAG**：外部/学内データを**検索**し、その結果を**根拠**に回答させる
+
+→ 今回は **RAG** をハンズオンで体験します。  
 
 <details>
-  <summary>ノーコードツールの例</summary>
+  <summary>参考：LLMを「ツール」と組み合わせて拡張する</summary>
+  <br>
 
-【サービス同士を繋げるもの】
-- [Make](https://www.make.com/en)
-- [Zapier](https://zapier.com/)
+  LLMは文章生成が得意ですが、単体だと「調べる・取りに行く・実行する」といった行動は苦手です。  
+  そこで **LLM＋ツール** にすると、弱点を補って「できること」を広げられます。
 
-【Webサイトやアプリを作れるもの】
-- [STUDIO](https://studio.design/ja)
-- [Adalo](https://ja.adalo.com/)
+  今回の授業では **RAG** をハンズオンで扱いますが、Difyでは他にも次のような拡張も実現できます。  
+  （※学内システム連携は環境や権限により調整が必要です）
 
-【AI系のもの】
-- [miibo](https://miibo.ai/)
-- [Dify](https://dify.ai/jp)
-- [Coze](https://www.coze.com/)
+  ### 1. Web検索 / API呼び出し
+  - 例：学内イベント・学食メニュー・天気などを取得してまとめる
+  - 例：交通情報や運行状況を取得して、移動プランを提案する
+
+  ### 2. 学内の情報 / 手続きのワークフロー
+  - 例：ゼミの共有資料や配布プリントを検索して、該当箇所を提示する（RAGの発展）
+  - 例：サークルの備品予約や教室予約の手順を案内し、必要項目を整理する
+  - 例：提出物のチェックリストを作って、締切前にやることを整理する
+
+  ### 3. ファイル整理・提出のサポート
+  - 例：レポートの構成案を作り、見出しごとに下書きを分けて整理する
+  - 例：議事録や講義メモを要約して、共有用の文章に整える
+  - 例：フォーム提出用に回答文を整形する（長すぎる文章を短く、など）
 
 </details>
 
-<details>
-  <summary>ノーコードツールを使った活用事例</summary>
 
-- [学内のタスクや共同作業を「見える化」して、共有をスムーズにする](https://protoout.studio/24c6077e4887800cb750cca5d55cd487)
-  - 応用の仕方：課題・制作・イベント準備の進捗をスマホで更新できるタスクボードなど
 
-- [申請・承認・管理などの「事務作業」をスマホで簡単にする](https://protoout.studio/71ad29b2ffa5444f9cf7602368b6763c)
-  - 応用の仕方：備品の貸出管理、ゼミ備品の管理、申請の承認フローなど
-
-【その他活用例】
-- 学内施設の案内（図書館の開館時間、PCルーム、食堂の混雑時間など）
-- 授業/ゼミのFAQ（レポート提出方法、持ち物、出欠ルール、参考資料）
-- 学生向けイベント案内（学内イベント、オープンキャンパス、サークルの説明）
-
-</details>
-
-今回は、ノーコードAI開発プラットフォームの **Dify** を使って、資料を参照して答えてくれるAIチャット制作を体験します。
 
 ---
 
