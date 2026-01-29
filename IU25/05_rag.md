@@ -11,7 +11,7 @@
     ```
   - 作成したチャットボットでも、`公式な公開情報はありません`という事実と異なる答えが返ってきたので、ハルシネーションが起きていることが確認できます
 
-    <img src="https://i.gyazo.com/4267d93864c4eb345671d70277672836.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/4267d93864c4eb345671d70277672836.png" width="450px" alt="image from gyazo"/>
 
 - 参考リンク
   - [漫画で理解するRAGの説明](https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee9654730312d2)
@@ -24,7 +24,7 @@
 - Difyのナレッジ機能を使ってRAGを構築します
 - 事前に用意した資料を検索して、その内容を根拠に回答できるチャットボットを作ります
 
-  <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="300px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="450px" alt="image from gyazo"/>
 
 ### 1-2. スタート準備
 
@@ -32,7 +32,7 @@
   - 前のパートで作った **盛岡の観光アドバイザーチャットボット** がある
   - そのチャットボットが **プレビューで会話できる**状態になっている
 
-    <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
 
 ## 2. ハンズオン：RAGを使った盛岡の観光アドバイザーAIチャットボットを作ろう
 
@@ -94,36 +94,36 @@
 
 1. [ナレッジ機能](https://cloud.dify.ai/datasets)に移動します  
 
-    <img src="https://i.gyazo.com/6d37cc15a7954a2bc22f1152e49af3c9.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/6d37cc15a7954a2bc22f1152e49af3c9.png" width="450px" alt="image from gyazo"/>
 
 2. 画面左上の`+ナレッジベースを作成`をクリックします
 
-    <img src="https://i.gyazo.com/00293973083117c298714eb8c38e4236.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/00293973083117c298714eb8c38e4236.png" width="450px" alt="image from gyazo"/>
 
 3. 先ほど保存したファイル（`morioka-oyako.md` など）をドラッグアンドドロップでアップロード
 
-    <img src="https://i.gyazo.com/44b34ca32a8699bbced5a4b206601d51.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/44b34ca32a8699bbced5a4b206601d51.png" width="450px" alt="image from gyazo"/>
 
 4. 実際にアップロードすると、「次へ」というボタンが表示されるのでそのボタンをクリック
 
-    <img src="https://i.gyazo.com/6b9699b09e8a5b17d964195335e7dc1c.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/6b9699b09e8a5b17d964195335e7dc1c.png" width="450px" alt="image from gyazo"/>
 
 ### 2-3. 埋め込み
 
 1. 基本汎用設定で良いですが、今回は精度を優先して `親子分割モード` を選択します
 
-    <img src="https://i.gyazo.com/a7ed0fb494e320d45de9bf2873198bd3.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/a7ed0fb494e320d45de9bf2873198bd3.png" width="450px" alt="image from gyazo"/>
 
 2. チャンク識別子と検索用子チャンク識別子は以下に書き換えましょう
 - チャンク識別子: `##`
 - 検索用子チャンク識別子: `=====`
 
-    <img src="https://i.gyazo.com/609e339e1339dd94154e381a12c0d2a9.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/609e339e1339dd94154e381a12c0d2a9.png" width="450px" alt="image from gyazo"/>
 
 3. 埋め込みモデル
 - 受講生の皆さんはGeminiがデフォルトで入っているかと思いますが、クリックして「embedding-001」というモデルを選びましょう
 
-    <img src="https://i.gyazo.com/eeaacd1f6a779377ef435f3973f9e288.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/eeaacd1f6a779377ef435f3973f9e288.png" width="450px" alt="image from gyazo"/>
 
 ### 2-4.検索設定をして保存しよう
 
@@ -132,67 +132,67 @@
 
 1. ベクトル検索、全文検索、ハイブリッド検索の中から、`ハイブリッド検索` を選択
 
-    <img src="https://i.gyazo.com/8c43d475ce1b25f798b3d9cb24c416f7.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/8c43d475ce1b25f798b3d9cb24c416f7.png" width="450px" alt="image from gyazo"/>
 
 2. `ウェイト設定` を選択
 
-    <img src="https://i.gyazo.com/fc14ea2b1739476acf83fc96f5b71a97.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/fc14ea2b1739476acf83fc96f5b71a97.png" width="450px" alt="image from gyazo"/>
 
 3. `保存して処理` を押す
 - 最後に、「保存して処理」のボタンをクリックしましょう
 - このとき多少埋め込み処理時間があります
 
-    <img src="https://i.gyazo.com/6782e5a33d0a533d1b7cc2fcb21952c1.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/6782e5a33d0a533d1b7cc2fcb21952c1.png" width="450px" alt="image from gyazo"/>
 
 > [!CAUTION]
 > 下記画像のように`埋め込み処理が完了しました`の表記が出たら、完了している合図です  
-> <img src="https://i.gyazo.com/bde4a5a225ba4c79c6a81380257cb3c4.png" width="250px" alt="image from gyazo"/>
+> <img src="https://i.gyazo.com/bde4a5a225ba4c79c6a81380257cb3c4.png" width="450px" alt="image from gyazo"/>
 
 4. `ドキュメントに移動`をクリック
 
-    <img src="https://i.gyazo.com/e4311250b72841b277afd46062218626.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/e4311450b72841b277afd46062218626.png" width="450px" alt="image from gyazo"/>
 
 5. ナレッジ追加の確認
 - 右側のステータスが利用可能になっているか確かめましょう
 
-    <img src="https://i.gyazo.com/b355dd66cc8543274e0359f40047342a.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/b355dd66cc8543274e0359f40047342a.png" width="450px" alt="image from gyazo"/>
 
 ### 2-5. チャットフローに「知識検索ノード」を追加
 
 1. 画面上部の「スタジオ」タブをクリックして、最初に作ったチャットフローの画面に戻り、自分のチャットアプリを開きましょう
 
-    <img src="https://i.gyazo.com/d346623b6c7942da8ca3a11226692bad.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/d346623b6c7942da8ca3a11226692bad.png" width="450px" alt="image from gyazo"/>
 
 2. 知識検索ノードを追加する
 - `開始ノード` と `LLMノード` を繋ぐ線の上にカーソルを持っていくと、`+マーク`がでます
 
-    <img src="https://i.gyazo.com/ce641441280e456578804d1c919a4675.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/ce641441280e456578804d1c919a4675.png" width="450px" alt="image from gyazo"/>
 
 - その`+マーク`をクリックして、 `知識検索` ノードを追加します
 
-    <img src="https://i.gyazo.com/f1b31a4a0ce4a2294c650d1bdb5170cd.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/f1b31a4a0ce4a2294c650d1bdb5170cd.png" width="450px" alt="image from gyazo"/>
 
 - 4つのノードが並びました
 
-    <img src="https://i.gyazo.com/c07911c0b224983db30572af072312fd.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/c07911c0b224983db30572af072312fd.png" width="450px" alt="image from gyazo"/>
 
 ### 2-6. 知識検索ノードの設定でナレッジを紐づける
 
 - ここから知識検索ノードをクリックして、右側の画面で設定していきます
 
-    <img src="https://i.gyazo.com/5baf19bc878348331fad2d31824c33c8.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/5baf19bc878348331fad2d31824c33c8.png" width="450px" alt="image from gyazo"/>
 
 1. ナレッジベース項目の右側にある`+`をクリックします
 
-    <img src="https://i.gyazo.com/0a5e05fc89e439ecbdee334c47c0b7ff.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/0a5e05fc89e439ecbdee334c47c0b7ff.png" width="450px" alt="image from gyazo"/>
 
 2. 先ほど作成したナレッジを選択して、`追加`をクリックします
 
-    <img src="https://i.gyazo.com/f88dc73902a2f7c7c202a581bb811b54.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/f88dc73902a2f7c7c202a581bb811b54.png" width="450px" alt="image from gyazo"/>
 
 3. ナレッジベースが登録されました
 
-    <img src="https://gyazo.com/6e0fe598a6be8a8cd889a368e2a40e05.png" width="250px" alt="image from gyazo"/>
+    <img src="https://gyazo.com/6e0fe598a6be8a8cd889a368e2a40e05.png" width="450px" alt="image from gyazo"/>
 
 4. 次にLLMノードをクリックして右側の画面で設定していきます
 - 入れるモデルは`Gemini 2.0 Flash-Lite 001`を選びます
@@ -200,14 +200,14 @@
 > [!TIP]
 > RAGが効いていることを分かりやすくするため、あえて少し古めのモデルを使います  
 > (賢すぎるモデルだと、RAGなしでも答えてしまうことがあります）  
-> <img src="https://i.gyazo.com/93a33031303a9e50de4d3d5a4e57142e.png" width="250px" alt="image from gyazo"/>
+> <img src="https://i.gyazo.com/93a33031303a9e50de4d3d5a4e57142e.png" width="450px" alt="image from gyazo"/>
 
 5. 設定
 - コンテキストの「変数値を設定」の欄をクリックして、知識検索の中の`result`を選びましょう 
 
-    <img src="https://i.gyazo.com/7a2138ec292a26b29c610dc949c8bb5e.png" width="250px" alt="image from gyazo"/><br>
+    <img src="https://i.gyazo.com/7a2138ec292a26b29c610dc949c8bb5e.png" width="450px" alt="image from gyazo"/><br>
 
-    <img src="https://i.gyazo.com/b1299412977579fcb86909c8b44ee624.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/b1299412977579fcb86909c8b44ee624.png" width="450px" alt="image from gyazo"/>
 
 6. プロンプトをRAG用に調整
 - LLMノードのSYSTEMの中に現在入っているプロンプトは削除し、以下のプロンプトをコピーして置き換えましょう
@@ -227,7 +227,7 @@
 > [!TIP]
 > コンテキストは、きちんと紫色で変数として入っているか確認しましょう
 > 
-> <img src="https://i.gyazo.com/1868c1034865e2ffec19e8314a59bb3e.png" width="250px" alt="image from gyazo"/>
+> <img src="https://i.gyazo.com/1868c1034865e2ffec19e8314a59bb3e.png" width="450px" alt="image from gyazo"/>
 
 ### 2-7. 動かしてみよう
 
@@ -243,7 +243,7 @@ RAGを入れたことでの差を体験しましょう
 - 資料にないことを断定する場合は、プロンプトを調整しましょう
   - 参考：[RAGの精度が上がらない？設定を見直してみよう！](https://protoout.studio/2296077e488780f081dace683bb63f86)
 
-    <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="250px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="450px" alt="image from gyazo"/>
 
 ### 2-8 公開して試そう
 
