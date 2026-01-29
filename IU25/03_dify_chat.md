@@ -5,7 +5,7 @@
 
 ## 1. 作るアプリケーション
 
-### 1-1. Dify上で、盛岡観光の質問をすると回答してくれるAIチャットアプリ
+### 1-1. 盛岡観光の質問をすると回答してくれるAIチャットアプリ
 
   <img src="https://i.gyazo.com/9968c20b8a6395091fc264e3a8e95a84.png" width="250px" alt="image from gyazo"/>
 
