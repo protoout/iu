@@ -148,7 +148,7 @@ WebhookURLをつかってDify側とLINEを連携します。
 
 スマートフォンで、友達になったLINE Botへ何かメッセージを送信し、返答がくるのを確認しましょう。
 
-<img src="https://i.gyazo.com/b132065325a9792bb0a1fc7a5c8004b8.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/149e85e5b9dbe16946f7441f44a7df2e.png" width="450px" alt="image from gyazo"/>
     
 - DifyとLINE Botが連携され、AIと会話ができるLINE Botが完成しました！  
 ここからオリジナリティを出していきましょう
