@@ -67,9 +67,10 @@
 
 ## クロージング 16:50-17:00（10分）
 1. [ワークシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?usp=sharing)
-  - 受講後の技術分けワーク(3分)
-    - 受講前と受講後で知っている用語数の変化を確認
-  - 振り返り時間(5分)
-    - 今回学んだことを振り返って今後に活かす
+    - 受講後の技術分けワーク（3分）
+        - 受講前と受講後で知っている用語数の変化を確認
+    - 振り返り時間（5分）
+        - 今回学んだことを振り返って今後に活かす
+
 2. [クロージング](https://docs.google.com/presentation/d/135YJM9t7xaBjX_fH5wC9yyu24B8s8wD_vEUzPeQFieI/edit?slide=id.g3bc0ae2a4eb_0_5#slide=id.g3bc0ae2a4eb_0_5)
 3. アンケート案内：[アンケートはこちら](https://forms.gle/ZUNycSw8CAuPBaHU6)
