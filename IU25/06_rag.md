@@ -150,7 +150,7 @@
 
 4. `ドキュメントに移動`をクリック
 
-    <img src="https://i.gyazo.com/e4311450b72841b277afd46062218626.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/e4311250b72841b277afd46062218626.png" width="450px" alt="image from gyazo"/>
 
 5. ナレッジ追加の確認
 - 右側のステータスが利用可能になっているか確かめましょう
