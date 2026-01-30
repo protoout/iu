@@ -43,18 +43,10 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
    直利庵本店の大人料金と小学生料金は？
    ```
 
-   ```txt
-   ぴょんぴょん舎盛岡駅前店は何時くらいが空いてる？
-   ```
-
 3. 現状は下記のようにローカルな観光情報が返ってこず、それっぽい嘘の情報が返ってきていてハルシネーションがおきています。  
   - 本来は、大人料金：3,300円・小学生料金：1,650円
 
-    <img src="https://i.gyazo.com/5027bac4a98a09a43528c9c9b0d5c425.png" width="450px" alt="image from gyazo"/>
-
-  - 本来は、開店直後の11:00-12:00または午後の15:00-17:00の時間帯がおすすめ
-
-    <img src="https://i.gyazo.com/0aced56b1ae7c43e48586bdef18fbab2.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/053b6cbce159c107ad01a1c7eeb21986.jpg" width="450px" alt="image from gyazo"/>
 
 - 参考リンク
   - [漫画で理解するRAGの説明](https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee9654730312d2)
@@ -239,7 +231,7 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 **冒頭で聞いた質問**をチャットボットに聞いてみましょう。  
 登録したナレッジの情報通りの回答が返ってきたら成功です。
 
-<img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/e2870f25bbac039cd72f2b7f53c80d80.jpg" width="450px" alt="image from gyazo"/>
 
 ※ うまくナレッジの情報をもとに回答していない場合は、プロンプトも調整してみましょう。
 
@@ -259,7 +251,7 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 
 4. 本番環境で早速試してみましょう！
 
-    <img src="https://i.gyazo.com/ee9d791bead1cfead5dcd80dbc6f4757.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/2155a0d3c2672ad1fc76d1d74a42df75.png" width="300px" alt="image from gyazo"/>
 
 ## 3. Tips: RAGの限界と応用
 
