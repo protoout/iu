@@ -39,7 +39,7 @@
 | ツール | 提供元 | 特徴 |
 | --- | --- | --- |
 | ChatGPT | OpenAI | 対話型LLMの先駆け。チャットに特化し、拡張プラグイン（機能）も豊富。 |
-| Gemini（旧 Bard） | Google | 検索インデックスとの連携が強み。画像への回答も得意。 |
+| Gemini | Google | 検索インデックスとの連携が強み。画像への回答も得意。 |
 | Microsoft Copilot | Microsoft | Word / Excel / Teams などM365製品に直結。業務ドキュメント生成で人気。 |
 | Claude | Anthropic | 長文の安全志向モデル。2〜3倍の入力長を扱えるのが魅力。 |
 
