@@ -130,25 +130,25 @@ WebhookURLをつかってDify側とLINEを連携します。
 
 6. `Webhook設定`の`編集`ボタンをクリックします。
 
-    <img src="https://i.gyazo.com/54330709801aabf9f5fe63ff6c96a58f.png" width="300px" alt="image from gyazo"/>
+   > <img src="https://i.gyazo.com/b2926bfddcc5faa8b594094c97744c4f.png" width="300px" alt="image from gyazo"/>
 
 7. 先ほどコピーしたURLをWebhook URLに設定します。
 
     <img src="https://i.gyazo.com/42c018ea53c79da753ad2b342ca85de3.png" width="450px" alt="image from gyazo"/>
 
-8. その下にある`Webhookの利用`ボタンをクリックし、オンにします。
+8. その下にある`Webhookの利用`ボタンをクリックし、オン（緑色の状態）にします。
 
     <img src="https://i.gyazo.com/88de95e073afa7218f78e883e8fa3d4d.png" width="450px" alt="image from gyazo"/>
 
-9. 検証ボタンを押して成功と表示されればOKです。
+9. `検証`ボタンを押して成功と表示されればOKです。
 
     <img src="https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png" width="450px" alt="image from gyazo"/>
 
 ### 2-6. LINEから会話してみよう
 
-- スマートフォンで、友達になったLINE Botへ何かメッセージを送信し、返答がくるのを確認しましょう。
+スマートフォンで、友達になったLINE Botへ何かメッセージを送信し、返答がくるのを確認しましょう。
 
-    <img src="https://i.gyazo.com/b132065325a9792bb0a1fc7a5c8004b8.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/b132065325a9792bb0a1fc7a5c8004b8.png" width="450px" alt="image from gyazo"/>
     
 - DifyとLINE Botが連携され、AIと会話ができるLINE Botが完成しました！  
 ここからオリジナリティを出していきましょう
@@ -156,34 +156,43 @@ WebhookURLをつかってDify側とLINEを連携します。
 ## 3. Tips
 ### 3-1. Dify以外のLINE Bot連携方法
 
-- LINE BotはDifyとは別の仕組みなので、ほかにも色々な連携方法があります
+LINE BotはDifyとは別の仕組みで、ほかにも色々な連携方法があるので興味がある人は調べてみましょう。
 
   例
   - プログラムを書いて連携する（自前サーバー）
   - 他のノーコードツールと組み合わせる
   - 外部APIと連携してリアルタイム情報を扱う
 
-  興味がある人は調べてみましょう
-
-### 3-2. Difyのプラグイン機能
+### 3-3. Difyのプラグイン機能
 
 - Difyのプラグイン機能では、LINE以外にも、Slack/Notion/スプレッドシートなどと連携できます。
 
     <img src="https://i.gyazo.com/2212299629f5be33c9c29f27829ee582.png" width="450px" alt="image from gyazo"/>
 
-### 3-2. 応答メッセージについて
+3-3. リッチメニュー
 
-- 今回は、LINE公式アカウント側の「応答設定」を以下のように調整しました  
-  これは、**LINEの自動応答ではなく、Difyからの返信をメインにするため**です。
-  - チャット：オフ  
-  - 挨拶メッセージ：オン  
-  - Webhook：オフ（Webhook URL設定後にオンにします。）  
-  - 応答メッセージ：オフ  
+- リッチメニューという機能を使うと、LINE Botの見栄えと操作性が格段に上がります  
+- 管理画面の設定で、プログラムなどは使わずに作ることができます。
 
-- 各項目の意味を詳しく知りたい人は、以下を開いて確認してください
+  <img src="https://i.gyazo.com/831101cd49d0d302d5a2fb51ded99988.jpg" width="200px" alt="image from gyazo"/>
+
+参考
+- ノーコード：[LINE公式アカウント（LINE Official Account Manager）リッチメニューを作成するマニュアル｜LINEヤフー for Business](https://www.lycbiz.com/jp/manual/OfficialAccountManager/rich-menus/)
+
+- 【発展】プログラムで制御したい人：[リッチメニューを使う（LINE Developers）](https://developers.line.biz/ja/docs/messaging-api/using-rich-menus/)
+
+
+### 3-4. 応答メッセージについて
+
+今回は、LINE公式アカウント側の「応答設定」を以下のように調整しました。  
+これは、**LINEの自動応答ではなく、Difyからの返信をメインにするため**です。　　
+>  - チャット：オフ  
+>  - 挨拶メッセージ：オン  
+>  - Webhook：オフ（Webhook URL設定後にオンにします。）  
+>  - 応答メッセージ：オフ  
 
   <details>
-  <summary>応答メッセージの機能について</summary>
+  <summary>補足：各項目の応答メッセージの機能について</summary>
 
   - **チャット**  
     アカウント管理画面からユーザーと手動でメッセージのやり取りができます。
@@ -233,37 +242,35 @@ WebhookURLをつかってDify側とLINEを連携します。
 
 ### 4-1. 自分のLINE Botを共有する/他の人のLINE Botも試す
 
-  - QRコードを共有することで他の人にも使ってもらえます
-  - 他の人のLINE Botも試して、動作を確認してみましょう
+  - QRコードを共有することで他の人にも使ってもらえます。
+    - QRコードはLINE DevelopersのMessagingAPIにあります。
 
-### 4-2. リッチメニュー
+      <img src="https://i.gyazo.com/e85d3e270be31bf7fd6354bdc1d1f4f2.png" width="200px" alt="image from gyazo"/>
+  
+  - 他の人のLINE Botも試して、動作を確認してみましょう。
 
-- リッチメニューという機能を使うと、LINE Botの見栄えと操作性が格段に上がります  
-- 管理画面の設定で、プログラムなどは使わずに作ることができます。
-
-  <img src="https://i.gyazo.com/831101cd49d0d302d5a2fb51ded99988.jpg" width="200px" alt="image from gyazo"/>
-
-参考
-- ノーコード：[LINE公式アカウント（LINE Official Account Manager）リッチメニューを作成するマニュアル｜LINEヤフー for Business](https://www.lycbiz.com/jp/manual/OfficialAccountManager/rich-menus/)
-
-- 【発展】プログラムで制御したい人：[リッチメニューを使う（LINE Developers）](https://developers.line.biz/ja/docs/messaging-api/using-rich-menus/)
-
-### 4-3 色々な公式アカウントを検索して共有する
+### 4-2. 色々な公式アカウントを検索して共有する
 
 - お店やサービスのLINE公式アカウントで、使いやすいと思ったアカウントを2〜3個探して、次の観点で見てみましょう
   - どんな導線で会話が始まるか？
   - どんな機能が使われているか？
     - リッチメニュー / クーポン / 予約 / ポイントカード など
   - 「使いやすい」と感じた理由は？
-- 見つけた「使いやすさ」を、後で作る自分のオリジナルLINE Botに取り入れたり、最後の発表タイムで共有したりしましょう。！
+- 見つけた「使いやすさ」を、後で作る自分のオリジナルLINE Botに取り入れたり、最後の発表タイムで共有しましょう。！
 
 ## 5. まとめ
 
-このパートでは、**Difyで作ったAIをLINE Botとして使える形にする**ところまで作成しました
+このパートでは、**Difyで作ったAIをLINE Botとして使える形にする**ところまで作成しました。
 
-LINE Botは、研究室・サークル・ゼミのFAQ、学内施設案内など、**身近な情報を答えるアシスタント**として、幅広く活用できます。
+Dify上で動かすだけでもプロトタイプはできますが、**LINEに載せることで普段使っているアプリからすぐ開ける**ようになります。  
+その結果、日常の中で使うハードルが下がり、試したり改善したりするサイクルを回しやすくなります。  
 
-LINEは普段使っている人も多いので、**登録者が増えやすく、改善のフィードバックが集めやすい**のも利点です。
+LINE Botは、たとえば**研究室・サークル・ゼミ内の連絡窓口**や、**学内施設の案内**など、身近なシーンの導線としても使えます。  
+思いついたアイデアを素早く形にする手段の1つとして、**Dify × LINE**もぜひ活用してみてください。
+<br>
+さらに外部サービスと連携することで、データの記録や参照できるLINE Botも作成できます。  
+[LINE Developers Communityの作成事例](https://www.youtube.com/@linedevelopercommunity9922/search?query=LINE%20Bot)や[QiitaのLINE Bot作成事例](https://qiita.com/search?q=LINEBot&sort=like)を見てどんなことができるか自分で探して幅を広げてみてください。
+
 
 ---
 
