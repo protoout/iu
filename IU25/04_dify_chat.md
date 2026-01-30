@@ -94,7 +94,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 2.下記画像のように、プロンプト通りの内容で盛岡について詳しく教えてもらえたら成功です。  
 プロンプトを調整することで、自分が望む回答を得ることができます。
 
-    <img src="https://i.gyazo.com/f822b0228e75f2dca8db520f41287cf5.png" width="300px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/f822b0228e75f2dca8db520f41287cf5.png" width="300px" alt="image from gyazo"/>
 
   > SYSTEMにプロンプトを入れないで同じ質問をすると、下記画像のように質問返しをされるなど安定しない回答になります。
   > 
