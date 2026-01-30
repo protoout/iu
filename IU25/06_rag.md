@@ -21,7 +21,7 @@ RAG（Retrieval-Augmented Generation）は、AIが回答を作る前に**関連�
 
 ### LLMだけ vs RAGあり
 
-- 02.llmでご紹介した、「LLMだけではあと一歩足りないところ」をRAGありだと以下のように解決できます。
+02.llmでご紹介した、「LLMだけではあと一歩足りないところ」をRAGありだと以下のように解決できます。
 
 | やりたいこと | LLM単体 | RAGあり |
 |---|---|---|
@@ -50,11 +50,11 @@ RAG（Retrieval-Augmented Generation）は、AIが回答を作る前に**関連�
 3. 現状は下記のようにローカルな観光情報が返ってこず、それっぽい嘘の情報が返ってきていてハルシネーションがおきています。  
   - 本来は、大人料金：3,300円・小学生料金：1,650円
 
-  <img src="https://i.gyazo.com/5027bac4a98a09a43528c9c9b0d5c425.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/5027bac4a98a09a43528c9c9b0d5c425.png" width="450px" alt="image from gyazo"/>
 
   - 本来は、開店直後の11:00-12:00または午後の15:00-17:00の時間帯がおすすめ
 
-  <img src="https://i.gyazo.com/0aced56b1ae7c43e48586bdef18fbab2.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/0aced56b1ae7c43e48586bdef18fbab2.png" width="450px" alt="image from gyazo"/>
 
 - 参考リンク
   - [漫画で理解するRAGの説明](https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee9654730312d2)
@@ -134,15 +134,15 @@ RAG（Retrieval-Augmented Generation）は、AIが回答を作る前に**関連�
 
 2. 画面左上の`+ナレッジベースを作成`をクリックします。
 
-    <img src="https://i.gyazo.com/00293973083117c298714eb8c38e4236.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/00293973083117c298714eb8c38e4236.png" width="300px" alt="image from gyazo"/>
 
 3. 先ほど保存したファイル（`morioka-oyako.md` など）をドラッグアンドドロップでアップロードします。
 
-    <img src="https://i.gyazo.com/44b34ca32a8699bbced5a4b206601d51.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/44b34ca32a8699bbced5a4b206601d51.png" width="300px" alt="image from gyazo"/>
 
 4. 実際にアップロードができたら「次へ」というボタンをクリックしましょう。
 
-    <img src="https://i.gyazo.com/6b9699b09e8a5b17d964195335e7dc1c.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/6b9699b09e8a5b17d964195335e7dc1c.png" width="300px" alt="image from gyazo"/>
 
 ### 2-3. ナレッジのチャンク設定をしよう
 ここからは検索しやすい形でナレッジデータを保存する設定をしていきいます。  
