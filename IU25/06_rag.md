@@ -121,9 +121,9 @@
     <img src="https://i.gyazo.com/609e339e1339dd94154e381a12c0d2a9.png" width="450px" alt="image from gyazo"/>
 
 3. 埋め込みモデル
-- 受講生の皆さんはGeminiがデフォルトで入っているかと思いますが、クリックして「embedding-001」というモデルを選びましょう
+- 受講生の皆さんはGeminiがデフォルトで入っているかと思いますが、クリックして「gemini-embedding-001」というモデルを選びましょう
 
-    <img src="https://i.gyazo.com/eeaacd1f6a779377ef435f3973f9e288.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/f39519002fae379e54e92b2e55046c71.png" width="450px" alt="image from gyazo"/>
 
 ### 2-4.検索設定をして保存しよう
 
