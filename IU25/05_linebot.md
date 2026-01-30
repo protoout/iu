@@ -63,27 +63,27 @@ Difyには外部サービスと連携しやすい「プラグイン」機能が�
 - 重要: LINEプラグインのバージョンを0.0.4に下げる
   - コミュニティ知見として、最新の0.0.5だとバグで動かないケースがあるため、0.0.4にダウングレードします。
 
-1. マーケットプレイスを探索するタブから、画面左上の`プラグイン`タブに移動しましょう。
+5. マーケットプレイスを探索するタブから、画面左上の`プラグイン`タブに移動しましょう。
 
     <img src="https://i.gyazo.com/4d9b98ca1138fb9bbd056622db32314e.png" width="450px" alt="image from gyazo"/>
 
-2. 先ほどインストールしたLINE Botの枠内をクリックすると、右側にバージョン設定が出てきます。
+6. 先ほどインストールしたLINE Botの枠内をクリックすると、右側にバージョン設定が出てきます。
   
     <img src="https://i.gyazo.com/7942431bf430e4d551d8af4e771d3920.png" width="450px" alt="image from gyazo"/>
 
-3. バージョン0.0.4部分をクリックします。
+7. バージョン0.0.4部分をクリックします。
 
     <img src="https://i.gyazo.com/9ef2508191d68e068ad2e25ea5bbc5b7.png" width="450px" alt="image from gyazo"/>
 
-3. `とにかくダウングレードする`をクリックします。
+8. `とにかくダウングレードする`をクリックします。
 
     <img src="https://i.gyazo.com/efc7555d54335a5ac8a2dfb69411e527.png" width="450px" alt="image from gyazo"/>
 
-4. 0.0.4にダウングレードできました
+9. 0.0.4にダウングレードできました
 
     <img src="https://i.gyazo.com/eaef1b8231978dec905c7bb6b4d79cc7.png" width="450px" alt="image from gyazo"/>
 
-### 2-4. エンドポイントを設定する
+### 2-3. エンドポイントを設定する
 
 1. インストールしたらエンドポイントの設定へ進みます
 
@@ -101,7 +101,7 @@ Difyには外部サービスと連携しやすい「プラグイン」機能が�
 
     <img src="https://i.gyazo.com/bb04e337be5b9c4d8807a651ba58b9fe.png" width="450px" alt="image from gyazo"/>
 
-### 2-5. Webhook URLを設定する（連携の仕上げ）  
+### 2-4. Webhook URLを設定する（連携の仕上げ）  
 
 WebhookURLをつかってDify側とLINEを連携します。  
 
@@ -144,7 +144,7 @@ WebhookURLをつかってDify側とLINEを連携します。
 
     <img src="https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png" width="450px" alt="image from gyazo"/>
 
-### 2-6. LINEから会話してみよう
+### 2-5. LINEから会話してみよう
 
 スマートフォンで、友達になったLINE Botへ何かメッセージを送信し、返答がくるのを確認しましょう。
 
