@@ -147,7 +147,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
       - Gemini 2.0 Flash-Lite 001（軽量の固定版）
       - Gemini 2.0 Flash-Lite（※2026/03/31で終了予定）
 
-      ### 画像生成系（文章用途とは別枠）
+      ### 画像生成系
       - Nano Banana（画像生成寄り）
       - Gemini 2.0 Flash Preview Image Generation（画像生成用)
       </details>
