@@ -60,8 +60,9 @@ Difyには外部サービスと連携しやすい「プラグイン」機能が�
 
     <img src="https://i.gyazo.com/11c6ade0c1750586be03eda3bb3950ce.png" width="450px" alt="image from gyazo"/>
 
-重要: LINEプラグインのバージョンを0.0.4に下げる  
-コミュニティ知見として、最新の0.0.5だとバグで動かないケースがあるため、0.0.4にダウングレードします。
+> [!IMPORTANT]
+> LINEプラグインのバージョンを0.0.4に下げる  
+> コミュニティ知見として、最新の0.0.5だとバグで動かないケースがあるため、0.0.4にダウングレードします。
 
 5. マーケットプレイスを探索するタブから、画面左上の`プラグイン`タブに移動しましょう。
 
@@ -79,17 +80,17 @@ Difyには外部サービスと連携しやすい「プラグイン」機能が�
 
     <img src="https://i.gyazo.com/efc7555d54335a5ac8a2dfb69411e527.png" width="450px" alt="image from gyazo"/>
 
-9. 0.0.4にダウングレードできました
+9. 0.0.4にダウングレードできました。
 
     <img src="https://i.gyazo.com/eaef1b8231978dec905c7bb6b4d79cc7.png" width="450px" alt="image from gyazo"/>
 
 ### 2-3. エンドポイントを設定する
 
-1. インストールしたらエンドポイントの設定へ進みます
+1. インストールしたらエンドポイントの設定へ進みます。
 
     <img src="https://i.gyazo.com/62cfd349da465c94475dc743162ada9c.png" width="450px" alt="image from gyazo"/>
 
-3. `+` ボタンから作成します。
+2. `+` ボタンから作成します。
 
     <img src="https://i.gyazo.com/3c1b027ae1be6071db87d0273d7fa7fc.png" width="450px" alt="image from gyazo"/>
   
@@ -103,10 +104,11 @@ Difyには外部サービスと連携しやすい「プラグイン」機能が�
 
 ### 2-4. Webhook URLを設定する（連携の仕上げ）  
 
-WebhookURLをつかってDify側とLINEを連携します。  
+Webhook URLをつかってDify側とLINEを連携します。  
 
 > [!TIP]
-> Webhookとは？：サービス（アプリケーション）の何らかのアクションを他のアプリケーションへリアルタイムに通知する仕組みのこと  
+> Webhookとは？：
+> サービス（アプリケーション）の何らかのアクションを他のアプリケーションへリアルタイムに通知する仕組みのこと  
 
 1. Dify側でWebhook URLが発行されたら、下記画像の赤枠のマークをクリックしてコピーしましょう。
 
@@ -130,7 +132,7 @@ WebhookURLをつかってDify側とLINEを連携します。
 
 6. `Webhook設定`の`編集`ボタンをクリックします。
 
-   > <img src="https://i.gyazo.com/b2926bfddcc5faa8b594094c97744c4f.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/b2926bfddcc5faa8b594094c97744c4f.png" width="300px" alt="image from gyazo"/>
 
 7. 先ほどコピーしたURLをWebhook URLに設定します。
 
@@ -171,7 +173,7 @@ LINE BotはDifyとは別の仕組みで、ほかにも色々な連携方法が�
 
 ### 3-3. リッチメニュー
 
-- リッチメニューという機能を使うと、LINE Botの見栄えと操作性が格段に上がります  
+- リッチメニューという機能を使うと、LINE Botの見栄えと操作性が格段に上がります。  
 - 管理画面の設定で、プログラムなどは使わずに作ることができます。
 
   <img src="https://i.gyazo.com/831101cd49d0d302d5a2fb51ded99988.jpg" width="200px" alt="image from gyazo"/>
