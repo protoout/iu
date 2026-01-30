@@ -41,6 +41,7 @@
 ウィンドウを分割してこのGitHubの教材と実際の作業画面を分けて閲覧していくのがオススメです。  
 
 > 左に教材、右で作業をしているウィンドウレイアウトの例
+>
 > <img src="https://i.gyazo.com/417cb6d672bed441417c1bd7b436fb60.png" width="450px" alt="image from gyazo"/>
 
 ---
