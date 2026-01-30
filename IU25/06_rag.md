@@ -37,53 +37,30 @@ RAG（Retrieval-Augmented Generation）は、AIが回答を作る前に**関連�
 1. 今回は盛岡のローカルな観光情報の知識（ナレッジ）を扱っていきます。
 [盛岡のローカル観光情報ナレッジ](https://gist.githubusercontent.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d/raw/c37cb9a96318eb9b1615b7276628230dbb5dd88e/morioka-oyako.md)を開いてみてください。
 
-2.下記をコピーして先ほど作成したチャットボットに貼り付けて聞いてみましょう。
-（質問文いくつか下記のフィードバックからもってきてください。）
+2. 下記をコピーして先ほど作成したチャットボットに貼り付けて聞いてみましょう。
 
     ```txt
-    直利庵本店の最低予約人数、大人料金と小学生料金は？
+    直利庵本店の大人料金と小学生料金は？
     ```
-  - 作成したチャットボットでも、`公式な公開情報はありません`という事実と異なる答えが返ってきたので、ハルシネーションが起きていることが確認できます
+    
+    ```txt
+    ぴょんぴょん舎盛岡駅前店は何時くらいが空いてる？
+    ```
 
+3. 現状は下記のようにローカルな観光情報が返ってこず、それっぽい嘘の情報が返ってきていてハルシネーションがおきています。  
+  - 本来は、大人料金：3,300円・小学生料金：1,650円
 
-3.現状は「〜〜〜」とローカルな観光情報が返ってこず、それっぽい嘘の情報が返ってきていてハルシネーションがおきています。
+  <img src="https://i.gyazo.com/5027bac4a98a09a43528c9c9b0d5c425.png" width="450px" alt="image from gyazo"/>
 
-  <img src="https://i.gyazo.com/4267d93864c4eb345671d70277672836.png" width="450px" alt="image from gyazo"/>
+  - 本来は、開店直後の11:00-12:00または午後の15:00-17:00の時間帯がおすすめ
+
+  <img src="https://i.gyazo.com/0aced56b1ae7c43e48586bdef18fbab2.png" width="450px" alt="image from gyazo"/>
 
 - 参考リンク
   - [漫画で理解するRAGの説明](https://note.com/preview/nbcd4a100e8c7?prev_access_key=a430d90f75599f57e6ee9654730312d2)
 
-
-## 1. 作るアプリケーション
-
-### 1-1. ローカル情報について質問すると、資料を参照しながら正しく回答してくれるAIチャットボット
-
-- Difyのナレッジ機能を使ってRAGを構築します
-- 事前に用意した資料を検索して、その内容を根拠に回答できるチャットボットを作ります
-
-  <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="450px" alt="image from gyazo"/>
-
-### 1-2. スタート準備
-
-- 現時点で、Difyが以下の状態になっていればOKです
-  - 前のパートで作った **盛岡の観光アドバイザーチャットボット** がある
-  - そのチャットボットが **プレビューで会話できる**状態になっている
-
-    <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
-
-## 2. ハンズオン：RAGを使った盛岡の観光アドバイザーAIチャットボットを作ろう
-
-### 2-1. ナレッジデータを登録しよう
-
-- [こちらのURL](https://gist.githubusercontent.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d/raw/c37cb9a96318eb9b1615b7276628230dbb5dd88e/morioka-oyako.md)を開き、ファイルとして保存します
-`morioka-oyako.md`または`morioka-oyako.txt`という名前で自分のパソコンに保存してください
-
-    <img src="https://i.gyazo.com/5d03e8e9fa1725f0f27e2c9f9046283d.png" width="150px" alt="image from gyazo"/>
-
-補足: zipでまとめてDLしたい人は[こちら](https://gist.github.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d)
-
 <details>
-  <summary>ファイル記載内容</summary>
+  <summary>盛岡のローカル観光情報</summary>
 
 # 盛岡観光完全ガイド
 
@@ -127,127 +104,165 @@ RAG（Retrieval-Augmented Generation）は、AIが回答を作る前に**関連�
 渋民バス停徒歩5分 盛岡駅からバス30分 無料駐車場50台 盛岡IC15分
 </details>
 
-### 2-2 ナレッジベースを作成
+## 1. 作るアプリケーション
 
-1. [ナレッジ機能](https://cloud.dify.ai/datasets)に移動します  
+### 1-1. 盛岡のローカル観光情報について回答するAIチャットボット
+
+  <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="450px" alt="image from gyazo"/>
+
+### 2-0. Difyのチャットフローを開く
+1. [Dify](https://dify.ai/jp)の画面で、先ほど作成した盛岡の観光アドバイザーチャットボットを開きましょう。
+
+    <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
+
+## 2. ハンズオン：RAGを使った盛岡の観光アドバイザーAIチャットボットを作ろう
+
+### 2-1. ナレッジデータをファイル保存する
+
+- 先ほど開いた[盛岡のローカル観光情報ナレッジ](https://gist.githubusercontent.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d/raw/c37cb9a96318eb9b1615b7276628230dbb5dd88e/morioka-oyako.md)をファイルとして保存します。  
+`morioka-oyako.md`または`morioka-oyako.txt`という名前で自分のパソコンに保存してください。
+
+    <img src="https://i.gyazo.com/5d03e8e9fa1725f0f27e2c9f9046283d.png" width="150px" alt="image from gyazo"/>
+
+補足: zipでまとめてDLしたい人は[こちら](https://gist.github.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d)
+
+### 2-2. ナレッジの登録をしよう
+
+1. Dify画面の上部にある[ナレッジタブ](https://cloud.dify.ai/datasets)をクリックします。  
 
     <img src="https://i.gyazo.com/6d37cc15a7954a2bc22f1152e49af3c9.png" width="450px" alt="image from gyazo"/>
 
-2. 画面左上の`+ナレッジベースを作成`をクリックします
+2. 画面左上の`+ナレッジベースを作成`をクリックします。
 
     <img src="https://i.gyazo.com/00293973083117c298714eb8c38e4236.png" width="450px" alt="image from gyazo"/>
 
-3. 先ほど保存したファイル（`morioka-oyako.md` など）をドラッグアンドドロップでアップロード
+3. 先ほど保存したファイル（`morioka-oyako.md` など）をドラッグアンドドロップでアップロードします。
 
     <img src="https://i.gyazo.com/44b34ca32a8699bbced5a4b206601d51.png" width="450px" alt="image from gyazo"/>
 
-4. 実際にアップロードすると、「次へ」というボタンが表示されるのでそのボタンをクリック
+4. 実際にアップロードができたら「次へ」というボタンをクリックしましょう。
 
     <img src="https://i.gyazo.com/6b9699b09e8a5b17d964195335e7dc1c.png" width="450px" alt="image from gyazo"/>
 
-### 2-3. 埋め込み
+### 2-3. ナレッジのチャンク設定をしよう
+ここからは検索しやすい形でナレッジデータを保存する設定をしていきいます。  
+ナレッジ設定の詳細については、3.Tipsを参照ください。  
 
-1. 基本汎用設定で良いですが、今回は精度を優先して `親子分割モード` を選択します
+1. 基本汎用設定で良いですが、今回は精度を優先して `親子分割モード` を選択します。
 
     <img src="https://i.gyazo.com/a7ed0fb494e320d45de9bf2873198bd3.png" width="450px" alt="image from gyazo"/>
 
-2. チャンク識別子と検索用子チャンク識別子は以下に書き換えましょう
+2. チャンク識別子と検索用子チャンク識別子は以下に書き換えましょう。
 - チャンク識別子: `##`
 - 検索用子チャンク識別子: `=====`
 
     <img src="https://i.gyazo.com/609e339e1339dd94154e381a12c0d2a9.png" width="450px" alt="image from gyazo"/>
 
-3. 埋め込みモデル
-- 受講生の皆さんはGeminiがデフォルトで入っているかと思いますが、クリックして「gemini-embedding-001」というモデルを選びましょう
+#### チャンク（chunk）とは？
+
+チャンクは、長い文章や資料を**検索しやすいサイズに小分けした「文章のかたまり」**のことです。  
+RAGでは、資料をそのまま丸ごと使うのではなく、**チャンク単位で保存しておき**、質問に近い部分だけを探して取り出します。
+
+3. インデックス方法
+- 親子モードでは自動的に`高品質`が選択されます。
+
+   <img src="https://i.gyazo.com/511dbc1c2450b65428bf76629fc73fa1.png" width="450px" alt="image from gyazo"/>
+
+#### インデックスとは？
+
+チャンクで分割したナレッジを、検索しやすいように整理して保存するための「索引」のことです。
+
+4. 埋め込みモデル
+- 埋め込みモデルは「gemini-embedding-001」を選びましょう。
 
     <img src="https://i.gyazo.com/f39519002fae379e54e92b2e55046c71.png" width="450px" alt="image from gyazo"/>
 
-### 2-4.検索設定をして保存しよう
+### 2-4. ナレッジの検索設定と保存をしよう
 
-- 本来は「ハイブリッド + リランカー」の方が精度が高い
-- ただリランカーは別途APIキーが必要な場合があるので、今回はウェイト設定で進めます
+本来は「ハイブリッド + リランカー」の方が精度が高いです。  
+ただ、リランカーは別途APIキーが必要な場合があるので、今回はウェイト設定で進めます。
 
-1. ベクトル検索、全文検索、ハイブリッド検索の中から、`ハイブリッド検索` を選択
+1. `ハイブリッド検索`をクリックして選びましょう。
 
     <img src="https://i.gyazo.com/8c43d475ce1b25f798b3d9cb24c416f7.png" width="450px" alt="image from gyazo"/>
 
-2. `ウェイト設定` を選択
+2. `ウェイト設定` を選択します。
 
     <img src="https://i.gyazo.com/fc14ea2b1739476acf83fc96f5b71a97.png" width="450px" alt="image from gyazo"/>
 
-3. `保存して処理` を押す
-- 最後に、「保存して処理」のボタンをクリックしましょう
-- このとき多少埋め込み処理時間があります
+3. `保存して処理`のボタンをクリックしましょう。
 
     <img src="https://i.gyazo.com/6782e5a33d0a533d1b7cc2fcb21952c1.png" width="450px" alt="image from gyazo"/>
 
+4. 
 > [!CAUTION]
-> 下記画像のように`埋め込み処理が完了しました`の表記が出たら、完了している合図です  
+> 少々埋め込み処理時間が発生します。
+> 埋め込み処理が完了しましたの表記が出たらドキュメントに移動 ボタンをクリックしましょう。
+>
 > <img src="https://i.gyazo.com/bde4a5a225ba4c79c6a81380257cb3c4.png" width="450px" alt="image from gyazo"/>
 
-4. `ドキュメントに移動`をクリック
+5. `ドキュメントに移動`をクリック
 
     <img src="https://i.gyazo.com/e4311250b72841b277afd46062218626.png" width="450px" alt="image from gyazo"/>
 
-5. ナレッジ追加の確認
-- 右側のステータスが利用可能になっているか確かめましょう
+6. ナレッジが追加できているか右側のステータスが利用可能になっているか確認しましょう。  
 
     <img src="https://i.gyazo.com/b355dd66cc8543274e0359f40047342a.png" width="450px" alt="image from gyazo"/>
 
-### 2-5. チャットフローに「知識検索ノード」を追加
+### 2-5. チャットフローに「知識検索ノード」を追加する
 
-1. 画面上部の「スタジオ」タブをクリックして、最初に作ったチャットフローの画面に戻り、自分のチャットアプリを開きましょう
+1. 画面上部の「スタジオ」タブをクリックし、自分のチャットアプリを開きましょう。
 
     <img src="https://i.gyazo.com/d346623b6c7942da8ca3a11226692bad.png" width="450px" alt="image from gyazo"/>
 
 2. 知識検索ノードを追加する
-- `開始ノード` と `LLMノード` を繋ぐ線の上にカーソルを持っていくと、`+マーク`がでます
+  1.  `開始ノード` と `LLMノード` を繋ぐ線の上にカーソルを持っていくと、`「+」ボタン`がでます。
 
-    <img src="https://i.gyazo.com/ce641441280e456578804d1c919a4675.png" width="450px" alt="image from gyazo"/>
+      <img src="https://i.gyazo.com/ce641441280e456578804d1c919a4675.png" width="450px" alt="image from gyazo"/>
 
-- その`+マーク`をクリックして、 `知識検索` ノードを追加します
+  2. その`「+」ボタン`をクリックして、 `知識検索` ノードを追加します。
 
-    <img src="https://i.gyazo.com/f1b31a4a0ce4a2294c650d1bdb5170cd.png" width="450px" alt="image from gyazo"/>
+      <img src="https://i.gyazo.com/f1b31a4a0ce4a2294c650d1bdb5170cd.png" width="450px" alt="image from gyazo"/>
 
-- 4つのノードが並びました
+  3. 4つのノードが並びました。
 
-    <img src="https://i.gyazo.com/c07911c0b224983db30572af072312fd.png" width="450px" alt="image from gyazo"/>
+      <img src="https://i.gyazo.com/c07911c0b224983db30572af072312fd.png" width="450px" alt="image from gyazo"/>
 
 ### 2-6. 知識検索ノードの設定でナレッジを紐づける
 
-- ここから知識検索ノードをクリックして、右側の画面で設定していきます
+1. ここから知識検索ノードをクリックして、右側の画面で設定していきます。
 
-    <img src="https://i.gyazo.com/5baf19bc878348331fad2d31824c33c8.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/5baf19bc878348331fad2d31824c33c8.png" width="300px" alt="image from gyazo"/>
 
-1. ナレッジベース項目の右側にある`+`をクリックします
+2. ナレッジベース項目の右側にある`+`をクリックします。
 
-    <img src="https://i.gyazo.com/0a5e05fc89e439ecbdee334c47c0b7ff.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/0a5e05fc89e439ecbdee334c47c0b7ff.png" width="300px" alt="image from gyazo"/>
 
-2. 先ほど作成したナレッジを選択して、`追加`をクリックします
+3. 先ほど作成したナレッジを選択して、`追加ボタン`をクリックします。
 
-    <img src="https://i.gyazo.com/f88dc73902a2f7c7c202a581bb811b54.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/f88dc73902a2f7c7c202a581bb811b54.png" width="300px" alt="image from gyazo"/>
 
-3. ナレッジベースが登録されました
+4. ナレッジベースが登録されました。
 
-    <img src="https://gyazo.com/6e0fe598a6be8a8cd889a368e2a40e05.png" width="450px" alt="image from gyazo"/>
+    <img src="https://gyazo.com/6e0fe598a6be8a8cd889a368e2a40e05.png" width="300px" alt="image from gyazo"/>
 
-4. 次にLLMノードをクリックして右側の画面で設定していきます
-- 入れるモデルは`Gemini 2.0 Flash-Lite 001`を選びます
+### 2-7. LLMの設定
+
+1. 次にLLMノードをクリックして右側の画面で設定していきます。
+- 入れるモデルは`Gemini 2.0 Flash-Lite 001`を選びます。
 
 > [!TIP]
-> RAGが効いていることを分かりやすくするため、あえて少し古めのモデルを使います  
-> (賢すぎるモデルだと、RAGなしでも答えてしまうことがあります）  
-> <img src="https://i.gyazo.com/93a33031303a9e50de4d3d5a4e57142e.png" width="450px" alt="image from gyazo"/>
+> RAGが効いていることを分かりやすくするため、あえて少し古めのモデルを使います。  
+> (賢すぎるモデルだと、RAGなしでも答えてしまうことがあります。）  
+> <img src="https://i.gyazo.com/93a33031303a9e50de4d3d5a4e57142e.png" width="300px" alt="image from gyazo"/>
 
-5. 設定
-- コンテキストの「変数値を設定」の欄をクリックして、知識検索の中の`result`を選びましょう 
+2. コンテキストの「変数値を設定」の欄をクリックして、知識検索の中の`result`を選びましょう。 
 
-    <img src="https://i.gyazo.com/7a2138ec292a26b29c610dc949c8bb5e.png" width="450px" alt="image from gyazo"/><br>
+    <img src="https://i.gyazo.com/7a2138ec292a26b29c610dc949c8bb5e.png" width="300px" alt="image from gyazo"/><br>
 
-    <img src="https://i.gyazo.com/b1299412977579fcb86909c8b44ee624.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/b1299412977579fcb86909c8b44ee624.png" width="300px" alt="image from gyazo"/>
 
-6. プロンプトをRAG用に調整
-- LLMノードのSYSTEMの中に現在入っているプロンプトは削除し、以下のプロンプトをコピーして置き換えましょう
+3. LLMノードのSYSTEMの中に現在入っているプロンプトは削除し、以下のプロンプトをコピーして置き換えましょう。
 
 ```
 ## 役割
@@ -262,61 +277,64 @@ RAG（Retrieval-Augmented Generation）は、AIが回答を作る前に**関連�
 ```
 
 > [!TIP]
-> コンテキストは、きちんと紫色で変数として入っているか確認しましょう
+> コンテキストは、きちんと紫色で変数として入っているか確認しましょう。
 > 
 > <img src="https://i.gyazo.com/1868c1034865e2ffec19e8314a59bb3e.png" width="450px" alt="image from gyazo"/>
 
-### 2-7. 動かしてみよう
+### 2-8. 動かしてみよう
 
-ここで **2-1で送ったものと同じ質問** をプレビュー画面でもう一度聞きます  
-RAGを入れたことでの差を体験しましょう
+**冒頭で聞いた質問**をチャットボットに聞いてみましょう。  
+登録したナレッジの情報通りの回答が返ってきたら成功です。
 
-```txt
-直利庵本店の最低予約人数、大人料金と小学生料金は？
-```
+<img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="450px" alt="image from gyazo"/>
 
-チェックポイント
-- 回答が登録したナレッジの情報通り答えられていれば成功です
-- 資料にないことを断定する場合は、プロンプトを調整しましょう
-  - 参考：[RAGの精度が上がらない？設定を見直してみよう！](https://protoout.studio/2296077e488780f081dace683bb63f86)
+※ うまくナレッジの情報をもとに回答していない場合は、プロンプトも調整してみましょう。
 
-    <img src="https://i.gyazo.com/e8cb69a64fbb355b3e8bb17ea7989f36.png" width="450px" alt="image from gyazo"/>
+### 2-9. 公開して試そう
 
-### 2-8 公開して試そう
-
-1. 画面右上の`公開`するをクリックし、`更新を公開`ボタンを押します
+1. 画面右上の`公開する`をクリックし、`更新を公開`ボタンを押します
 
     <img src="https://i.gyazo.com/b66569ab623f4d957cd11406afea8a0d.png" width="300px" alt="image from gyazo"/>
 
 2. `アクションが成功しました`が表示されたらOKです
 
-    <img src="https://i.gyazo.com/86dff25ab402ecbd30794931e743017d.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/5d21f62b70494405d4e139b4df38856a.png" width="300px" alt="image from gyazo"/>
 
-3. `実行`ボタンをクリックして早速試してみましょう！
+3. `アプリを実行`ボタンをクリックします
 
-    <img src="https://i.gyazo.com/e207e9745453366d225ae663b2981510.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/bb95bb664ffadbdebbfd236a580748ea.png" width="300px" alt="image from gyazo"/>
+
+4. 本番環境で早速試してみましょう！
+
+    <img src="https://i.gyazo.com/ee9d791bead1cfead5dcd80dbc6f4757.png" width="300px" alt="image from gyazo"/>
 
 ## 3. Tips: RAGの限界と応用
 
-- RAGは「事前に登録した情報」が中心ですが、リアルタイム性が高い情報や更新性が高い情報を扱うためにはそういったデータを提供している外部サービス（API）と連携する必要があります   
-「Webhookを利用して外部サービスと連携する」というものもあります  
-  - 例：[お天気API](https://weather.tsukumijima.net/)   
-  - JSONという書き方が少し難しいですが、チャレンジすると応用の幅が広がると思います！
+### 3-1. 外部サービス（API）と連携
+リアルタイム性が高い情報や更新性が高い情報を扱うためには外部サービス（API）と連携する必要があります。   
+[お天気API](https://weather.tsukumijima.net/) のように「Webhookを利用して外部サービスと連携する」というものもあります。  
+
+### 3-2.ナレッジ設定の詳細について
+[RAGの精度を高めるナレッジ設計ガイド](https://github.com/protoout/iu/blob/main/IU25/rag_guide.md)を見ながら、ナレッジを改善していきましょう。
+参考：[RAGの精度が上がらない？設定を見直してみよう！](https://protoout.studio/2296077e488780f081dace683bb63f86)
 
 ## 4. チャレンジ課題
 
 時間が余っている人はこちら
 プロンプトを書き換えてみたり、自分の大学のHPを読みこんでみるなど、オリジナル会話型AIを作ってみましょう！
 
-1. LINE Botで動かせるようにして、周りの人との共有してみよう
-2. ナレッジデータにない情報は回答しないよう、プロンプトを調整してみよう
-3. 盛岡ではなく「自分の大学/職場/施設」の情報でナレッジを追加してみよう
+### 4-1. LINE Botでも動かしてみよう
+### 4-2. 周りの人と共有してみよう
+### 4-3. 盛岡ではなく「自分の大学/職場/施設」の情報でナレッジを追加してみよう
+### 4-4. ナレッジデータにない情報は回答しないよう、プロンプトを調整してみよう
 
 ## 5. まとめ
 
-生成AIだけだと、ローカル情報は学習されていないことが多く、もっともらしい誤回答（ハルシネーション）が起きやすいため、このパートでは「資料を検索して、その内容を根拠に回答する」RAGという仕組みで、回答の精度と再現性を上げました
-
-DIfyには、エクセルファイルやNotionの内部ページなど、扱えるデータが多く搭載されているので、 大学の案内・学内ルール・サークル情報などにも応用して、様々なAIチャットボットを作成することができます
+このパートではRAGという手法を学び、特定の知識の情報に強いAIチャットボットを作成していきました。  
+回答の精度を上げるためにはデータを入れる前の前処理が大切になりますので、他のナレッジ検索や保存方法も試してみてください。  
+<br>
+Difyには、様々なファイル形式やNotion連携など扱えるデータが多く搭載されています。  
+大学の案内・学内ルール・サークル情報など自分が作りたいアイデアを形にする手段の1つとしてRAGを活用してみましょう。
 
 ---
 
