@@ -10,10 +10,11 @@
 ### 1-1. 生成AIとは？
 
 生成AI（Generative AI）は、テキスト・画像・音声などを“新しく作り出す”AIの総称です。  
-なかでもテキスト生成を得意とする代表格がLLM（Large Language Model／大規模言語モデル）です。
+なかでもテキスト生成を得意とする代表格がLLM（Large Language Model／大規模言語モデル）です。　　
+
 - ざっくりイメージ：大量の文章を読み込んで、人間っぽく文章を作るAI
 
-<img src="https://i.gyazo.com/9fa38557e2abdcd459d0e9b841d7e83d.png" width="450px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/9fa38557e2abdcd459d0e9b841d7e83d.png" width="450px" alt="image from gyazo"/>
 
 #### LLMとは
 
