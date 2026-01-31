@@ -159,11 +159,11 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
     <img src="https://i.gyazo.com/d346623b6c7942da8ca3a11226692bad.png" width="450px" alt="image from gyazo"/>
 
 2. 知識検索ノードを追加する
-  1.  `開始ノード` と `LLMノード` を繋ぐ線の上にカーソルを持っていくと、`「+」ボタン`がでます。
+  1.  `開始ノード` と `LLMノード` を繋ぐ線の上にカーソルを持っていくと、`「+」`ボタンがでます。
 
       <img src="https://i.gyazo.com/ce641441280e456578804d1c919a4675.png" width="450px" alt="image from gyazo"/>
 
-  2. その`「+」ボタン`をクリックして、 `知識検索` ノードを追加します。
+  2. その`「+」`ボタンをクリックして、 `知識検索` ノードを追加します。
 
       <img src="https://i.gyazo.com/f1b31a4a0ce4a2294c650d1bdb5170cd.png" width="450px" alt="image from gyazo"/>
 
@@ -177,11 +177,11 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 
     <img src="https://i.gyazo.com/5baf19bc878348331fad2d31824c33c8.png" width="300px" alt="image from gyazo"/>
 
-2. ナレッジベース項目の右側にある`+`をクリックします。
+2. ナレッジベース項目の右側にある`+`ボタンをクリックします。
 
     <img src="https://i.gyazo.com/0a5e05fc89e439ecbdee334c47c0b7ff.png" width="300px" alt="image from gyazo"/>
 
-3. 先ほど作成したナレッジを選択して、`追加ボタン`をクリックします。
+3. 先ほど作成したナレッジを選択して、`追加`ボタンをクリックします。
 
     <img src="https://i.gyazo.com/f88dc73902a2f7c7c202a581bb811b54.png" width="300px" alt="image from gyazo"/>
 
@@ -196,7 +196,7 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 
 > [!TIP]
 > RAGが効いていることを分かりやすくするため、あえて少し古めのモデルを使います。  
-> (賢すぎるモデルだと、RAGなしでも答えてしまうことがあります。）  
+> （賢すぎるモデルだと、RAGなしでも答えてしまうことがあります。）  
 > <img src="https://i.gyazo.com/93a33031303a9e50de4d3d5a4e57142e.png" width="300px" alt="image from gyazo"/>
 
 2. コンテキストの「変数値を設定」の欄をクリックして、知識検索の中の`result`を選びましょう。 
