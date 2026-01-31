@@ -159,17 +159,19 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
     <img src="https://i.gyazo.com/d346623b6c7942da8ca3a11226692bad.png" width="450px" alt="image from gyazo"/>
 
 2. 知識検索ノードを追加する
-  1.  `開始ノード` と `LLMノード` を繋ぐ線の上にカーソルを持っていくと、`「+」`ボタンがでます。
 
-      <img src="https://i.gyazo.com/ce641441280e456578804d1c919a4675.png" width="450px" alt="image from gyazo"/>
 
-  2. その`「+」`ボタンをクリックして、 `知識検索` ノードを追加します。
+    1.  `開始ノード` と `LLMノード` を繋ぐ線の上にカーソルを持っていくと、`「+」`ボタンがでます。
 
-      <img src="https://i.gyazo.com/f1b31a4a0ce4a2294c650d1bdb5170cd.png" width="450px" alt="image from gyazo"/>
+        <img src="https://i.gyazo.com/ce641441280e456578804d1c919a4675.png" width="450px" alt="image from gyazo"/>
 
-  3. 4つのノードが並びました。
+    2. その`「+」`ボタンをクリックして、 `知識検索` ノードを追加します。
 
-      <img src="https://i.gyazo.com/c07911c0b224983db30572af072312fd.png" width="450px" alt="image from gyazo"/>
+        <img src="https://i.gyazo.com/f1b31a4a0ce4a2294c650d1bdb5170cd.png" width="450px" alt="image from gyazo"/>
+
+    3. 4つのノードが並びました。
+
+        <img src="https://i.gyazo.com/c07911c0b224983db30572af072312fd.png" width="450px" alt="image from gyazo"/>
 
 ### 2-6. 知識検索ノードの設定でナレッジを紐づける
 
