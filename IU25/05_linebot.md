@@ -1,30 +1,38 @@
 # LINEと連携をした「盛岡の観光アドバイザーLINE Bot」を作ろう
 
+## LINEに触れよう
+
 このパートでは、Difyで作った盛岡観光AIチャットボットを、LINE上で動くBotとして利用できる形にします。  
 LINEはみなさんの身の回りの（もはや生活の基盤になっている）アプリなので、触れることがイメージしやすいのが強みです。  
-- [LINE1億人突破](https://x.com/itm_mobile/status/2016734324117459255?s=46)
+参考：[LINE1億人突破](https://x.com/itm_mobile/status/2016734324117459255?s=46)
 
-    <img src="https://i.gyazo.com/355989836f8dec83fd666346ef7a9868.png" width="300px" alt="image from gyazo"/>
+### LINE Botとは
 
+LINE Botは、LINE上で動作するチャットボットです。  
+補足：Bot（ボット）とは、人の代わりに自動でやり取りや処理を行うプログラムのことです。  
+- 例：「質問に自動で返事をする」「案内をする」「予約や申請の受付をする」などを、ルールやAIを使って実行します。
 
-- LINE Botは、LINE上で動作するチャットボットです。
-- お店の公式アカウントをイメージしてもらえると良いです。
-  - [郵便局LINE「ぽすくま」](https://www.post.japanpost.jp/send/line/index.html)
+### 公式アカウントを使ってみよう
 
-    <img src="https://i.gyazo.com/584ad087677f0a94caa5649177ab6ec8.png" width="300px" alt="image from gyazo"/>
+今回は公式アカウントを使っていきます。  
+※ 個人のLINEアカウントとは別物です。　　
 
-- 個人のLINEアカウントとは別物です。
-- LINE公式アカウントは複数作れるので、用途別にBotを作って試すことができます   
-  - 例：盛岡観光Bot / 大学案内Bot / サークル新歓Bot など
+お店の公式アカウントをイメージしてもらえると良いです。  
+参考：[郵便局LINE「ぽすくま」](https://www.post.japanpost.jp/send/line/index.html)　　
 
-<br>
+<img src="https://i.gyazo.com/584ad087677f0a94caa5649177ab6ec8.png" width="300px" alt="image from gyazo"/>
 
-参考：Bot（ボット）は、**人の代わりに自動でやり取りや処理を行うプログラム**のことです。
-  - 例えば「質問に自動で返事をする」「案内をする」「予約や申請の受付をする」などを、ルールやAIを使って実行します。
+>出典：日本郵便株式会社「LINEで郵便局」https://www.post.japanpost.jp/send/line/index.html
 
-  - [スターバックスLINEでモバイルオーダー](https://www.starbucks.co.jp/mobileorder/line/?srsltid=AfmBOorlyDn1F7MMv6uCnyz6CYoa5a_jU0I6oGPBmkvy8f7bk-ZygOum)
+参考：[スターバックスLINEでモバイルオーダー](https://www.starbucks.co.jp/mobileorder/line/?srsltid=AfmBOorlyDn1F7MMv6uCnyz6CYoa5a_jU0I6oGPBmkvy8f7bk-ZygOum)
 
-    <img src="https://i.gyazo.com/23d8488beab27b4d1ddb28f1f7d0bc28.png" width="300px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/23d8488beab27b4d1ddb28f1f7d0bc28.png" width="300px" alt="image from gyazo"/>
+
+> 出典：スターバックス コーヒー ジャパン株式会社「LINEでモバイルオーダー」https://www.starbucks.co.jp/mobileorder/line/
+
+LINE公式アカウントは複数作れるので、用途別にBotを作って試すことができます。
+
+例：盛岡観光Bot / 大学案内Bot / サークル新歓Bot など
 
 ## 1. 作るアプリケーション
 
@@ -38,7 +46,7 @@ LINEはみなさんの身の回りの（もはや生活の基盤になってい�
 
 - 盛岡観光AIチャットボットが公開になっているか確認しておきましょう。
 
-    <img src="https://i.gyazo.com/b66569ab623f4d957cd11406afea8a0d.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/b66569ab623f4d957cd11406afea8a0d.png" width="250px" alt="image from gyazo"/>
 
 ### 2-2. DifyにLINEプラグインを追加する
 
@@ -114,35 +122,39 @@ Webhook URLをつかってDify側とLINEを連携します。
 
     <img src="https://i.gyazo.com/d91b9ded1ee5b6cd464cc616a4d04886.png" width="450px" alt="image from gyazo"/>
 
-2. [LINE Developers](https://developers.line.biz/ja/docs/line-developers-console/)を開き、`LINEアカウント`をクリックします。
+2. [LINE Developers](https://developers.line.biz/ja/)からアクセスし、画面右上の `コンソールにログイン` をクリックします。
+
+    <img src="https://i.gyazo.com/e91a09f97239f139efac4c4d2f86ef39.png" width="450px" alt="image from gyazo"/>
+
+3. `LINEアカウント`をクリックします。
     
     <img src="https://i.gyazo.com/e925062eb2d104283343de71c105b1f5.png" width="300px" alt="image from gyazo"/>
 
-3. `ログイン`をクリックします。
+4. `ログイン`をクリックします。
     
     <img src="https://i.gyazo.com/92c3f1a38b11b069b1d62aca419acd1f.png" width="300px" alt="image from gyazo"/>
 
-4. ご自身で登録したチャネル（例：`盛岡の観光アドバイザー`）を開きます。
+5. ご自身で登録したチャネル（例：`盛岡の観光アドバイザー`）を開きます。
     
     <img src="https://i.gyazo.com/b017a2e5fa6151556fbec1770fece089.png" width="450px" alt="image from gyazo"/>
 
-5. `Messaging API設定`タブを開きます。
+6. `Messaging API設定`タブを開きます。
     
     <img src="https://i.gyazo.com/483fba01e56b7afda6a5df29379db70a.png" width="450px" alt="image from gyazo"/>
 
-6. `Webhook設定`の`編集`ボタンをクリックします。
+7. `Webhook設定`の`編集`ボタンをクリックします。
 
     <img src="https://i.gyazo.com/b2926bfddcc5faa8b594094c97744c4f.png" width="300px" alt="image from gyazo"/>
 
-7. 先ほどコピーしたURLをWebhook URLに設定します。
+8. 先ほどコピーしたURLをWebhook URLに設定します。
 
     <img src="https://i.gyazo.com/42c018ea53c79da753ad2b342ca85de3.png" width="450px" alt="image from gyazo"/>
 
-8. その下にある`Webhookの利用`ボタンをクリックし、オン（緑色の状態）にします。
+9. その下にある`Webhookの利用`ボタンをクリックし、オン（緑色の状態）にします。
 
     <img src="https://i.gyazo.com/88de95e073afa7218f78e883e8fa3d4d.png" width="450px" alt="image from gyazo"/>
 
-9. `検証`ボタンを押して成功と表示されればOKです。
+10. `検証`ボタンを押して成功と表示されればOKです。
 
     <img src="https://i.gyazo.com/c1e4975d249ca4863a82288495990af4.png" width="450px" alt="image from gyazo"/>
 
@@ -167,7 +179,7 @@ LINE BotはDifyとは別の仕組みで、ほかにも色々な連携方法が�
 
 ### 3-2. Difyのプラグイン機能
 
-- Difyのプラグイン機能では、LINE以外にも、Slack/Notion/スプレッドシートなどと連携できます。
+- Difyのプラグイン機能では、LINE以外にも、SlackやNotion、Googleスプレッドシートなどと連携することができます。
 
     <img src="https://i.gyazo.com/2212299629f5be33c9c29f27829ee582.png" width="450px" alt="image from gyazo"/>
 
@@ -245,7 +257,7 @@ LINE BotはDifyとは別の仕組みで、ほかにも色々な連携方法が�
 ### 4-1. 自分のLINE Botを共有する/他の人のLINE Botも試す
 
   - QRコードを共有することで他の人にも使ってもらえます。
-    - QRコードはLINE DevelopersのMessagingAPIにあります。
+    - QRコードはLINE DevelopersのMessagingAPI設定にあります。
 
       <img src="https://i.gyazo.com/e85d3e270be31bf7fd6354bdc1d1f4f2.png" width="200px" alt="image from gyazo"/>
   
@@ -260,6 +272,14 @@ LINE BotはDifyとは別の仕組みで、ほかにも色々な連携方法が�
   - 「使いやすい」と感じた理由は？
 - 見つけた「使いやすさ」を、後で作る自分のオリジナルLINE Botに取り入れたり、最後の発表タイムで共有しましょう。！
 
+### 4-3. LINE Botの事例を見てみよう
+
+外部サービスと連携することで、データの記録や参照できるLINE Botも作成できます。  
+どんなことができるか自分で探して幅を広げてみましょう。  
+
+参考1：[LINE Developers Communityの作成事例](https://www.youtube.com/@linedevelopercommunity9922/search?query=LINE%20Bot)  
+参考2：[QiitaのLINE Bot作成事例](https://qiita.com/search?q=LINEBot&sort=like)
+
 ## 5. まとめ
 
 このパートでは、**Difyで作ったAIをLINE Botとして使える形にする**ところまで作成しました。
@@ -269,10 +289,6 @@ Dify上で動かすだけでもプロトタイプはできますが、**LINEに�
 
 LINE Botは、たとえば**研究室・サークル・ゼミ内の連絡窓口**や、**学内施設の案内**など、身近なシーンの導線としても使えます。  
 思いついたアイデアを素早く形にする手段の1つとして、**Dify × LINE**もぜひ活用してみてください。
-<br>
-さらに外部サービスと連携することで、データの記録や参照できるLINE Botも作成できます。  
-[LINE Developers Communityの作成事例](https://www.youtube.com/@linedevelopercommunity9922/search?query=LINE%20Bot)や[QiitaのLINE Bot作成事例](https://qiita.com/search?q=LINEBot&sort=like)を見てどんなことができるか自分で探して幅を広げてみてください。
-
 
 ---
 
