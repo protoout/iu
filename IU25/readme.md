@@ -8,7 +8,7 @@
   - [ワークシート](https://docs.google.com/spreadsheets/d/1oLxuu5APnb8F0h7VE1wiXt8Ad9AW5i1qbG5wjdJ7qPc/edit?usp=sharing)
 
 ## 実装ワークショップ前のオリエンテーション 13:30-13:35（5分）
-- [授業の進め方について](/IU25/01_orientation.md)
+- [ワークショップの進め方について](/IU25/01_orientation.md)
 
 ## 実装ワークショップ1 13:35-14:35（60分）
 
