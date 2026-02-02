@@ -33,7 +33,7 @@
 
 ### 2-2. LLMをGeminiのモデルに設定する
 
-授業では、無料枠があり試作が進めやすいGeminiを利用します。  
+ワークショップでは、無料枠があり試作が進めやすいGeminiを利用します。  
 Difyは「モデルプロバイダー」画面から、使用するLLMを追加できます。
 
 1. [Difyモデルプロバイダー設定ページ](https://zenn.dev/protoout/books/15_dify-manual/viewer/model-setup-gemini#2-dify%E3%81%AE%E3%83%A2%E3%83%87%E3%83%AB%E3%83%97%E3%83%AD%E3%83%90%E3%82%A4%E3%83%80%E3%83%BC%E8%A8%AD%E5%AE%9A)に沿って、`セット成功`まで進めましょう。
