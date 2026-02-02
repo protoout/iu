@@ -256,7 +256,7 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 
 ### 3-1. 外部サービス（API）と連携
 リアルタイム性が高い情報や更新性が高い情報を扱うためには外部サービス（API）と連携する必要があります。   
-[お天気API](https://weather.tsukumijima.net/) のように「Webhookを利用して外部サービスと連携する」というものもあります。  
+[お天気API](https://weather.tsukumijima.net/) のように「Webhookを利用して外部サービスと連携する」という仕組みもあります。  
 
 ### 3-2.ナレッジ設定の詳細について
 [RAGの精度を高めるナレッジ設計ガイド](https://github.com/protoout/iu/blob/main/IU25/rag_guide.md)を見ながら、ナレッジを改善していきましょう。  
