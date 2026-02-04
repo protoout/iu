@@ -62,7 +62,7 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 
 ### 2-1. ナレッジデータをファイル保存する
 
-- 先ほど開いた[盛岡のローカル観光情報ナレッジ](https://github.com/protoout/iu/blob/main/IU25/morioka-oyako.md)をファイルとして保存します。
+先ほど開いた[盛岡のローカル観光情報ナレッジ](https://github.com/protoout/iu/blob/main/IU25/morioka-oyako.md)をファイルとして保存します。  
 1. 右上にある`Download raw file`ボタンをクリックします。
 
     <img src="https://i.gyazo.com/0042de392968c6ae9a099c2f974daa31.png" width="450px" alt="image from gyazo"/>
