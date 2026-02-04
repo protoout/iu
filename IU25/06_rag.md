@@ -47,7 +47,7 @@ RAG（Retrieval-Augmented Generation）は、AIが回答を作る前に**関連�
 RAGを入れた後で回答にどのような変化が起きるかを試していきます。  
 
 2. 今回は盛岡のローカルな観光情報の知識（ナレッジ）を扱っていきます。  
-  [盛岡のローカル観光情報ナレッジ](https://gist.githubusercontent.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d/raw/c37cb9a96318eb9b1615b7276628230dbb5dd88e/morioka-oyako.md)を開いてみてください。
+  [盛岡のローカル観光情報ナレッジ](https://github.com/protoout/iu/blob/main/IU25/morioka-oyako.md)を開いてみてください。
 
 3. 下記をコピーして先ほど作成したチャットボットに貼り付けて聞いてみましょう。
 
@@ -62,7 +62,7 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 
 ### 2-1. ナレッジデータをファイル保存する
 
-- 先ほど開いた[盛岡のローカル観光情報ナレッジ](https://gist.githubusercontent.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d/raw/c37cb9a96318eb9b1615b7276628230dbb5dd88e/morioka-oyako.md)をファイルとして保存します。  
+- 先ほど開いた[盛岡のローカル観光情報ナレッジ](https://github.com/protoout/iu/blob/main/IU25/morioka-oyako.md)をファイルとして保存します。  
 `morioka-oyako.md`または`morioka-oyako.txt`という名前で自分のパソコンに保存してください。
 
     <img src="https://i.gyazo.com/5d03e8e9fa1725f0f27e2c9f9046283d.png" width="150px" alt="image from gyazo"/>
