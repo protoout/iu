@@ -34,7 +34,7 @@ RAG（Retrieval-Augmented Generation）は、AIが回答を作る前に**関連�
 
 ### 1-1. 盛岡のローカル観光情報について回答するAIチャットボット
 
-  <img src="https://i.gyazo.com/e2870f25bbac039cd72f2b7f53c80d80.jpg" width="450px" alt="image from gyazo"/>
+  <img src="https://i.gyazo.com/161822e287f750f4e692484c1c1f13de.png" width="450px" alt="image from gyazo"/>
 
 ## 2. ハンズオン：RAGを使った盛岡の観光アドバイザーAIチャットボットを作ろう
 
@@ -241,7 +241,7 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 **冒頭で聞いた質問**をチャットボットに聞いてみましょう。  
 登録したナレッジの情報通りの回答が返ってきたら成功です。
 
-<img src="https://i.gyazo.com/e2870f25bbac039cd72f2b7f53c80d80.jpg" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/161822e287f750f4e692484c1c1f13de.png" width="450px" alt="image from gyazo"/>
 
 ※ うまくナレッジの情報をもとに回答していない場合は、プロンプトも調整してみましょう。
 
@@ -261,7 +261,7 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 
 4. 本番環境で早速試してみましょう！
 
-    <img src="https://i.gyazo.com/2155a0d3c2672ad1fc76d1d74a42df75.png" width="300px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/0d656b1ed75253ae4a67b8e4741e7ff3.png" width="450px" alt="image from gyazo"/>
 
 ## 3. Tips: RAGの限界と応用
 
