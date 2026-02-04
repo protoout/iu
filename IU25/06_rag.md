@@ -198,7 +198,16 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 > [!TIP]
 > RAGが効いていることを分かりやすくするため、あえて少し古めのモデルを使います。  
 > （賢すぎるモデルだと、RAGなしでも答えてしまうことがあります。）  
+>
 > <img src="https://i.gyazo.com/93a33031303a9e50de4d3d5a4e57142e.png" width="300px" alt="image from gyazo"/>
+
+> [!CAUTION]
+> ただし、制作タイムではgemini-2.5を使うようにしましょう。
+> gemini-2.5の方がコストと性能とのバランスが良く、gemini-2.0は2026年3月末で使用できなくなるためです。
+>
+> <img src="https://i.gyazo.com/b55a38a9b80dc19cc726fb0f4762d427.png" width="300px" alt="image from gyazo"/>
+>
+> 参考；[Gemini APIリリースノート](https://ai.google.dev/gemini-api/docs/changelog?hl=ja)
 
 2. コンテキストの「変数値を設定」の欄をクリックして、知識検索の中の`result`を選びましょう。 
 
