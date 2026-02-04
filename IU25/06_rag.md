@@ -52,7 +52,7 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 3. 下記をコピーして先ほど作成したチャットボットに貼り付けて聞いてみましょう。
 
    ```txt
-   直利庵本店の大人料金と小学生料金も含めて旅程を出して
+   成人男性と成人女性、わんこそばの平均的な杯数は？
    ```
 
 4. 現状は下記のようにローカルな観光情報が返ってこず、それっぽい嘘の情報が返ってきていてハルシネーションがおきています。  
@@ -62,12 +62,14 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
 
 ### 2-1. ナレッジデータをファイル保存する
 
-- 先ほど開いた[盛岡のローカル観光情報ナレッジ](https://github.com/protoout/iu/blob/main/IU25/morioka-oyako.md)をファイルとして保存します。  
-`morioka-oyako.md`または`morioka-oyako.txt`という名前で自分のパソコンに保存してください。
+- 先ほど開いた[盛岡のローカル観光情報ナレッジ](https://github.com/protoout/iu/blob/main/IU25/morioka-oyako.md)をファイルとして保存します。
+1. 右上にある`Download raw file`ボタンをクリックします。
+
+    <img src="https://i.gyazo.com/0042de392968c6ae9a099c2f974daa31.png" width="450px" alt="image from gyazo"/>
+
+2. morioka-oyako.md`という名前で自分のパソコンに保存してください。
 
     <img src="https://i.gyazo.com/5d03e8e9fa1725f0f27e2c9f9046283d.png" width="150px" alt="image from gyazo"/>
-
-補足: zipでまとめてDLしたい人は[こちら](https://gist.github.com/n0bisuke/a6d77572f3b55e9755e0580ebea2414d)
 
 ### 2-2. ナレッジの登録をしよう
 
