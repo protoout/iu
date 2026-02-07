@@ -80,6 +80,11 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 - 提案スポットは2〜3つ
 ```
 
+2. モデルは、`Gemini 2.0 Flash 001`を選択しましょう。
+
+> [!CAUTION]
+> Gemini 3.0は賢いモデルですが、トークンをすぐに使い切ってしまう可能性があるので気をつけましょう。
+
 <img src="https://i.gyazo.com/de4fcc0bab3a21a888fbcf42341df396.png" width="450px" alt="image from gyazo"/>
 
 ### 2-4. 動かしてみよう
