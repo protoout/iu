@@ -20,9 +20,9 @@
 
     <img src="https://i.gyazo.com/7b6715b8a0b7da4e31a694601caa4475.png" width="450px" alt="image from gyazo"/>
 
-2. DifyのVersionが`1.11.4`になっているか、画面右上の丸いアイコンから確認しましょう。
+2. DifyのVersionが`1.12.1`になっているか、画面右上の丸いアイコンから確認しましょう。
 
-    <img src="https://i.gyazo.com/7244bf7eb6f60446bf080717b36d5fd1.png" width="150px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/19ca658e2b38b3d0fe01708c4d89c823.png" width="150px" alt="image from gyazo"/>
 
 3. [Difyチャットアプリ作成ページ](https://zenn.dev/protoout/articles/81-start-dify-chatflow)に沿って、まずは、[「アプリケーションを作成しよう」](https://zenn.dev/protoout/articles/81-start-dify-chatflow#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%82%88%E3%81%86)まで作っていきます。
 
