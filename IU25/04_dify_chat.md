@@ -141,16 +141,15 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
    - たくさんのモデルがありますが、目安としては Pro > Flash > Flash-Lite の順に精度が高いです。
 
       ### 一覧（上から順番に高精度）
-      - Gemini 2.5 Pro（最上位のthinkingモデル）
-      - Gemini Flash Latest（最新Flashへ自動追従）
-      - Gemini 2.5 Flash（推論もできる高速モデル）
-      - Gemini 2.0 Flash Exp（実験版、当たり外れあり）
-      - Gemini 2.0 Flash 001（固定の安定版）
-      - Gemini 2.0 Flash（latest扱いになり得る）
-      - Gemini Flash-Lite Latest（Flash-Lite系の最新へ自動追従）
-      - Gemini 2.5 Flash-Lite（軽量・コスパ）
-      - Gemini 2.0 Flash-Lite 001（軽量の固定版）
-      - Gemini 2.0 Flash-Lite（※2026/03/31で終了予定）
+
+      | 順位 | モデル名 | 賢さのレベル（特徴） | 推奨用途 |
+      |---:|---|---|---|
+      | 1 | Gemini 3 Pro | 最強。論理的思考と複雑な指示理解が極めて高い。 | 複雑なコード生成、高度な戦略立案 |
+      | 2 | Gemini 2.5 Pro | 非常に高い。3 Pro登場までは最高峰だった安定モデル。 | 文脈の長いナレッジ検索、高精度な翻訳 |
+      | 3 | Gemini 3 Flash | 高い。旧Pro並みの知能を持ちつつ、応答が爆速。 | リアルタイム対話、一般的なQA、Dify運用 |
+      | 4 | Gemini 2.5 Flash | 中程度。バランスは良いが、3 Flashにその座を譲りつつある。 | データの要約、シンプルなタスク処理 |
+      | 5 | Gemini 2.5 Flash-Lite | 控えめ。知能より「効率と回数」に特化。 | 大量のテキスト分類、簡単な定型文生成 |
+      | 6 | Gemini 2.0 シリーズ | 過去世代。現行モデルに比べると理解の深さが劣る。 | 旧環境の維持以外では非推奨 |
 
       ### 画像生成系
       - Nano Banana（画像生成寄り）
