@@ -60,7 +60,7 @@ RAGを入れた後で回答にどのような変化が起きるかを試して�
     - ユーザーが不快に思う返信は禁止です
    ```
 
-    <img src="https://i.gyazo.com/5dff5672c3a73f6332d0efb8ae885c61.png" width="450px" alt="image from gyazo"/>
+    <img src="https://i.gyazo.com/1ea1140b0f7bdc16bed4c79ec8d2fa86.png" width="450px" alt="image from gyazo"/>
 
 4. 下記をコピーして先ほど作成したチャットボットに貼り付けて聞いてみましょう。
 
