@@ -51,7 +51,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 
 3. プレビューで試す
 
-- LLMノードのAIモデルは、`Gemini 2.0 Flash-Lite`を選択しましょう。
+- LLMノードのAIモデルは、`Gemini 2.5 Flash-Lite`を選択しましょう。
 
 > [!CAUTION]
 > モデルによってはトークンをすぐに使い切ってしまう可能性があるので気をつけましょう。
@@ -85,7 +85,7 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 - 提案スポットは2〜3つ
 ```
 
-<img src="https://i.gyazo.com/de4fcc0bab3a21a888fbcf42341df396.png" width="450px" alt="image from gyazo"/>
+<img src="https://i.gyazo.com/bf28ffb540e05f4182bd6755c4c50164.png" width="450px" alt="image from gyazo"/>
 
 ### 2-4. 動かしてみよう
 
