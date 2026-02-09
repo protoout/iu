@@ -55,6 +55,12 @@ Difyは「モデルプロバイダー」画面から、使用するLLMを追加�
 
 > [!CAUTION]
 > モデルによってはクレジットをすぐに使い切ってしまう可能性があるので気をつけましょう。
+> gemini-2.0は2026年3月末で使用できなくなります。
+>
+> <img src="https://i.gyazo.com/b55a38a9b80dc19cc726fb0f4762d427.png" width="300px" alt="image from gyazo"/>
+>
+> 参考；[Gemini APIリリースノート](https://ai.google.dev/gemini-api/docs/changelog?hl=ja)
+
 
 - `プレビュー`ボタンを押すと、チャットウィンドウが開くので、「こんにちは」など何か挨拶してみましょう。
 - 下記画像のように回答が返ってきたらOKです！
